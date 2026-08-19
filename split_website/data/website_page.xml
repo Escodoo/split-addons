@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="page_reel" model="website.page">
+        <field name="view_id" ref="reel" />
+        <field name="url">/reel</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Watch the Split Studio showreel.</field>
+    </record>
+    <record id="page_our_work" model="website.page">
+        <field name="view_id" ref="our_work" />
+        <field name="url">/our-work</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >Animated series, films, promos and branded content produced by Split Studio.</field>
+    </record>
+    <record id="page_split_originals" model="website.page">
+        <field name="view_id" ref="split_originals" />
+        <field name="url">/split-originals</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >Intellectual properties created and developed inside Split Studio.</field>
+    </record>
+    <record id="page_about" model="website.page">
+        <field name="view_id" ref="about" />
+        <field name="url">/about</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >Who we are and what Split Studio does.</field>
+    </record>
+</odoo>

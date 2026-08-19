@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="split_originals" model="ir.ui.view">
+        <field name="name">Split Studio - Split Originals</field>
+        <field name="key">split_website.split_originals</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Split Originals" t-name="split_website.split_originals">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_split_originals"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_title parallax s_parallax_is_fixed pt96 pb96 o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_title"
+                                data-name="Title"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_among_the_stars');"
+                                />
+                                <div class="o_we_bg_filter bg-black-75" />
+                                <div class="container">
+                                    <h1 class="display-2-fs">Split Originals</h1>
+                                    <p
+                                        class="lead mb-0"
+                                    >Intellectual properties created inside the studio, from preschool series to games.</p>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Original intellectual properties"
+                            >
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-12 pb16 d-flex flex-wrap align-items-baseline justify-content-between"
+                                        >
+                                            <div>
+                                                <h2
+                                                    class="mb-0"
+                                                >Original intellectual properties</h2>
+                                                <p
+                                                    class="lead mb-0"
+                                                >Stories we create, develop and produce ourselves.</p>
+                                            </div>
+                                            <p class="mb-0">
+                                                <a
+                                                    href="/contactus"
+                                                >Co-produce with us <i
+                                                    class="fa fa-long-arrow-right ms-2"
+                                                /></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_weeboom"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="WeeBoom"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4 class="mb-0">WeeBoom</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Preschool series</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_whats_up_bud"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="What's Up, Bud?"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >What's Up, Bud?</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Comedy series</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_charcoal_swordsman"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="The Charcoal Swordsman"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >The Charcoal Swordsman</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Series in development</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_sun_boy"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Sun Boy and Friends"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >Sun Boy and Friends</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Music videos</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_que_corpo_e_esse"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Que Corpo é Esse?"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >Que Corpo é Esse?</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Canal Futura · Original series</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_wizavior"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Wizavior"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4 class="mb-0">Wizavior</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Game</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_egregora"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Egrégora"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4 class="mb-0">Egrégora</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Short film</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_children_of_the_world"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Children of the World"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >Children of the World</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Series</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_blue_butterflies"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="On the Trail of the Blue Butterflies"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >On the Trail of the Blue Butterflies</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Series</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_howdy_harrdy"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Howdy Harrdy"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4 class="mb-0">Howdy Harrdy</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Series in development</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_miss_and_grubs"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="Miss &amp; Grubs"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >Miss &amp; Grubs</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Series in development</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <figure class="mb-0">
+                                                <img
+                                                    src="/web/image/split_website.original_to_reach_the_moon"
+                                                    class="img img-fluid w-100"
+                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                    alt="To Reach the Moon"
+                                                    loading="lazy"
+                                                />
+                                                <figcaption class="pt-2">
+                                                    <h4
+                                                        class="mb-0"
+                                                    >To Reach the Moon</h4>
+                                                    <p
+                                                        class="o_small mb-0"
+                                                    >Original IP · Short film</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

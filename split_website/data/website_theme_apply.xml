@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Split's brand palette, read from the colours used on splitstudio.tv. -->
+    <function name="make_scss_customization" model="web_editor.assets">
+        <value
+            eval="'/website/static/src/scss/options/colors/user_color_palette.scss'"
+        />
+        <value
+            eval="{
+                'o-color-1': '#F05983',
+                'o-color-2': '#EBEA55',
+                'o-color-3': '#8ECFF6',
+                'o-color-4': '#FFFFFF',
+                'o-color-5': '#111111',
+                'o-cc1-bg': 'o-color-5',
+                'menu': 5,
+                'footer': 5,
+                'copyright': 5,
+            }"
+        />
+    </function>
+    <!-- The studio site is dark: page, header and footer all run on the dark
+         colour combination, with the yellow used for links. The page background
+         comes from the first combination, which Bootstrap reads as $body-bg. -->
+    <function name="make_scss_customization" model="web_editor.assets">
+        <value
+            eval="'/website/static/src/scss/options/colors/user_theme_color_palette.scss'"
+        />
+        <value
+            eval="{
+                'o-cc1-headings': 'o-color-4',
+                'o-cc1-text': 'rgba(#fff, .78)',
+                'o-cc1-link': 'o-color-2',
+                'o-cc1-btn-primary': 'o-color-1',
+                'o-cc1-btn-primary-text': 'o-color-4',
+                'o-cc1-btn-secondary': 'o-color-2',
+                'o-cc1-btn-secondary-text': 'o-color-5',
+                'o-cc5-headings': 'o-color-4',
+                'o-cc5-text': 'rgba(#fff, .78)',
+                'o-cc5-link': 'o-color-2',
+                'o-cc5-btn-primary': 'o-color-1',
+                'o-cc5-btn-primary-text': 'o-color-4',
+                'o-cc5-btn-secondary': 'o-color-2',
+                'o-cc5-btn-secondary-text': 'o-color-5',
+                'o-cc4-headings': 'o-color-4',
+                'o-cc4-text': 'rgba(#fff, .85)',
+            }"
+        />
+    </function>
+    <function name="make_scss_customization" model="web_editor.assets">
+        <value eval="'/website/static/src/scss/options/user_values.scss'" />
+        <value
+            eval="{
+                'google-fonts': &quot;('Oswald', 'Roboto')&quot;,
+                'font': 'Roboto',
+                'headings-font': 'Oswald',
+                'navbar-font': 'Oswald',
+                'buttons-font': 'Oswald',
+                'header-links-style': 'default',
+                'logo-height': '2.6rem',
+                'btn-border-radius': 0,
+                'btn-border-radius-sm': 0,
+                'btn-border-radius-lg': 0,
+                'btn-padding-x': '1.5rem',
+                'btn-padding-x-lg': '2.5rem',
+            }"
+        />
+    </function>
+    <!-- The home page and the contact page replace core views instead of
+         registering new website.page records, because the website module
+         already owns the "/" and "/contactus" URLs. -->
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('website.homepage').id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{'arch': obj().env.ref('split_website.homepage').arch.replace(
+                '*mailing_list_id*',
+                str(obj().env.ref('split_website.mailing_list_newsletter').id),
+            )}"
+        />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('website.contactus').id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{'arch': obj().env.ref('split_website.contactus').arch.replace(
+                '*crm_team_intake*',
+                str(obj().env['crm.team'].search([('name', '=', 'Intake')], limit=1).id
+                    or obj().env.ref('sales_team.team_sales_department').id),
+            ).replace(
+                '*utm_medium_website*',
+                str(obj().env.ref('utm.utm_medium_website').id),
+            )}"
+        />
+    </function>
+</odoo>

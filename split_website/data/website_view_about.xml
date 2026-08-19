@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="about" model="ir.ui.view">
+        <field name="name">Split Studio - About</field>
+        <field name="key">split_website.about</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="About" t-name="split_website.about">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div id="oe_structure_split_website_about" class="oe_structure">
+                            <section
+                                class="s_title parallax s_parallax_is_fixed pt96 pb96 o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_title"
+                                data-name="Title"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_split_academy');"
+                                />
+                                <div class="o_we_bg_filter bg-black-75" />
+                                <div class="container">
+                                    <h1
+                                        class="display-2-fs"
+                                    >We are Split. We love telling stories.</h1>
+                                    <p
+                                        class="lead mb-0"
+                                    >Creating and producing animation and games since 2009.</p>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Story"
+                            >
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8 offset-lg-2">
+                                            <p
+                                                class="lead"
+                                            >Have you noticed that the character of our brand is splitting? It's because Split works daily to create and produce top-quality animation and games.</p>
+                                            <p
+                                            >In order to find a new path within this huge adventure that is storytelling through animation, Split cannot be one; it needs to be many. With each new journey, with each new partner, with each new initiative, our studio divides and multiplies. Each new version can fully understand the objectives of the content to deliver the best result.</p>
+                                            <p
+                                            >Therefore, if there is animation, Split has the solution. From branded content to feature films, TV shows to streaming mini-series, web series to games, promos, commercials and music videos, we'll be there for you every step of the way.</p>
+                                            <p
+                                            >Since 2009 we have been producing a world of animation. Not one, actually, but many. Today we create entertainment content for Cartoon Network, Cartoonito, Comedy Central, Canal Futura, Sanrio, Disney Jr., Instituto Ayrton Senna, Mauricio de Sousa Produções, Wonder Media and Midas Music, among others.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_company_team pt32 pb64 o_cc o_cc5"
+                                data-snippet="s_company_team"
+                                data-name="Team"
+                            >
+                                <div class="container">
+                                    <div class="col-lg-12 pb16">
+                                        <h2>Who leads the studio</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.team_cid_makino"
+                                                class="img img-fluid rounded mb-3"
+                                                alt="Cid Makino"
+                                                loading="lazy"
+                                            />
+                                            <h3 class="h5-fs mb-0">Cid Makino</h3>
+                                            <p
+                                                class="o_small text-o-color-2"
+                                            >Executive Producer &amp; Animation Director</p>
+                                            <p
+                                            >More than 15 years of experience across TV series, feature films and short films. At Split, Cid carries the production torch and leads the teams toward innovation, quality and top-notch delivery.</p>
+                                        </div>
+                                        <div class="col-lg-4 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.team_guille_hiertz"
+                                                class="img img-fluid rounded mb-3"
+                                                alt="Guille Hiertz"
+                                                loading="lazy"
+                                            />
+                                            <h3 class="h5-fs mb-0">Guille Hiertz</h3>
+                                            <p
+                                                class="o_small text-o-color-2"
+                                            >Founder &amp; CEO</p>
+                                            <p
+                                            >Producer, director, editor, screenwriter and animator, with a degree in Image and Sound from UFSCar. Guille produced dozens of films, series, games and comics, and created the studio's Games Center.</p>
+                                        </div>
+                                        <div class="col-lg-4 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.team_jonas_brandao"
+                                                class="img img-fluid rounded mb-3"
+                                                alt="Jonas Brandão"
+                                                loading="lazy"
+                                            />
+                                            <h3 class="h5-fs mb-0">Jonas Brandão</h3>
+                                            <p
+                                                class="o_small text-o-color-2"
+                                            >Founder, Director &amp; Writer</p>
+                                            <p
+                                            >Director, producer, writer and animator, with a degree in Image and Sound from UFSCar and a fellowship at the National Film Board of Canada. Jonas leads Split's international projects from the US office.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_features pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_features"
+                                data-name="What Split Does"
+                            >
+                                <div class="container">
+                                    <div class="col-lg-12 pb16">
+                                        <h2>What Split does</h2>
+                                        <p
+                                            class="lead"
+                                        >A full 2D pipeline, from the first idea to the final render.</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.icon_creation"
+                                                class="img mb-3"
+                                                style="height: 64px;"
+                                                alt="Creation &amp; Development"
+                                                loading="lazy"
+                                            />
+                                            <h3
+                                                class="h5-fs"
+                                            >Creation &amp; Development</h3>
+                                            <ul class="list-unstyled o_small mb-0">
+                                                <li class="mb-1">IPs Creation</li>
+                                                <li
+                                                    class="mb-1"
+                                                >Project Development</li>
+                                                <li class="mb-1">Script Writing</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.icon_pre_production"
+                                                class="img mb-3"
+                                                style="height: 64px;"
+                                                alt="Pre-Production"
+                                                loading="lazy"
+                                            />
+                                            <h3 class="h5-fs">Pre-Production</h3>
+                                            <ul class="list-unstyled o_small mb-0">
+                                                <li
+                                                    class="mb-1"
+                                                >Storyboard &amp; Animatic</li>
+                                                <li
+                                                    class="mb-1"
+                                                >Character Design &amp; Backgrounds</li>
+                                                <li
+                                                    class="mb-1"
+                                                >Setup &amp; Rigging</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.icon_animation"
+                                                class="img mb-3"
+                                                style="height: 64px;"
+                                                alt="2D Animation"
+                                                loading="lazy"
+                                            />
+                                            <h3 class="h5-fs">2D Animation</h3>
+                                            <ul class="list-unstyled o_small mb-0">
+                                                <li
+                                                    class="mb-1"
+                                                >Staging &amp; Blocking</li>
+                                                <li
+                                                    class="mb-1"
+                                                >Cut Out &amp; Traditional Animation</li>
+                                                <li
+                                                    class="mb-1"
+                                                >FX &amp; Motion Animation</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.icon_post_production"
+                                                class="img mb-3"
+                                                style="height: 64px;"
+                                                alt="Post-Production"
+                                                loading="lazy"
+                                            />
+                                            <h3 class="h5-fs">Post-Production</h3>
+                                            <ul class="list-unstyled o_small mb-0">
+                                                <li class="mb-1">Scene Composition</li>
+                                                <li class="mb-1">Film Editing</li>
+                                                <li class="mb-1">Rendering</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>
