@@ -748,7 +748,7 @@
                                 </div>
                             </section>
                             <section
-                                class="s_quotes_carousel_wrapper"
+                                class="s_quotes_carousel_wrapper split-testimonials"
                                 data-vxml="001"
                                 data-vcss="002"
                                 data-snippet="s_quotes_carousel"
@@ -1262,7 +1262,7 @@
                                 </div>
                             </section>
                             <section
-                                class="s_references o_cc o_cc5 pt64 pb64"
+                                class="s_references split-clients pt64 pb64"
                                 data-snippet="s_references"
                                 data-name="Clients"
                             >

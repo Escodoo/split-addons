@@ -7,17 +7,39 @@ Usage: optimize_asset.py SOURCE TARGET_DIR NAME MAX_WIDTH
 Vector files and anything with MAX_WIDTH 0 are copied verbatim. Raster files
 are downscaled to MAX_WIDTH and re-encoded as JPEG, or as PNG when the source
 carries transparency.
+
+Client logos are always flattened onto an opaque white card and saved as PNG
+so they stay readable on the dark homepage, matching the official studio site.
 """
 # This is a standalone maintenance script, not Odoo server code.
 # pylint: disable=print-used
 
 import shutil
 import sys
+from io import BytesIO
 from pathlib import Path
 
 from PIL import Image
 
 JPEG_QUALITY = 82
+
+
+def flatten_on_white(source, target, max_width):
+    """Paste a logo onto a white plate and write an opaque PNG."""
+    if isinstance(source, (bytes, bytearray)):
+        image = Image.open(BytesIO(source))
+    else:
+        image = Image.open(source)
+    image = image.convert("RGBA")
+    if max_width and image.width > max_width:
+        height = round(image.height * max_width / image.width)
+        image = image.resize((max_width, height), Image.LANCZOS)
+    card = Image.new("RGB", image.size, (255, 255, 255))
+    card.paste(image, mask=image.split()[-1])
+    target = Path(target)
+    card.save(target, "PNG", optimize=True)
+    print(f"{target.name} ({target.stat().st_size // 1024} KiB, {card.width}px, white card)")
+    return target
 
 
 def main():
@@ -36,6 +58,10 @@ def main():
         target = target_dir / f"{name}.{suffix.lstrip('.')}"
         shutil.copyfile(source, target)
         print(f"{target.name} ({target.stat().st_size // 1024} KiB, verbatim)")
+        return
+
+    if name.startswith("client_"):
+        flatten_on_white(source, target_dir / f"{name}.png", max_width)
         return
 
     has_alpha = image.mode in ("RGBA", "LA") or (

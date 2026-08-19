@@ -83,6 +83,10 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("home_hero_mobile.webm", body)
         self.assertIn("/work/bit-wars", body)
         self.assertIn("catarse.com.br/entreasestrelas-original", body)
+        self.assertIn("Who we create with", body)
+        self.assertIn("/web/image/split_website.client_cartoon_network", body)
+        self.assertIn("split-clients", body)
+        self.assertIn("split-testimonials", body)
         self.assertNotIn("splitacademia.com.br", body)
 
     def test_contact_form_targets_crm_lead(self):

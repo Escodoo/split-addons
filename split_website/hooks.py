@@ -214,7 +214,7 @@ def _overlay_public_headers(env):
 
 
 def _refresh_client_logos(env):
-    """Reload knocked-out PNGs even when the attachment records are noupdate."""
+    """Reload official white-card PNGs even when attachments are noupdate."""
     binary_dir = (
         Path(get_module_path("split_website")) / "static/src/binary/ir_attachment"
     )
