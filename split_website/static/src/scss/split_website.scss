@@ -148,3 +148,22 @@
     width: 100%;
     display: block;
 }
+
+.split-about-hero {
+    background: #1a1a12;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.split-about-character {
+    max-width: 18rem;
+}
+
+.split-about-block .lead {
+    margin-bottom: 0;
+}

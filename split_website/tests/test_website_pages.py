@@ -62,6 +62,15 @@ class TestSplitWebsitePages(HttpCase):
         self.assertEqual(len(pages), 6)
         self.assertTrue(all(pages.mapped("is_published")))
 
+    def test_about_shows_the_official_manifesto(self):
+        body = self.url_open("/about").text
+        self.assertIn("We love telling stories", body)
+        self.assertIn("about_hero", body)
+        self.assertIn("about_character_01", body)
+        self.assertIn("Future Channel", body)
+        self.assertIn("Motion Graphics", body)
+        self.assertNotIn("banner_split_academy", body)
+
     def test_home_shows_split_content(self):
         body = self.url_open("/").text
         self.assertIn("Animation & Games", body)

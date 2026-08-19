@@ -12,49 +12,149 @@
                     <div id="wrap">
                         <div id="oe_structure_split_website_about" class="oe_structure">
                             <section
-                                class="s_title parallax s_parallax_is_fixed pt96 pb96 o_cc o_cc5"
-                                data-vcss="001"
+                                class="split-about-hero o_cc o_cc5"
+                                data-name="Cover"
+                            >
+                                <img
+                                    src="/web/image/split_website.about_hero"
+                                    class="img img-fluid w-100"
+                                    alt=""
+                                />
+                            </section>
+                            <section
+                                class="s_title pt64 pb32 o_cc o_cc5"
                                 data-snippet="s_title"
                                 data-name="Title"
-                                data-scroll-background-ratio="1"
                             >
-                                <span
-                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
-                                    style="background-image: url('/web/image/split_website.banner_split_academy');"
-                                />
-                                <div class="o_we_bg_filter bg-black-75" />
-                                <div class="container">
-                                    <h1
-                                        class="display-2-fs"
-                                    >We are Split. We love telling stories.</h1>
-                                    <p
-                                        class="lead mb-0"
-                                    >Creating and producing animation and games since 2009.</p>
+                                <div class="container text-center">
+                                    <h1 class="display-2-fs mb-0">
+                                        We are Split.<br />We love telling stories.
+                                    </h1>
                                 </div>
                             </section>
                             <section
-                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                class="s_text_block pt16 pb16 o_cc o_cc5"
                                 data-snippet="s_text_block"
-                                data-name="Story"
+                                data-name="Intro"
                             >
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-8 offset-lg-2">
-                                            <p
-                                                class="lead"
-                                            >Have you noticed that the character of our brand is splitting? It's because Split works daily to create and produce top-quality animation and games.</p>
-                                            <p
-                                            >In order to find a new path within this huge adventure that is storytelling through animation, Split cannot be one; it needs to be many. With each new journey, with each new partner, with each new initiative, our studio divides and multiplies. Each new version can fully understand the objectives of the content to deliver the best result.</p>
-                                            <p
-                                            >Therefore, if there is animation, Split has the solution. From branded content to feature films, TV shows to streaming mini-series, web series to games, promos, commercials and music videos, we'll be there for you every step of the way.</p>
-                                            <p
-                                            >Since 2009 we have been producing a world of animation. Not one, actually, but many. Today we create entertainment content for Cartoon Network, Cartoonito, Comedy Central, Canal Futura, Sanrio, Disney Jr., Instituto Ayrton Senna, Mauricio de Sousa Produções, Wonder Media and Midas Music, among others.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-10">
+                                            <p class="lead mb-0">
+                                                Have you noticed that the character of
+                                                our brand is splitting? It's because
+                                                Split works daily to create and produce
+                                                top-quality animation and games.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </section>
                             <section
-                                class="s_company_team pt32 pb64 o_cc o_cc5"
+                                class="s_text_block pt32 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Story"
+                            >
+                                <div class="container">
+                                    <div
+                                        class="row align-items-center split-about-block"
+                                    >
+                                        <div class="col-lg-4 text-center pb32 pb-lg-0">
+                                            <img
+                                                src="/web/image/split_website.about_character_01"
+                                                class="img img-fluid split-about-character"
+                                                alt=""
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p class="lead mb-0">
+                                                In order to find
+                                                <strong
+                                                >a new path within this huge adventure
+                                                that is storytelling through
+                                                animation</strong>, Split cannot be
+                                                one; it needs to be many. With each new
+                                                journey, with each new partner, with
+                                                each new initiative, our studio divides
+                                                and multiplies. Each new version can
+                                                fully understand the objectives of the
+                                                content to deliver the best result.
+                                                That is, Split will always find a way
+                                                to fit perfectly into your project.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row align-items-center split-about-block pt48"
+                                    >
+                                        <div
+                                            class="col-lg-8 order-2 order-lg-1"
+                                        >
+                                            <p class="lead mb-0">
+                                                Therefore,
+                                                <strong
+                                                >if there is animation, Split has the
+                                                solution.</strong>
+                                                From branded content to feature films,
+                                                TV shows to streaming mini-series, web
+                                                series to games, promos, commercials
+                                                and music videos, we'll be there for
+                                                you every step of the way.
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="col-lg-4 order-1 order-lg-2 text-center pb32 pb-lg-0"
+                                        >
+                                            <img
+                                                src="/web/image/split_website.about_character_02"
+                                                class="img img-fluid split-about-character"
+                                                alt=""
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="row align-items-center split-about-block pt48"
+                                    >
+                                        <div class="col-lg-4 text-center pb32 pb-lg-0">
+                                            <img
+                                                src="/web/image/split_website.about_character_03"
+                                                class="img img-fluid split-about-character"
+                                                alt=""
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <p class="lead">
+                                                Since 2009, we have been producing a
+                                                world of animation. Not one, actually,
+                                                but many. To be honest, entire
+                                                universes! Today we create
+                                                entertainment content for
+                                                <strong
+                                                >Cartoon Network, Cartoonito, Comedy
+                                                Central, Canal Futura, Sanrio, Disney
+                                                Jr., Instituto Ayrton Senna, Mauricio
+                                                de Sousa Produções, Wonder Media, Midas
+                                                Music</strong>
+                                                and
+                                                <strong>Future Channel</strong>, among
+                                                others. We're constantly adapting our
+                                                pipelines to deliver the best-animated
+                                                story yet.
+                                            </p>
+                                            <p class="lead mb-0">
+                                                <strong
+                                                >Come along and enjoy this journey
+                                                with us.</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_company_team pt64 pb64 o_cc o_cc5"
                                 data-snippet="s_company_team"
                                 data-name="Team"
                             >
@@ -74,8 +174,16 @@
                                             <p
                                                 class="o_small text-o-color-2"
                                             >Executive Producer &amp; Animation Director</p>
-                                            <p
-                                            >More than 15 years of experience across TV series, feature films and short films. At Split, Cid carries the production torch and leads the teams toward innovation, quality and top-notch delivery.</p>
+                                            <p>
+                                                Cid is an Executive Producer and
+                                                Animation Director with more than 15
+                                                years of experience across TV series,
+                                                feature films, short films and other
+                                                formats. At Split, he carries the
+                                                production torch and leads the teams
+                                                toward innovation, quality and
+                                                top-notch delivery.
+                                            </p>
                                         </div>
                                         <div class="col-lg-4 pt16 pb16">
                                             <img
@@ -88,8 +196,16 @@
                                             <p
                                                 class="o_small text-o-color-2"
                                             >Founder &amp; CEO</p>
-                                            <p
-                                            >Producer, director, editor, screenwriter and animator, with a degree in Image and Sound from UFSCar. Guille produced dozens of films, series, games and comics, and created the studio's Games Center.</p>
+                                            <p>
+                                                Guille is a producer, director, editor,
+                                                screenwriter and animator, with a
+                                                degree in Image and Sound from UFSCar.
+                                                One of the founders of Split and its
+                                                current CEO, he has produced dozens of
+                                                films, series, games and comics, and
+                                                created the studio's Games Center and
+                                                special projects.
+                                            </p>
                                         </div>
                                         <div class="col-lg-4 pt16 pb16">
                                             <img
@@ -102,8 +218,16 @@
                                             <p
                                                 class="o_small text-o-color-2"
                                             >Founder, Director &amp; Writer</p>
-                                            <p
-                                            >Director, producer, writer and animator, with a degree in Image and Sound from UFSCar and a fellowship at the National Film Board of Canada. Jonas leads Split's international projects from the US office.</p>
+                                            <p>
+                                                Jonas is a director, producer, writer
+                                                and animator, with a degree in Image
+                                                and Sound from UFSCar and a fellowship
+                                                at the National Film Board of Canada.
+                                                He has always been involved with the
+                                                creative side of Split and now produces
+                                                the studio's international projects
+                                                from the US office.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -116,9 +240,10 @@
                                 <div class="container">
                                     <div class="col-lg-12 pb16">
                                         <h2>What Split does</h2>
-                                        <p
-                                            class="lead"
-                                        >A full 2D pipeline, from the first idea to the final render.</p>
+                                        <p class="lead">
+                                            A full 2D pipeline, from the first idea to
+                                            the final render.
+                                        </p>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-3 col-md-6 pt16 pb16">
@@ -155,7 +280,7 @@
                                                 >Storyboard &amp; Animatic</li>
                                                 <li
                                                     class="mb-1"
-                                                >Character Design &amp; Backgrounds</li>
+                                                >Character &amp; Background Designs</li>
                                                 <li
                                                     class="mb-1"
                                                 >Setup &amp; Rigging</li>
@@ -177,9 +302,7 @@
                                                 <li
                                                     class="mb-1"
                                                 >Cut Out &amp; Traditional Animation</li>
-                                                <li
-                                                    class="mb-1"
-                                                >FX &amp; Motion Animation</li>
+                                                <li class="mb-1">Motion Graphics</li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-3 col-md-6 pt16 pb16">
@@ -198,6 +321,12 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <p class="text-center pt32 mb-0">
+                                        <a
+                                            href="/contactus"
+                                            class="btn btn-primary"
+                                        >Come along with us</a>
+                                    </p>
                                 </div>
                             </section>
                         </div>
