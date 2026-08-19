@@ -369,7 +369,7 @@ PROJECTS = (
         "banner": "original_weeboom",
         "back_url": "/split-originals",
         "back_label": "Split Originals",
-        "layout": "ip",
+        "layout": "weeboom",
         "facts": (
             ("Format", "26 x 7′ | 4 to 7 years old"),
             ("Genres", "Comedy | Adventure | Travel"),
@@ -412,6 +412,402 @@ PROJECTS = (
         ),
         "cta_label": "Co-produce with us",
     },
+    {
+        "xml_id": "project_whats_up_bud",
+        "url": "/originals/whats-up-bud",
+        "title": "What's Up, Bud?",
+        "client": "Split Studio",
+        "kind": "Comedy series",
+        "image": "original_whats_up_bud",
+        "banner": "original_whats_up_bud",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/642375897?h=118e81dc08",
+        "facts": (
+            ("Created by", "Michele Massagli"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Sound FX, Songs, Mix",
+            ),
+        ),
+        "summary": (
+            "Original comedy series created by Michele Massagli and produced "
+            "inside Split."
+        ),
+        "synopsis": (
+            "An original comedy series created by Michele Massagli. Split "
+            "covers the full 2D pipeline, from direction and script through "
+            "voices, animation, sound and mix."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_charcoal_swordsman",
+        "url": "/originals/the-charcoal-swordsman",
+        "title": "The Charcoal Swordsman",
+        "client": "Split Studio",
+        "kind": "Series in development",
+        "image": "original_charcoal_swordsman",
+        "banner": "charcoal_cover",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "layout": "ip",
+        "hero_image": "charcoal_cover",
+        "logo": "charcoal_logo",
+        "seal": "charcoal_seal",
+        "format": "10 x 22′ | 12+ years old",
+        "genres": "Adventure | Fantasy | Drama",
+        "highlights": (
+            "Based on Affonso Solano's work",
+            "Produced by Split Studio",
+            "Teaser project released in CCXP19",
+        ),
+        "tagline": "A divided world. A unique journey.",
+        "video": "https://www.youtube.com/embed/Y4jV4n_K7mc",
+        "characters": (
+            {
+                "image": "charcoal_character_adapak",
+                "name": "Adapak",
+                "role": "",
+                "bio": (
+                    "A kind and altruistic youth with white eyes and dark "
+                    "skin. Adapak wanders the world of Kurgala, searching "
+                    "for a meaning to his own existence and unraveling the "
+                    "mysteries that The Four That Are One hide from mortals. "
+                    "He is a master of the Tibaul Circles, a martial art "
+                    "that lets him defend himself from multiple opponents at "
+                    "once. Despite being extremely cultured and skilled in "
+                    "combat, his innocence and inexperience in the mortal "
+                    "world involuntarily involve him in conflict."
+                ),
+            },
+            {
+                "image": "charcoal_character_sirara",
+                "name": "Sirara",
+                "role": "Loyal Companion",
+                "bio": (
+                    "A human of nearly 25 cycles. She is the captain of a "
+                    "ship she inherited from her deceased uncle and shelters "
+                    "Adapak at the beginning of his journey, helping him "
+                    "travel to the island of Caspama. A woman of strong "
+                    "personality, she uses it to disguise her own "
+                    "insecurities. Sirara is one of the only mortals to "
+                    "know Adapak's origin."
+                ),
+            },
+        ),
+        "gallery": (
+            "charcoal_still_01",
+            "charcoal_still_02",
+            "charcoal_still_03",
+            "charcoal_still_04",
+        ),
+        "facts": (
+            ("Format", "10 x 22′ | 12+ years old"),
+            ("Genres", "Adventure | Fantasy | Drama"),
+        ),
+        "summary": (
+            "Original adventure series based on Affonso Solano's work. The "
+            "teaser was released at CCXP19."
+        ),
+        "synopsis": (
+            "Welcome to a world divided between the wild and the civilized, "
+            "the mundane and the sacred, where forests and deserts hide "
+            "ruins of once-forgotten gods and the seas shelter monsters "
+            "capable of swallowing ships; where bone blades keep the law in "
+            "cities of rock and wood, and a plurality of species must live "
+            "together — in harmony or not."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_sun_boy",
+        "url": "/originals/sun-boy-and-friends",
+        "title": "Sun Boy and Friends",
+        "client": "Midas Productions",
+        "kind": "Music videos",
+        "image": "original_sun_boy",
+        "banner": "original_sun_boy",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://www.youtube.com/embed/dfgleWIL04s",
+        "facts": (
+            ("Client", "Midas Productions"),
+            (
+                "Services",
+                "Direction, Storyboard & Animatic, Character Design, Props, "
+                "Backgrounds, Builds, 2D Animation, Editing, Composition",
+            ),
+        ),
+        "summary": ("Music videos for Sun Boy and Friends, with songs by Vitor Kley."),
+        "synopsis": (
+            "Animated music videos for Sun Boy and Friends, produced with "
+            "Midas Productions and scored with Vitor Kley's songs. Split "
+            "directed the pieces and carried them through the 2D pipeline."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_que_corpo_e_esse",
+        "url": "/originals/que-corpo-e-esse",
+        "title": "Que Corpo é Esse?",
+        "client": "Canal Futura",
+        "kind": "Original series",
+        "image": "original_que_corpo_e_esse",
+        "banner": "original_que_corpo_e_esse",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/235423978?h=92bcd23f38",
+        "facts": (
+            ("Client", "Canal Futura"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Sound FX, Songs, Mix",
+            ),
+        ),
+        "summary": (
+            "Original series produced with Canal Futura, covering the full "
+            "2D pipeline."
+        ),
+        "synopsis": (
+            "An original series produced with Canal Futura. Split directed "
+            "the show and covered everything from script and voices to "
+            "animation, sound and mix."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_wizavior",
+        "url": "/originals/wizavior",
+        "title": "Wizavior",
+        "client": "Split Studio",
+        "kind": "Game",
+        "image": "original_wizavior",
+        "banner": "original_wizavior",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://www.youtube.com/embed/iGOUS0az-54",
+        "facts": (
+            ("Client", "Split Studio"),
+            ("Status", "In development"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Sound FX, Songs, Mix, 3D Animation",
+            ),
+        ),
+        "summary": ("Split original game in development, mixing 2D and 3D animation."),
+        "synopsis": (
+            "Wizavior is an original game created inside Split. The studio "
+            "is developing the world, characters and animation in house, "
+            "mixing the 2D pipeline with 3D animation."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_egregora",
+        "url": "/originals/egregore",
+        "title": "Egregore",
+        "client": "Split Studio",
+        "kind": "Short film",
+        "image": "original_egregora",
+        "banner": "original_egregora",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/313229925?h=b1753368c2",
+        "facts": (
+            ("Client", "Split Studio"),
+            ("Format", "Short film"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Sound FX, Songs, Mix",
+            ),
+        ),
+        "summary": "Original animated short created and produced by Split.",
+        "synopsis": (
+            "An original animated short created inside Split. The studio "
+            "covered the film from direction and script through animation, "
+            "sound and mix."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_children_of_the_world",
+        "url": "/originals/children-of-the-world",
+        "title": "Children of the World",
+        "client": "Split Studio",
+        "kind": "Series",
+        "image": "original_children_of_the_world",
+        "banner": "original_children_of_the_world",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "layout": "ip",
+        "hero_image": "original_children_of_the_world",
+        "logo": "children_of_the_world_logo",
+        "format": "TV series & Digital Game",
+        "genres": "Adventure | Fantasy | Drama",
+        "video": "https://player.vimeo.com/video/435369576",
+        "extra": (
+            "Children of the World is a 2D adventure indie game displayed "
+            "in a 3D world, with puzzle, platform, music and minigame "
+            "elements.",
+            "The game tells a universal and contemporary story, which "
+            "could be the story of many children from different "
+            "nationalities.",
+            "It continues the world of The Boy and the World, the 2016 "
+            "Academy Award-nominated animated feature, as a crossmedia "
+            "proposal pairing a TV series with a digital game.",
+        ),
+        "facts": (
+            ("Format", "TV series & Digital Game"),
+            ("Genres", "Adventure | Fantasy | Drama"),
+        ),
+        "summary": (
+            "Crossmedia original pairing a TV series with a digital game, "
+            "continuing the world of The Boy and the World."
+        ),
+        "synopsis": (
+            "Children of the World gives players a poetic art direction "
+            "filled with grace and bittersweet optimism, broadening the "
+            "narrative of a film that travelled the festival circuit and "
+            "reached an Academy Award nomination."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_blue_butterflies",
+        "url": "/originals/blue-butterflies",
+        "title": "On the Trail of the Blue Butterflies",
+        "client": "Split Studio",
+        "kind": "Series",
+        "image": "original_blue_butterflies",
+        "banner": "original_blue_butterflies",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/377842284",
+        "facts": (
+            ("Client", "Split Studio"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Sound FX, Songs, Mix",
+            ),
+        ),
+        "summary": (
+            "Original series created inside Split, covering the full 2D " "pipeline."
+        ),
+        "synopsis": (
+            "An original series created inside Split. The studio covers the "
+            "full 2D pipeline, from direction and script through animation, "
+            "sound and mix."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_howdy_harrdy",
+        "url": "/originals/howdy-harrdy",
+        "title": "Howdy Harrdy",
+        "client": "Nick Jr. US",
+        "kind": "Series in development",
+        "image": "original_howdy_harrdy",
+        "banner": "original_howdy_harrdy",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/118581932",
+        "facts": (
+            ("Client", "Nick Jr. US"),
+            ("Release year", "2015"),
+            ("Created by", "Henrique Lira"),
+        ),
+        "extra": (
+            "Howdy Harrdy is a preschool cartoon created by Henrique Lira "
+            "and produced by Split Studio in partnership with Animact! for "
+            "Nick Jr. US through the Nickelodeon Animated Shorts Program.",
+        ),
+        "summary": (
+            "Preschool cartoon created by Henrique Lira for Nick Jr. US "
+            "through the Nickelodeon Animated Shorts Program."
+        ),
+        "synopsis": (
+            "A preschool short produced with Animact! for Nickelodeon's "
+            "Animated Shorts Program. Henrique Lira created the series and "
+            "Split produced it for Nick Jr. US."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_miss_and_grubs",
+        "url": "/originals/miss-and-grubs",
+        "title": "Miss & Grubs",
+        "client": "Split Studio",
+        "kind": "Series in development",
+        "image": "original_miss_and_grubs",
+        "banner": "original_miss_and_grubs",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/120198390",
+        "facts": (
+            ("Format", "Animated short"),
+            ("Release year", "2015"),
+            ("Created by", "Camila Kamimura and Victor Canela"),
+        ),
+        "extra": (
+            "Once upon a time, in a Dark Forest where no ray of light or "
+            "love could get in, a perfect and tiny rodent lives alone in a "
+            "perfect egg house, where everything works and fits perfectly. "
+            "One day her power goes out, and Miss has to face the wild "
+            "dangers of the darkness to find what she is looking for.",
+        ),
+        "summary": (
+            "Animated short created by Camila Kamimura and Victor Canela "
+            "and produced by Split with support from the São Paulo "
+            "government."
+        ),
+        "synopsis": (
+            "An animated short originally created by Camila Kamimura and "
+            "Victor Canela and produced by Split with the support of the "
+            "São Paulo government Culture Secretary through the Programa de "
+            "Ação Cultural in 2013."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+    {
+        "xml_id": "project_to_reach_the_moon",
+        "url": "/originals/to-reach-the-moon",
+        "title": "To Reach the Moon",
+        "client": "Split Studio",
+        "kind": "Short film",
+        "image": "original_to_reach_the_moon",
+        "banner": "original_to_reach_the_moon",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "video": "https://player.vimeo.com/video/7721831?h=63cd34166f",
+        "facts": (
+            ("Client", "Split Studio"),
+            ("Format", "Short film"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Songs, Mix",
+            ),
+        ),
+        "summary": "Original animated short created and produced by Split.",
+        "synopsis": (
+            "An original animated short created inside Split. The studio "
+            "covered the film from direction and script through animation "
+            "and mix."
+        ),
+        "cta_label": "Co-produce with us",
+    },
 )
 
 CARD_LINKS = {
@@ -428,6 +824,17 @@ CARD_LINKS = {
     "work_bubu_and_the_little_owls": "/work/bubu-and-the-little-owls",
     "work_the_boy_and_the_world": "/work/the-boy-and-the-world",
     "original_weeboom": "/originals/weeboom",
+    "original_whats_up_bud": "/originals/whats-up-bud",
+    "original_charcoal_swordsman": "/originals/the-charcoal-swordsman",
+    "original_sun_boy": "/originals/sun-boy-and-friends",
+    "original_que_corpo_e_esse": "/originals/que-corpo-e-esse",
+    "original_wizavior": "/originals/wizavior",
+    "original_egregora": "/originals/egregore",
+    "original_children_of_the_world": "/originals/children-of-the-world",
+    "original_blue_butterflies": "/originals/blue-butterflies",
+    "original_howdy_harrdy": "/originals/howdy-harrdy",
+    "original_miss_and_grubs": "/originals/miss-and-grubs",
+    "original_to_reach_the_moon": "/originals/to-reach-the-moon",
 }
 
 # Captions that drifted from the official credits.
@@ -519,7 +926,7 @@ VIEW_TEMPLATE = """    <record id="{xml_id}" model="ir.ui.view">
                                         </div>
                                         <div class="col-lg-5 mt-4 mt-lg-0">
                                             <p class="lead">{synopsis}</p>
-                                            <p>
+{extra}                                            <p>
                                                 <a
                                                     href="/contactus"
                                                     class="btn btn-primary"
@@ -575,6 +982,14 @@ PAGE_RECORD = """    <record id="page_{xml_id}" model="website.page">
 """
 
 
+def _paragraphs_xml(paragraphs):
+    return "".join(
+        f"""                                            <p>{escape(paragraph)}</p>
+"""
+        for paragraph in paragraphs
+    )
+
+
 def _facts_xml(facts):
     chunks = []
     for label, value in facts:
@@ -615,8 +1030,224 @@ def _service_view(project):
         "cta_label": escape(project.get("cta_label", "Start a project")),
         "facts": _facts_xml(project["facts"]),
         "video": _video_xml(project),
+        "extra": _paragraphs_xml(project.get("extra", ())),
     }
     return VIEW_TEMPLATE.format(**values)
+
+
+def _ip_hero_xml(project):
+    if project.get("hero_video"):
+        media = f"""                                <video
+                                    class="split-ip-hero-video"
+                                    src="{escape(project["hero_video"])}"
+                                    autoplay="autoplay"
+                                    muted="muted"
+                                    loop="loop"
+                                    playsinline="playsinline"
+                                    preload="metadata"
+                                />"""
+    else:
+        media = f"""                                <img
+                                    class="split-ip-hero-video"
+                                    src="/web/image/split_website.{project["hero_image"]}"
+                                    alt=""
+                                />"""
+    mark = ""
+    if project.get("logo"):
+        mark = f"""
+                                <div class="split-ip-hero-mark">
+                                    <img
+                                        src="/web/image/split_website.{project["logo"]}"
+                                        class="img img-fluid"
+                                        alt="{escape(project["title"])}"
+                                    />
+                                </div>"""
+    return f"""                            <section
+                                class="split-ip-hero"
+                                data-name="Cover"
+                            >
+{media}{mark}
+                            </section>
+"""
+
+
+def _ip_about_xml(project):
+    seal = ""
+    if project.get("seal"):
+        seal = f"""                                        <div class="col-lg-2 col-md-3 text-center pb32">
+                                            <img
+                                                src="/web/image/split_website.{project["seal"]}"
+                                                class="img img-fluid split-ip-seal"
+                                                alt=""
+                                            />
+                                        </div>
+"""
+    title_width = "col-lg-10" if project.get("seal") else "col-12"
+    highlights = ""
+    if project.get("highlights"):
+        items = "\n".join(
+            f"                                                <li>{escape(item)}</li>"
+            for item in project["highlights"]
+        )
+        highlights = f"""                                        <div class="col-lg-5">
+                                            <ul class="mb-4">
+{items}
+                                            </ul>
+                                        </div>
+"""
+    copy_width = "col-lg-7" if project.get("highlights") else "col-lg-10"
+    extra = "".join(
+        f"""                                            <p>{escape(paragraph)}</p>
+"""
+        for paragraph in project.get("extra", ())
+    )
+    tagline = ""
+    if project.get("tagline"):
+        tagline = f"""                                            <p class="h3-fs mb-3">{escape(project["tagline"])}</p>
+"""
+    return f"""                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="About"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-start">
+{seal}                                        <div class="{title_width}">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs mb-3">{escape(project["title"])}</h1>
+                                            <p class="h3-fs mb-2">{escape(project["format"])}</p>
+                                            <p class="h3-fs mb-4">{escape(project["genres"])}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+{highlights}                                        <div class="{copy_width}">
+{tagline}                                            <p class="lead">{escape(project["synopsis"])}</p>
+{extra}                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+"""
+
+
+def _ip_characters_xml(project):
+    characters = project.get("characters")
+    if not characters:
+        return ""
+    cards = []
+    width = "col-lg-6" if len(characters) == 2 else "col-lg-4"
+    for character in characters:
+        role = ""
+        if character.get("role"):
+            role = f"""                                            <p class="text-uppercase o_small mb-2">{escape(character["role"])}</p>
+"""
+        cards.append(
+            f"""                                        <div class="{width} pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.{character["image"]}"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="{escape(character["name"])}"
+                                            />
+                                            <h3>{escape(character["name"])}</h3>
+{role}                                            <p>{escape(character["bio"])}</p>
+                                        </div>"""
+        )
+    body = "\n".join(cards)
+    return f"""                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Characters"
+                            >
+                                <div class="container">
+                                    <h2 class="text-center mb-5">Characters</h2>
+                                    <div class="row">
+{body}
+                                    </div>
+                                </div>
+                            </section>
+"""
+
+
+def _ip_gallery_xml(project):
+    gallery = project.get("gallery")
+    if not gallery:
+        return ""
+    first, *rest = gallery
+    tiles = [
+        f"""                                        <div class="col-12 p-0">
+                                            <img
+                                                src="/web/image/split_website.{first}"
+                                                class="img img-fluid w-100"
+                                                alt="{escape(project["title"])} still"
+                                            />
+                                        </div>"""
+    ]
+    for xml_id in rest:
+        tiles.append(
+            f"""                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.{xml_id}"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="{escape(project["title"])} still"
+                                            />
+                                        </div>"""
+        )
+    body = "\n".join(tiles)
+    return f"""                            <section
+                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                data-snippet="s_images_wall"
+                                data-name="Gallery"
+                            >
+                                <div class="container-fluid">
+                                    <div class="row">
+{body}
+                                    </div>
+                                </div>
+                            </section>
+"""
+
+
+def _ip_cta_xml(project):
+    return f"""                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Call to action"
+                            >
+                                <div class="container text-center">
+                                    <a
+                                        href="/contactus"
+                                        class="btn btn-primary"
+                                    >{escape(project.get("cta_label", "Co-produce with us"))}</a>
+                                </div>
+                            </section>
+"""
+
+
+def _ip_view(project):
+    """Data-driven IP bible: hero, credits, teaser, characters, gallery."""
+    return f"""    <record id="{project["xml_id"]}" model="ir.ui.view">
+        <field name="name">Split Studio - {escape(project["title"])}</field>
+        <field name="key">split_website.{project["xml_id"]}</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="{escape(project["title"])}" t-name="split_website.{project["xml_id"]}">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_{project["xml_id"]}"
+                            class="oe_structure"
+                        >
+{_ip_hero_xml(project)}{_ip_about_xml(project)}{_video_xml(project)}{_ip_characters_xml(project)}{_ip_gallery_xml(project)}{_ip_cta_xml(project)}                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+"""
 
 
 def _weeboom_view(project):
@@ -821,8 +1452,10 @@ def _weeboom_view(project):
 
 
 def _project_view(project):
-    if project.get("layout") == "ip":
+    if project.get("layout") == "weeboom":
         return _weeboom_view(project)
+    if project.get("layout") == "ip":
+        return _ip_view(project)
     return _service_view(project)
 
 

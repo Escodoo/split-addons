@@ -1689,4 +1689,1324 @@
             </t>
         </field>
     </record>
+    <record id="project_whats_up_bud" model="ir.ui.view">
+        <field name="name">Split Studio - What's Up, Bud?</field>
+        <field name="key">split_website.project_whats_up_bud</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="What's Up, Bud?" t-name="split_website.project_whats_up_bud">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_whats_up_bud"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_whats_up_bud');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">What's Up, Bud?</h1>
+                                            <p class="lead mb-0">Split Studio · Comedy series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/642375897?h=118e81dc08"
+                                                    title="What's Up, Bud?"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Created by</p>
+                                            <p class="mb-0">Michele Massagli</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_whats_up_bud"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="What's Up, Bud?"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">An original comedy series created by Michele Massagli. Split covers the full 2D pipeline, from direction and script through voices, animation, sound and mix.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_charcoal_swordsman" model="ir.ui.view">
+        <field name="name">Split Studio - The Charcoal Swordsman</field>
+        <field name="key">split_website.project_charcoal_swordsman</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="The Charcoal Swordsman" t-name="split_website.project_charcoal_swordsman">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_charcoal_swordsman"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="split-ip-hero"
+                                data-name="Cover"
+                            >
+                                <img
+                                    class="split-ip-hero-video"
+                                    src="/web/image/split_website.charcoal_cover"
+                                    alt=""
+                                />
+                                <div class="split-ip-hero-mark">
+                                    <img
+                                        src="/web/image/split_website.charcoal_logo"
+                                        class="img img-fluid"
+                                        alt="The Charcoal Swordsman"
+                                    />
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="About"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-start">
+                                        <div class="col-lg-2 col-md-3 text-center pb32">
+                                            <img
+                                                src="/web/image/split_website.charcoal_seal"
+                                                class="img img-fluid split-ip-seal"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs mb-3">The Charcoal Swordsman</h1>
+                                            <p class="h3-fs mb-2">10 x 22′ | 12+ years old</p>
+                                            <p class="h3-fs mb-4">Adventure | Fantasy | Drama</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <ul class="mb-4">
+                                                <li>Based on Affonso Solano's work</li>
+                                                <li>Produced by Split Studio</li>
+                                                <li>Teaser project released in CCXP19</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <p class="h3-fs mb-3">A divided world. A unique journey.</p>
+                                            <p class="lead">Welcome to a world divided between the wild and the civilized, the mundane and the sacred, where forests and deserts hide ruins of once-forgotten gods and the seas shelter monsters capable of swallowing ships; where bone blades keep the law in cities of rock and wood, and a plurality of species must live together — in harmony or not.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/Y4jV4n_K7mc"
+                                                    title="The Charcoal Swordsman"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Characters"
+                            >
+                                <div class="container">
+                                    <h2 class="text-center mb-5">Characters</h2>
+                                    <div class="row">
+                                        <div class="col-lg-6 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.charcoal_character_adapak"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Adapak"
+                                            />
+                                            <h3>Adapak</h3>
+                                            <p>A kind and altruistic youth with white eyes and dark skin. Adapak wanders the world of Kurgala, searching for a meaning to his own existence and unraveling the mysteries that The Four That Are One hide from mortals. He is a master of the Tibaul Circles, a martial art that lets him defend himself from multiple opponents at once. Despite being extremely cultured and skilled in combat, his innocence and inexperience in the mortal world involuntarily involve him in conflict.</p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.charcoal_character_sirara"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Sirara"
+                                            />
+                                            <h3>Sirara</h3>
+                                            <p class="text-uppercase o_small mb-2">Loyal Companion</p>
+                                            <p>A human of nearly 25 cycles. She is the captain of a ship she inherited from her deceased uncle and shelters Adapak at the beginning of his journey, helping him travel to the island of Caspama. A woman of strong personality, she uses it to disguise her own insecurities. Sirara is one of the only mortals to know Adapak's origin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                data-snippet="s_images_wall"
+                                data-name="Gallery"
+                            >
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 p-0">
+                                            <img
+                                                src="/web/image/split_website.charcoal_still_01"
+                                                class="img img-fluid w-100"
+                                                alt="The Charcoal Swordsman still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.charcoal_still_02"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="The Charcoal Swordsman still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.charcoal_still_03"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="The Charcoal Swordsman still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.charcoal_still_04"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="The Charcoal Swordsman still"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Call to action"
+                            >
+                                <div class="container text-center">
+                                    <a
+                                        href="/contactus"
+                                        class="btn btn-primary"
+                                    >Co-produce with us</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_sun_boy" model="ir.ui.view">
+        <field name="name">Split Studio - Sun Boy and Friends</field>
+        <field name="key">split_website.project_sun_boy</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Sun Boy and Friends" t-name="split_website.project_sun_boy">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_sun_boy"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_sun_boy');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Sun Boy and Friends</h1>
+                                            <p class="lead mb-0">Midas Productions · Music videos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/dfgleWIL04s"
+                                                    title="Sun Boy and Friends"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Midas Productions</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Storyboard &amp; Animatic, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_sun_boy"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Sun Boy and Friends"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">Animated music videos for Sun Boy and Friends, produced with Midas Productions and scored with Vitor Kley's songs. Split directed the pieces and carried them through the 2D pipeline.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_que_corpo_e_esse" model="ir.ui.view">
+        <field name="name">Split Studio - Que Corpo é Esse?</field>
+        <field name="key">split_website.project_que_corpo_e_esse</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Que Corpo é Esse?" t-name="split_website.project_que_corpo_e_esse">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_que_corpo_e_esse"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_que_corpo_e_esse');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Que Corpo é Esse?</h1>
+                                            <p class="lead mb-0">Canal Futura · Original series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/235423978?h=92bcd23f38"
+                                                    title="Que Corpo é Esse?"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Canal Futura</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_que_corpo_e_esse"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Que Corpo é Esse?"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">An original series produced with Canal Futura. Split directed the show and covered everything from script and voices to animation, sound and mix.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_wizavior" model="ir.ui.view">
+        <field name="name">Split Studio - Wizavior</field>
+        <field name="key">split_website.project_wizavior</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Wizavior" t-name="split_website.project_wizavior">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_wizavior"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_wizavior');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Wizavior</h1>
+                                            <p class="lead mb-0">Split Studio · Game</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/iGOUS0az-54"
+                                                    title="Wizavior"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Split Studio</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Status</p>
+                                            <p class="mb-0">In development</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix, 3D Animation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_wizavior"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Wizavior"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">Wizavior is an original game created inside Split. The studio is developing the world, characters and animation in house, mixing the 2D pipeline with 3D animation.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_egregora" model="ir.ui.view">
+        <field name="name">Split Studio - Egregore</field>
+        <field name="key">split_website.project_egregora</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Egregore" t-name="split_website.project_egregora">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_egregora"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_egregora');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Egregore</h1>
+                                            <p class="lead mb-0">Split Studio · Short film</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/313229925?h=b1753368c2"
+                                                    title="Egregore"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Split Studio</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Format</p>
+                                            <p class="mb-0">Short film</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_egregora"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Egregore"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">An original animated short created inside Split. The studio covered the film from direction and script through animation, sound and mix.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_children_of_the_world" model="ir.ui.view">
+        <field name="name">Split Studio - Children of the World</field>
+        <field name="key">split_website.project_children_of_the_world</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Children of the World" t-name="split_website.project_children_of_the_world">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_children_of_the_world"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="split-ip-hero"
+                                data-name="Cover"
+                            >
+                                <img
+                                    class="split-ip-hero-video"
+                                    src="/web/image/split_website.original_children_of_the_world"
+                                    alt=""
+                                />
+                                <div class="split-ip-hero-mark">
+                                    <img
+                                        src="/web/image/split_website.children_of_the_world_logo"
+                                        class="img img-fluid"
+                                        alt="Children of the World"
+                                    />
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="About"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-start">
+                                        <div class="col-12">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs mb-3">Children of the World</h1>
+                                            <p class="h3-fs mb-2">TV series &amp; Digital Game</p>
+                                            <p class="h3-fs mb-4">Adventure | Fantasy | Drama</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-10">
+                                            <p class="lead">Children of the World gives players a poetic art direction filled with grace and bittersweet optimism, broadening the narrative of a film that travelled the festival circuit and reached an Academy Award nomination.</p>
+                                            <p>Children of the World is a 2D adventure indie game displayed in a 3D world, with puzzle, platform, music and minigame elements.</p>
+                                            <p>The game tells a universal and contemporary story, which could be the story of many children from different nationalities.</p>
+                                            <p>It continues the world of The Boy and the World, the 2016 Academy Award-nominated animated feature, as a crossmedia proposal pairing a TV series with a digital game.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/435369576"
+                                                    title="Children of the World"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Call to action"
+                            >
+                                <div class="container text-center">
+                                    <a
+                                        href="/contactus"
+                                        class="btn btn-primary"
+                                    >Co-produce with us</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_blue_butterflies" model="ir.ui.view">
+        <field name="name">Split Studio - On the Trail of the Blue Butterflies</field>
+        <field name="key">split_website.project_blue_butterflies</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="On the Trail of the Blue Butterflies" t-name="split_website.project_blue_butterflies">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_blue_butterflies"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_blue_butterflies');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">On the Trail of the Blue Butterflies</h1>
+                                            <p class="lead mb-0">Split Studio · Series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/377842284"
+                                                    title="On the Trail of the Blue Butterflies"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Split Studio</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_blue_butterflies"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="On the Trail of the Blue Butterflies"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">An original series created inside Split. The studio covers the full 2D pipeline, from direction and script through animation, sound and mix.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_howdy_harrdy" model="ir.ui.view">
+        <field name="name">Split Studio - Howdy Harrdy</field>
+        <field name="key">split_website.project_howdy_harrdy</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Howdy Harrdy" t-name="split_website.project_howdy_harrdy">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_howdy_harrdy"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_howdy_harrdy');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Howdy Harrdy</h1>
+                                            <p class="lead mb-0">Nick Jr. US · Series in development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/118581932"
+                                                    title="Howdy Harrdy"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Nick Jr. US</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Release year</p>
+                                            <p class="mb-0">2015</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Created by</p>
+                                            <p class="mb-0">Henrique Lira</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_howdy_harrdy"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Howdy Harrdy"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">A preschool short produced with Animact! for Nickelodeon's Animated Shorts Program. Henrique Lira created the series and Split produced it for Nick Jr. US.</p>
+                                            <p>Howdy Harrdy is a preschool cartoon created by Henrique Lira and produced by Split Studio in partnership with Animact! for Nick Jr. US through the Nickelodeon Animated Shorts Program.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_miss_and_grubs" model="ir.ui.view">
+        <field name="name">Split Studio - Miss &amp; Grubs</field>
+        <field name="key">split_website.project_miss_and_grubs</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Miss &amp; Grubs" t-name="split_website.project_miss_and_grubs">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_miss_and_grubs"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_miss_and_grubs');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Miss &amp; Grubs</h1>
+                                            <p class="lead mb-0">Split Studio · Series in development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/120198390"
+                                                    title="Miss &amp; Grubs"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Format</p>
+                                            <p class="mb-0">Animated short</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Release year</p>
+                                            <p class="mb-0">2015</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Created by</p>
+                                            <p class="mb-0">Camila Kamimura and Victor Canela</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_miss_and_grubs"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Miss &amp; Grubs"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">An animated short originally created by Camila Kamimura and Victor Canela and produced by Split with the support of the São Paulo government Culture Secretary through the Programa de Ação Cultural in 2013.</p>
+                                            <p>Once upon a time, in a Dark Forest where no ray of light or love could get in, a perfect and tiny rodent lives alone in a perfect egg house, where everything works and fits perfectly. One day her power goes out, and Miss has to face the wild dangers of the darkness to find what she is looking for.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_to_reach_the_moon" model="ir.ui.view">
+        <field name="name">Split Studio - To Reach the Moon</field>
+        <field name="key">split_website.project_to_reach_the_moon</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="To Reach the Moon" t-name="split_website.project_to_reach_the_moon">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_to_reach_the_moon"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.original_to_reach_the_moon');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs">To Reach the Moon</h1>
+                                            <p class="lead mb-0">Split Studio · Short film</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-16x9"
+                                            >
+                                                <iframe
+                                                    src="https://player.vimeo.com/video/7721831?h=63cd34166f"
+                                                    title="To Reach the Moon"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Client</p>
+                                            <p class="mb-0">Split Studio</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Format</p>
+                                            <p class="mb-0">Short film</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">Services</p>
+                                            <p class="mb-0">Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.original_to_reach_the_moon"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="To Reach the Moon"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">An original animated short created inside Split. The studio covered the film from direction and script through animation and mix.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
 </odoo>

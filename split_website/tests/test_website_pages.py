@@ -23,6 +23,17 @@ class TestSplitWebsitePages(HttpCase):
         "/work/the-boy-and-the-world",
         "/originals/weeboom",
         "/originals/among-the-stars",
+        "/originals/whats-up-bud",
+        "/originals/the-charcoal-swordsman",
+        "/originals/sun-boy-and-friends",
+        "/originals/que-corpo-e-esse",
+        "/originals/wizavior",
+        "/originals/egregore",
+        "/originals/children-of-the-world",
+        "/originals/blue-butterflies",
+        "/originals/howdy-harrdy",
+        "/originals/miss-and-grubs",
+        "/originals/to-reach-the-moon",
     ]
 
     def test_pages_are_reachable(self):
@@ -102,6 +113,35 @@ class TestSplitWebsitePages(HttpCase):
     def test_newsletter_list_is_resolved(self):
         body = self.url_open("/").text
         self.assertNotIn("*mailing_list_id*", body)
+
+    def test_originals_page_links_every_card(self):
+        body = self.url_open("/split-originals").text
+        for url in (
+            "/originals/weeboom",
+            "/originals/whats-up-bud",
+            "/originals/the-charcoal-swordsman",
+            "/originals/sun-boy-and-friends",
+            "/originals/que-corpo-e-esse",
+            "/originals/wizavior",
+            "/originals/egregore",
+            "/originals/children-of-the-world",
+            "/originals/blue-butterflies",
+            "/originals/howdy-harrdy",
+            "/originals/miss-and-grubs",
+            "/originals/to-reach-the-moon",
+        ):
+            with self.subTest(url=url):
+                self.assertIn(f'href="{url}"', body)
+
+    def test_charcoal_swordsman_is_a_full_ip_page(self):
+        body = self.url_open("/originals/the-charcoal-swordsman").text
+        self.assertIn("10 x 22", body)
+        self.assertIn("Adventure | Fantasy | Drama", body)
+        self.assertIn("Affonso Solano", body)
+        self.assertIn("Adapak", body)
+        self.assertIn("Sirara", body)
+        self.assertIn("youtube.com/embed/Y4jV4n_K7mc", body)
+        self.assertIn("/web/image/split_website.charcoal_character_adapak", body)
 
     def test_weeboom_is_a_full_ip_page(self):
         body = self.url_open("/originals/weeboom").text

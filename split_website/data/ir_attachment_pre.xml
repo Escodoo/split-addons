@@ -191,6 +191,106 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="charcoal_character_adapak" model="ir.attachment">
+        <field name="name">charcoal_character_adapak.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_character_adapak.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_character_sirara" model="ir.attachment">
+        <field name="name">charcoal_character_sirara.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_character_sirara.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_cover" model="ir.attachment">
+        <field name="name">charcoal_cover.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_cover.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_logo" model="ir.attachment">
+        <field name="name">charcoal_logo.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_logo.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_seal" model="ir.attachment">
+        <field name="name">charcoal_seal.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_seal.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_still_01" model="ir.attachment">
+        <field name="name">charcoal_still_01.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_still_01.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_still_02" model="ir.attachment">
+        <field name="name">charcoal_still_02.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_still_02.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_still_03" model="ir.attachment">
+        <field name="name">charcoal_still_03.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_still_03.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="charcoal_still_04" model="ir.attachment">
+        <field name="name">charcoal_still_04.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/charcoal_still_04.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="children_of_the_world_logo" model="ir.attachment">
+        <field name="name">children_of_the_world_logo.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/children_of_the_world_logo.png"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="client_boomerang" model="ir.attachment">
         <field name="name">client_boomerang.png</field>
         <field name="mimetype">image/png</field>

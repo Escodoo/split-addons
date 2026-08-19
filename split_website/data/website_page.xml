@@ -168,4 +168,103 @@
         <field name="track" eval="True" />
         <field name="website_meta_description">Split original game. Help make this project a reality on Catarse.</field>
     </record>
+    <record id="page_project_whats_up_bud" model="website.page">
+        <field name="view_id" ref="project_whats_up_bud" />
+        <field name="url">/originals/whats-up-bud</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original comedy series created by Michele Massagli and produced inside Split.</field>
+    </record>
+    <record id="page_project_charcoal_swordsman" model="website.page">
+        <field name="view_id" ref="project_charcoal_swordsman" />
+        <field name="url">/originals/the-charcoal-swordsman</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original adventure series based on Affonso Solano's work. The teaser was released at CCXP19.</field>
+    </record>
+    <record id="page_project_sun_boy" model="website.page">
+        <field name="view_id" ref="project_sun_boy" />
+        <field name="url">/originals/sun-boy-and-friends</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Music videos for Sun Boy and Friends, with songs by Vitor Kley.</field>
+    </record>
+    <record id="page_project_que_corpo_e_esse" model="website.page">
+        <field name="view_id" ref="project_que_corpo_e_esse" />
+        <field name="url">/originals/que-corpo-e-esse</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original series produced with Canal Futura, covering the full 2D pipeline.</field>
+    </record>
+    <record id="page_project_wizavior" model="website.page">
+        <field name="view_id" ref="project_wizavior" />
+        <field name="url">/originals/wizavior</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Split original game in development, mixing 2D and 3D animation.</field>
+    </record>
+    <record id="page_project_egregora" model="website.page">
+        <field name="view_id" ref="project_egregora" />
+        <field name="url">/originals/egregore</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original animated short created and produced by Split.</field>
+    </record>
+    <record id="page_project_children_of_the_world" model="website.page">
+        <field name="view_id" ref="project_children_of_the_world" />
+        <field name="url">/originals/children-of-the-world</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Crossmedia original pairing a TV series with a digital game, continuing the world of The Boy and the World.</field>
+    </record>
+    <record id="page_project_blue_butterflies" model="website.page">
+        <field name="view_id" ref="project_blue_butterflies" />
+        <field name="url">/originals/blue-butterflies</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original series created inside Split, covering the full 2D pipeline.</field>
+    </record>
+    <record id="page_project_howdy_harrdy" model="website.page">
+        <field name="view_id" ref="project_howdy_harrdy" />
+        <field name="url">/originals/howdy-harrdy</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Preschool cartoon created by Henrique Lira for Nick Jr. US through the Nickelodeon Animated Shorts Program.</field>
+    </record>
+    <record id="page_project_miss_and_grubs" model="website.page">
+        <field name="view_id" ref="project_miss_and_grubs" />
+        <field name="url">/originals/miss-and-grubs</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated short created by Camila Kamimura and Victor Canela and produced by Split with support from the São Paulo government.</field>
+    </record>
+    <record id="page_project_to_reach_the_moon" model="website.page">
+        <field name="view_id" ref="project_to_reach_the_moon" />
+        <field name="url">/originals/to-reach-the-moon</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original animated short created and produced by Split.</field>
+    </record>
 </odoo>

@@ -503,97 +503,122 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_whats_up_bud"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="What's Up, Bud?"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >What's Up, Bud?</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Original IP · Comedy series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/whats-up-bud"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_whats_up_bud"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="What's Up, Bud?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >What's Up, Bud?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Comedy series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_charcoal_swordsman"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="The Charcoal Swordsman"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >The Charcoal Swordsman</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Original IP · Series in development</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/the-charcoal-swordsman"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_charcoal_swordsman"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="The Charcoal Swordsman"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >The Charcoal Swordsman</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Series in development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_sun_boy"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Sun Boy and Friends"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Sun Boy and Friends</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Original IP · Music videos</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/sun-boy-and-friends"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_sun_boy"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Sun Boy and Friends"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Sun Boy and Friends</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Music videos</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_que_corpo_e_esse"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Que Corpo é Esse?"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Que Corpo é Esse?</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Canal Futura · Original series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/que-corpo-e-esse"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_que_corpo_e_esse"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Que Corpo é Esse?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Que Corpo é Esse?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Canal Futura · Original series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_wizavior"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Wizavior"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">Wizavior</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Original IP · Game</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/wizavior"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_wizavior"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Wizavior"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Wizavior</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Game</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
