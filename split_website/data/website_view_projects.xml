@@ -1513,40 +1513,47 @@
                                 </div>
                             </section>
                             <section
-                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                class="s_image_gallery o_spc-none o_grid pt0 pb0 o_cc o_cc5 split-gallery"
                                 data-snippet="s_images_wall"
                                 data-name="Gallery"
+                                data-vcss="002"
+                                data-columns="3"
                             >
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 p-0">
+                                <div class="container-fluid px-0">
+                                    <div class="row s_nb_column_fixed g-0">
+                                        <div class="col-12">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_01"
-                                                class="img img-fluid w-100"
+                                                data-index="0"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_02"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="1"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_03"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="2"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_04"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="3"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
@@ -1675,9 +1682,14 @@
                                             <p class="lead">Among the Stars is an original game created inside Split. The studio is developing the world, characters and animation in house and inviting the audience to help make the project a reality on Catarse.</p>
                                             <p>
                                                 <a
-                                                    href="/contactus"
+                                                    href="https://www.catarse.com.br/entreasestrelas-original"
                                                     class="btn btn-primary"
-                                                >Co-produce with us</a>
+                                                    target="_blank"
+                                                >Support on Catarse</a>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-outline-secondary ms-2"
+                                                >Talk to us</a>
                                             </p>
                                         </div>
                                     </div>
@@ -1926,40 +1938,47 @@
                                 </div>
                             </section>
                             <section
-                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                class="s_image_gallery o_spc-none o_grid pt0 pb0 o_cc o_cc5 split-gallery"
                                 data-snippet="s_images_wall"
                                 data-name="Gallery"
+                                data-vcss="002"
+                                data-columns="3"
                             >
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 p-0">
+                                <div class="container-fluid px-0">
+                                    <div class="row s_nb_column_fixed g-0">
+                                        <div class="col-12">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.charcoal_still_01"
-                                                class="img img-fluid w-100"
+                                                data-index="0"
+                                                data-name="Image"
                                                 alt="The Charcoal Swordsman still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.charcoal_still_02"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="1"
+                                                data-name="Image"
                                                 alt="The Charcoal Swordsman still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.charcoal_still_03"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="2"
+                                                data-name="Image"
                                                 alt="The Charcoal Swordsman still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.charcoal_still_04"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="3"
+                                                data-name="Image"
                                                 alt="The Charcoal Swordsman still"
                                             />
                                         </div>

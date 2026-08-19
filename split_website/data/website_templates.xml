@@ -18,11 +18,7 @@
         priority="20"
     >
         <xpath expr="//div[@id='footer']" position="before">
-            <section
-                class="s_newsletter_block s_newsletter_list o_cc o_cc5 pt48 pb32"
-                data-snippet="s_newsletter_block"
-                data-name="Newsletter"
-            >
+            <section class="o_cc o_cc5 pt48 pb32" data-name="Newsletter">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 pb16 pb-lg-0">
@@ -33,33 +29,62 @@
                             </p>
                         </div>
                         <div class="col-lg-5 offset-lg-1">
-                            <div
-                                class="s_newsletter_subscribe_form s_newsletter_list js_subscribe"
-                                data-vxml="001"
-                                t-att-data-list-id="request.env.ref('split_website.mailing_list_newsletter').id"
-                                data-name="Newsletter Form"
-                            >
-                                <div class="js_subscribed_wrap d-none">
-                                    <p class="h4-fs text-center text-success mb-0">
-                                        <i class="fa fa-check-circle-o" role="img" />
-                                        Thanks for registering!
-                                    </p>
-                                </div>
-                                <div class="js_subscribe_wrap">
-                                    <div class="input-group">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            class="js_subscribe_value form-control"
-                                            placeholder="you@example.com"
-                                        />
-                                        <a
-                                            role="button"
-                                            href="#"
-                                            class="btn btn-primary js_subscribe_btn o_submit"
-                                        >Subscribe</a>
+                            <div class="s_website_form" data-vcss="001">
+                                <form
+                                    action="/website/form/"
+                                    method="post"
+                                    enctype="multipart/form-data"
+                                    class="o_mark_required"
+                                    data-mark="*"
+                                    data-model_name="mailing.contact"
+                                    data-success-mode="message"
+                                >
+                                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                                        <div
+                                            class="mb-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                            data-type="char"
+                                        >
+                                            <input
+                                                type="text"
+                                                class="form-control s_website_form_input"
+                                                name="name"
+                                                required=""
+                                                placeholder="Your name"
+                                            />
+                                        </div>
+                                        <div
+                                            class="mb-0 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                            data-type="email"
+                                        >
+                                            <div class="input-group">
+                                                <input
+                                                    type="email"
+                                                    class="form-control s_website_form_input"
+                                                    name="email"
+                                                    required=""
+                                                    placeholder="you@example.com"
+                                                />
+                                                <a
+                                                    href="#"
+                                                    role="button"
+                                                    class="btn btn-primary s_website_form_send"
+                                                >Subscribe</a>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="s_website_form_field s_website_form_dnone"
+                                            data-type="char"
+                                        >
+                                            <input
+                                                type="hidden"
+                                                class="s_website_form_input"
+                                                name="list_ids"
+                                                t-att-value="request.env.ref('split_website.mailing_list_newsletter').id"
+                                            />
+                                        </div>
                                     </div>
-                                </div>
+                                    <span id="s_website_form_result" />
+                                </form>
                             </div>
                             <p class="o_small mt-3 mb-0">
                                 <a

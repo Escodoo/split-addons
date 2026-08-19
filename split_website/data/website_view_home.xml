@@ -15,31 +15,33 @@
                     <div id="wrap">
                         <div id="oe_structure_split_website_home" class="oe_structure">
                             <section
-                                class="s_cover split-hero o_cc o_cc5"
-                                data-vcss="001"
+                                class="s_cover parallax s_parallax_is_fixed o_cc o_cc5 split-hero"
                                 data-snippet="s_cover"
                                 data-name="Cover"
+                                data-scroll-background-ratio="1"
                             >
-                                <video
-                                    class="split-hero-video split-hero-video-desktop"
-                                    src="/split_website/static/src/video/home_hero.webm"
-                                    autoplay="autoplay"
-                                    muted="muted"
-                                    loop="loop"
-                                    playsinline="playsinline"
-                                    preload="metadata"
-                                />
-                                <video
-                                    class="split-hero-video split-hero-video-mobile"
-                                    src="/split_website/static/src/video/home_hero_mobile.webm"
-                                    autoplay="autoplay"
-                                    muted="muted"
-                                    loop="loop"
-                                    playsinline="playsinline"
-                                    preload="metadata"
-                                />
+                                <span class="s_parallax_bg oe_img_bg o_bg_img_center">
+                                    <video
+                                        class="split-hero-video split-hero-video-desktop"
+                                        src="/split_website/static/src/video/home_hero.webm"
+                                        autoplay="autoplay"
+                                        muted="muted"
+                                        loop="loop"
+                                        playsinline="playsinline"
+                                        preload="metadata"
+                                    />
+                                    <video
+                                        class="split-hero-video split-hero-video-mobile"
+                                        src="/split_website/static/src/video/home_hero_mobile.webm"
+                                        autoplay="autoplay"
+                                        muted="muted"
+                                        loop="loop"
+                                        playsinline="playsinline"
+                                        preload="metadata"
+                                    />
+                                </span>
                                 <div class="o_we_bg_filter bg-black-25" />
-                                <div class="container">
+                                <div class="container s_allow_columns">
                                     <div class="row">
                                         <div class="col-lg-6 offset-lg-6 text-lg-end">
                                             <h1
@@ -88,8 +90,13 @@
                                                         >Split original — help make this game a reality at Catarse.</p>
                                                         <p>
                                                             <a
-                                                                href="/originals/among-the-stars"
+                                                                href="https://www.catarse.com.br/entreasestrelas-original"
                                                                 class="btn btn-primary"
+                                                                target="_blank"
+                                                            >Support on Catarse</a>
+                                                            <a
+                                                                href="/originals/among-the-stars"
+                                                                class="btn btn-outline-secondary ms-2"
                                                             >Discover the project</a>
                                                         </p>
                                                     </div>
@@ -695,7 +702,7 @@
                                                 >Storyboard &amp; Animatic</li>
                                                 <li
                                                     class="mb-1"
-                                                >Character &amp; Background Designs</li>
+                                                >Character Design &amp; Backgrounds</li>
                                                 <li
                                                     class="mb-1"
                                                 >Setup &amp; Rigging</li>
@@ -719,7 +726,7 @@
                                                 >Cut Out &amp; Traditional Animation</li>
                                                 <li
                                                     class="mb-1"
-                                                >Motion Graphics</li>
+                                                >FX &amp; Motion Animation</li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-3 col-md-6 pt16 pb16">

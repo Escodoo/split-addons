@@ -8,6 +8,10 @@
     display: flex;
     align-items: flex-end;
 
+    > .s_parallax_bg {
+        overflow: hidden;
+    }
+
     .split-hero-video {
         position: absolute;
         inset: 0;
@@ -144,9 +148,18 @@
     }
 }
 
-.split-gallery img {
-    width: 100%;
-    display: block;
+.split-gallery {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
 }
 
 .split-about-hero {

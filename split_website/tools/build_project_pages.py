@@ -410,7 +410,8 @@ PROJECTS = (
             "house and inviting the audience to help make the project a "
             "reality on Catarse."
         ),
-        "cta_label": "Co-produce with us",
+        "cta_label": "Support on Catarse",
+        "cta_href": "https://www.catarse.com.br/entreasestrelas-original",
     },
     {
         "xml_id": "project_whats_up_bud",
@@ -928,7 +929,7 @@ VIEW_TEMPLATE = """    <record id="{xml_id}" model="ir.ui.view">
                                             <p class="lead">{synopsis}</p>
 {extra}                                            <p>
                                                 <a
-                                                    href="/contactus"
+                                                    href="{cta_href}"
                                                     class="btn btn-primary"
                                                 >{cta_label}</a>
                                             </p>
@@ -1028,6 +1029,7 @@ def _service_view(project):
         "kind": escape(project["kind"]),
         "synopsis": escape(project["synopsis"]),
         "cta_label": escape(project.get("cta_label", "Start a project")),
+        "cta_href": escape(project.get("cta_href", "/contactus")),
         "facts": _facts_xml(project["facts"]),
         "video": _video_xml(project),
         "extra": _paragraphs_xml(project.get("extra", ())),
@@ -1173,35 +1175,30 @@ def _ip_gallery_xml(project):
     gallery = project.get("gallery")
     if not gallery:
         return ""
-    first, *rest = gallery
-    tiles = [
-        f"""                                        <div class="col-12 p-0">
-                                            <img
-                                                src="/web/image/split_website.{first}"
-                                                class="img img-fluid w-100"
-                                                alt="{escape(project["title"])} still"
-                                            />
-                                        </div>"""
-    ]
-    for xml_id in rest:
+    tiles = []
+    for index, xml_id in enumerate(gallery):
+        width = "col-12" if index == 0 else "col-lg-4"
         tiles.append(
-            f"""                                        <div class="col-lg-4 p-0">
+            f"""                                        <div class="{width}">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.{xml_id}"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="{index}"
+                                                data-name="Image"
                                                 alt="{escape(project["title"])} still"
                                             />
                                         </div>"""
         )
     body = "\n".join(tiles)
     return f"""                            <section
-                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                class="s_image_gallery o_spc-none o_grid pt0 pb0 o_cc o_cc5 split-gallery"
                                 data-snippet="s_images_wall"
                                 data-name="Gallery"
+                                data-vcss="002"
+                                data-columns="3"
                             >
-                                <div class="container-fluid">
-                                    <div class="row">
+                                <div class="container-fluid px-0">
+                                    <div class="row s_nb_column_fixed g-0">
 {body}
                                     </div>
                                 </div>
@@ -1365,40 +1362,47 @@ def _weeboom_view(project):
                                 </div>
                             </section>
                             <section
-                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                class="s_image_gallery o_spc-none o_grid pt0 pb0 o_cc o_cc5 split-gallery"
                                 data-snippet="s_images_wall"
                                 data-name="Gallery"
+                                data-vcss="002"
+                                data-columns="3"
                             >
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 p-0">
+                                <div class="container-fluid px-0">
+                                    <div class="row s_nb_column_fixed g-0">
+                                        <div class="col-12">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_01"
-                                                class="img img-fluid w-100"
+                                                data-index="0"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_02"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="1"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_03"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="2"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
-                                        <div class="col-lg-4 p-0">
+                                        <div class="col-lg-4">
                                             <img
+                                                class="img img-fluid d-block w-100"
                                                 src="/web/image/split_website.weeboom_still_04"
-                                                class="img img-fluid w-100"
-                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                data-index="3"
+                                                data-name="Image"
                                                 alt="WeeBoom still"
                                             />
                                         </div>
