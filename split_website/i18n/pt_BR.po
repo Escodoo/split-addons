@@ -2690,8 +2690,12 @@ msgstr "Assista ao showreel da Split Studio."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
-msgid "We are Split.<br/>We love telling stories."
-msgstr "Somos a Split.<br/>Adoramos contar histórias."
+msgid ""
+"We are Split.<br/><span class=\"split-about-title-love\">We love telling "
+"stories.</span>"
+msgstr ""
+"Somos a Split.<br/><span class=\"split-about-title-love\">Adoramos contar "
+"histórias.</span>"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.privacy

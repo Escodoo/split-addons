@@ -214,8 +214,46 @@
     }
 }
 
+#wrap:has(.split-about) {
+    background-color: #f05983;
+}
+
+.split-about {
+    background-color: #f05983;
+    color: #fff;
+
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    .lead {
+        color: #fff;
+    }
+
+    .split-about-title-love {
+        color: #003d55;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .split-about-band {
+        background-color: #88cdf1;
+        color: #003d55;
+
+        h1,
+        h2,
+        h3,
+        p,
+        .lead,
+        strong {
+            color: #003d55;
+        }
+    }
+}
+
 .split-about-hero {
-    background: #1a1a12;
+    background: #f05983;
     overflow: hidden;
 
     img {
@@ -234,6 +272,49 @@
 
 .split-about-block .lead {
     margin-bottom: 0;
+}
+
+.split-about-team {
+    .split-about-person {
+        color: #fff;
+
+        h3,
+        p,
+        .text-o-color-2 {
+            color: #fff !important;
+        }
+
+        &:nth-child(1) {
+            background-color: #95599b;
+        }
+
+        &:nth-child(2) {
+            background-color: #7dbf9d;
+        }
+
+        &:nth-child(3) {
+            background-color: #003d55;
+        }
+    }
+}
+
+.split-about-pipeline {
+    background-color: #333 !important;
+    color: #fff;
+
+    h2,
+    .lead,
+    li {
+        color: #fff;
+    }
+
+    h3 {
+        background-color: #60d776;
+        color: #333;
+        display: inline-block;
+        padding: 0.4rem 0.85rem;
+        margin-bottom: 0.75rem;
+    }
 }
 
 header {

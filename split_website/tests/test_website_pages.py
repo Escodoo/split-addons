@@ -66,6 +66,7 @@ class TestSplitWebsitePages(HttpCase):
     def test_about_shows_the_official_manifesto(self):
         body = self.url_open("/about").text
         self.assertIn("We love telling stories", body)
+        self.assertIn("split-about", body)
         self.assertIn("about_hero", body)
         self.assertIn("about_character_01", body)
         self.assertIn("Future Channel", body)

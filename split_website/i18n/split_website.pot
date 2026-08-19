@@ -2388,7 +2388,7 @@ msgstr ""
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
-msgid "We are Split.<br/>We love telling stories."
+msgid "We are Split.<br/><span class=\"split-about-title-love\">We love telling stories.</span>"
 msgstr ""
 
 #. module: split_website

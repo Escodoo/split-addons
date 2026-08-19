@@ -10,9 +10,12 @@
             <t name="About" t-name="split_website.about">
                 <t t-call="website.layout">
                     <div id="wrap">
-                        <div id="oe_structure_split_website_about" class="oe_structure">
+                        <div
+                            id="oe_structure_split_website_about"
+                            class="oe_structure split-about"
+                        >
                             <section
-                                class="split-about-hero o_cc o_cc5"
+                                class="split-about-hero"
                                 data-name="Cover"
                             >
                                 <img
@@ -22,18 +25,20 @@
                                 />
                             </section>
                             <section
-                                class="s_title pt64 pb32 o_cc o_cc5"
+                                class="s_title pt64 pb32"
                                 data-snippet="s_title"
                                 data-name="Title"
                             >
                                 <div class="container text-center">
                                     <h1 class="display-2-fs mb-0">
-                                        We are Split.<br />We love telling stories.
+                                        We are Split.<br /><span
+                                            class="split-about-title-love"
+                                        >We love telling stories.</span>
                                     </h1>
                                 </div>
                             </section>
                             <section
-                                class="s_text_block pt16 pb16 o_cc o_cc5"
+                                class="s_text_block pt32 pb32 split-about-band"
                                 data-snippet="s_text_block"
                                 data-name="Intro"
                             >
@@ -51,7 +56,7 @@
                                 </div>
                             </section>
                             <section
-                                class="s_text_block pt32 pb32 o_cc o_cc5"
+                                class="s_text_block pt32 pb32"
                                 data-snippet="s_text_block"
                                 data-name="Story"
                             >
@@ -86,7 +91,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="row align-items-center split-about-block pt48"
+                                        class="row align-items-center split-about-block split-about-band pt48 pb48"
                                     >
                                         <div
                                             class="col-lg-8 order-2 order-lg-1"
@@ -154,7 +159,7 @@
                                 </div>
                             </section>
                             <section
-                                class="s_company_team pt64 pb64 o_cc o_cc5"
+                                class="s_company_team pt64 pb64 split-about-team"
                                 data-snippet="s_company_team"
                                 data-name="Team"
                             >
@@ -163,7 +168,9 @@
                                         <h2>Who leads the studio</h2>
                                     </div>
                                     <div class="row">
-                                        <div class="col-lg-4 pt16 pb16">
+                                        <div
+                                            class="col-lg-4 pt32 pb32 px-3 split-about-person"
+                                        >
                                             <img
                                                 src="/web/image/split_website.team_cid_makino"
                                                 class="img img-fluid rounded mb-3"
@@ -185,7 +192,9 @@
                                                 top-notch delivery.
                                             </p>
                                         </div>
-                                        <div class="col-lg-4 pt16 pb16">
+                                        <div
+                                            class="col-lg-4 pt32 pb32 px-3 split-about-person"
+                                        >
                                             <img
                                                 src="/web/image/split_website.team_guille_hiertz"
                                                 class="img img-fluid rounded mb-3"
@@ -207,7 +216,9 @@
                                                 special projects.
                                             </p>
                                         </div>
-                                        <div class="col-lg-4 pt16 pb16">
+                                        <div
+                                            class="col-lg-4 pt32 pb32 px-3 split-about-person"
+                                        >
                                             <img
                                                 src="/web/image/split_website.team_jonas_brandao"
                                                 class="img img-fluid rounded mb-3"
@@ -233,7 +244,7 @@
                                 </div>
                             </section>
                             <section
-                                class="s_features pt64 pb64 o_cc o_cc5"
+                                class="s_features pt64 pb64 split-about-pipeline"
                                 data-snippet="s_features"
                                 data-name="What Split Does"
                             >
