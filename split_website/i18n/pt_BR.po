@@ -1,0 +1,384 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* split_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-19 16:00+0000\n"
+"PO-Revision-Date: 2026-08-19 16:00+0000\n"
+"Last-Translator: Escodoo <https://www.escodoo.com.br>\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: split_website
+#: model:website.menu,name:split_website.menu_about
+msgid "About"
+msgstr "Sobre"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Ads and branded"
+msgstr "Publicidade e branded"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "All"
+msgstr "Todos"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Animation &amp; Games"
+msgstr "Animação e games"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "A full 2D pipeline, from the first idea to the final render."
+msgstr "Um pipeline 2D completo, da primeira ideia ao render final."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Bids"
+msgstr "Licitações"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Brazil"
+msgstr "Brasil"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Character &amp; Background Designs"
+msgstr "Design de personagens e cenários"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Client productions"
+msgstr "Produções para clientes"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "Co-produce with us"
+msgstr "Coproduza conosco"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+msgid "Come along with us"
+msgstr "Venha com a gente"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Company"
+msgstr "Empresa"
+
+#. module: split_website
+#: model:website.menu,name:website.menu_contactus
+msgid "Contact"
+msgstr "Contato"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "Contact form"
+msgstr "Formulário de contato"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Creation &amp; Development"
+msgstr "Criação e desenvolvimento"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Discover the project"
+msgstr "Conheça o projeto"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "E-mail"
+msgstr "E-mail"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Feature films"
+msgstr "Longas"
+
+#. module: split_website
+#: model:website.menu,name:website.menu_home
+msgid "Home"
+msgstr "Início"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "How Split uses the information you send us."
+msgstr "Como a Split usa as informações que você envia."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "How long we keep it"
+msgstr "Por quanto tempo guardamos"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "I agree to the <a href=\"/privacy\">privacy policy</a>"
+msgstr "Concordo com a <a href=\"/privacy\">política de privacidade</a>"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "Intellectual properties created inside the studio, from preschool series to games."
+msgstr "Propriedades intelectuais criadas no estúdio, de séries preschool a games."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Link to portfolio"
+msgstr "Link do portfólio"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Message"
+msgstr "Mensagem"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Motion Graphics"
+msgstr "Motion graphics"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Name"
+msgstr "Nome"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "Newsletter"
+msgstr "Newsletter"
+
+#. module: split_website
+#: model:website.menu,name:split_website.menu_our_work
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Our Work"
+msgstr "Nossos trabalhos"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "Original intellectual properties"
+msgstr "Propriedades intelectuais originais"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Phone"
+msgstr "Telefone"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Pilots and promos"
+msgstr "Pilotos e promos"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Pre-Production"
+msgstr "Pré-produção"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Post-Production"
+msgstr "Pós-produção"
+
+#. module: split_website
+#: model:website.page,name:split_website.page_privacy
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "Privacy"
+msgstr "Privacidade"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Productions, original IPs and studio news, straight to your inbox."
+msgstr "Produções, IPs originais e novidades do estúdio, direto no seu e-mail."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Productions created and animated for channels, studios, agencies and brands around the world."
+msgstr "Produções criadas e animadas para canais, estúdios, agências e marcas no mundo todo."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "Questions:"
+msgstr "Dúvidas:"
+
+#. module: split_website
+#: model:website.menu,name:split_website.menu_reel
+#: model_terms:ir.ui.view,arch_db:split_website.reel
+msgid "Reel"
+msgstr "Reel"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Select the subject"
+msgstr "Selecione o assunto"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Select your field of work"
+msgstr "Selecione sua área de atuação"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Send"
+msgstr "Enviar"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Series, films, promos and branded content."
+msgstr "Séries, filmes, promos e branded content."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "See them all"
+msgstr "Ver todos"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Shows"
+msgstr "Séries"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Sign up for our newsletter"
+msgstr "Inscreva-se na newsletter"
+
+#. module: split_website
+#: model:website.menu,name:split_website.menu_split_originals
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Split Originals"
+msgstr "Originais Split"
+
+#. module: split_website
+#: model:mailing.list,name:split_website.mailing_list_newsletter
+msgid "Split Studio Newsletter"
+msgstr "Newsletter da Split Studio"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Start a project"
+msgstr "Comece um projeto"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "Stories we create, develop and produce ourselves."
+msgstr "Histórias que criamos, desenvolvemos e produzimos."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Subscribe"
+msgstr "Assinar"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Talk to us"
+msgstr "Fale conosco"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Tell us about your project, your studio or the story you want to animate."
+msgstr "Conte sobre o seu projeto, o seu estúdio ou a história que você quer animar."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Thanks for registering!"
+msgstr "Obrigado por se inscrever!"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "USA"
+msgstr "EUA"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Watch Split's Reel"
+msgstr "Assista ao reel da Split"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+msgid "We are Split.<br/>We love telling stories."
+msgstr "Somos a Split.<br/>Adoramos contar histórias."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.privacy
+msgid "When you write to us through the website, we store your name, e-mail, company, phone, the subject of the message, your field of work and portfolio link, and the message itself. That information becomes a lead in our studio CRM so the right person can reply."
+msgstr "Quando você escreve pelo site, guardamos nome, e-mail, empresa, telefone, o assunto da mensagem, a área de atuação, o link do portfólio e a mensagem. Essas informações viram um lead no CRM do estúdio para a pessoa certa responder."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "What Split does"
+msgstr "O que a Split faz"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+msgid "Who leads the studio"
+msgstr "Quem lidera o estúdio"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:website.homepage
+msgid "Who we create with"
+msgstr "Com quem criamos"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "Work with Split"
+msgstr "Trabalhar com a Split"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.reel
+msgid "A few minutes through ten years of animation."
+msgstr "Alguns minutos por dez anos de animação."

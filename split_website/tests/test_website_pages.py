@@ -213,3 +213,20 @@ class TestSplitWebsitePages(HttpCase):
         body = self.url_open("/privacy").text
         self.assertIn("How Split uses the information you send us", body)
         self.assertIn("contato@splitstudio.tv", body)
+
+    def test_portuguese_locale_is_available(self):
+        website = self.env.ref("website.default_website")
+        portuguese = self.env["res.lang"].search([("code", "=", "pt_BR")], limit=1)
+        self.assertTrue(portuguese, "pt_BR must be activated for the public site")
+        self.assertIn(portuguese, website.language_ids)
+        home = self.url_open("/").text
+        self.assertTrue(
+            "js_language_selector" in home
+            or "o_header_language_selector" in home
+            or portuguese.url_code in home,
+            "The language selector must appear when more than one language is active",
+        )
+        response = self.url_open(f"/{portuguese.url_code}/our-work")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Nossos trabalhos", response.text)
+        self.assertIn("Inscreva-se na newsletter", response.text)
