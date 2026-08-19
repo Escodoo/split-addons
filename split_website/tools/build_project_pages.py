@@ -4,6 +4,7 @@
 # pylint: disable=print-used
 # ruff: noqa: E501
 
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -21,6 +22,7 @@ PROJECTS = (
         "banner": "banner_rick_and_morty",
         "back_url": "/our-work",
         "back_label": "Our Work",
+        "video": "https://player.vimeo.com/video/727502245?h=ace901b1c8",
         "facts": (
             ("Client", "Bardel"),
             ("Format", "Season 5 episodes"),
@@ -47,6 +49,7 @@ PROJECTS = (
         "banner": "banner_hello_kitty",
         "back_url": "/our-work",
         "back_label": "Our Work",
+        "video": "https://www.youtube.com/embed/BbCefdlDDTU",
         "facts": (
             ("Client", "Sanrio Brazil"),
             ("Format", "75 x 3′"),
@@ -79,6 +82,7 @@ PROJECTS = (
         "banner": "work_tito_and_the_birds",
         "back_url": "/our-work",
         "back_label": "Our Work",
+        "video": "https://player.vimeo.com/video/286577783",
         "facts": (
             ("Client", "Bit Productions"),
             ("Release year", "2018"),
@@ -109,6 +113,7 @@ PROJECTS = (
         "banner": "work_my_life_is_worth_living",
         "back_url": "/our-work",
         "back_label": "Our Work",
+        "video": "https://www.youtube.com/embed/rx3X1VJqEq4",
         "facts": (
             ("Client", "Wonder Media"),
             ("Format", "20 x 5 min"),
@@ -139,6 +144,7 @@ PROJECTS = (
         "banner": "banner_monica_and_friends",
         "back_url": "/our-work",
         "back_label": "Our Work",
+        "video": "https://player.vimeo.com/video/217550961",
         "facts": (
             ("Client", "Cartoon Network"),
             ("Format", "52 x 7′"),
@@ -169,6 +175,7 @@ PROJECTS = (
         "banner": "work_fit_ufc",
         "back_url": "/our-work",
         "back_label": "Our Work",
+        "video": "https://player.vimeo.com/video/655025664?h=9226e530e7",
         "facts": (
             ("Client", "UFC"),
             ("Format", "Branded series"),
@@ -187,6 +194,169 @@ PROJECTS = (
             "Branded shorts produced for UFC, mixing fight mythology with "
             "Split's 2D pipeline. The studio covered the show from direction "
             "and script through voices, animation, sound and mix."
+        ),
+    },
+    {
+        "xml_id": "project_are_you_okay",
+        "url": "/work/are-you-okay",
+        "title": "Are You Okay?",
+        "client": "Wonder Media",
+        "kind": "Animated series",
+        "image": "work_are_you_okay",
+        "banner": "work_are_you_okay",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "video": "https://www.youtube.com/embed/tJsGGsPNakw",
+        "facts": (
+            ("Client", "Wonder Media"),
+            ("Release year", "2021"),
+            (
+                "Services",
+                "Props, Backgrounds, Builds, 2D Animation, Composition",
+            ),
+        ),
+        "summary": (
+            "Animated series produced with Wonder Media in 2021, part of the "
+            "studio's slate of stories built around social causes."
+        ),
+        "synopsis": (
+            "Produced with Wonder Media in 2021, Are You Okay? uses animation "
+            "to open a conversation about mental health. Split delivered "
+            "props, backgrounds, builds, 2D animation and composition."
+        ),
+    },
+    {
+        "xml_id": "project_is_anybody_out_there",
+        "url": "/work/is-anybody-out-there",
+        "title": "Is Anybody Out There?",
+        "client": "Wonder Media",
+        "kind": "Animated series",
+        "image": "work_is_anybody_out_there",
+        "banner": "work_is_anybody_out_there",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "video": "https://www.youtube.com/embed/xgKdiPFrdl0",
+        "facts": (
+            ("Client", "Wonder Media"),
+            ("Release year", "2022"),
+            (
+                "Services",
+                "Direction, Storyboard & Animatic, Props, Backgrounds, "
+                "Builds, 2D Animation, Editing, Composition",
+            ),
+        ),
+        "summary": (
+            "Animated series produced with Wonder Media in 2022, directed "
+            "in house and delivered through the full 2D pipeline."
+        ),
+        "synopsis": (
+            "The second series Split produced with Wonder Media, this time "
+            "with the studio also on direction. The team carried the show "
+            "from storyboard and animatic through animation, editing and "
+            "composition."
+        ),
+    },
+    {
+        "xml_id": "project_bit_wars",
+        "url": "/work/bit-wars",
+        "title": "Bit Wars",
+        "client": "NuBoom",
+        "kind": "Promo",
+        "image": "work_bit_wars",
+        "banner": "banner_bit_wars",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "video": "https://www.youtube.com/embed/z7qujaY59wc",
+        "facts": (
+            ("Client", "NuBoom"),
+            ("Format", "Promo"),
+            ("Services", "Layout, Animation"),
+        ),
+        "summary": ("Promo produced for NuBoom, with Split on layout and animation."),
+        "synopsis": (
+            "A promo produced for NuBoom. Split handled layout and animation, "
+            "turning a retro gaming pitch into a fast, readable piece."
+        ),
+    },
+    {
+        "xml_id": "project_mr_men_little_miss",
+        "url": "/work/mr-men-little-miss",
+        "title": "Mr Men Little Miss",
+        "client": "Sanrio Brazil",
+        "kind": "Promo",
+        "image": "work_mr_men_little_miss",
+        "banner": "work_mr_men_little_miss",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "video": "https://player.vimeo.com/video/731166549?h=0f8b2fd4a8",
+        "video_ratio": "1x1",
+        "facts": (
+            ("Client", "Sanrio Brazil"),
+            (
+                "Services",
+                "Direction, Storyboard & Animatic, Voices, Props, "
+                "Backgrounds, Builds, 2D Animation, Composition, Sound FX, "
+                "Songs, Mix",
+            ),
+        ),
+        "summary": (
+            "Promo produced for Sanrio Brazil, covering the full 2D pipeline "
+            "from direction to mix."
+        ),
+        "synopsis": (
+            "A promo for Sanrio Brazil's Mr Men Little Miss. Split directed "
+            "the piece and covered everything from storyboard and voices to "
+            "animation, sound effects, songs and mix."
+        ),
+    },
+    {
+        "xml_id": "project_bubu_and_the_little_owls",
+        "url": "/work/bubu-and-the-little-owls",
+        "title": "Bubu and the Little Owls",
+        "client": "Up Content",
+        "kind": "Preschool series",
+        "image": "work_bubu_and_the_little_owls",
+        "banner": "work_bubu_and_the_little_owls",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "video": "https://player.vimeo.com/video/727504876?h=ef9b70da52",
+        "facts": (
+            ("Client", "Up Content"),
+            ("Format", "Preschool series"),
+            ("Services", "2D Animation"),
+        ),
+        "summary": (
+            "Preschool series produced with Up Content, with Split on 2D " "animation."
+        ),
+        "synopsis": (
+            "A preschool series produced with Up Content. Split contributed "
+            "2D animation to the show that follows Bubu and his owl friends."
+        ),
+    },
+    {
+        "xml_id": "project_the_boy_and_the_world",
+        "url": "/work/the-boy-and-the-world",
+        "title": "The Boy and the World",
+        "client": "Paper Films",
+        "kind": "Feature film",
+        "image": "work_the_boy_and_the_world",
+        "banner": "work_the_boy_and_the_world",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "video": "https://www.youtube.com/embed/eqdrwu0NvY8",
+        "facts": (
+            ("Client", "Paper Films"),
+            ("Format", "Feature film"),
+            ("Services", "2D Animation"),
+        ),
+        "summary": (
+            "Oscar-nominated feature film produced with Paper Films, with "
+            "Split on 2D animation."
+        ),
+        "synopsis": (
+            "Feature film produced with Paper Films. Split contributed 2D "
+            "animation to a film that travelled the festival circuit and "
+            "reached an Academy Award nomination."
         ),
     },
     {
@@ -251,7 +421,21 @@ CARD_LINKS = {
     "work_my_life_is_worth_living": "/work/my-life-is-worth-living",
     "work_monica_and_friends": "/work/monica-and-friends",
     "work_fit_ufc": "/work/fit-ufc-true-myth",
+    "work_are_you_okay": "/work/are-you-okay",
+    "work_is_anybody_out_there": "/work/is-anybody-out-there",
+    "work_bit_wars": "/work/bit-wars",
+    "work_mr_men_little_miss": "/work/mr-men-little-miss",
+    "work_bubu_and_the_little_owls": "/work/bubu-and-the-little-owls",
+    "work_the_boy_and_the_world": "/work/the-boy-and-the-world",
     "original_weeboom": "/originals/weeboom",
+}
+
+# Captions that drifted from the official credits.
+CARD_CAPTIONS = {
+    "work_bubu_and_the_little_owls": "Up Content · Preschool series",
+    "work_the_boy_and_the_world": "Paper Films · Feature film",
+    "work_bit_wars": "NuBoom · Promo",
+    "work_mr_men_little_miss": "Sanrio Brazil · Promo",
 }
 
 WORK_CATEGORIES = {
@@ -307,7 +491,7 @@ VIEW_TEMPLATE = """    <record id="{xml_id}" model="ir.ui.view">
                                     </div>
                                 </div>
                             </section>
-                            <section
+{video}                            <section
                                 class="s_text_block pt64 pb32 o_cc o_cc5"
                                 data-snippet="s_text_block"
                                 data-name="Credits"
@@ -353,6 +537,32 @@ VIEW_TEMPLATE = """    <record id="{xml_id}" model="ir.ui.view">
     </record>
 """
 
+VIDEO_SECTION = """                            <section
+                                class="s_embed_code pt64 pb0 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Video"
+                            >
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="{column}">
+                                            <div
+                                                class="s_embed_code_embedded ratio ratio-{ratio}"
+                                            >
+                                                <iframe
+                                                    src="{video}"
+                                                    title="{title}"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen="allowfullscreen"
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+"""
+
 PAGE_RECORD = """    <record id="page_{xml_id}" model="website.page">
         <field name="view_id" ref="{xml_id}" />
         <field name="url">{url}</field>
@@ -378,6 +588,19 @@ def _facts_xml(facts):
     return "\n".join(chunks)
 
 
+def _video_xml(project):
+    video = project.get("video")
+    if not video:
+        return ""
+    ratio = project.get("video_ratio", "16x9")
+    return VIDEO_SECTION.format(
+        video=escape(video),
+        title=escape(project["title"]),
+        ratio=ratio,
+        column="col-12" if ratio == "16x9" else "col-lg-7",
+    )
+
+
 def _service_view(project):
     values = {
         "xml_id": project["xml_id"],
@@ -391,6 +614,7 @@ def _service_view(project):
         "synopsis": escape(project["synopsis"]),
         "cta_label": escape(project.get("cta_label", "Start a project")),
         "facts": _facts_xml(project["facts"]),
+        "video": _video_xml(project),
     }
     return VIEW_TEMPLATE.format(**values)
 
@@ -652,18 +876,46 @@ def wrap_cards(path):
                 break
             fig_end += len("</figure>")
             block = text[fig:fig_end]
-            if f'href="{url}"' in text[max(0, fig - 120) : fig]:
+            # The anchor, when present, sits between the column div and the
+            # figure. Anything wider matches the previous card once prettier
+            # has reflowed the attributes onto their own lines.
+            col = max(text.rfind("<div", 0, fig), 0)
+            if "split-project-card" in text[col:fig]:
                 start = fig_end
                 continue
+            indent = " " * (fig - text.rfind("\n", 0, fig) - 1)
+            inner = block.replace("\n", f"\n{' ' * 4}")
             wrapped = (
-                f'<a href="{url}" class="text-reset split-project-card">\n'
-                f"                                            {block}\n"
-                f"                                            </a>"
+                f"<a\n"
+                f'{indent}    href="{url}"\n'
+                f'{indent}    class="text-reset split-project-card"\n'
+                f"{indent}>\n"
+                f"{indent}    {inner}\n"
+                f"{indent}</a>"
             )
             text = text[:fig] + wrapped + text[fig_end:]
             start = fig + len(wrapped)
     path.write_text(text, encoding="utf-8")
     print(f"wrapped cards in {path.name}")
+
+
+def fix_captions(path):
+    text = path.read_text(encoding="utf-8")
+    for xml_id, caption in CARD_CAPTIONS.items():
+        idx = text.find(f'src="/web/image/split_website.{xml_id}"')
+        if idx < 0:
+            continue
+        end = text.find("</figcaption>", idx)
+        block = text[idx:end]
+        old = re.search(
+            r'<p\s+class="o_small mb-0"\s*>([^<]+)</p>', block
+        ) or re.search(r'<p\n\s+class="o_small mb-0"\n\s+>([^<]+)</p>', block)
+        if not old or old.group(1) == caption:
+            continue
+        start = idx + old.start(1)
+        text = text[:start] + caption + text[idx + old.end(1) :]
+    path.write_text(text, encoding="utf-8")
+    print(f"fixed captions in {path.name}")
 
 
 def add_work_filter():
@@ -822,6 +1074,8 @@ def main():
     wrap_cards(DATA_DIR / "website_view_home.xml")
     wrap_cards(DATA_DIR / "website_view_our_work.xml")
     wrap_cards(DATA_DIR / "website_view_originals.xml")
+    fix_captions(DATA_DIR / "website_view_our_work.xml")
+    fix_captions(DATA_DIR / "website_view_home.xml")
     add_work_filter()
     link_carousel()
 

@@ -14,6 +14,13 @@ class TestSplitWebsitePages(HttpCase):
         "/about",
         "/contactus",
         "/work/rick-and-morty",
+        "/work/fit-ufc-true-myth",
+        "/work/are-you-okay",
+        "/work/is-anybody-out-there",
+        "/work/bit-wars",
+        "/work/mr-men-little-miss",
+        "/work/bubu-and-the-little-owls",
+        "/work/the-boy-and-the-world",
         "/originals/weeboom",
         "/originals/among-the-stars",
     ]
@@ -111,3 +118,30 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("Sanrio Brazil", body)
         self.assertIn("75 x 3", body)
         self.assertIn("Storyboard", body)
+
+    def test_fit_ufc_embeds_the_official_video(self):
+        body = self.url_open("/work/fit-ufc-true-myth").text
+        self.assertIn("player.vimeo.com/video/655025664", body)
+        self.assertIn("ratio ratio-16x9", body)
+
+    def test_are_you_okay_lists_credits_and_video(self):
+        body = self.url_open("/work/are-you-okay").text
+        self.assertIn("Wonder Media", body)
+        self.assertIn("2021", body)
+        self.assertIn("youtube.com/embed/tJsGGsPNakw", body)
+
+    def test_our_work_links_every_card(self):
+        body = self.url_open("/our-work").text
+        for url in (
+            "/work/are-you-okay",
+            "/work/is-anybody-out-there",
+            "/work/bit-wars",
+            "/work/mr-men-little-miss",
+            "/work/bubu-and-the-little-owls",
+            "/work/the-boy-and-the-world",
+        ):
+            with self.subTest(url=url):
+                self.assertIn(f'href="{url}"', body)
+        # The card captions must match the official credits.
+        self.assertIn("Up Content · Preschool series", body)
+        self.assertNotIn("Mr Plot", body)

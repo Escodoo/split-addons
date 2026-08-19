@@ -360,23 +360,28 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_is_anybody_out_there"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Is Anybody Out There?"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Is Anybody Out There?</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Wonder Media · Animated series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/is-anybody-out-there"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_is_anybody_out_there"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Is Anybody Out There?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Is Anybody Out There?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <a
@@ -403,21 +408,26 @@
                                             </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_are_you_okay"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Are You Okay?"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">Are You Okay?</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Wonder Media · Animated series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/are-you-okay"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_are_you_okay"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Are You Okay?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Are You Okay?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <a

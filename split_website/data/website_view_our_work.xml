@@ -152,23 +152,28 @@
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
                                             data-category="shows"
                                         >
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_is_anybody_out_there"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Is Anybody Out There?"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Is Anybody Out There?</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Wonder Media · Animated series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/is-anybody-out-there"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_is_anybody_out_there"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Is Anybody Out There?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Is Anybody Out There?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
@@ -201,21 +206,26 @@
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
                                             data-category="shows"
                                         >
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_are_you_okay"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Are You Okay?"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">Are You Okay?</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Wonder Media · Animated series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/are-you-okay"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_are_you_okay"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Are You Okay?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Are You Okay?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
@@ -275,21 +285,26 @@
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
                                             data-category="promos"
                                         >
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_bit_wars"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Bit Wars"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">Bit Wars</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Split Studio · Series promo</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/bit-wars"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_bit_wars"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Bit Wars"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Bit Wars</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >NuBoom · Promo</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
@@ -322,67 +337,82 @@
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
                                             data-category="shows"
                                         >
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_mr_men_little_miss"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Mr Men Little Miss"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Mr Men Little Miss</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Sanrio · Animated series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/mr-men-little-miss"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_mr_men_little_miss"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Mr Men Little Miss"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Mr Men Little Miss</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Sanrio Brazil · Promo</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
                                             data-category="shows"
                                         >
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_bubu_and_the_little_owls"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Bubu and the Little Owls"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Bubu and the Little Owls</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Mr Plot · Preschool series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/bubu-and-the-little-owls"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_bubu_and_the_little_owls"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Bubu and the Little Owls"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Bubu and the Little Owls</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Up Content · Preschool series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div
                                             class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
                                             data-category="features"
                                         >
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_the_boy_and_the_world"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="The Boy and the World"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >The Boy and the World</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Filme de Papel · Feature film</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/the-boy-and-the-world"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_the_boy_and_the_world"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="The Boy and the World"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >The Boy and the World</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Paper Films · Feature film</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
