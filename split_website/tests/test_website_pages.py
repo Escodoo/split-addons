@@ -13,6 +13,7 @@ class TestSplitWebsitePages(HttpCase):
         "/split-originals",
         "/about",
         "/contactus",
+        "/privacy",
         "/work/rick-and-morty",
         "/work/fit-ufc-true-myth",
         "/work/are-you-okay",
@@ -70,6 +71,7 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("Future Channel", body)
         self.assertIn("Motion Graphics", body)
         self.assertNotIn("banner_split_academy", body)
+        self.assertNotIn("OS ORIGINAIS SPLIT", body)
 
     def test_home_shows_split_content(self):
         body = self.url_open("/").text
@@ -78,6 +80,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("/web/image/split_website.work_tito_and_the_birds", body)
         self.assertIn("home_hero.webm", body)
         self.assertIn("home_hero_mobile.webm", body)
+        self.assertIn("/work/bit-wars", body)
+        self.assertNotIn("splitacademia.com.br", body)
 
     def test_contact_form_targets_crm_lead(self):
         body = self.url_open("/contactus").text
@@ -85,6 +89,10 @@ class TestSplitWebsitePages(HttpCase):
         # The team and medium placeholders must have been resolved at install.
         self.assertNotIn("*crm_team_intake*", body)
         self.assertNotIn("*utm_medium_website*", body)
+        self.assertNotIn("banner_hello_kitty", body)
+        self.assertIn("charcoal_cover", body)
+        self.assertIn("/privacy", body)
+        self.assertIn('name="Privacy"', body)
 
     def test_contact_form_creates_intake_lead(self):
         team = self.env["crm.team"].search([("name", "=", "Intake")], limit=1)
@@ -97,6 +105,7 @@ class TestSplitWebsitePages(HttpCase):
                 "partner_name": "Split Studio",
                 "name": "Work with Split",
                 "description": "We would like to co-produce a series.",
+                "Privacy": "on",
                 "team_id": str(team.id),
             },
         )
@@ -111,7 +120,11 @@ class TestSplitWebsitePages(HttpCase):
         body = self.url_open("/").text
         self.assertNotIn("Sign in", body)
         self.assertNotIn("Powered by", body)
+        self.assertNotIn("Extra page", body)
+        self.assertNotIn("Extra Page", body)
         self.assertNotIn('id="split_work_all"', body)
+        self.assertIn("vimeo.com/splitstudio", body)
+        self.assertIn("Sign up for our newsletter", body)
 
     def test_our_work_has_category_filter(self):
         body = self.url_open("/our-work").text
@@ -127,6 +140,7 @@ class TestSplitWebsitePages(HttpCase):
         body = self.url_open("/split-originals").text
         for url in (
             "/originals/weeboom",
+            "/originals/among-the-stars",
             "/originals/whats-up-bud",
             "/originals/the-charcoal-swordsman",
             "/originals/sun-boy-and-friends",
@@ -194,3 +208,8 @@ class TestSplitWebsitePages(HttpCase):
         # The card captions must match the official credits.
         self.assertIn("Up Content · Preschool series", body)
         self.assertNotIn("Mr Plot", body)
+
+    def test_privacy_page_explains_how_data_is_used(self):
+        body = self.url_open("/privacy").text
+        self.assertIn("How Split uses the information you send us", body)
+        self.assertIn("contato@splitstudio.tv", body)

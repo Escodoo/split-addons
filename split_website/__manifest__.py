@@ -24,6 +24,7 @@
         "data/website_view_originals.xml",
         "data/website_view_about.xml",
         "data/website_view_contactus.xml",
+        "data/website_view_privacy.xml",
         "data/website_view_projects.xml",
         "data/website_templates.xml",
         "data/website_page.xml",

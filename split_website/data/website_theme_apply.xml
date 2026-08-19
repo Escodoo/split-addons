@@ -149,4 +149,63 @@
         />
         <value eval="{'header_overlay': True}" />
     </function>
+    <!-- website.xml is noupdate; keep languages, LinkedIn and Extra page in sync. -->
+    <function name="write" model="website">
+        <value model="website" eval="[ref('website.default_website')]" />
+        <value
+            model="website"
+            eval="(lambda env: {
+                'social_linkedin': 'https://br.linkedin.com/company/splitstudio',
+                'language_ids': [(6, 0, (
+                    env['res.lang']._activate_lang('en_US')
+                    | env['res.lang']._activate_lang('pt_BR')
+                ).ids)],
+                'default_lang_id': env['res.lang']._activate_lang('en_US').id,
+            })(obj().env)"
+        />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('website.footer_custom').id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{
+                'arch': obj().env['website'].with_context(
+                    website_id=ref('website.default_website')
+                ).viewref('website.footer_custom').arch.replace(
+                    'aria-label=' + chr(34) + 'Extra page' + chr(34),
+                    'aria-label=' + chr(34) + 'Home' + chr(34),
+                ).replace(
+                    'aria-label=' + chr(34) + 'Extra Page' + chr(34),
+                    'aria-label=' + chr(34) + 'Home' + chr(34),
+                )
+            }"
+        />
+    </function>
+    <function name="write" model="website.menu">
+        <value
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                ('name', 'ilike', 'extra'),
+            ]).ids"
+        />
+        <value eval="{'is_visible': False}" />
+    </function>
+    <function name="write" model="website.page">
+        <value
+            model="website.page"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                '|',
+                ('name', 'ilike', 'extra'),
+                ('url', 'in', ('/extra', '/page/extra')),
+            ]).ids"
+        />
+        <value eval="{'is_published': False}" />
+    </function>
 </odoo>

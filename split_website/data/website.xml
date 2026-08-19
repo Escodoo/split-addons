@@ -15,7 +15,9 @@
         <field name="social_facebook">https://www.facebook.com/SplitFilmes/</field>
         <field name="social_instagram">https://www.instagram.com/splitstudiobr/</field>
         <field name="social_youtube">https://www.youtube.com/c/SplitStudioBR</field>
-        <field name="social_linkedin" />
+        <field
+            name="social_linkedin"
+        >https://br.linkedin.com/company/splitstudio</field>
         <field name="social_twitter" />
         <field name="social_tiktok" />
     </record>

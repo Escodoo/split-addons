@@ -188,6 +188,12 @@
                                                         <p
                                                             class="lead"
                                                         >Series promo on air.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/bit-wars"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -689,7 +695,7 @@
                                                 >Storyboard &amp; Animatic</li>
                                                 <li
                                                     class="mb-1"
-                                                >Character Design &amp; Backgrounds</li>
+                                                >Character &amp; Background Designs</li>
                                                 <li
                                                     class="mb-1"
                                                 >Setup &amp; Rigging</li>
@@ -713,7 +719,7 @@
                                                 >Cut Out &amp; Traditional Animation</li>
                                                 <li
                                                     class="mb-1"
-                                                >FX &amp; Motion Animation</li>
+                                                >Motion Graphics</li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-3 col-md-6 pt16 pb16">
@@ -1439,61 +1445,6 @@
                                                 alt="Wonder Media"
                                                 loading="lazy"
                                             />
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="s_newsletter_block s_newsletter_list o_cc o_cc5 pt64 pb64"
-                                data-list-id="*mailing_list_id*"
-                                data-snippet="s_newsletter_block"
-                                data-name="Newsletter"
-                            >
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <h2
-                                                class="h4-fs"
-                                            >Sign up for our newsletter</h2>
-                                            <p>
-                                                Productions, original IPs and studio news, straight to
-                                                your inbox.
-                                            </p>
-                                        </div>
-                                        <div class="col-lg-5 offset-lg-1">
-                                            <div
-                                                class="s_newsletter_subscribe_form s_newsletter_list js_subscribe"
-                                                data-vxml="001"
-                                                data-list-id="*mailing_list_id*"
-                                                data-name="Newsletter Form"
-                                            >
-                                                <div class="js_subscribed_wrap d-none">
-                                                    <p
-                                                        class="h4-fs text-center text-success"
-                                                    >
-                                                        <i
-                                                        class="fa fa-check-circle-o"
-                                                        role="img"
-                                                    />
-                                                        Thanks for registering!
-                                                    </p>
-                                                </div>
-                                                <div class="js_subscribe_wrap">
-                                                    <div class="input-group">
-                                                        <input
-                                                            type="email"
-                                                            name="email"
-                                                            class="js_subscribe_value form-control"
-                                                            placeholder="you@example.com"
-                                                        />
-                                                        <a
-                                                            role="button"
-                                                            href="#"
-                                                            class="btn btn-primary js_subscribe_btn o_submit"
-                                                        >Subscribe</a>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

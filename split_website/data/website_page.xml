@@ -31,6 +31,17 @@
             name="website_meta_description"
         >Intellectual properties created and developed inside Split Studio.</field>
     </record>
+    <record id="page_privacy" model="website.page">
+        <field name="view_id" ref="privacy" />
+        <field name="url">/privacy</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="False" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >How Split Studio uses the information you send through the website.</field>
+    </record>
     <record id="page_about" model="website.page">
         <field name="view_id" ref="about" />
         <field name="url">/about</field>

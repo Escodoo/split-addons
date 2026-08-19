@@ -83,6 +83,30 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <a
+                                                href="/originals/among-the-stars"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.banner_among_the_stars"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Among the Stars"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Among the Stars</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Game</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
                                                 href="/originals/whats-up-bud"
                                                 class="text-reset split-project-card"
                                             >

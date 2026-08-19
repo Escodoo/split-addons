@@ -42,7 +42,7 @@
                             >
                                 <span
                                     class="s_parallax_bg oe_img_bg o_bg_img_center"
-                                    style="background-image: url('/web/image/split_website.banner_hello_kitty');"
+                                    style="background-image: url('/web/image/split_website.charcoal_cover');"
                                 />
                                 <div class="o_we_bg_filter bg-black-75" />
                                 <div class="container">
@@ -342,6 +342,36 @@
                                                                             value="*utm_medium_website*"
                                                                         />
                                                                     </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_custom"
+                                                                data-type="boolean"
+                                                                data-name="Field"
+                                                            >
+                                                                <div
+                                                                    class="form-check s_website_form_boolean"
+                                                                >
+                                                                    <input
+                                                                        id="split_contact_privacy"
+                                                                        type="checkbox"
+                                                                        class="form-check-input s_website_form_input"
+                                                                        name="Privacy"
+                                                                        required=""
+                                                                    />
+                                                                    <label
+                                                                        class="form-check-label s_website_form_label"
+                                                                        for="split_contact_privacy"
+                                                                    >
+                                                                        <span
+                                                                            class="s_website_form_label_content"
+                                                                        >I agree to the <a
+                                                                            href="/privacy"
+                                                                        >privacy policy</a></span>
+                                                                        <span
+                                                                            class="s_website_form_mark"
+                                                                        > *</span>
+                                                                    </label>
                                                                 </div>
                                                             </div>
                                                             <div

@@ -37,6 +37,10 @@ BRANDING_REPLACEMENTS = (
     ('<a href="#">Products</a>', '<a href="/our-work">Our Work</a>'),
     ('<a href="#">Services</a>', '<a href="/split-originals">Split Originals</a>'),
     ('<a href="#">Legal</a>', '<a href="/reel">Reel</a>'),
+    ('<a href="/extra">Extra Page</a>', '<a href="/privacy">Privacy</a>'),
+    ('<a href="/extra">Extra page</a>', '<a href="/privacy">Privacy</a>'),
+    ('aria-label="Extra page"', 'aria-label="Home"'),
+    ('aria-label="Extra Page"', 'aria-label="Home"'),
     (
         "We are a team of passionate people whose goal is to improve everyone's "
         "life through disruptive products. We build great products to solve your "
@@ -64,39 +68,44 @@ HIDDEN_HEADER_VIEWS = (
 
 def post_init_hook(env):
     """Serve the public site in English and align the studio contact details."""
-    _serve_website_in_english(env)
+    _serve_website_languages(env)
     _rename_default_menus(env)
     _brand_header_and_footer(env)
+    _brand_social(env)
     _hide_erp_chrome(env)
+    _hide_extra_page(env)
     _overlay_public_headers(env)
     _refresh_client_logos(env)
     # base.main_company is a noupdate record, so its data cannot be set from XML.
     env.company.write(COMPANY_VALUES)
 
 
-def _serve_website_in_english(env):
-    """The site content is written in English; other locales come from i18n."""
+def _serve_website_languages(env):
+    """English is the source language; Portuguese is loaded from i18n."""
     english = env["res.lang"]._activate_lang("en_US")
+    portuguese = env["res.lang"]._activate_lang("pt_BR")
     if not english:
         _logger.warning("Split Website: en_US is unavailable, keeping the site locale")
         return
+    langs = english
+    if portuguese:
+        langs |= portuguese
     website = env.ref("website.default_website")
     website.write(
-        {"language_ids": [(6, 0, english.ids)], "default_lang_id": english.id}
+        {"language_ids": [(6, 0, langs.ids)], "default_lang_id": english.id}
     )
 
 
 def _rename_default_menus(env):
-    """Keep the menus inherited from the website module in the source language."""
+    """Keep inherited menus in the English source language."""
     menus = env["website.menu"].search(
         [
             ("website_id", "=", env.ref("website.default_website").id),
             ("url", "in", list(MENU_NAMES)),
         ]
     )
-    for lang in env["res.lang"].search([]):
-        for menu in menus.with_context(lang=lang.code):
-            menu.name = MENU_NAMES[menu.url]
+    for menu in menus.with_context(lang="en_US"):
+        menu.name = MENU_NAMES[menu.url]
 
 
 def _brand_header_and_footer(env):
@@ -116,6 +125,37 @@ def _brand_header_and_footer(env):
     for sample, branded in BRANDING_REPLACEMENTS:
         if branded not in archs:
             _logger.warning("Split Website: could not brand the sample text %r", sample)
+
+
+def _brand_social(env):
+    """website.xml is noupdate; keep the official LinkedIn on existing databases."""
+    website = env.ref("website.default_website")
+    website.write(
+        {"social_linkedin": "https://br.linkedin.com/company/splitstudio"}
+    )
+
+
+def _hide_extra_page(env):
+    """Drop the sample Extra page the Website module ships with."""
+    website_id = env.ref("website.default_website").id
+    menus = env["website.menu"].search(
+        [
+            ("website_id", "=", website_id),
+            ("name", "ilike", "extra"),
+        ]
+    )
+    if menus:
+        menus.write({"is_visible": False})
+    pages = env["website.page"].search(
+        [
+            ("website_id", "=", website_id),
+            "|",
+            ("name", "ilike", "extra"),
+            ("url", "in", ("/extra", "/page/extra")),
+        ]
+    )
+    if pages:
+        pages.write({"is_published": False})
 
 
 def _hide_erp_chrome(env):

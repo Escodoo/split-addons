@@ -18,7 +18,7 @@
                                 <img
                                     src="/web/image/split_website.about_hero"
                                     class="img img-fluid w-100"
-                                    alt=""
+                                    alt="Split Studio characters"
                                 />
                             </section>
                             <section
@@ -63,7 +63,7 @@
                                             <img
                                                 src="/web/image/split_website.about_character_01"
                                                 class="img img-fluid split-about-character"
-                                                alt=""
+                                                alt="Split brand character"
                                                 loading="lazy"
                                             />
                                         </div>
@@ -109,7 +109,7 @@
                                             <img
                                                 src="/web/image/split_website.about_character_02"
                                                 class="img img-fluid split-about-character"
-                                                alt=""
+                                                alt="Split brand character"
                                                 loading="lazy"
                                             />
                                         </div>
@@ -121,7 +121,7 @@
                                             <img
                                                 src="/web/image/split_website.about_character_03"
                                                 class="img img-fluid split-about-character"
-                                                alt=""
+                                                alt="Split brand character"
                                                 loading="lazy"
                                             />
                                         </div>
