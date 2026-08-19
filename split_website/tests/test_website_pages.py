@@ -69,7 +69,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("about_hero", body)
         self.assertIn("about_character_01", body)
         self.assertIn("Future Channel", body)
-        self.assertIn("Motion Graphics", body)
+        self.assertIn("Character Design", body)
+        self.assertIn("Motion Animation", body)
         self.assertNotIn("banner_split_academy", body)
         self.assertNotIn("OS ORIGINAIS SPLIT", body)
 
@@ -81,6 +82,7 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("home_hero.webm", body)
         self.assertIn("home_hero_mobile.webm", body)
         self.assertIn("/work/bit-wars", body)
+        self.assertIn("catarse.com.br/entreasestrelas-original", body)
         self.assertNotIn("splitacademia.com.br", body)
 
     def test_contact_form_targets_crm_lead(self):
@@ -209,6 +211,10 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("Up Content · Preschool series", body)
         self.assertNotIn("Mr Plot", body)
 
+    def test_among_the_stars_links_to_catarse(self):
+        body = self.url_open("/originals/among-the-stars").text
+        self.assertIn("catarse.com.br/entreasestrelas-original", body)
+
     def test_privacy_page_explains_how_data_is_used(self):
         body = self.url_open("/privacy").text
         self.assertIn("How Split uses the information you send us", body)
@@ -230,3 +236,30 @@ class TestSplitWebsitePages(HttpCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("Nossos trabalhos", response.text)
         self.assertIn("Inscreva-se na newsletter", response.text)
+        weeboom = self.url_open(f"/{portuguese.url_code}/originals/weeboom")
+        self.assertEqual(weeboom.status_code, 200)
+        self.assertIn("Personagens", weeboom.text)
+        self.assertIn("Aventureira", weeboom.text)
+        self.assertIn("4 a 7 anos", weeboom.text)
+        home_pt = self.url_open(f"/{portuguese.url_code}/")
+        self.assertEqual(home_pt.status_code, 200)
+        self.assertIn("Entre as Estrelas", home_pt.text)
+        self.assertIn("Apoie no Catarse", home_pt.text)
+        about = self.url_open(f"/{portuguese.url_code}/about")
+        self.assertEqual(about.status_code, 200)
+        self.assertIn("Somos a Split", about.text)
+        self.assertIn("Já percebeu que a personagem", about.text)
+        charcoal = self.url_open(
+            f"/{portuguese.url_code}/originals/the-charcoal-swordsman"
+        )
+        self.assertEqual(charcoal.status_code, 200)
+        self.assertIn("O Espadachim de Carvão", charcoal.text)
+        self.assertIn("Fiel companheira", charcoal.text)
+        children = self.url_open(
+            f"/{portuguese.url_code}/originals/children-of-the-world"
+        )
+        self.assertEqual(children.status_code, 200)
+        self.assertIn("Crianças do Mundo", children.text)
+        contact = self.url_open(f"/{portuguese.url_code}/contactus")
+        self.assertEqual(contact.status_code, 200)
+        self.assertIn("Fale conosco", contact.text)

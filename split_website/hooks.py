@@ -66,6 +66,12 @@ HIDDEN_HEADER_VIEWS = (
 )
 
 
+COPIED_VIEWS = (
+    ("split_website.homepage", "website.homepage"),
+    ("split_website.contactus", "website.contactus"),
+)
+
+
 def post_init_hook(env):
     """Serve the public site in English and align the studio contact details."""
     _serve_website_languages(env)
@@ -76,8 +82,39 @@ def post_init_hook(env):
     _hide_extra_page(env)
     _overlay_public_headers(env)
     _refresh_client_logos(env)
+    sync_copied_view_translations(env)
     # base.main_company is a noupdate record, so its data cannot be set from XML.
     env.company.write(COMPANY_VALUES)
+
+
+def sync_copied_view_translations(env):
+    """Copy term translations onto the live home and contact views.
+
+    Those pages replace ``website.homepage`` / ``website.contactus`` on every
+    update. Website copy-on-write stores the public arch on a specific view,
+    so the ``split_website`` PO terms would otherwise stay on the source
+    records and never reach ``/pt``.
+    """
+    portuguese = env["res.lang"].search([("code", "=", "pt_BR")], limit=1)
+    if not portuguese:
+        return
+    website = env.ref("website.default_website", raise_if_not_found=False)
+    if not website:
+        return
+    website = website.with_context(website_id=website.id)
+    for src_xmlid, dest_key in COPIED_VIEWS:
+        source = env.ref(src_xmlid, raise_if_not_found=False)
+        if source is None:
+            continue
+        dest = website.viewref(dest_key)
+        terms, _context = source.get_field_translations("arch_db", langs=["pt_BR"])
+        mapping = {
+            term["source"]: term["value"]
+            for term in terms
+            if term.get("lang") == "pt_BR" and term.get("value")
+        }
+        if mapping:
+            dest.update_field_translations("arch_db", {"pt_BR": mapping})
 
 
 def _serve_website_languages(env):
