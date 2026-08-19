@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_crm_lead_kanban" model="ir.ui.view">
+        <field name="name">crm.lead.kanban.inherit.split.crm.custom</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.view_crm_lead_kanban" />
+        <field name="arch" type="xml">
+            <kanban position="attributes">
+                <attribute name="default_group_by">stage_id</attribute>
+                <attribute
+                    name="class"
+                >o_kanban_mobile o_kanban_small_column</attribute>
+            </kanban>
+            <xpath expr="//kanban/templates" position="before">
+                <field
+                    name="stage_id"
+                    options="{'group_by_tooltip': {'requirements': 'Description'}}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_crm_case_leads_filter" model="ir.ui.view">
+        <field name="name">crm.lead.search.lead.inherit.split.crm.custom</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.view_crm_case_leads_filter" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='salesperson']" position="before">
+                <filter
+                    name="stage"
+                    string="Stage"
+                    context="{'group_by': 'stage_id'}"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="crm.crm_lead_all_leads" model="ir.actions.act_window">
+        <field name="view_mode">kanban,list,graph,pivot,calendar,form,activity</field>
+        <field name="context">{
+                'default_type': 'lead',
+                'search_default_type': 'lead',
+                'search_default_to_process': 1,
+            }</field>
+    </record>
+
+    <record id="crm.crm_lead_all_leads_view_kanban" model="ir.actions.act_window.view">
+        <field name="sequence" eval="0" />
+    </record>
+    <record id="crm.crm_lead_all_leads_view_tree" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2" />
+    </record>
+
+    <record
+        id="crm.crm_case_form_view_salesteams_opportunity"
+        model="ir.actions.act_window"
+    >
+        <field name="view_mode">kanban,list,graph,form,calendar,pivot,activity</field>
+    </record>
+    <record
+        id="crm.crm_lead_action_team_overdue_opportunity"
+        model="ir.actions.act_window"
+    >
+        <field name="view_mode">kanban,list,graph,form,calendar,pivot,activity</field>
+    </record>
+</odoo>
