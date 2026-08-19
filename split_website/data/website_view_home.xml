@@ -15,15 +15,28 @@
                     <div id="wrap">
                         <div id="oe_structure_split_website_home" class="oe_structure">
                             <section
-                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                class="s_cover split-hero o_cc o_cc5"
                                 data-vcss="001"
                                 data-snippet="s_cover"
                                 data-name="Cover"
-                                data-scroll-background-ratio="1"
                             >
-                                <span
-                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
-                                    style="background-image: url('/web/image/split_website.banner_rick_and_morty'); background-position: 50% 50%;"
+                                <video
+                                    class="split-hero-video split-hero-video-desktop"
+                                    src="/split_website/static/src/video/home_hero.webm"
+                                    autoplay="autoplay"
+                                    muted="muted"
+                                    loop="loop"
+                                    playsinline="playsinline"
+                                    preload="metadata"
+                                />
+                                <video
+                                    class="split-hero-video split-hero-video-mobile"
+                                    src="/split_website/static/src/video/home_hero_mobile.webm"
+                                    autoplay="autoplay"
+                                    muted="muted"
+                                    loop="loop"
+                                    playsinline="playsinline"
+                                    preload="metadata"
                                 />
                                 <div class="o_we_bg_filter bg-black-25" />
                                 <div class="container">

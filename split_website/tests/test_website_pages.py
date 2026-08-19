@@ -49,6 +49,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("Animation & Games", body)
         self.assertIn("What Split does", body)
         self.assertIn("/web/image/split_website.work_tito_and_the_birds", body)
+        self.assertIn("home_hero.webm", body)
+        self.assertIn("home_hero_mobile.webm", body)
 
     def test_contact_form_targets_crm_lead(self):
         body = self.url_open("/contactus").text

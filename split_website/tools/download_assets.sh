@@ -41,6 +41,12 @@ mkdir -p "${VIDEO_DIR}"
 curl -fsSL --max-time 120 -A "Mozilla/5.0" \
     "https://splitstudio.tv/wp-content/uploads/2020/06/Wee_Boom_Header_Split_Studio_720x404_1.mp4" \
     -o "${VIDEO_DIR}/weeboom_hero.mp4"
+curl -fsSL --max-time 120 -A "Mozilla/5.0" \
+    "https://splitstudio.tv/wp-content/uploads/2022/08/SPLIT_REEL_2022_SITE_HOME_DESKTOP_1920x1080-3.webm" \
+    -o "${VIDEO_DIR}/home_hero.webm"
+curl -fsSL --max-time 120 -A "Mozilla/5.0" \
+    "https://splitstudio.tv/wp-content/uploads/2022/08/SPLIT_REEL_2022_SITE_HOME_MOBILE_1080x1920_1-1.webm" \
+    -o "${VIDEO_DIR}/home_hero_mobile.webm"
 
 python3 "${MODULE_DIR}/tools/build_attachment_xml.py"
 
