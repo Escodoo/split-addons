@@ -36,7 +36,13 @@ else
     echo "magick not found, keeping the current brand_logo_png.png" >&2
 fi
 
+VIDEO_DIR="${MODULE_DIR}/static/src/video"
+mkdir -p "${VIDEO_DIR}"
+curl -fsSL --max-time 120 -A "Mozilla/5.0" \
+    "https://splitstudio.tv/wp-content/uploads/2020/06/Wee_Boom_Header_Split_Studio_720x404_1.mp4" \
+    -o "${VIDEO_DIR}/weeboom_hero.mp4"
+
 python3 "${MODULE_DIR}/tools/build_attachment_xml.py"
 
 echo "Done. Total size:"
-du -sh "${TARGET_DIR}"
+du -sh "${TARGET_DIR}" "${VIDEO_DIR}"

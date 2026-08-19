@@ -60,21 +60,26 @@
                                             </p>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_weeboom"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="WeeBoom"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">WeeBoom</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Original IP · Preschool series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/weeboom"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_weeboom"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="WeeBoom"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">WeeBoom</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Preschool series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <figure class="mb-0">

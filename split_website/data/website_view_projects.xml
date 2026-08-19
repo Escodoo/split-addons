@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="project_rick_and_morty" model="ir.ui.view">
+        <field name="name">Split Studio - Rick and Morty</field>
+        <field name="key">split_website.project_rick_and_morty</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Rick and Morty" t-name="split_website.project_rick_and_morty">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_rick_and_morty"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_rick_and_morty');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/our-work">Our Work</a>
+                                            </p>
+                                            <h1 class="display-2-fs">Rick and Morty</h1>
+                                            <p
+                                                class="lead mb-0"
+                                            >Bardel · Animated episodes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">Bardel</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Format</p>
+                                            <p class="mb-0">Season 5 episodes</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Services</p>
+                                            <p class="mb-0">2D Animation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.work_rick_and_morty"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Rick and Morty"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >Split joined Bardel on season 5 of Rick and Morty, delivering 2D animation for one of Adult Swim's flagship comedies. The episodes sit in the studio's international service slate, next to other long-running series produced for US networks.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Start a project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_hello_kitty" model="ir.ui.view">
+        <field
+            name="name"
+        >Split Studio - Hello Kitty and Friends Supercute Adventures</field>
+        <field name="key">split_website.project_hello_kitty</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t
+                name="Hello Kitty and Friends Supercute Adventures"
+                t-name="split_website.project_hello_kitty"
+            >
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_hello_kitty"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_hello_kitty');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/our-work">Our Work</a>
+                                            </p>
+                                            <h1
+                                                class="display-2-fs"
+                                            >Hello Kitty and Friends Supercute Adventures</h1>
+                                            <p class="lead mb-0">Sanrio · Web series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">Sanrio Brazil</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Format</p>
+                                            <p class="mb-0">75 x 3′</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Services</p>
+                                            <p
+                                                class="mb-0"
+                                            >Direction, Storyboard &amp; Animatic, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.work_hello_kitty_supercute"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Hello Kitty and Friends Supercute Adventures"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >Split directs and produces new episodes of Hello Kitty and Friends Supercute Adventures for Sanrio Brazil, covering the full 2D pipeline from storyboard to mix. Fresh episodes land on the Hello Kitty Brazil, Mexico and Latin America YouTube channels every Wednesday.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Start a project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_tito_and_the_birds" model="ir.ui.view">
+        <field name="name">Split Studio - Tito and the Birds</field>
+        <field name="key">split_website.project_tito_and_the_birds</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t
+                name="Tito and the Birds"
+                t-name="split_website.project_tito_and_the_birds"
+            >
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_tito_and_the_birds"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.work_tito_and_the_birds');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/our-work">Our Work</a>
+                                            </p>
+                                            <h1
+                                                class="display-2-fs"
+                                            >Tito and the Birds</h1>
+                                            <p
+                                                class="lead mb-0"
+                                            >Bit Productions · Feature film</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">Bit Productions</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Release year</p>
+                                            <p class="mb-0">2018</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Services</p>
+                                            <p
+                                                class="mb-0"
+                                            >Storyboard &amp; Animatic, Character Design, Props, Backgrounds, Builds, 2D Animation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.work_tito_and_the_birds"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Tito and the Birds"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >Feature-length animation produced with Bit Productions. Split joined for storyboard, design, backgrounds, builds and 2D animation, raising the quality of the conception, animation and art that took Tito to festivals around the world.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Start a project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_my_life_is_worth_living" model="ir.ui.view">
+        <field name="name">Split Studio - My Life Is Worth Living</field>
+        <field name="key">split_website.project_my_life_is_worth_living</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t
+                name="My Life Is Worth Living"
+                t-name="split_website.project_my_life_is_worth_living"
+            >
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_my_life_is_worth_living"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.work_my_life_is_worth_living');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/our-work">Our Work</a>
+                                            </p>
+                                            <h1
+                                                class="display-2-fs"
+                                            >My Life Is Worth Living</h1>
+                                            <p
+                                                class="lead mb-0"
+                                            >Wonder Media · Animated series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">Wonder Media</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Format</p>
+                                            <p class="mb-0">20 x 5 min</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Services</p>
+                                            <p
+                                                class="mb-0"
+                                            >Storyboard &amp; Animatic, Character Designs, Props, Backgrounds, Builds, 2D Animation, Editing, Compositing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.work_my_life_is_worth_living"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="My Life Is Worth Living"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >A 20 x 5 minute series produced with Wonder Media. The stories were designed to communicate through social causes, and Split handled the 2D pipeline from storyboard and character design through animation, editing and compositing.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Start a project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_monica_and_friends" model="ir.ui.view">
+        <field name="name">Split Studio - Monica and Friends</field>
+        <field name="key">split_website.project_monica_and_friends</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t
+                name="Monica and Friends"
+                t-name="split_website.project_monica_and_friends"
+            >
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_monica_and_friends"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_monica_and_friends');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/our-work">Our Work</a>
+                                            </p>
+                                            <h1
+                                                class="display-2-fs"
+                                            >Monica and Friends</h1>
+                                            <p
+                                                class="lead mb-0"
+                                            >Mauricio de Sousa Produções · TV series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">Cartoon Network</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Format</p>
+                                            <p class="mb-0">52 x 7′</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Services</p>
+                                            <p
+                                                class="mb-0"
+                                            >Direction, Script, Storyboard &amp; Animatic, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.work_monica_and_friends"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Monica and Friends"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >Classic Monica and Friends episodes produced for Cartoon Network: 52 x 7 minutes, from direction and script through the full 2D pipeline. The series is one of the most watched Brazilian shows on the channel.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Start a project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_fit_ufc" model="ir.ui.view">
+        <field name="name">Split Studio - Fit UFC | True Myth</field>
+        <field name="key">split_website.project_fit_ufc</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Fit UFC | True Myth" t-name="split_website.project_fit_ufc">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_fit_ufc"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.work_fit_ufc');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="/our-work">Our Work</a>
+                                            </p>
+                                            <h1
+                                                class="display-2-fs"
+                                            >Fit UFC | True Myth</h1>
+                                            <p
+                                                class="lead mb-0"
+                                            >UFC · Branded series</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">UFC</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Format</p>
+                                            <p class="mb-0">Branded series</p>
+                                        </div>
+                                        <div class="col-lg-8 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Services</p>
+                                            <p
+                                                class="mb-0"
+                                            >Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, Mix</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.work_fit_ufc"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Fit UFC | True Myth"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >Branded shorts produced for UFC, mixing fight mythology with Split's 2D pipeline. The studio covered the show from direction and script through voices, animation, sound and mix.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Start a project</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_weeboom" model="ir.ui.view">
+        <field name="name">Split Studio - WeeBoom</field>
+        <field name="key">split_website.project_weeboom</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="WeeBoom" t-name="split_website.project_weeboom">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_weeboom"
+                            class="oe_structure"
+                        >
+                            <section class="split-ip-hero" data-name="Cover">
+                                <video
+                                    class="split-ip-hero-video"
+                                    src="/split_website/static/src/video/weeboom_hero.mp4"
+                                    autoplay="autoplay"
+                                    muted="muted"
+                                    loop="loop"
+                                    playsinline="playsinline"
+                                    preload="metadata"
+                                />
+                                <div class="split-ip-hero-mark">
+                                    <img
+                                        src="/web/image/split_website.weeboom_logo"
+                                        class="img img-fluid"
+                                        alt="WeeBoom"
+                                    />
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="About"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-start">
+                                        <div class="col-lg-2 col-md-3 text-center pb32">
+                                            <img
+                                                src="/web/image/split_website.weeboom_seal"
+                                                class="img img-fluid split-ip-seal"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p class="mb-2">
+                                                <a
+                                                    href="/split-originals"
+                                                >Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs mb-3">WeeBoom</h1>
+                                            <p
+                                                class="h3-fs mb-2"
+                                            >26 x 7′ | 4 to 7 years old</p>
+                                            <p
+                                                class="h3-fs mb-4"
+                                            >Comedy | Adventure | Travel</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <ul class="mb-4">
+                                                <li
+                                                >Season 1 available in Portuguese and Spanish, in multiple territories. Sample English episodes available.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <p
+                                                class="lead"
+                                            >WEE is an adventurous, smart and strong-willed rabbit. BOOM is a goofy mythical creature full of special powers. Together, they travel through cities around the world in search of capturing the BOOMIES, fun little magical creatures that are spreading chaos everywhere!</p>
+                                            <p
+                                            >Wee and Boom are two friends who travel the world to capture some fun and magical creatures, the Boomies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Characters"
+                            >
+                                <div class="container">
+                                    <h2 class="text-center mb-5">Characters</h2>
+                                    <div class="row">
+                                        <div class="col-lg-4 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.weeboom_character_wee"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Wee"
+                                            />
+                                            <h3>Wee</h3>
+                                            <p
+                                                class="text-uppercase o_small mb-2"
+                                            >The Adventure</p>
+                                            <p
+                                            >Wee lives for adventures. In one of them, she accidentally woke Boom from centuries of slumber. By doing so, she also accidentally brought the Boomies into the world. Now they are lost and out there. Wee is a caring, athletic and competitive friend, and capturing Boomies has become her mission.</p>
+                                        </div>
+                                        <div class="col-lg-4 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.weeboom_character_boom"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Boom"
+                                            />
+                                            <h3>Boom</h3>
+                                            <p
+                                                class="text-uppercase o_small mb-2"
+                                            >The Mythological Giant</p>
+                                            <p
+                                            >Boom is silly, sweet and is also the guardian of all the sounds in the universe. Inside his body one will find a library of sounds, managed by the Boomies. Boom is always looking for fun, and despite his naivety and lack of attention, he is Wee's best friend and greatest ally.</p>
+                                        </div>
+                                        <div class="col-lg-4 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.weeboom_character_boomies"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Boomies"
+                                            />
+                                            <h3>Boomies</h3>
+                                            <p
+                                                class="text-uppercase o_small mb-2"
+                                            >Run Away from Them!</p>
+                                            <p
+                                            >Boomies are cute yellow creatures that live inside Boom, where they take care of all the sounds of the universe. They are now lost to the world and go crazy listening to music. When that happens, they use their magical powers to set wherever they are on chaos. Watch out!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                data-snippet="s_images_wall"
+                                data-name="Gallery"
+                            >
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_01"
+                                                class="img img-fluid w-100"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_02"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_03"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_04"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Episodes"
+                            >
+                                <div class="container">
+                                    <h2
+                                        class="text-center mb-5"
+                                    >Check out some episode synopses</h2>
+                                    <div class="row">
+                                        <div class="col-lg-6 pt16 pb32 split-episode">
+                                            <img
+                                                src="/web/image/split_website.weeboom_episode_01"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Episode 01"
+                                            />
+                                            <h3>Ep 01 – Mamma Mia!</h3>
+                                            <p
+                                                class="text-uppercase o_small mb-2"
+                                            >Palermo, Italy</p>
+                                            <p
+                                            >Hmmm, I'm so hungry! Wee and Boom look for a Boomie in the city of Palermo, Italy, famous for its tarantella and pasta. A very hungry Wee and Boom stumble upon a restaurant whose boss seems to be crazy, turning the place and customers upside down. That smells like Boomie!</p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb32 split-episode">
+                                            <img
+                                                src="/web/image/split_website.weeboom_episode_02"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Episode 02"
+                                            />
+                                            <h3>Ep 02 – Ah, I'amour…</h3>
+                                            <p
+                                                class="text-uppercase o_small mb-2"
+                                            >Paris, France</p>
+                                            <p
+                                            >Ah, Paris, the city of love! Wee and Boom are looking for a Boomie in this très magnifique city, whose inhabitants seem to be more in love than usual. The contagious love will even hit Wee, who gets extremely in love with Boom. Now Boom will have to find a way to capture the Boomie so that Wee and the city return to normal.</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-center pt16 mb-0">
+                                        <a
+                                            href="/contactus"
+                                            class="btn btn-primary"
+                                        >Co-produce with us</a>
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="project_among_the_stars" model="ir.ui.view">
+        <field name="name">Split Studio - Among the Stars</field>
+        <field name="key">split_website.project_among_the_stars</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Among the Stars" t-name="split_website.project_among_the_stars">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_project_among_the_stars"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_among_the_stars');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a
+                                                    href="/split-originals"
+                                                >Split Originals</a>
+                                            </p>
+                                            <h1
+                                                class="display-2-fs"
+                                            >Among the Stars</h1>
+                                            <p class="lead mb-0">Split Studio · Game</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Client</p>
+                                            <p class="mb-0">Split Studio</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Format</p>
+                                            <p class="mb-0">Game</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt8 pb16">
+                                            <p
+                                                class="o_small text-uppercase mb-1"
+                                            >Status</p>
+                                            <p class="mb-0">In development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.banner_among_the_stars"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="Among the Stars"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p
+                                                class="lead"
+                                            >Among the Stars is an original game created inside Split. The studio is developing the world, characters and animation in house and inviting the audience to help make the project a reality on Catarse.</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >Co-produce with us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

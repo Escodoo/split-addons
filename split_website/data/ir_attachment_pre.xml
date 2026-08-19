@@ -192,32 +192,32 @@
         <field name="public" eval="True" />
     </record>
     <record id="client_boomerang" model="ir.attachment">
-        <field name="name">client_boomerang.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_boomerang.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_boomerang.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_boomerang.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_canal_futura" model="ir.attachment">
-        <field name="name">client_canal_futura.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_canal_futura.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_canal_futura.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_canal_futura.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_cartoon_network" model="ir.attachment">
-        <field name="name">client_cartoon_network.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_cartoon_network.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_cartoon_network.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_cartoon_network.png"
         />
         <field name="public" eval="True" />
     </record>
@@ -232,182 +232,182 @@
         <field name="public" eval="True" />
     </record>
     <record id="client_childhood" model="ir.attachment">
-        <field name="name">client_childhood.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_childhood.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_childhood.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_childhood.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_comedy_central" model="ir.attachment">
-        <field name="name">client_comedy_central.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_comedy_central.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_comedy_central.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_comedy_central.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_disney_jr" model="ir.attachment">
-        <field name="name">client_disney_jr.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_disney_jr.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_disney_jr.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_disney_jr.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_globo" model="ir.attachment">
-        <field name="name">client_globo.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_globo.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_globo.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_globo.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_gloobinho" model="ir.attachment">
-        <field name="name">client_gloobinho.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_gloobinho.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_gloobinho.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_gloobinho.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_gullane" model="ir.attachment">
-        <field name="name">client_gullane.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_gullane.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_gullane.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_gullane.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_instituto_ayrton_senna" model="ir.attachment">
-        <field name="name">client_instituto_ayrton_senna.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_instituto_ayrton_senna.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_instituto_ayrton_senna.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_instituto_ayrton_senna.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_mixer_films" model="ir.attachment">
-        <field name="name">client_mixer_films.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_mixer_films.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_mixer_films.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_mixer_films.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_mr_plot" model="ir.attachment">
-        <field name="name">client_mr_plot.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_mr_plot.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_mr_plot.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_mr_plot.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_msp" model="ir.attachment">
-        <field name="name">client_msp.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_msp.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_msp.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_msp.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_nickelodeon" model="ir.attachment">
-        <field name="name">client_nickelodeon.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_nickelodeon.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_nickelodeon.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_nickelodeon.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_paranoid" model="ir.attachment">
-        <field name="name">client_paranoid.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_paranoid.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_paranoid.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_paranoid.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_record" model="ir.attachment">
-        <field name="name">client_record.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_record.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_record.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_record.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_riot" model="ir.attachment">
-        <field name="name">client_riot.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_riot.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_riot.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_riot.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_sanrio" model="ir.attachment">
-        <field name="name">client_sanrio.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_sanrio.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_sanrio.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_sanrio.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_unicef" model="ir.attachment">
-        <field name="name">client_unicef.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_unicef.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_unicef.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_unicef.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_up_content" model="ir.attachment">
-        <field name="name">client_up_content.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_up_content.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_up_content.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_up_content.png"
         />
         <field name="public" eval="True" />
     </record>
     <record id="client_wonder_media" model="ir.attachment">
-        <field name="name">client_wonder_media.jpg</field>
-        <field name="mimetype">image/jpeg</field>
+        <field name="name">client_wonder_media.png</field>
+        <field name="mimetype">image/png</field>
         <field
             name="datas"
             type="base64"
-            file="split_website/static/src/binary/ir_attachment/client_wonder_media.jpg"
+            file="split_website/static/src/binary/ir_attachment/client_wonder_media.png"
         />
         <field name="public" eval="True" />
     </record>
@@ -598,6 +598,116 @@
             name="datas"
             type="base64"
             file="split_website/static/src/binary/ir_attachment/team_jonas_brandao.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_character_boom" model="ir.attachment">
+        <field name="name">weeboom_character_boom.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_character_boom.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_character_boomies" model="ir.attachment">
+        <field name="name">weeboom_character_boomies.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_character_boomies.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_character_wee" model="ir.attachment">
+        <field name="name">weeboom_character_wee.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_character_wee.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_episode_01" model="ir.attachment">
+        <field name="name">weeboom_episode_01.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_episode_01.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_episode_02" model="ir.attachment">
+        <field name="name">weeboom_episode_02.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_episode_02.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_logo" model="ir.attachment">
+        <field name="name">weeboom_logo.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_logo.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_seal" model="ir.attachment">
+        <field name="name">weeboom_seal.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_seal.png"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_still_01" model="ir.attachment">
+        <field name="name">weeboom_still_01.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_still_01.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_still_02" model="ir.attachment">
+        <field name="name">weeboom_still_02.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_still_02.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_still_03" model="ir.attachment">
+        <field name="name">weeboom_still_03.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_still_03.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="weeboom_still_04" model="ir.attachment">
+        <field name="name">weeboom_still_04.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/weeboom_still_04.png"
         />
         <field name="public" eval="True" />
     </record>

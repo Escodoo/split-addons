@@ -1,0 +1,124 @@
+// Copyright 2026 Escodoo
+// License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+.split-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+
+    .container {
+        padding-bottom: 3rem;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+}
+
+.o_header_overlay header {
+    box-shadow: none;
+}
+
+.split-work-filter {
+    input[type="radio"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    label {
+        cursor: pointer;
+        margin: 0 0.75rem 0.75rem 0;
+        padding-bottom: 0.2rem;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.8rem;
+    }
+
+    input:checked + label {
+        border-bottom-color: #f05983;
+        color: #fff;
+    }
+
+    #split_work_shows:checked ~ .row .split-work-item:not([data-category="shows"]),
+    #split_work_features:checked
+        ~ .row
+        .split-work-item:not([data-category="features"]),
+    #split_work_branded:checked ~ .row .split-work-item:not([data-category="branded"]),
+    #split_work_promos:checked ~ .row .split-work-item:not([data-category="promos"]) {
+        display: none;
+    }
+}
+
+.split-project-card {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover h4 {
+        color: #f05983;
+    }
+}
+
+.s_references img {
+    background-color: transparent;
+    max-height: 4.5rem;
+    width: auto;
+    object-fit: contain;
+}
+
+.split-ip-hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #111;
+
+    .split-ip-hero-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .split-ip-hero-mark {
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 1.5rem 3rem;
+
+        img {
+            max-width: 20rem;
+            width: 70%;
+            height: auto;
+        }
+    }
+}
+
+.split-ip-seal {
+    max-width: 7rem;
+}
+
+.split-project-facts .o_small {
+    letter-spacing: 0.08em;
+    color: #8ecff6;
+}
+
+.split-character,
+.split-episode {
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+}
+
+.split-gallery img {
+    width: 100%;
+    display: block;
+}

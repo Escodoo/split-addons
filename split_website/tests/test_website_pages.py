@@ -6,7 +6,17 @@ from odoo.tests import HttpCase, tagged
 
 @tagged("post_install", "-at_install")
 class TestSplitWebsitePages(HttpCase):
-    PAGE_URLS = ["/", "/reel", "/our-work", "/split-originals", "/about", "/contactus"]
+    PAGE_URLS = [
+        "/",
+        "/reel",
+        "/our-work",
+        "/split-originals",
+        "/about",
+        "/contactus",
+        "/work/rick-and-morty",
+        "/originals/weeboom",
+        "/originals/among-the-stars",
+    ]
 
     def test_pages_are_reachable(self):
         for url in self.PAGE_URLS:
@@ -16,9 +26,22 @@ class TestSplitWebsitePages(HttpCase):
 
     def test_pages_are_published(self):
         pages = self.env["website.page"].search(
-            [("url", "in", ["/reel", "/our-work", "/split-originals", "/about"])]
+            [
+                (
+                    "url",
+                    "in",
+                    [
+                        "/reel",
+                        "/our-work",
+                        "/split-originals",
+                        "/about",
+                        "/work/rick-and-morty",
+                        "/originals/weeboom",
+                    ],
+                )
+            ]
         )
-        self.assertEqual(len(pages), 4)
+        self.assertEqual(len(pages), 6)
         self.assertTrue(all(pages.mapped("is_published")))
 
     def test_home_shows_split_content(self):
@@ -55,6 +78,34 @@ class TestSplitWebsitePages(HttpCase):
         self.assertTrue(lead, "The contact form must create a lead")
         self.assertEqual(lead.team_id, team)
 
+    def test_public_chrome_is_hidden(self):
+        body = self.url_open("/").text
+        self.assertNotIn("Sign in", body)
+        self.assertNotIn("Powered by", body)
+        self.assertNotIn('id="split_work_all"', body)
+
+    def test_our_work_has_category_filter(self):
+        body = self.url_open("/our-work").text
+        self.assertIn('id="split_work_all"', body)
+        self.assertIn('data-category="shows"', body)
+        self.assertIn("/work/rick-and-morty", body)
+
     def test_newsletter_list_is_resolved(self):
         body = self.url_open("/").text
         self.assertNotIn("*mailing_list_id*", body)
+
+    def test_weeboom_is_a_full_ip_page(self):
+        body = self.url_open("/originals/weeboom").text
+        self.assertIn("26 x 7", body)
+        self.assertIn("Comedy | Adventure | Travel", body)
+        self.assertIn("Characters", body)
+        self.assertIn("The Adventure", body)
+        self.assertIn("Mamma Mia", body)
+        self.assertIn("weeboom_hero.mp4", body)
+        self.assertIn("/web/image/split_website.weeboom_character_wee", body)
+
+    def test_work_page_lists_credits(self):
+        body = self.url_open("/work/hello-kitty-supercute").text
+        self.assertIn("Sanrio Brazil", body)
+        self.assertIn("75 x 3", body)
+        self.assertIn("Storyboard", body)

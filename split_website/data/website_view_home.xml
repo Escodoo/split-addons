@@ -15,7 +15,7 @@
                     <div id="wrap">
                         <div id="oe_structure_split_website_home" class="oe_structure">
                             <section
-                                class="s_cover parallax s_parallax_is_fixed pt128 pb128 o_cc o_cc5"
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
                                 data-vcss="001"
                                 data-snippet="s_cover"
                                 data-name="Cover"
@@ -23,29 +23,20 @@
                             >
                                 <span
                                     class="s_parallax_bg oe_img_bg o_bg_img_center"
-                                    style="background-image: url('/web/image/split_website.banner_among_the_stars'); background-position: 50% 50%;"
+                                    style="background-image: url('/web/image/split_website.banner_rick_and_morty'); background-position: 50% 50%;"
                                 />
-                                <div class="o_we_bg_filter bg-black-75" />
+                                <div class="o_we_bg_filter bg-black-25" />
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-6 offset-lg-6 text-lg-end">
                                             <h1
                                                 class="display-1-fs"
                                             >Animation &amp; Games</h1>
-                                            <p class="lead">
-                                                Storytelling in animation and games. Since 2009 Split
-                                                has been creating and producing animated stories for
-                                                some of the biggest brands in the world.
-                                            </p>
-                                            <p>
+                                            <p class="mb-0">
                                                 <a
                                                     href="/reel"
                                                     class="btn btn-primary btn-lg"
                                                 >Watch Split's Reel</a>
-                                                <a
-                                                    href="/our-work"
-                                                    class="btn btn-outline-secondary btn-lg ms-2"
-                                                >Our Work</a>
                                             </p>
                                         </div>
                                     </div>
@@ -84,7 +75,7 @@
                                                         >Split original — help make this game a reality at Catarse.</p>
                                                         <p>
                                                             <a
-                                                                href="/split-originals"
+                                                                href="/originals/among-the-stars"
                                                                 class="btn btn-primary"
                                                             >Discover the project</a>
                                                         </p>
@@ -130,6 +121,12 @@
                                                         <p
                                                             class="lead"
                                                         >Animated episodes produced for the fifth season.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/rick-and-morty"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,6 +148,12 @@
                                                         <p
                                                             class="lead"
                                                         >New episodes on YouTube every Wednesday.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/hello-kitty-supercute"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -193,6 +196,12 @@
                                                         <p
                                                             class="lead"
                                                         >The most watched Brazilian show on Cartoon Network.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/monica-and-friends"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -290,42 +299,52 @@
                                             </p>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_my_life_is_worth_living"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="My Life Is Worth Living"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >My Life Is Worth Living</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Wonder Media · Animated series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/my-life-is-worth-living"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_my_life_is_worth_living"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="My Life Is Worth Living"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >My Life Is Worth Living</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_fit_ufc"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Fit UFC | True Myth"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Fit UFC | True Myth</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >UFC · Branded series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/fit-ufc-true-myth"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_fit_ufc"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Fit UFC | True Myth"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Fit UFC | True Myth</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >UFC · Branded series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <figure class="mb-0">
@@ -347,23 +366,28 @@
                                             </figure>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_tito_and_the_birds"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Tito and the Birds"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4
-                                                        class="mb-0"
-                                                    >Tito and the Birds</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Bits Produções · Feature film</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/tito-and-the-birds"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_tito_and_the_birds"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Tito and the Birds"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Tito and the Birds</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Bits Produções · Feature film</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <figure class="mb-0">
@@ -383,21 +407,28 @@
                                             </figure>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.work_rick_and_morty"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="Rick and Morty"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">Rick and Morty</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Adult Swim · Animated episodes</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/work/rick-and-morty"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_rick_and_morty"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Rick and Morty"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Rick and Morty</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Adult Swim · Animated episodes</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -427,21 +458,26 @@
                                             </p>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
-                                            <figure class="mb-0">
-                                                <img
-                                                    src="/web/image/split_website.original_weeboom"
-                                                    class="img img-fluid w-100"
-                                                    style="aspect-ratio: 16 / 9; object-fit: cover;"
-                                                    alt="WeeBoom"
-                                                    loading="lazy"
-                                                />
-                                                <figcaption class="pt-2">
-                                                    <h4 class="mb-0">WeeBoom</h4>
-                                                    <p
-                                                        class="o_small mb-0"
-                                                    >Original IP · Preschool series</p>
-                                                </figcaption>
-                                            </figure>
+                                            <a
+                                                href="/originals/weeboom"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_weeboom"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="WeeBoom"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">WeeBoom</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Preschool series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
                                         </div>
                                         <div class="col-lg-4 col-md-6 pt16 pb16">
                                             <figure class="mb-0">

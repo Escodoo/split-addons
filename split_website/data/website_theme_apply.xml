@@ -84,6 +84,43 @@
             )}"
         />
     </function>
+    <!-- Drop the ERP chrome that the studio site never shows. -->
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('website.header_search_box').id"
+        />
+        <value eval="{'active': False}" />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('website.header_text_element').id"
+        />
+        <value eval="{'active': False}" />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('website.header_call_to_action').id"
+        />
+        <value eval="{'active': False}" />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('website.default_website')
+            ).viewref('portal.user_sign_in').id"
+        />
+        <value eval="{'active': False}" />
+    </function>
     <function name="write" model="ir.ui.view">
         <value
             model="ir.ui.view"
@@ -102,5 +139,14 @@
                 str(obj().env.ref('utm.utm_medium_website').id),
             )}"
         />
+    </function>
+    <function name="write" model="website.page">
+        <value
+            model="website.page"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+            ]).ids"
+        />
+        <value eval="{'header_overlay': True}" />
     </function>
 </odoo>

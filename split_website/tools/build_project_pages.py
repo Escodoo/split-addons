@@ -1,0 +1,830 @@
+# Copyright 2026 Escodoo
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+"""Generate project pages and wrap gallery cards with their URLs."""
+# pylint: disable=print-used
+# ruff: noqa: E501
+
+from pathlib import Path
+from xml.sax.saxutils import escape
+
+MODULE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = MODULE_DIR / "data"
+
+PROJECTS = (
+    {
+        "xml_id": "project_rick_and_morty",
+        "url": "/work/rick-and-morty",
+        "title": "Rick and Morty",
+        "client": "Bardel",
+        "kind": "Animated episodes",
+        "image": "work_rick_and_morty",
+        "banner": "banner_rick_and_morty",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "facts": (
+            ("Client", "Bardel"),
+            ("Format", "Season 5 episodes"),
+            ("Services", "2D Animation"),
+        ),
+        "summary": (
+            "Animated episodes produced for the fifth season of Rick and Morty, "
+            "one of the studio's international service titles."
+        ),
+        "synopsis": (
+            "Split joined Bardel on season 5 of Rick and Morty, delivering 2D "
+            "animation for one of Adult Swim's flagship comedies. The episodes "
+            "sit in the studio's international service slate, next to other "
+            "long-running series produced for US networks."
+        ),
+    },
+    {
+        "xml_id": "project_hello_kitty",
+        "url": "/work/hello-kitty-supercute",
+        "title": "Hello Kitty and Friends Supercute Adventures",
+        "client": "Sanrio",
+        "kind": "Web series",
+        "image": "work_hello_kitty_supercute",
+        "banner": "banner_hello_kitty",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "facts": (
+            ("Client", "Sanrio Brazil"),
+            ("Format", "75 x 3′"),
+            (
+                "Services",
+                "Direction, Storyboard & Animatic, Character Design, Props, "
+                "Backgrounds, Builds, 2D Animation, Editing, Composition, "
+                "Sound FX, Songs, Mix",
+            ),
+        ),
+        "summary": (
+            "New episodes produced for the Hello Kitty Brazil, Mexico and "
+            "Latin America channels, published on YouTube every Wednesday."
+        ),
+        "synopsis": (
+            "Split directs and produces new episodes of Hello Kitty and Friends "
+            "Supercute Adventures for Sanrio Brazil, covering the full 2D "
+            "pipeline from storyboard to mix. Fresh episodes land on the Hello "
+            "Kitty Brazil, Mexico and Latin America YouTube channels every "
+            "Wednesday."
+        ),
+    },
+    {
+        "xml_id": "project_tito_and_the_birds",
+        "url": "/work/tito-and-the-birds",
+        "title": "Tito and the Birds",
+        "client": "Bit Productions",
+        "kind": "Feature film",
+        "image": "work_tito_and_the_birds",
+        "banner": "work_tito_and_the_birds",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "facts": (
+            ("Client", "Bit Productions"),
+            ("Release year", "2018"),
+            (
+                "Services",
+                "Storyboard & Animatic, Character Design, Props, "
+                "Backgrounds, Builds, 2D Animation",
+            ),
+        ),
+        "summary": (
+            "Feature film animation produced with Bit Productions. Split "
+            "raised the quality of the conception, animation and art."
+        ),
+        "synopsis": (
+            "Feature-length animation produced with Bit Productions. Split "
+            "joined for storyboard, design, backgrounds, builds and 2D "
+            "animation, raising the quality of the conception, animation and "
+            "art that took Tito to festivals around the world."
+        ),
+    },
+    {
+        "xml_id": "project_my_life_is_worth_living",
+        "url": "/work/my-life-is-worth-living",
+        "title": "My Life Is Worth Living",
+        "client": "Wonder Media",
+        "kind": "Animated series",
+        "image": "work_my_life_is_worth_living",
+        "banner": "work_my_life_is_worth_living",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "facts": (
+            ("Client", "Wonder Media"),
+            ("Format", "20 x 5 min"),
+            (
+                "Services",
+                "Storyboard & Animatic, Character Designs, Props, "
+                "Backgrounds, Builds, 2D Animation, Editing, Compositing",
+            ),
+        ),
+        "summary": (
+            "Animated series produced with Wonder Media, part of a slate of "
+            "stories designed to communicate through social causes."
+        ),
+        "synopsis": (
+            "A 20 x 5 minute series produced with Wonder Media. The stories "
+            "were designed to communicate through social causes, and Split "
+            "handled the 2D pipeline from storyboard and character design "
+            "through animation, editing and compositing."
+        ),
+    },
+    {
+        "xml_id": "project_monica_and_friends",
+        "url": "/work/monica-and-friends",
+        "title": "Monica and Friends",
+        "client": "Mauricio de Sousa Produções",
+        "kind": "TV series",
+        "image": "work_monica_and_friends",
+        "banner": "banner_monica_and_friends",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "facts": (
+            ("Client", "Cartoon Network"),
+            ("Format", "52 x 7′"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Character Design, "
+                "Props, Backgrounds, Builds, 2D Animation, Editing, Composition",
+            ),
+        ),
+        "summary": (
+            "Classic Monica and Friends episodes produced for Cartoon Network, "
+            "one of the most watched Brazilian shows on the channel."
+        ),
+        "synopsis": (
+            "Classic Monica and Friends episodes produced for Cartoon Network: "
+            "52 x 7 minutes, from direction and script through the full 2D "
+            "pipeline. The series is one of the most watched Brazilian shows "
+            "on the channel."
+        ),
+    },
+    {
+        "xml_id": "project_fit_ufc",
+        "url": "/work/fit-ufc-true-myth",
+        "title": "Fit UFC | True Myth",
+        "client": "UFC",
+        "kind": "Branded series",
+        "image": "work_fit_ufc",
+        "banner": "work_fit_ufc",
+        "back_url": "/our-work",
+        "back_label": "Our Work",
+        "facts": (
+            ("Client", "UFC"),
+            ("Format", "Branded series"),
+            (
+                "Services",
+                "Direction, Script, Storyboard & Animatic, Voices, "
+                "Character Design, Props, Backgrounds, Builds, 2D Animation, "
+                "Editing, Composition, Sound FX, Songs, Mix",
+            ),
+        ),
+        "summary": (
+            "Branded series produced for UFC, mixing fight mythology with "
+            "Split's 2D animation pipeline."
+        ),
+        "synopsis": (
+            "Branded shorts produced for UFC, mixing fight mythology with "
+            "Split's 2D pipeline. The studio covered the show from direction "
+            "and script through voices, animation, sound and mix."
+        ),
+    },
+    {
+        "xml_id": "project_weeboom",
+        "url": "/originals/weeboom",
+        "title": "WeeBoom",
+        "client": "Split Studio",
+        "kind": "Preschool series",
+        "image": "original_weeboom",
+        "banner": "original_weeboom",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "layout": "ip",
+        "facts": (
+            ("Format", "26 x 7′ | 4 to 7 years old"),
+            ("Genres", "Comedy | Adventure | Travel"),
+        ),
+        "summary": (
+            "Original preschool series created inside the studio. The first "
+            "season is available in multiple territories."
+        ),
+        "synopsis": (
+            "WEE is an adventurous, smart and strong-willed rabbit. BOOM is a "
+            "goofy mythical creature full of special powers. Together, they "
+            "travel through cities around the world in search of capturing "
+            "the BOOMIES, fun little magical creatures that are spreading "
+            "chaos everywhere!"
+        ),
+    },
+    {
+        "xml_id": "project_among_the_stars",
+        "url": "/originals/among-the-stars",
+        "title": "Among the Stars",
+        "client": "Split Studio",
+        "kind": "Game",
+        "image": "banner_among_the_stars",
+        "banner": "banner_among_the_stars",
+        "back_url": "/split-originals",
+        "back_label": "Split Originals",
+        "facts": (
+            ("Client", "Split Studio"),
+            ("Format", "Game"),
+            ("Status", "In development"),
+        ),
+        "summary": (
+            "Split original game. Help make this project a reality on Catarse."
+        ),
+        "synopsis": (
+            "Among the Stars is an original game created inside Split. The "
+            "studio is developing the world, characters and animation in "
+            "house and inviting the audience to help make the project a "
+            "reality on Catarse."
+        ),
+        "cta_label": "Co-produce with us",
+    },
+)
+
+CARD_LINKS = {
+    "work_rick_and_morty": "/work/rick-and-morty",
+    "work_hello_kitty_supercute": "/work/hello-kitty-supercute",
+    "work_tito_and_the_birds": "/work/tito-and-the-birds",
+    "work_my_life_is_worth_living": "/work/my-life-is-worth-living",
+    "work_monica_and_friends": "/work/monica-and-friends",
+    "work_fit_ufc": "/work/fit-ufc-true-myth",
+    "original_weeboom": "/originals/weeboom",
+}
+
+WORK_CATEGORIES = {
+    "work_my_life_is_worth_living": "shows",
+    "work_fit_ufc": "branded",
+    "work_is_anybody_out_there": "shows",
+    "work_tito_and_the_birds": "features",
+    "work_are_you_okay": "shows",
+    "work_rick_and_morty": "shows",
+    "work_hello_kitty_supercute": "shows",
+    "work_bit_wars": "promos",
+    "work_monica_and_friends": "shows",
+    "work_mr_men_little_miss": "shows",
+    "work_bubu_and_the_little_owls": "shows",
+    "work_the_boy_and_the_world": "features",
+}
+
+VIEW_TEMPLATE = """    <record id="{xml_id}" model="ir.ui.view">
+        <field name="name">Split Studio - {title}</field>
+        <field name="key">split_website.{xml_id}</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="{title}" t-name="split_website.{xml_id}">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_{xml_id}"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed split-hero o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.{banner}');"
+                                />
+                                <div class="o_we_bg_filter bg-black-50" />
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <p class="mb-2">
+                                                <a href="{back_url}">{back_label}</a>
+                                            </p>
+                                            <h1 class="display-2-fs">{title}</h1>
+                                            <p class="lead mb-0">{client} · {kind}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb32 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Credits"
+                            >
+                                <div class="container">
+                                    <div class="row split-project-facts">
+{facts}
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Project"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-7">
+                                            <img
+                                                src="/web/image/split_website.{image}"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                alt="{title}"
+                                            />
+                                        </div>
+                                        <div class="col-lg-5 mt-4 mt-lg-0">
+                                            <p class="lead">{synopsis}</p>
+                                            <p>
+                                                <a
+                                                    href="/contactus"
+                                                    class="btn btn-primary"
+                                                >{cta_label}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+"""
+
+PAGE_RECORD = """    <record id="page_{xml_id}" model="website.page">
+        <field name="view_id" ref="{xml_id}" />
+        <field name="url">{url}</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">{summary}</field>
+    </record>
+"""
+
+
+def _facts_xml(facts):
+    chunks = []
+    for label, value in facts:
+        width = "col-lg-8" if label == "Services" else "col-lg-4 col-md-6"
+        chunks.append(
+            f"""                                        <div class="{width} pt8 pb16">
+                                            <p class="o_small text-uppercase mb-1">{escape(label)}</p>
+                                            <p class="mb-0">{escape(value)}</p>
+                                        </div>"""
+        )
+    return "\n".join(chunks)
+
+
+def _service_view(project):
+    values = {
+        "xml_id": project["xml_id"],
+        "title": escape(project["title"]),
+        "banner": project["banner"],
+        "image": project["image"],
+        "back_url": escape(project["back_url"]),
+        "back_label": escape(project["back_label"]),
+        "client": escape(project["client"]),
+        "kind": escape(project["kind"]),
+        "synopsis": escape(project["synopsis"]),
+        "cta_label": escape(project.get("cta_label", "Start a project")),
+        "facts": _facts_xml(project["facts"]),
+    }
+    return VIEW_TEMPLATE.format(**values)
+
+
+def _weeboom_view(project):
+    """WeeBoom is an original IP bible, not a service credit sheet."""
+    return f"""    <record id="{project["xml_id"]}" model="ir.ui.view">
+        <field name="name">Split Studio - {escape(project["title"])}</field>
+        <field name="key">split_website.{project["xml_id"]}</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="{escape(project["title"])}" t-name="split_website.{project["xml_id"]}">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_{project["xml_id"]}"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="split-ip-hero"
+                                data-name="Cover"
+                            >
+                                <video
+                                    class="split-ip-hero-video"
+                                    src="/split_website/static/src/video/weeboom_hero.mp4"
+                                    autoplay="autoplay"
+                                    muted="muted"
+                                    loop="loop"
+                                    playsinline="playsinline"
+                                    preload="metadata"
+                                />
+                                <div class="split-ip-hero-mark">
+                                    <img
+                                        src="/web/image/split_website.weeboom_logo"
+                                        class="img img-fluid"
+                                        alt="WeeBoom"
+                                    />
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="About"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-start">
+                                        <div class="col-lg-2 col-md-3 text-center pb32">
+                                            <img
+                                                src="/web/image/split_website.weeboom_seal"
+                                                class="img img-fluid split-ip-seal"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p class="mb-2">
+                                                <a href="/split-originals">Split Originals</a>
+                                            </p>
+                                            <h1 class="display-2-fs mb-3">WeeBoom</h1>
+                                            <p class="h3-fs mb-2">26 x 7′ | 4 to 7 years old</p>
+                                            <p class="h3-fs mb-4">Comedy | Adventure | Travel</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <ul class="mb-4">
+                                                <li>Season 1 available in Portuguese and Spanish, in multiple territories. Sample English episodes available.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <p class="lead">{escape(project["synopsis"])}</p>
+                                            <p>Wee and Boom are two friends who travel the world to capture some fun and magical creatures, the Boomies.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Characters"
+                            >
+                                <div class="container">
+                                    <h2 class="text-center mb-5">Characters</h2>
+                                    <div class="row">
+                                        <div class="col-lg-4 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.weeboom_character_wee"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Wee"
+                                            />
+                                            <h3>Wee</h3>
+                                            <p class="text-uppercase o_small mb-2">The Adventure</p>
+                                            <p>Wee lives for adventures. In one of them, she accidentally woke Boom from centuries of slumber. By doing so, she also accidentally brought the Boomies into the world. Now they are lost and out there. Wee is a caring, athletic and competitive friend, and capturing Boomies has become her mission.</p>
+                                        </div>
+                                        <div class="col-lg-4 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.weeboom_character_boom"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Boom"
+                                            />
+                                            <h3>Boom</h3>
+                                            <p class="text-uppercase o_small mb-2">The Mythological Giant</p>
+                                            <p>Boom is silly, sweet and is also the guardian of all the sounds in the universe. Inside his body one will find a library of sounds, managed by the Boomies. Boom is always looking for fun, and despite his naivety and lack of attention, he is Wee's best friend and greatest ally.</p>
+                                        </div>
+                                        <div class="col-lg-4 pt16 pb32 split-character">
+                                            <img
+                                                src="/web/image/split_website.weeboom_character_boomies"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Boomies"
+                                            />
+                                            <h3>Boomies</h3>
+                                            <p class="text-uppercase o_small mb-2">Run Away from Them!</p>
+                                            <p>Boomies are cute yellow creatures that live inside Boom, where they take care of all the sounds of the universe. They are now lost to the world and go crazy listening to music. When that happens, they use their magical powers to set wherever they are on chaos. Watch out!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_images_wall pt0 pb0 o_cc o_cc5 split-gallery"
+                                data-snippet="s_images_wall"
+                                data-name="Gallery"
+                            >
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_01"
+                                                class="img img-fluid w-100"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_02"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_03"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                        <div class="col-lg-4 p-0">
+                                            <img
+                                                src="/web/image/split_website.weeboom_still_04"
+                                                class="img img-fluid w-100"
+                                                style="aspect-ratio: 3 / 2; object-fit: cover;"
+                                                alt="WeeBoom still"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Episodes"
+                            >
+                                <div class="container">
+                                    <h2 class="text-center mb-5">Check out some episode synopses</h2>
+                                    <div class="row">
+                                        <div class="col-lg-6 pt16 pb32 split-episode">
+                                            <img
+                                                src="/web/image/split_website.weeboom_episode_01"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Episode 01"
+                                            />
+                                            <h3>Ep 01 – Mamma Mia!</h3>
+                                            <p class="text-uppercase o_small mb-2">Palermo, Italy</p>
+                                            <p>Hmmm, I'm so hungry! Wee and Boom look for a Boomie in the city of Palermo, Italy, famous for its tarantella and pasta. A very hungry Wee and Boom stumble upon a restaurant whose boss seems to be crazy, turning the place and customers upside down. That smells like Boomie!</p>
+                                        </div>
+                                        <div class="col-lg-6 pt16 pb32 split-episode">
+                                            <img
+                                                src="/web/image/split_website.weeboom_episode_02"
+                                                class="img img-fluid w-100 mb-3"
+                                                alt="Episode 02"
+                                            />
+                                            <h3>Ep 02 – Ah, I'amour…</h3>
+                                            <p class="text-uppercase o_small mb-2">Paris, France</p>
+                                            <p>Ah, Paris, the city of love! Wee and Boom are looking for a Boomie in this très magnifique city, whose inhabitants seem to be more in love than usual. The contagious love will even hit Wee, who gets extremely in love with Boom. Now Boom will have to find a way to capture the Boomie so that Wee and the city return to normal.</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-center pt16 mb-0">
+                                        <a
+                                            href="/contactus"
+                                            class="btn btn-primary"
+                                        >Co-produce with us</a>
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+"""
+
+
+def _project_view(project):
+    if project.get("layout") == "ip":
+        return _weeboom_view(project)
+    return _service_view(project)
+
+
+def write_project_views():
+    chunks = [
+        '<?xml version="1.0" encoding="utf-8" ?>\n',
+        "<odoo>\n",
+    ]
+    for project in PROJECTS:
+        chunks.append(_project_view(project))
+    chunks.append("</odoo>\n")
+    target = DATA_DIR / "website_view_projects.xml"
+    target.write_text("".join(chunks), encoding="utf-8")
+    print(f"wrote {target.name} ({len(PROJECTS)} pages)")
+
+
+def append_project_pages():
+    target = DATA_DIR / "website_page.xml"
+    text = target.read_text(encoding="utf-8")
+    if "page_project_rick_and_morty" in text:
+        text = text.split('    <record id="page_project_')[0].rstrip() + "\n</odoo>\n"
+    if '<field name="header_overlay"' not in text:
+        text = text.replace(
+            '<field name="is_published" eval="True" />',
+            '<field name="is_published" eval="True" />\n'
+            '        <field name="header_overlay" eval="True" />',
+        )
+    pages = "".join(PAGE_RECORD.format(**project) for project in PROJECTS)
+    if not text.endswith("</odoo>\n"):
+        raise SystemExit("unexpected website_page.xml footer")
+    text = text[: -len("</odoo>\n")] + pages + "</odoo>\n"
+    target.write_text(text, encoding="utf-8")
+    print(f"updated {target.name}")
+
+
+def wrap_cards(path):
+    text = path.read_text(encoding="utf-8")
+    for xml_id, url in CARD_LINKS.items():
+        needle = f'src="/web/image/split_website.{xml_id}"'
+        if needle not in text:
+            continue
+        # Wrap each unwrapped figure that uses this image.
+        start = 0
+        while True:
+            idx = text.find(needle, start)
+            if idx < 0:
+                break
+            fig = text.rfind("<figure", 0, idx)
+            fig_end = text.find("</figure>", idx)
+            if fig < 0 or fig_end < 0:
+                break
+            fig_end += len("</figure>")
+            block = text[fig:fig_end]
+            if f'href="{url}"' in text[max(0, fig - 120) : fig]:
+                start = fig_end
+                continue
+            wrapped = (
+                f'<a href="{url}" class="text-reset split-project-card">\n'
+                f"                                            {block}\n"
+                f"                                            </a>"
+            )
+            text = text[:fig] + wrapped + text[fig_end:]
+            start = fig + len(wrapped)
+    path.write_text(text, encoding="utf-8")
+    print(f"wrapped cards in {path.name}")
+
+
+def add_work_filter():
+    path = DATA_DIR / "website_view_our_work.xml"
+    text = path.read_text(encoding="utf-8")
+    for xml_id, category in WORK_CATEGORIES.items():
+        old = (
+            f'<div class="col-lg-4 col-md-6 pt16 pb16">\n'
+            f'                                            <figure class="mb-0">\n'
+            f"                                                <img\n"
+            f'                                                    src="/web/image/split_website.{xml_id}"'
+        )
+        new = (
+            f'<div class="col-lg-4 col-md-6 pt16 pb16 split-work-item" '
+            f'data-category="{category}">\n'
+            f'                                            <figure class="mb-0">\n'
+            f"                                                <img\n"
+            f'                                                    src="/web/image/split_website.{xml_id}"'
+        )
+        if f'data-category="{category}"' in text and xml_id in text:
+            continue
+        if old in text:
+            text = text.replace(old, new, 1)
+            continue
+        # Generic: add class on the column that contains this image.
+        marker = f'src="/web/image/split_website.{xml_id}"'
+        idx = text.find(marker)
+        if idx < 0:
+            continue
+        col = text.rfind('<div class="col-lg-4 col-md-6 pt16 pb16"', 0, idx)
+        if col < 0:
+            continue
+        text = (
+            text[:col] + f'<div class="col-lg-4 col-md-6 pt16 pb16 split-work-item" '
+            f'data-category="{category}"'
+            + text[col + len('<div class="col-lg-4 col-md-6 pt16 pb16"') :]
+        )
+    if 'class="row split-work-filter"' not in text:
+        # The productions grid is the only row that already has project columns.
+        text = text.replace(
+            '<div class="row">\n'
+            "                                    <div\n"
+            '                                        class="col-lg-12 pb16 d-flex flex-wrap'
+            ' align-items-baseline justify-content-between"',
+            '<div class="row split-work-filter">\n'
+            "                                    <div\n"
+            '                                        class="col-lg-12 pb16 d-flex flex-wrap'
+            ' align-items-baseline justify-content-between"',
+            1,
+        )
+    filter_bar = """                                            <div class="col-12 pt8 pb8">
+                                                <input
+                                                    type="radio"
+                                                    name="split_work_cat"
+                                                    id="split_work_all"
+                                                    checked="checked"
+                                                />
+                                                <label for="split_work_all">All</label>
+                                                <input
+                                                    type="radio"
+                                                    name="split_work_cat"
+                                                    id="split_work_shows"
+                                                />
+                                                <label for="split_work_shows">Shows</label>
+                                                <input
+                                                    type="radio"
+                                                    name="split_work_cat"
+                                                    id="split_work_features"
+                                                />
+                                                <label
+                                                    for="split_work_features"
+                                                >Feature films</label>
+                                                <input
+                                                    type="radio"
+                                                    name="split_work_cat"
+                                                    id="split_work_branded"
+                                                />
+                                                <label
+                                                    for="split_work_branded"
+                                                >Ads and branded</label>
+                                                <input
+                                                    type="radio"
+                                                    name="split_work_cat"
+                                                    id="split_work_promos"
+                                                />
+                                                <label
+                                                    for="split_work_promos"
+                                                >Pilots and promos</label>
+                                            </div>
+"""
+    if 'id="split_work_all"' not in text:
+        row = text.find('<div class="row">')
+        # The productions section row is the second row in the file.
+        row = text.find('<div class="row">', row + 1) if row >= 0 else -1
+        # Safer: insert before the first split-work-item / first project column.
+        insert_at = text.find('<div class="col-lg-4 col-md-6 pt16 pb16')
+        if insert_at < 0:
+            raise SystemExit("could not find work grid")
+        text = text[:insert_at] + filter_bar + text[insert_at:]
+        # The filter radios must be siblings of the row. Close the header
+        # flex row first: move the filter to wrap the grid instead.
+    path.write_text(text, encoding="utf-8")
+    print(f"categorised {path.name}")
+
+
+def link_carousel():
+    path = DATA_DIR / "website_view_home.xml"
+    text = path.read_text(encoding="utf-8")
+    text = text.replace(
+        'href="/split-originals"\n                                                                class="btn btn-primary"',
+        'href="/originals/among-the-stars"\n                                                                class="btn btn-primary"',
+        1,
+    )
+    replacements = (
+        (
+            "banner_rick_and_morty",
+            "Animated episodes produced for the fifth season.",
+            "/work/rick-and-morty",
+        ),
+        (
+            "banner_hello_kitty",
+            "New episodes on YouTube every Wednesday.",
+            "/work/hello-kitty-supercute",
+        ),
+        (
+            "banner_monica_and_friends",
+            "The most watched Brazilian show on Cartoon Network.",
+            "/work/monica-and-friends",
+        ),
+    )
+    for banner, lead, url in replacements:
+        lead_xml = f">{lead}</p>"
+        idx = text.find(banner)
+        if idx < 0:
+            continue
+        lead_idx = text.find(lead_xml, idx)
+        if lead_idx < 0 or f'href="{url}"' in text[idx : lead_idx + 200]:
+            continue
+        insert = (
+            f">{lead}</p>\n"
+            f"                                                        <p>\n"
+            f"                                                            <a\n"
+            f'                                                                href="{url}"\n'
+            f'                                                                class="btn btn-primary"\n'
+            f"                                                            >Discover the project</a>\n"
+            f"                                                        </p>"
+        )
+        text = text[:lead_idx] + insert + text[lead_idx + len(lead_xml) :]
+    path.write_text(text, encoding="utf-8")
+    print(f"linked carousel in {path.name}")
+
+
+def main():
+    write_project_views()
+    append_project_pages()
+    wrap_cards(DATA_DIR / "website_view_home.xml")
+    wrap_cards(DATA_DIR / "website_view_our_work.xml")
+    wrap_cards(DATA_DIR / "website_view_originals.xml")
+    add_work_filter()
+    link_carousel()
+
+
+if __name__ == "__main__":
+    main()

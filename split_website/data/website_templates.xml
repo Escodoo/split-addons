@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- The official studio site has no Odoo promotion in the copyright bar. -->
+    <template
+        id="hide_brand_promotion"
+        inherit_id="web.brand_promotion"
+        name="Hide Odoo brand promotion"
+        priority="99"
+    >
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace">
+            <div class="o_brand_promotion d-none" />
+        </xpath>
+    </template>
+</odoo>

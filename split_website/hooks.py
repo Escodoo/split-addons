@@ -1,7 +1,11 @@
 # Copyright 2026 Escodoo
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
+import base64
 import logging
+from pathlib import Path
+
+from odoo.modules.module import get_module_path
 
 _logger = logging.getLogger(__name__)
 
@@ -49,11 +53,23 @@ BRANDING_REPLACEMENTS = (
 )
 
 
+# ERP chrome that the studio site never shows.
+HIDDEN_HEADER_VIEWS = (
+    "website.header_search_box",
+    "website.header_text_element",
+    "website.header_call_to_action",
+    "portal.user_sign_in",
+)
+
+
 def post_init_hook(env):
     """Serve the public site in English and align the studio contact details."""
     _serve_website_in_english(env)
     _rename_default_menus(env)
     _brand_header_and_footer(env)
+    _hide_erp_chrome(env)
+    _overlay_public_headers(env)
+    _refresh_client_logos(env)
     # base.main_company is a noupdate record, so its data cannot be set from XML.
     env.company.write(COMPANY_VALUES)
 
@@ -100,3 +116,39 @@ def _brand_header_and_footer(env):
     for sample, branded in BRANDING_REPLACEMENTS:
         if branded not in archs:
             _logger.warning("Split Website: could not brand the sample text %r", sample)
+
+
+def _hide_erp_chrome(env):
+    """Drop search, phone, Sign in and the Contact Us button from the header."""
+    website_id = env.ref("website.default_website").id
+    website = env["website"].with_context(website_id=website_id)
+    for key in HIDDEN_HEADER_VIEWS:
+        view = website.viewref(key)
+        if view.active:
+            view.write({"active": False})
+
+
+def _overlay_public_headers(env):
+    """Let the first artwork sit under a transparent header, like the studio site."""
+    pages = env["website.page"].search(
+        [("website_id", "=", env.ref("website.default_website").id)]
+    )
+    pages.write({"header_overlay": True})
+
+
+def _refresh_client_logos(env):
+    """Reload knocked-out PNGs even when the attachment records are noupdate."""
+    binary_dir = (
+        Path(get_module_path("split_website")) / "static/src/binary/ir_attachment"
+    )
+    for path in binary_dir.glob("client_*"):
+        attachment = env.ref(f"split_website.{path.stem}", raise_if_not_found=False)
+        if not attachment:
+            continue
+        attachment.write(
+            {
+                "name": path.name,
+                "mimetype": "image/png",
+                "datas": base64.b64encode(path.read_bytes()),
+            }
+        )

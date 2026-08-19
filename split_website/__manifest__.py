@@ -24,10 +24,17 @@
         "data/website_view_originals.xml",
         "data/website_view_about.xml",
         "data/website_view_contactus.xml",
+        "data/website_view_projects.xml",
+        "data/website_templates.xml",
         "data/website_page.xml",
         "data/website_menu.xml",
         "data/website_theme_apply.xml",
     ],
+    "assets": {
+        "web.assets_frontend": [
+            "split_website/static/src/scss/split_website.scss",
+        ],
+    },
     "installable": True,
     "post_init_hook": "post_init_hook",
 }
