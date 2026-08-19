@@ -100,4 +100,21 @@
             </section>
         </xpath>
     </template>
+    <template
+        id="footer_mascot"
+        inherit_id="website.layout"
+        name="Split footer mascot"
+        priority="25"
+    >
+        <xpath expr="//footer[@id='bottom']" position="inside">
+            <div class="split-footer-mascot" aria-hidden="true">
+                <video
+                    src="/split_website/static/src/video/footer_character_01.mp4"
+                    muted="muted"
+                    playsinline="playsinline"
+                    preload="metadata"
+                />
+            </div>
+        </xpath>
+    </template>
 </odoo>

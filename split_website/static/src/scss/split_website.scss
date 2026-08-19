@@ -209,3 +209,54 @@ header {
         }
     }
 }
+
+footer#bottom {
+    position: relative;
+}
+
+footer#bottom .o_footer_copyright {
+    background-color: #f05983 !important;
+    color: #111 !important;
+    min-height: 16rem;
+    z-index: 1;
+
+    a,
+    span,
+    small,
+    .o_footer_copyright_name {
+        color: #111 !important;
+    }
+}
+
+.split-footer-mascot {
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+    z-index: 2;
+    height: 16rem;
+    pointer-events: none;
+    mix-blend-mode: darken;
+
+    video {
+        display: block;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    footer#bottom .o_footer_copyright {
+        min-height: 40vw;
+    }
+
+    .split-footer-mascot {
+        right: 0;
+        height: 40vw;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .split-footer-mascot {
+        display: none;
+    }
+}

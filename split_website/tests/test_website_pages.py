@@ -127,6 +127,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertNotIn('id="split_work_all"', body)
         self.assertIn("vimeo.com/splitstudio", body)
         self.assertIn("Sign up for our newsletter", body)
+        self.assertIn("split-footer-mascot", body)
+        self.assertIn("footer_character_01.mp4", body)
 
     def test_our_work_has_category_filter(self):
         body = self.url_open("/our-work").text

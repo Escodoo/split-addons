@@ -34,6 +34,7 @@
     "assets": {
         "web.assets_frontend": [
             "split_website/static/src/scss/split_website.scss",
+            "split_website/static/src/js/footer_mascot.js",
         ],
     },
     "installable": True,
