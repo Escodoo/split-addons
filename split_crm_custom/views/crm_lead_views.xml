@@ -22,6 +22,17 @@
         </field>
     </record>
 
+    <record id="crm_lead_view_form" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.split.crm.custom</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header/field[@name='stage_id']" position="attributes">
+                <attribute name="invisible">not active</attribute>
+            </xpath>
+        </field>
+    </record>
+
     <record id="view_crm_case_leads_filter" model="ir.ui.view">
         <field name="name">crm.lead.search.lead.inherit.split.crm.custom</field>
         <field name="model">crm.lead</field>
@@ -39,11 +50,15 @@
 
     <record id="crm.crm_lead_all_leads" model="ir.actions.act_window">
         <field name="view_mode">kanban,list,graph,pivot,calendar,form,activity</field>
-        <field name="context">{
+        <field
+            name="context"
+            eval="{
                 'default_type': 'lead',
+                'default_team_id': ref('crm_team_intake'),
                 'search_default_type': 'lead',
-                'search_default_to_process': 1,
-            }</field>
+                'search_default_team_id': [ref('crm_team_intake')],
+            }"
+        />
     </record>
 
     <record id="crm.crm_lead_all_leads_view_kanban" model="ir.actions.act_window.view">

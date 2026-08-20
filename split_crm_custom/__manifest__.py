@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "Split CRM Custom",
-    "summary": "Show Leads before Sales, kanban by stage and team activity view",
+    "summary": "Intake team, lead stages and Leads kanban before Sales",
     "version": "18.0.1.0.0",
     "category": "Sales/CRM",
     "author": "Escodoo",
@@ -12,6 +12,8 @@
     "maintainers": ["marcelsavegnago"],
     "depends": ["crm"],
     "data": [
+        "data/crm_team.xml",
+        "data/crm_stage.xml",
         "views/crm_lead_views.xml",
         "views/crm_menu_views.xml",
     ],
