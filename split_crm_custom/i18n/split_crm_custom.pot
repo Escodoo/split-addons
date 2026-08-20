@@ -14,6 +14,36 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: split_crm_custom
+#: model:crm.stage,name:split_crm_custom.stage_intake_disqualified
+msgid "Disqualified"
+msgstr ""
+
+#. module: split_crm_custom
+#: model:crm.team,name:split_crm_custom.crm_team_intake
+msgid "Intake"
+msgstr ""
+
+#. module: split_crm_custom
+#: model:crm.stage,name:split_crm_custom.stage_intake_new
+msgid "New"
+msgstr ""
+
+#. module: split_crm_custom
+#: model:crm.stage,name:split_crm_custom.stage_intake_nurture
+msgid "Nurture"
+msgstr ""
+
+#. module: split_crm_custom
+#: model:crm.stage,name:split_crm_custom.stage_intake_ready
+msgid "Ready for sales"
+msgstr ""
+
+#. module: split_crm_custom
 #: model_terms:ir.ui.view,arch_db:split_crm_custom.view_crm_case_leads_filter
 msgid "Stage"
+msgstr ""
+
+#. module: split_crm_custom
+#: model:crm.stage,name:split_crm_custom.stage_intake_qualify
+msgid "To qualify"
 msgstr ""
