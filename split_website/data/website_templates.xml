@@ -110,6 +110,18 @@
         name="Split footer mascot"
         priority="25"
     >
+        <xpath expr="//span[hasclass('o_footer_copyright_name')]" position="replace">
+            <span class="o_footer_copyright_name">Copyright © Split Studio. All rights reserved.</span>
+        </xpath>
+        <xpath expr="//span[hasclass('o_footer_copyright_name')]" position="after">
+            <nav class="split-footer-languages" aria-label="Languages">
+                <t t-call="website.language_selector_inline">
+                    <t t-set="no_text" t-value="True" />
+                    <t t-set="codes" t-value="True" />
+                    <t t-set="_div_classes" t-value="'split-footer-language-selector'" />
+                </t>
+            </nav>
+        </xpath>
         <xpath expr="//footer[@id='bottom']" position="inside">
             <div class="split-footer-mascot" aria-hidden="true">
                 <video

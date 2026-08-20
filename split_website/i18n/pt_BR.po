@@ -1420,20 +1420,19 @@ msgstr "Cid Makino"
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
 msgid ""
-"Cid is an Executive Producer and\n"
-"                                                Animation Director with more than 15\n"
-"                                                years of experience across TV series,\n"
-"                                                feature films, short films and other\n"
-"                                                formats. At Split, he carries the\n"
-"                                                production torch and leads the teams\n"
-"                                                toward innovation, quality and\n"
-"                                                top-notch delivery."
+" is an Executive Producer and Animation Director with more than 15 years of experience. Throughout the years, Cid has worked on many projects for TV series, feature films, short films, and other formats."
 msgstr ""
-"Cid é produtor executivo e diretor de animação com mais de 15 anos de "
-"experiência. Ao longo desse tempo, trabalhou em séries de TV, "
-"longas-metragens, curtas e outros formatos. Na Split, ele carrega a tocha "
-"da produção e lidera as equipes na busca de inovação, qualidade e entrega "
-"de alto nível."
+" é produtor executivo e diretor de animação com mais de 15 anos de "
+"experiência. Ao longo desse tempo, Cid trabalhou em muitos projetos para "
+"séries de TV, longas-metragens, curtas-metragens e outros formatos."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+msgid ""
+"At Split, Cid has always been carrying the production torch and leading our teams toward seeking innovation, quality, and top-notch delivery."
+msgstr ""
+"Na Split, Cid sempre esteve carregando a tocha da produção e liderando "
+"nossas equipes na busca de inovação, qualidade e entrega de alto nível."
 
 #. module: split_website
 #: model:ir.ui.view,website_meta_description:split_website.project_monica_and_friends
@@ -2009,19 +2008,20 @@ msgstr "Guille Hiertz"
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
 msgid ""
-"Guille is a producer, director, editor,\n"
-"                                                screenwriter and animator, with a\n"
-"                                                degree in Image and Sound from UFSCar.\n"
-"                                                One of the founders of Split and its\n"
-"                                                current CEO, he has produced dozens of\n"
-"                                                films, series, games and comics, and\n"
-"                                                created the studio's Games Center and\n"
-"                                                special projects."
+" is a Producer, Director, Editor, Screenwriter, and Animator. With a degree in Image and Sound from UFSCar, Guille is one of the founders of Split Studio and its current CEO."
 msgstr ""
-"Guille é produtor, diretor, editor, roteirista e animador. Bacharel em "
-"Imagem e Som pela UFSCar, é um dos fundadores do Split Studio e atualmente "
-"seu CEO. Pela Split, produziu dezenas de filmes, séries, games e "
-"quadrinhos, e criou o Núcleo de Games e os projetos especiais."
+" é produtor, diretor, editor, roteirista e animador. Bacharel em Imagem e "
+"Som pela UFSCar, Guille é um dos fundadores do Split Studio e atualmente "
+"seu CEO."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+msgid ""
+"Through Split, Guille produced dozens of projects, including films, series, games, and comics, as well as led many other initiatives, including creating the Games Center and special projects."
+msgstr ""
+"Pela Split, Guille produziu dezenas de trabalhos, entre filmes, séries, "
+"games e quadrinhos, e liderou muitas outras iniciativas, dentre elas a "
+"criação do Núcleo de Games e de projetos especiais."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -2268,20 +2268,20 @@ msgstr "Jonas Brandão"
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
 msgid ""
-"Jonas is a director, producer, writer\n"
-"                                                and animator, with a degree in Image\n"
-"                                                and Sound from UFSCar and a fellowship\n"
-"                                                at the National Film Board of Canada.\n"
-"                                                He has always been involved with the\n"
-"                                                creative side of Split and now produces\n"
-"                                                the studio's international projects\n"
-"                                                from the US office."
+" is a Director, Producer, Writer, Animator, and one of the founders of Split. With a degree in Image and Sound at UFSCar, and with a fellowship at the National Film Board of Canada, Jonas has always been involved with the creative side by directing and writing several projects at Split."
 msgstr ""
-"Jonas é diretor, produtor, escritor e animador, e um dos fundadores da "
-"Split. Formado em Imagem e Som pela UFSCar e com passagem pelo National "
-"Film Board of Canada, sempre esteve no lado criativo, dirigindo e "
-"escrevendo produções da Split. Hoje também produz os projetos "
-"internacionais no escritório dos EUA."
+" é diretor, produtor, escritor e animador e um dos fundadores da Split. "
+"Formado em Imagem e Som pela UFSCar, e com passagem pelo National Film "
+"Board of Canada, Jonas sempre esteve envolvido com o lado criativo, "
+"dirigindo e escrevendo diversas produções pela Split."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.about
+msgid ""
+"Currently, Jonas is also responsible for producing Split's international projects in the US office."
+msgstr ""
+"Atualmente, Jonas também é responsável pela produção de projetos "
+"internacionais da Split no escritório dos EUA."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -3288,6 +3288,11 @@ msgstr "Curtas-metragens"
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
 msgid "Shows"
 msgstr "Séries"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_mascot
+msgid "Copyright © Split Studio. All rights reserved."
+msgstr "Copyright © Split Studio. Todos os direitos reservados."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter

@@ -146,6 +146,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertNotIn('id="split_work_all"', body)
         self.assertIn("vimeo.com/splitstudio", body)
         self.assertIn("Sign up for our newsletter", body)
+        self.assertIn("All rights reserved.", body)
+        self.assertIn("split-footer-languages", body)
         self.assertIn("split-footer-mascot", body)
         self.assertIn("split-footer-socials", body)
         self.assertIn("facebook.com/SplitFilmes", body)
