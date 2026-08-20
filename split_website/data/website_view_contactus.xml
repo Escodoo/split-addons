@@ -31,34 +31,26 @@
                     <div id="wrap">
                         <div
                             id="oe_structure_split_website_contactus"
-                            class="oe_structure"
+                            class="oe_structure split-contact"
                         >
                             <section
-                                class="s_title parallax s_parallax_is_fixed pt96 pb96 o_cc o_cc5"
-                                data-vcss="001"
+                                class="s_title pt96 pb32"
                                 data-snippet="s_title"
                                 data-name="Title"
-                                data-scroll-background-ratio="1"
                             >
-                                <span
-                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
-                                    style="background-image: url('/web/image/split_website.charcoal_cover');"
-                                />
-                                <div class="o_we_bg_filter bg-black-75" />
                                 <div class="container">
-                                    <h1 class="display-2-fs">Talk to us</h1>
-                                    <p
-                                        class="lead mb-0"
-                                    >Tell us about your project, your studio or the story you want to animate.</p>
+                                    <h1
+                                        class="display-2-fs text-center mb-0"
+                                    >Talk to us</h1>
                                 </div>
                             </section>
                             <section
-                                class="s_text_block pt48 pb64 o_cc o_cc5"
+                                class="s_text_block pt16 pb64"
                                 data-snippet="s_text_block"
                                 data-name="Contact"
                             >
                                 <div class="container s_allow_columns">
-                                    <div class="row">
+                                    <div class="row align-items-start">
                                         <div class="col-lg-7">
                                             <section
                                                 class="s_website_form"
@@ -83,7 +75,7 @@
                                                             class="s_website_form_rows row s_col_no_bgcolor"
                                                         >
                                                             <div
-                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
                                                                 data-type="char"
                                                                 data-name="Field"
                                                             >
@@ -108,7 +100,7 @@
                                                                 />
                                                             </div>
                                                             <div
-                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
                                                                 data-type="email"
                                                                 data-name="Field"
                                                             >
@@ -133,49 +125,7 @@
                                                                 />
                                                             </div>
                                                             <div
-                                                                class="mb-3 col-lg-6 s_website_form_field"
-                                                                data-type="char"
-                                                                data-name="Field"
-                                                            >
-                                                                <label
-                                                                    class="s_website_form_label"
-                                                                    for="split_contact_company"
-                                                                >
-                                                                    <span
-                                                                        class="s_website_form_label_content"
-                                                                    >Company</span>
-                                                                </label>
-                                                                <input
-                                                                    id="split_contact_company"
-                                                                    type="text"
-                                                                    class="form-control s_website_form_input"
-                                                                    name="partner_name"
-                                                                    data-fill-with="commercial_company_name"
-                                                                />
-                                                            </div>
-                                                            <div
-                                                                class="mb-3 col-lg-6 s_website_form_field"
-                                                                data-type="char"
-                                                                data-name="Field"
-                                                            >
-                                                                <label
-                                                                    class="s_website_form_label"
-                                                                    for="split_contact_phone"
-                                                                >
-                                                                    <span
-                                                                        class="s_website_form_label_content"
-                                                                    >Phone</span>
-                                                                </label>
-                                                                <input
-                                                                    id="split_contact_phone"
-                                                                    type="tel"
-                                                                    class="form-control s_website_form_input"
-                                                                    name="phone"
-                                                                    data-fill-with="phone"
-                                                                />
-                                                            </div>
-                                                            <div
-                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
                                                                 data-type="selection"
                                                                 data-name="Field"
                                                             >
@@ -212,7 +162,7 @@
                                                                 </select>
                                                             </div>
                                                             <div
-                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_custom"
+                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_custom split-contact-work d-none"
                                                                 data-type="selection"
                                                                 data-name="Field"
                                                             >
@@ -251,7 +201,7 @@
                                                                 </select>
                                                             </div>
                                                             <div
-                                                                class="mb-3 col-12 s_website_form_field s_website_form_custom"
+                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_custom split-contact-work d-none"
                                                                 data-type="char"
                                                                 data-name="Field"
                                                             >
@@ -396,66 +346,33 @@
                                                 </div>
                                             </section>
                                         </div>
-                                        <div class="col-lg-4 offset-lg-1 mt-4 mt-lg-0">
-                                            <h5>Brazil</h5>
-                                            <ul class="list-unstyled mb-4 ps-2">
-                                                <li>
-                                                    <i class="fa fa-phone fa-fw me-2" />
-                                                    <span
-                                                        class="o_force_ltr"
-                                                    >+55 (11) 91366 8953</span>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa fa-map-marker fa-fw me-2"
-                                                    />
-                                                    <span
-                                                    >São Paulo - SP &amp; Rio de Janeiro - RJ</span>
-                                                </li>
-                                            </ul>
-                                            <h5>USA</h5>
-                                            <ul class="list-unstyled mb-4 ps-2">
-                                                <li>
-                                                    <i class="fa fa-phone fa-fw me-2" />
-                                                    <span
-                                                        class="o_force_ltr"
-                                                    >+1 (682) 862 6656</span>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa fa-map-marker fa-fw me-2"
-                                                    />
-                                                    <span>Dallas - TX</span>
-                                                </li>
-                                            </ul>
-                                            <ul class="list-unstyled mb-0 ps-2">
-                                                <li>
-                                                    <i class="fa fa-vimeo fa-fw me-2" />
-                                                    <a
-                                                        href="https://vimeo.com/splitstudio"
-                                                        target="_blank"
-                                                    >vimeo.com/splitstudio</a>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa fa-youtube-play fa-fw me-2"
-                                                    />
-                                                    <a
-                                                        href="https://www.youtube.com/c/SplitStudioBR"
-                                                        target="_blank"
-                                                    >YouTube</a>
-                                                </li>
-                                                <li>
-                                                    <i
-                                                        class="fa fa-instagram fa-fw me-2"
-                                                    />
-                                                    <a
-                                                        href="https://www.instagram.com/splitstudiobr/"
-                                                        target="_blank"
-                                                    >@splitstudiobr</a>
-                                                </li>
-                                            </ul>
+                                        <div
+                                            class="col-lg-4 offset-lg-1 d-none d-lg-block"
+                                        >
+                                            <img
+                                                src="/split_website/static/src/binary/ir_attachment/contact_character.png"
+                                                class="img img-fluid split-contact-mascot"
+                                                alt="Split brand character"
+                                            />
                                         </div>
+                                    </div>
+                                    <div
+                                        class="split-contact-offices pt48"
+                                    >
+                                        <p class="mb-2">
+                                            <a
+                                                class="o_force_ltr"
+                                                href="tel:+5511913668953"
+                                            >+55 (11) 91366 8953</a>
+                                            <span> | Brazil | São Paulo – SP &amp; Rio de Janeiro – RJ</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a
+                                                class="o_force_ltr"
+                                                href="tel:+16828626656"
+                                            >+1 (682) 862 6656</a>
+                                            <span> | USA | Dallas – TX</span>
+                                        </p>
                                     </div>
                                 </div>
                             </section>
