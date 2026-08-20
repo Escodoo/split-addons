@@ -363,6 +363,76 @@
                                                 </figure>
                                             </a>
                                         </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/the-world-doesnt-know"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_world_doesnt_know"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="The World Doesn't Know What It Lost"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >The World Doesn't Know What It Lost</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Promo</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/cool-sneakers"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_cool_sneakers"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Cool Sneakers"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Cool Sneakers</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Short film</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/a-common-place"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_a_common_place"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="A Common Place"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >A Common Place</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Short film</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
