@@ -551,6 +551,16 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="contact_character" model="ir.attachment">
+        <field name="name">contact_character.png</field>
+        <field name="mimetype">image/png</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/contact_character.png"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="icon_animation" model="ir.attachment">
         <field name="name">icon_animation.svg</field>
         <field name="mimetype">image/svg+xml</field>
@@ -851,6 +861,26 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="work_a_common_place" model="ir.attachment">
+        <field name="name">work_a_common_place.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_a_common_place.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_adventures_of_mike" model="ir.attachment">
+        <field name="name">work_adventures_of_mike.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_adventures_of_mike.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="work_are_you_okay" model="ir.attachment">
         <field name="name">work_are_you_okay.jpg</field>
         <field name="mimetype">image/jpeg</field>
@@ -858,6 +888,26 @@
             name="datas"
             type="base64"
             file="split_website/static/src/binary/ir_attachment/work_are_you_okay.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_balacobaco" model="ir.attachment">
+        <field name="name">work_balacobaco.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_balacobaco.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_betania_kids" model="ir.attachment">
+        <field name="name">work_betania_kids.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_betania_kids.jpg"
         />
         <field name="public" eval="True" />
     </record>
@@ -881,6 +931,66 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="work_cabrito_chewy" model="ir.attachment">
+        <field name="name">work_cabrito_chewy.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_cabrito_chewy.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_castanhari_2022" model="ir.attachment">
+        <field name="name">work_castanhari_2022.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_castanhari_2022.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_castanhari_2023" model="ir.attachment">
+        <field name="name">work_castanhari_2023.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_castanhari_2023.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_cool_sneakers" model="ir.attachment">
+        <field name="name">work_cool_sneakers.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_cool_sneakers.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_dc_fandome" model="ir.attachment">
+        <field name="name">work_dc_fandome.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_dc_fandome.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_elma_chips" model="ir.attachment">
+        <field name="name">work_elma_chips.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_elma_chips.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="work_fit_ufc" model="ir.attachment">
         <field name="name">work_fit_ufc.jpg</field>
         <field name="mimetype">image/jpeg</field>
@@ -888,6 +998,46 @@
             name="datas"
             type="base64"
             file="split_website/static/src/binary/ir_attachment/work_fit_ufc.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_from_love_to_bingo" model="ir.attachment">
+        <field name="name">work_from_love_to_bingo.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_from_love_to_bingo.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_heart_of_darkness" model="ir.attachment">
+        <field name="name">work_heart_of_darkness.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_heart_of_darkness.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_hello_kitty_chef_star" model="ir.attachment">
+        <field name="name">work_hello_kitty_chef_star.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_hello_kitty_chef_star.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_hello_kitty_fun" model="ir.attachment">
+        <field name="name">work_hello_kitty_fun.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_hello_kitty_fun.jpg"
         />
         <field name="public" eval="True" />
     </record>
@@ -901,6 +1051,16 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="work_iguatemi" model="ir.attachment">
+        <field name="name">work_iguatemi.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_iguatemi.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="work_is_anybody_out_there" model="ir.attachment">
         <field name="name">work_is_anybody_out_there.jpg</field>
         <field name="mimetype">image/jpeg</field>
@@ -911,6 +1071,36 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="work_lala" model="ir.attachment">
+        <field name="name">work_lala.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_lala.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_league_of_legends" model="ir.attachment">
+        <field name="name">work_league_of_legends.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_league_of_legends.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_luan_santana" model="ir.attachment">
+        <field name="name">work_luan_santana.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_luan_santana.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="work_monica_and_friends" model="ir.attachment">
         <field name="name">work_monica_and_friends.jpg</field>
         <field name="mimetype">image/jpeg</field>
@@ -918,6 +1108,16 @@
             name="datas"
             type="base64"
             file="split_website/static/src/binary/ir_attachment/work_monica_and_friends.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_monica_month" model="ir.attachment">
+        <field name="name">work_monica_month.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_monica_month.jpg"
         />
         <field name="public" eval="True" />
     </record>
@@ -941,6 +1141,76 @@
         />
         <field name="public" eval="True" />
     </record>
+    <record id="work_nick_summer" model="ir.attachment">
+        <field name="name">work_nick_summer.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_nick_summer.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_oglobo_media_day" model="ir.attachment">
+        <field name="name">work_oglobo_media_day.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_oglobo_media_day.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_one_fm_giant_robot" model="ir.attachment">
+        <field name="name">work_one_fm_giant_robot.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_one_fm_giant_robot.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_parmalat" model="ir.attachment">
+        <field name="name">work_parmalat.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_parmalat.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_pernambucanas" model="ir.attachment">
+        <field name="name">work_pernambucanas.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_pernambucanas.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_que_corpo_eca" model="ir.attachment">
+        <field name="name">work_que_corpo_eca.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_que_corpo_eca.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_radio_bita" model="ir.attachment">
+        <field name="name">work_radio_bita.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_radio_bita.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
     <record id="work_rick_and_morty" model="ir.attachment">
         <field name="name">work_rick_and_morty.jpg</field>
         <field name="mimetype">image/jpeg</field>
@@ -948,6 +1218,46 @@
             name="datas"
             type="base64"
             file="split_website/static/src/binary/ir_attachment/work_rick_and_morty.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_seara_monica" model="ir.attachment">
+        <field name="name">work_seara_monica.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_seara_monica.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_senninha" model="ir.attachment">
+        <field name="name">work_senninha.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_senninha.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_sesc" model="ir.attachment">
+        <field name="name">work_sesc.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_sesc.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_studio_r" model="ir.attachment">
+        <field name="name">work_studio_r.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_studio_r.jpg"
         />
         <field name="public" eval="True" />
     </record>
@@ -968,6 +1278,56 @@
             name="datas"
             type="base64"
             file="split_website/static/src/binary/ir_attachment/work_tito_and_the_birds.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_under_undergrounds" model="ir.attachment">
+        <field name="name">work_under_undergrounds.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_under_undergrounds.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_world_doesnt_know" model="ir.attachment">
+        <field name="name">work_world_doesnt_know.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_world_doesnt_know.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_yellow_woodpecker" model="ir.attachment">
+        <field name="name">work_yellow_woodpecker.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_yellow_woodpecker.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_zis" model="ir.attachment">
+        <field name="name">work_zis.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_zis.jpg"
+        />
+        <field name="public" eval="True" />
+    </record>
+    <record id="work_zolkin" model="ir.attachment">
+        <field name="name">work_zolkin.jpg</field>
+        <field name="mimetype">image/jpeg</field>
+        <field
+            name="datas"
+            type="base64"
+            file="split_website/static/src/binary/ir_attachment/work_zolkin.jpg"
         />
         <field name="public" eval="True" />
     </record>

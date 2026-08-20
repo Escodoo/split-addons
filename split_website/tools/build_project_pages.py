@@ -5,11 +5,14 @@
 # ruff: noqa: E501
 
 import re
+import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 MODULE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = MODULE_DIR / "data"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from work_catalog import FILTERS, NEW_PROJECTS, WORK_CARDS  # noqa: E402
 
 PROJECTS = (
     {
@@ -810,6 +813,7 @@ PROJECTS = (
         "cta_label": "Co-produce with us",
     },
 )
+PROJECTS = PROJECTS + NEW_PROJECTS
 
 CARD_LINKS = {
     "work_rick_and_morty": "/work/rick-and-morty",
@@ -846,20 +850,8 @@ CARD_CAPTIONS = {
     "work_mr_men_little_miss": "Sanrio Brazil · Promo",
 }
 
-WORK_CATEGORIES = {
-    "work_my_life_is_worth_living": "shows",
-    "work_fit_ufc": "branded",
-    "work_is_anybody_out_there": "shows",
-    "work_tito_and_the_birds": "features",
-    "work_are_you_okay": "shows",
-    "work_rick_and_morty": "shows",
-    "work_hello_kitty_supercute": "shows",
-    "work_bit_wars": "promos",
-    "work_monica_and_friends": "shows",
-    "work_mr_men_little_miss": "shows",
-    "work_bubu_and_the_little_owls": "shows",
-    "work_the_boy_and_the_world": "features",
-}
+CARD_LINKS.update({card["image"]: card["url"] for card in WORK_CARDS})
+WORK_CATEGORIES = {card["image"]: card["category"] for card in WORK_CARDS}
 
 VIEW_TEMPLATE = """    <record id="{xml_id}" model="ir.ui.view">
         <field name="name">Split Studio - {title}</field>
@@ -1463,6 +1455,95 @@ def _project_view(project):
     return _service_view(project)
 
 
+def _work_card_xml(card):
+    title = escape(card["title"])
+    return f"""                                        <div
+                                            class="col-lg-4 col-md-6 pt16 pb16 split-work-item"
+                                            data-category="{escape(card["category"])}"
+                                        >
+                                            <a
+                                                href="{escape(card["url"])}"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.{card["image"]}"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="{title}"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">{title}</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >{escape(card["caption"])}</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+"""
+
+
+def _work_filter_xml():
+    chunks = []
+    for key, label in FILTERS:
+        checked = ' checked="checked"' if key == "all" else ""
+        chunks.append(
+            f"""                                    <input
+                                        type="radio"
+                                        name="split_work_cat"
+                                        id="split_work_{key}"{checked}
+                                    />
+                                    <label for="split_work_{key}">{escape(label)}</label>
+"""
+        )
+    return "".join(chunks)
+
+
+def write_our_work_grid():
+    """Replace the productions section with the official catalog."""
+    path = DATA_DIR / "website_view_our_work.xml"
+    text = path.read_text(encoding="utf-8")
+    start = text.find(
+        '<section\n                                class="s_text_block pt64 pb64'
+    )
+    end = text.rfind("                            </section>")
+    if start < 0 or end < 0:
+        raise SystemExit("could not find the Our Work productions section")
+    end += len("                            </section>")
+    cards = "".join(_work_card_xml(card) for card in WORK_CARDS)
+    replacement = f"""                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Client productions"
+                            >
+                                <div class="container split-work-filter">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-12 pb16 d-flex flex-wrap align-items-baseline justify-content-between"
+                                        >
+                                            <div>
+                                                <h2 class="mb-0">Client productions</h2>
+                                                <p
+                                                    class="lead mb-0"
+                                                >Series, films, promos and branded content.</p>
+                                            </div>
+                                            <p class="mb-0">
+                                                <a href="/contactus">Start a project <i
+                                                    class="fa fa-long-arrow-right ms-2"
+                                                /></a>
+                                            </p>
+                                        </div>
+                                    </div>
+{_work_filter_xml()}                                    <div class="row">
+{cards}                                    </div>
+                                </div>
+                            </section>"""
+    path.write_text(text[:start] + replacement + text[end:], encoding="utf-8")
+    print(f"wrote {len(WORK_CARDS)} work cards in {path.name}")
+
+
 def write_project_views():
     chunks = [
         '<?xml version="1.0" encoding="utf-8" ?>\n',
@@ -1703,6 +1784,13 @@ def link_carousel():
         text = text[:lead_idx] + insert + text[lead_idx + len(lead_xml) :]
     path.write_text(text, encoding="utf-8")
     print(f"linked carousel in {path.name}")
+
+
+def complete_work_catalog():
+    """Rebuild project sheets and the Our Work grid. Do not run add_work_filter()."""
+    write_our_work_grid()
+    write_project_views()
+    append_project_pages()
 
 
 def main():
