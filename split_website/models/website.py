@@ -3,7 +3,11 @@
 
 from odoo import api, models
 
-from ..hooks import _refresh_client_logos, sync_copied_view_translations
+from ..hooks import (
+    _refresh_client_logos,
+    _rename_default_menus,
+    sync_copied_view_translations,
+)
 
 
 class Website(models.Model):
@@ -13,4 +17,5 @@ class Website(models.Model):
     def _register_hook(self):
         super()._register_hook()
         _refresh_client_logos(self.env)
+        _rename_default_menus(self.env)
         sync_copied_view_translations(self.env)

@@ -12,6 +12,8 @@ from pathlib import Path
 
 MODULE_DIR = Path(__file__).resolve().parent.parent
 I18N_DIR = MODULE_DIR / "i18n"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from work_catalog import TITLE_TRANSLATIONS  # noqa: E402
 DEFAULT_EXPORT = Path("/opt/odoo/auto/split_website.export.pot")
 LOCAL_EXPORT = MODULE_DIR.parents[4] / "auto" / "split_website.export.pot"
 
@@ -151,6 +153,7 @@ def write_po(path: Path, entries: list[dict], *, pot: bool) -> None:
 
 # Normalized English -> Portuguese. Official Split copy is preferred.
 TRANSLATIONS = {
+    **TITLE_TRANSLATIONS,
     "10 x 22′ | 12+ years old": "10 x 22′ | 12+ anos",
     "20 x 5 min": "20 x 5 min",
     "26 x 7′ | 4 to 7 years old": "26 x 7′ | 4 a 7 anos",
@@ -165,6 +168,7 @@ TRANSLATIONS = {
         "Um pipeline 2D completo, da primeira ideia ao render final."
     ),
     "About": "Sobre",
+    "Contact": "Contato",
     "Ads and branded": "Publicidade e branded",
     "Adult Swim · Animated episodes": "Adult Swim · Episódios animados",
     "Adventure | Fantasy | Drama": "Aventura | Fantasia | Drama",
@@ -186,6 +190,10 @@ TRANSLATIONS = {
     "Bits Produções · Feature film": "Bits Produções · Longa-metragem",
     "Branded series": "Série branded",
     "Brazil": "Brasil",
+    "<span> | Brazil | São Paulo – SP &amp; Rio de Janeiro – RJ</span>": (
+        "<span> | Brasil | São Paulo – SP &amp; Rio de Janeiro – RJ</span>"
+    ),
+    "<span> | USA | Dallas – TX</span>": "<span> | EUA | Dallas – TX</span>",
     "Bubu and the Little Owls": "Bubu e as Corujinhas",
     "Canal Futura · Original series": "Canal Futura · Série original",
     "Carousel indicator": "Indicador do carrossel",
@@ -290,6 +298,7 @@ TRANSLATIONS = {
         "IP original · Série em desenvolvimento"
     ),
     "Original IP · Short film": "IP original · Curta",
+    "Original IP · Promo": "IP original · Promo",
     "Original animated short created and produced by Split.": (
         "Curta original criado e produzido pela Split."
     ),
@@ -1005,10 +1014,43 @@ IDENTITY = {
     "Unicef",
     "Up Content",
     "Vimeo",
+    "Website",
     "Wee",
     "WeeBoom",
     "Wizavior",
     "Wonder Media",
+    "Canal Nostalgia",
+    "FalaíDearo",
+    "Karmatique",
+    "Kids Glove",
+    "Teatro Iguatemi",
+    "Lala Produções",
+    "Tortuga Studios",
+    "DC Fandome",
+    "Heart of Darkness",
+    "Hello Kitty Chef Star",
+    "Hello Kitty Fun",
+    "Studio R",
+    "Zolkin",
+    "Zis",
+    "Balacobaco",
+    "Lala",
+    "Getty Images",
+    "Parmalat",
+    "SESC",
+    "1 FM",
+    "Elma Chips",
+    "Pernambucanas",
+    "O Globo",
+    "Cabrito & Chewy",
+    "League of Legends | Project n.5",
+    "Parmalat | Manifesto",
+    "Getty Images | From Love to Bingo",
+    "Hélio Ziskind",
+    "Luan Santana",
+    "Rede Globo",
+    "TV Escola",
+    "Cabrito & Chewy",
     "YouTube",
     "@splitstudiobr",
     "contato@splitstudio.tv",
@@ -1017,17 +1059,17 @@ IDENTITY = {
 
 HTML_REPLACEMENTS = (
     (">Select the subject<", ">Selecione o assunto<"),
-    (">Select your field of work<", ">Selecione sua área de atuação<"),
-    (">Link to portfolio<", ">Link do portfólio<"),
+    (">Select your field of work<", ">Selecione o campo de atuação<"),
+    (">Link to portfolio<", ">Link para portfólio<"),
     (">Sales Team<", ">Equipe comercial<"),
     (">Field of work<", ">Área de atuação<"),
     (">Script Writing<", ">Roteiro<"),
-    (">Work with Split<", ">Trabalhar com a Split<"),
+    (">Work with Split<", ">Trabalhe na Split<"),
     (">Illustration<", ">Ilustração<"),
     (">Animation<", ">Animação<"),
     (">Production<", ">Produção<"),
     (">Storyboard<", ">Storyboard<"),
-    (">Bids<", ">Licitações<"),
+    (">Bids<", ">Orçamento<"),
     (">Press<", ">Imprensa<"),
     (">Other<", ">Outro<"),
     (">Company<", ">Empresa<"),
@@ -1038,10 +1080,51 @@ HTML_REPLACEMENTS = (
     (">Name<", ">Nome<"),
     (">Next<", ">Próximo<"),
     (">Previous<", ">Anterior<"),
+    (" | Brazil | ", " | Brasil | "),
+    (" | USA | ", " | EUA | "),
     (">Sanrio Brazil<", ">Sanrio Brasil<"),
     (">Bit Productions<", ">Bits Produções<"),
     (">Verite Entertainment<", ">Verité Entertainment<"),
 )
+
+
+SERVICE_TOKENS = {
+    "Direction": "Direção",
+    "Script": "Roteiro",
+    "Storyboard & Animatic": "Storyboard & Animatic",
+    "Storyboard &amp; Animatic": "Storyboard &amp; Animatic",
+    "Voices": "Vozes",
+    "Character Design": "Design de personagens",
+    "Character Designs": "Design de personagens",
+    "Props": "Props",
+    "Backgrounds": "Cenários",
+    "Builds": "Rigs",
+    "2D Animation": "Animação 2D",
+    "Editing": "Edição",
+    "Composition": "Composição",
+    "Compositing": "Composição",
+    "Sound FX": "Efeitos sonoros",
+    "Songs": "Músicas",
+    "Mix": "Mixagem",
+}
+
+
+def translate_services(msgid: str) -> str | None:
+    if (
+        "2D Animation" not in msgid
+        and "Storyboard" not in msgid
+        and "Editing" not in msgid
+    ):
+        return None
+    if msgid.startswith("A ") or msgid.startswith("An ") or msgid.startswith("Branded"):
+        return None
+    parts = [part.strip() for part in msgid.split(",")]
+    if len(parts) < 2:
+        return None
+    translated = [SERVICE_TOKENS.get(part, part) for part in parts]
+    if translated == parts:
+        return None
+    return ", ".join(translated)
 
 
 def translate_html(msgid: str) -> str | None:
@@ -1069,6 +1152,9 @@ def translate(msgid: str, existing: dict[str, str]) -> str:
     html = translate_html(msgid)
     if html:
         return html
+    services = translate_services(key)
+    if services:
+        return services
     # Keep phone, address and empty-option markup as-is.
     if msgid.startswith("<i class=") or msgid.startswith("<span class="):
         return msgid

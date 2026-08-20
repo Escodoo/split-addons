@@ -22,6 +22,14 @@ class TestSplitWebsitePages(HttpCase):
         "/work/mr-men-little-miss",
         "/work/bubu-and-the-little-owls",
         "/work/the-boy-and-the-world",
+        "/work/castanhari-2023",
+        "/work/castanhari-2022",
+        "/work/league-of-legends",
+        "/work/senninha",
+        "/work/adventures-of-mike",
+        "/work/heart-of-darkness",
+        "/work/radio-bita",
+        "/work/yellow-woodpecker-farm",
         "/originals/weeboom",
         "/originals/among-the-stars",
         "/originals/whats-up-bud",
@@ -67,6 +75,8 @@ class TestSplitWebsitePages(HttpCase):
         body = self.url_open("/about").text
         self.assertIn("We love telling stories", body)
         self.assertIn("split-about", body)
+        self.assertIn("split-pipeline", body)
+        self.assertIn("icon_creation.svg", body)
         self.assertIn("about_hero", body)
         self.assertIn("about_character_01", body)
         self.assertIn("Future Channel", body)
@@ -79,6 +89,7 @@ class TestSplitWebsitePages(HttpCase):
         body = self.url_open("/").text
         self.assertIn("Animation & Games", body)
         self.assertIn("What Split does", body)
+        self.assertIn("split-pipeline", body)
         self.assertIn("/web/image/split_website.work_tito_and_the_birds", body)
         self.assertIn("home_hero.webm", body)
         self.assertIn("home_hero_mobile.webm", body)
@@ -97,7 +108,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertNotIn("*crm_team_intake*", body)
         self.assertNotIn("*utm_medium_website*", body)
         self.assertNotIn("banner_hello_kitty", body)
-        self.assertIn("charcoal_cover", body)
+        self.assertIn("split-contact", body)
+        self.assertIn("contact_character.png", body)
         self.assertIn("/privacy", body)
         self.assertIn('name="Privacy"', body)
 
@@ -138,8 +150,13 @@ class TestSplitWebsitePages(HttpCase):
     def test_our_work_has_category_filter(self):
         body = self.url_open("/our-work").text
         self.assertIn('id="split_work_all"', body)
+        self.assertIn('id="split_work_music"', body)
+        self.assertIn('id="split_work_shorts"', body)
+        self.assertIn('id="split_work_games"', body)
         self.assertIn('data-category="shows"', body)
+        self.assertIn('data-category="music"', body)
         self.assertIn("/work/rick-and-morty", body)
+        self.assertEqual(body.count("split-work-item"), 58)
 
     def test_newsletter_list_is_resolved(self):
         body = self.url_open("/").text
@@ -161,6 +178,9 @@ class TestSplitWebsitePages(HttpCase):
             "/originals/howdy-harrdy",
             "/originals/miss-and-grubs",
             "/originals/to-reach-the-moon",
+            "/work/the-world-doesnt-know",
+            "/work/cool-sneakers",
+            "/work/a-common-place",
         ):
             with self.subTest(url=url):
                 self.assertIn(f'href="{url}"', body)
@@ -211,12 +231,18 @@ class TestSplitWebsitePages(HttpCase):
             "/work/mr-men-little-miss",
             "/work/bubu-and-the-little-owls",
             "/work/the-boy-and-the-world",
+            "/work/castanhari-2023",
+            "/work/league-of-legends",
+            "/work/senninha",
+            "/originals/weeboom",
+            "/originals/wizavior",
         ):
             with self.subTest(url=url):
                 self.assertIn(f'href="{url}"', body)
         # The card captions must match the official credits.
         self.assertIn("Up Content · Preschool series", body)
-        self.assertNotIn("Mr Plot", body)
+        self.assertIn("Sanrio Brazil · Promo", body)
+        self.assertIn("Mr Plot · Music video", body)
 
     def test_among_the_stars_links_to_catarse(self):
         body = self.url_open("/originals/among-the-stars").text
@@ -243,6 +269,14 @@ class TestSplitWebsitePages(HttpCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn("Nossos trabalhos", response.text)
         self.assertIn("Inscreva-se na newsletter", response.text)
+        self.assertIn("Retrospectiva Castanhari 2023", response.text)
+        self.assertIn("Senninha na Pista Maluca", response.text)
+        self.assertIn("Clipes musicais", response.text)
+        originals = self.url_open(f"/{portuguese.url_code}/split-originals")
+        self.assertEqual(originals.status_code, 200)
+        self.assertIn("O Mundo Não Sabe o que Perdeu", originals.text)
+        self.assertIn("Tênis da Hora", originals.text)
+        self.assertIn("Um Lugar Comum", originals.text)
         weeboom = self.url_open(f"/{portuguese.url_code}/originals/weeboom")
         self.assertEqual(weeboom.status_code, 200)
         self.assertIn("Personagens", weeboom.text)
@@ -270,3 +304,7 @@ class TestSplitWebsitePages(HttpCase):
         contact = self.url_open(f"/{portuguese.url_code}/contactus")
         self.assertEqual(contact.status_code, 200)
         self.assertIn("Fale conosco", contact.text)
+        self.assertIn("Contato", contact.text)
+        self.assertIn("Brasil", contact.text)
+        self.assertIn("EUA", contact.text)
+        self.assertNotIn(">Contact<", contact.text)

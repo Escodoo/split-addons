@@ -17,6 +17,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+msgid "1 FM"
+msgstr "1 FM"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+msgid "1 FM | Giant Robot"
+msgstr "1 FM | Robô Gigante"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+msgid "1 FM · Branded content"
+msgstr "1 FM · Branded content"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
 msgid "10 x 22′ | 12+ years old"
 msgstr "10 x 22′ | 12+ anos"
@@ -27,6 +44,11 @@ msgid "20 x 5 min"
 msgstr "20 x 5 min"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+msgid "26 x 11 min"
+msgstr "26 x 11 min"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "26 x 7′ | 4 to 7 years old"
 msgstr "26 x 7′ | 4 a 7 anos"
@@ -34,9 +56,13 @@ msgstr "26 x 7′ | 4 a 7 anos"
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
 #: model_terms:ir.ui.view,arch_db:split_website.project_bubu_and_the_little_owls
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "2D Animation"
 msgstr "Animação 2D"
@@ -50,46 +76,6 @@ msgstr "52 x 7′"
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
 msgid "75 x 3′"
 msgstr "75 x 3′"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid ""
-"<i class=\"fa fa-map-marker fa-fw me-2\"/>\n"
-"                                                    <span>Dallas - TX</span>"
-msgstr ""
-"<i class=\"fa fa-map-marker fa-fw me-2\"/>\n"
-"                                                    <span>Dallas - TX</span>"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid ""
-"<i class=\"fa fa-map-marker fa-fw me-2\"/>\n"
-"                                                    <span>São Paulo - SP &amp; Rio de Janeiro - RJ</span>"
-msgstr ""
-"<i class=\"fa fa-map-marker fa-fw me-2\"/>\n"
-"                                                    <span>São Paulo - SP &amp; Rio de Janeiro - RJ</span>"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid ""
-"<i class=\"fa fa-phone fa-fw me-2\"/>\n"
-"                                                    <span class=\"o_force_ltr\">+1 (682) 862 6656</span>"
-msgstr ""
-"<i class=\"fa fa-phone fa-fw me-2\"/>\n"
-"                                                    <span class=\"o_force_ltr\">+1 (682) 862 6656</span>"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid ""
-"<i class=\"fa fa-phone fa-fw me-2\"/>\n"
-"                                                    <span class=\"o_force_ltr\">+55 (11) 91366 8953</span>"
-msgstr ""
-"<i class=\"fa fa-phone fa-fw me-2\"/>\n"
-"                                                    <span class=\"o_force_ltr\">+55 (11) 91366 8953</span>"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
@@ -129,8 +115,8 @@ msgid ""
 msgstr ""
 "<select id=\"split_contact_subject\" class=\"form-select s_website_form_input\" name=\"name\" required=\"\">\n"
 "                                                                    <option value=\"\"/>\n"
-"                                                                    <option value=\"Bids\">Licitações</option>\n"
-"                                                                    <option value=\"Work with Split\">Trabalhar com a Split</option>\n"
+"                                                                    <option value=\"Bids\">Orçamento</option>\n"
+"                                                                    <option value=\"Work with Split\">Trabalhe na Split</option>\n"
 "                                                                    <option value=\"Press\">Imprensa</option>\n"
 "                                                                    <option value=\"Other\">Outro</option>\n"
 "                                                                </select>"
@@ -318,12 +304,6 @@ msgstr ""
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
 #: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "<span class=\"s_website_form_label_content\">Company</span>"
-msgstr "<span class=\"s_website_form_label_content\">Empresa</span>"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
 msgid ""
 "<span class=\"s_website_form_label_content\">E-mail</span>\n"
 "                                                                    <span class=\"s_website_form_mark\"> *</span>"
@@ -335,7 +315,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
 #: model_terms:ir.ui.view,arch_db:website.contactus
 msgid "<span class=\"s_website_form_label_content\">Link to portfolio</span>"
-msgstr "<span class=\"s_website_form_label_content\">Link do portfólio</span>"
+msgstr "<span class=\"s_website_form_label_content\">Link para portfólio</span>"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
@@ -366,12 +346,6 @@ msgstr ""
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
 #: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "<span class=\"s_website_form_label_content\">Phone</span>"
-msgstr "<span class=\"s_website_form_label_content\">Telefone</span>"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
 msgid "<span class=\"s_website_form_label_content\">Sales Team</span>"
 msgstr "<span class=\"s_website_form_label_content\">Equipe comercial</span>"
 
@@ -392,7 +366,7 @@ msgid ""
 "<span class=\"s_website_form_label_content\">Select your field of "
 "work</span>"
 msgstr ""
-"<span class=\"s_website_form_label_content\">Selecione sua área de "
+"<span class=\"s_website_form_label_content\">Selecione o campo de "
 "atuação</span>"
 
 #. module: split_website
@@ -402,17 +376,23 @@ msgid "<span class=\"s_website_form_mark\"> *</span>"
 msgstr "<span class=\"s_website_form_mark\"> *</span>"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "<span> | Brazil | São Paulo – SP &amp; Rio de Janeiro – RJ</span>"
+msgstr "<span> | Brasil | São Paulo – SP &amp; Rio de Janeiro – RJ</span>"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
+msgid "<span> | USA | Dallas – TX</span>"
+msgstr "<span> | EUA | Dallas – TX</span>"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
 msgid ""
 "<strong>Come along and enjoy this journey\n"
 "                                                with us.</strong>"
 msgstr "<strong>Vem curtir essa jornada com a gente.</strong>"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "@splitstudiobr"
-msgstr "@splitstudiobr"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
@@ -428,6 +408,155 @@ msgstr ""
 "edição e a composição."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+msgid ""
+"A 2022 recap produced by Split for Canal Nostalgia, covering direction, "
+"design and 2D animation through the final mix of the cut."
+msgstr ""
+"Retrospectiva de 2022 produzida pela Split para o Canal Nostalgia, da "
+"direção e do design à animação 2D e à mixagem final."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+msgid ""
+"A 2023 recap produced by Split for Canal Nostalgia, mixing 2D animation "
+"with Castanhari's year on YouTube."
+msgstr ""
+"Retrospectiva de 2023 produzida pela Split para o Canal Nostalgia, "
+"misturando animação 2D com o ano do Castanhari no YouTube."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "A Common Place"
+msgstr "Um Lugar Comum"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
+msgid ""
+"A branded Monica and Friends short produced with Mauricio de Sousa "
+"Produções for DC Fandome, covering the full 2D pipeline from direction and "
+"script through composition."
+msgstr ""
+"Curta branded da Turma da Mônica produzido com a Mauricio de Sousa "
+"Produções para o DC Fandome, cobrindo o pipeline 2D da direção e do "
+"roteiro até a composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+msgid ""
+"A branded Que Corpo é Esse? film produced with Canal Futura for Eca's 30th "
+"anniversary, covering the full 2D pipeline."
+msgstr ""
+"Filme branded de Que Corpo é Esse? produzido com o Canal Futura para os 30 "
+"anos da Eca, cobrindo o pipeline 2D completo."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
+msgid ""
+"A branded campaign produced for Cartoon Network's Monica Month, from "
+"direction and script through 2D animation and composition."
+msgstr ""
+"Campanha branded produzida para o Mês da Mônica do Cartoon Network, da "
+"direção e do roteiro à animação 2D e à composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+msgid ""
+"A branded campaign produced for Nickelodeon. Split covered direction, "
+"voices, design and 2D animation through composition."
+msgstr ""
+"Campanha branded produzida para a Nickelodeon. A Split cobriu direção, "
+"vozes, design e animação 2D até a composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+msgid ""
+"A branded film produced for 1 FM. Split covered direction, voices and 2D "
+"animation through sound and mix."
+msgstr ""
+"Filme branded produzido para a 1 FM. A Split cobriu direção, vozes e "
+"animação 2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
+msgid ""
+"A branded film produced for Elma Chips. Split covered direction, voices "
+"and 2D animation through sound and mix."
+msgstr ""
+"Filme branded produzido para a Elma Chips. A Split cobriu direção, vozes e "
+"animação 2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+msgid ""
+"A branded film produced for Getty Images, with Split on editing and "
+"composition."
+msgstr ""
+"Filme branded produzido para a Getty Images, com a Split na edição e na "
+"composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+msgid ""
+"A branded film produced for O Globo. Split handled direction, design and "
+"2D animation through sound and mix."
+msgstr ""
+"Filme branded produzido para O Globo. A Split fez direção, design e "
+"animação 2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+msgid ""
+"A branded film produced for Riot Games. Split covered direction, voices, "
+"design and 2D animation through sound and mix."
+msgstr ""
+"Filme branded produzido para a Riot Games. A Split cobriu direção, vozes, "
+"design e animação 2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+msgid ""
+"A branded film produced for SESC. Split covered direction, script and 2D "
+"animation through composition."
+msgstr ""
+"Filme branded produzido para o SESC. A Split cobriu direção, roteiro e "
+"animação 2D até a composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
+msgid ""
+"A branded film produced for Teatro Iguatemi, covering direction, voices "
+"and 2D animation through sound and mix."
+msgstr ""
+"Filme branded produzido para o Teatro Iguatemi, cobrindo direção, vozes e "
+"animação 2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
+msgid ""
+"A branded film produced for Zolkin, covering direction, voices and 2D "
+"animation through sound and mix."
+msgstr ""
+"Filme branded produzido para a Zolkin, cobrindo direção, vozes e animação "
+"2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+msgid ""
+"A branded manifesto produced for Parmalat. Split handled storyboard, "
+"design and 2D animation through compositing."
+msgstr ""
+"Manifesto branded produzido para a Parmalat. A Split fez storyboard, "
+"design e animação 2D até a composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
+msgid "A branded spot produced for Pernambucanas, with Split on 2D animation."
+msgstr "Spot branded produzido para as Pernambucanas, com a Split na animação 2D."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
 msgid "A divided world. A unique journey."
 msgstr "Um mundo dividido. Uma jornada única."
@@ -436,19 +565,6 @@ msgstr "Um mundo dividido. Uma jornada única."
 #: model_terms:ir.ui.view,arch_db:split_website.reel
 msgid "A few minutes through ten years of animation."
 msgstr "Alguns minutos por dez anos de animação."
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.about
-msgid ""
-"A full 2D pipeline, from the first idea to\n"
-"                                            the final render."
-msgstr "Um pipeline 2D completo, da primeira ideia ao render final."
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.homepage
-#: model_terms:ir.ui.view,arch_db:website.homepage
-msgid "A full 2D pipeline, from the first idea to the final render."
-msgstr "Um pipeline 2D completo, da primeira ideia ao render final."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
@@ -526,6 +642,33 @@ msgstr ""
 "transformando um pitch de game retrô numa peça rápida e legível."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
+msgid ""
+"A promo produced for Studio R, from direction and script through design, "
+"2D animation and composition."
+msgstr ""
+"Promo produzida para o Studio R, da direção e do roteiro ao design, à "
+"animação 2D e à composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
+msgid ""
+"A promo produced with Karmatique. Split handled props, backgrounds, 2D "
+"animation, editing and composition."
+msgstr ""
+"Promo produzida com a Karmatique. A Split fez props, cenários, animação "
+"2D, edição e composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+msgid ""
+"A promo produced with Kids Glove. Split handled props, backgrounds, builds "
+"and 2D animation."
+msgstr ""
+"Promo produzida com a Kids Glove. A Split fez props, cenários, rigs e "
+"animação 2D."
+
+#. module: split_website
 #: model:website.menu,name:split_website.menu_about
 msgid "About"
 msgstr "Sobre"
@@ -600,6 +743,60 @@ msgstr ""
 "ajudar a tornar o projeto realidade no Catarse."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
+msgid ""
+"An animated music video produced for Luan Santana, from direction and "
+"storyboard through 2D animation and composition."
+msgstr ""
+"Clipe animado produzido para Luan Santana, da direção e do storyboard à "
+"animação 2D e à composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+msgid ""
+"An animated music video produced with Hélio Ziskind, from direction and "
+"script through 2D animation and composition."
+msgstr ""
+"Clipe animado produzido com Hélio Ziskind, da direção e do roteiro à "
+"animação 2D e à composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
+msgid ""
+"An animated series produced with FalaíDearo. Split covered direction, "
+"voices, design and 2D animation through sound and mix."
+msgstr ""
+"Série animada produzida com a FalaíDearo. A Split cobriu direção, vozes, "
+"design e animação 2D até o som e a mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+msgid ""
+"An animated series produced with Instituto Ayrton Senna and Gullane. Split "
+"handled direction, design and 2D animation through composition."
+msgstr ""
+"Série animada produzida com o Instituto Ayrton Senna e a Gullane. A Split "
+"fez direção, design e animação 2D até a composição."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+msgid ""
+"An animated series produced with Lala Produções. Split handled character "
+"design, props, backgrounds, builds and 2D animation."
+msgstr ""
+"Série animada produzida com a Lala Produções. A Split fez design de "
+"personagens, props, cenários, rigs e animação 2D."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+msgid ""
+"An animated series produced with Tortuga Studios. Split handled "
+"storyboard, builds and 2D animation."
+msgstr ""
+"Série animada produzida com a Tortuga Studios. A Split fez storyboard, "
+"rigs e animação 2D."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_miss_and_grubs
 msgid ""
 "An animated short originally created by Camila Kamimura and Victor Canela "
@@ -609,6 +806,24 @@ msgstr ""
 "Curta originalmente criado por Camila Kamimura e Victor Canela e produzido "
 "pela Split com o apoio da Secretaria de Cultura do Governo do Estado de "
 "São Paulo, por meio do Programa de Ação Cultural em 2013."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+msgid ""
+"An animated short produced with TV Escola. Split covered direction, "
+"script, voices and 2D animation through songs."
+msgstr ""
+"Curta animado produzido com a TV Escola. A Split cobriu direção, roteiro, "
+"vozes e animação 2D até as músicas."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
+msgid ""
+"An original animated short created inside Split, from direction and script "
+"through animation, songs and mix."
+msgstr ""
+"Curta original criado dentro da Split, da direção e do roteiro à animação, "
+"às músicas e à mixagem."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
@@ -638,6 +853,15 @@ msgstr ""
 "Série de comédia original criada por Michele Massagli. A Split cobre o "
 "pipeline 2D completo, da direção e do roteiro às vozes, à animação, ao som "
 "e à mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+msgid ""
+"An original promo created inside Split, covering the film from direction "
+"and script through animation, sound and mix."
+msgstr ""
+"Promo original criada dentro da Split, cobrindo o filme da direção e do "
+"roteiro à animação, ao som e à mixagem."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
@@ -673,6 +897,16 @@ msgid "Animated episodes produced for the fifth season."
 msgstr "Episódios animados para a 5ª temporada."
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_luan_santana
+msgid "Animated music video produced for Luan Santana."
+msgstr "Clipe animado produzido para Luan Santana."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_zis
+msgid "Animated music video produced with Hélio Ziskind."
+msgstr "Clipe animado produzido com Hélio Ziskind."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_sun_boy
 msgid ""
 "Animated music videos for Sun Boy and Friends, produced with Midas "
@@ -682,6 +916,26 @@ msgstr ""
 "Clipes animados da Turma do Menino Sol, produzidos com a Midas Productions "
 "e com as músicas de Vitor Kley. A Split dirigiu as peças e as levou pelo "
 "pipeline 2D."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_adventures_of_mike
+msgid "Animated series produced with FalaíDearo, covering Split's 2D pipeline."
+msgstr "Série animada produzida com a FalaíDearo, cobrindo o pipeline 2D da Split."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_senninha
+msgid "Animated series produced with Instituto Ayrton Senna and Gullane."
+msgstr "Série animada produzida com o Instituto Ayrton Senna e a Gullane."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_lala
+msgid "Animated series produced with Lala Produções."
+msgstr "Série animada produzida com a Lala Produções."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_under_undergrounds
+msgid "Animated series produced with Tortuga Studios."
+msgstr "Série animada produzida com a Tortuga Studios."
 
 #. module: split_website
 #: model:ir.ui.view,website_meta_description:split_website.project_are_you_okay
@@ -732,10 +986,24 @@ msgstr ""
 "com apoio do Governo de São Paulo."
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_cool_sneakers
+msgid "Animated short produced with TV Escola."
+msgstr "Curta animado produzido com a TV Escola."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Animation &amp; Games"
 msgstr "Animação e games"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+msgid ""
+"Animation produced for Rede Globo's Yellow Woodpecker Farm. The series ran "
+"26 episodes of 11 minutes, with Split on 2D animation."
+msgstr ""
+"Animação produzida para o Sítio do Picapau Amarelo da Rede Globo. A série "
+"teve 26 episódios de 11 minutos, com a Split na animação 2D."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -744,6 +1012,12 @@ msgstr "Animação e games"
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Are You Okay?"
 msgstr "Are You Okay?"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+msgid "Balacobaco"
+msgstr "Balacobaco"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
@@ -759,6 +1033,12 @@ msgstr "Bardel · Episódios animados"
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
 msgid "Based on Affonso Solano's work"
 msgstr "Baseado na obra de Affonso Solano"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
+msgid "Betania Kids | Monica and Friends"
+msgstr "Betânia Kids | Turma da Mônica"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -834,6 +1114,104 @@ msgstr ""
 "seus poderes mágicos para espalhar caos por onde estão. Cuidado!"
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_betania_kids
+msgid "Branded Monica and Friends spots produced for Betania Kids."
+msgstr "Spots branded da Turma da Mônica produzidos para a Betânia Kids."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_seara_monica
+msgid "Branded Monica and Friends spots produced for Seara."
+msgstr "Spots branded da Turma da Mônica produzidos para a Seara."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
+msgid ""
+"Branded Monica and Friends spots produced with Mauricio de Sousa Produções "
+"for Betania Kids, with Split on 2D animation."
+msgstr ""
+"Spots branded da Turma da Mônica produzidos com a Mauricio de Sousa "
+"Produções para a Betânia Kids, com a Split na animação 2D."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+msgid ""
+"Branded Monica and Friends spots produced with Mauricio de Sousa Produções "
+"for Seara, from storyboard through 2D animation and composition."
+msgstr ""
+"Spots branded da Turma da Mônica produzidos com a Mauricio de Sousa "
+"Produções para a Seara, do storyboard à animação 2D e à composição."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_monica_month
+msgid "Branded campaign produced for Cartoon Network's Monica Month."
+msgstr "Campanha branded produzida para o Mês da Mônica do Cartoon Network."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_nick_summer
+msgid "Branded campaign produced for Nickelodeon's Nick Summer."
+msgstr "Campanha branded produzida para o Verão Nick da Nickelodeon."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+msgid "Branded content produced for Record, with Split on 2D animation."
+msgstr "Branded content produzido para a Record, com a Split na animação 2D."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_balacobaco
+msgid "Branded content produced for Record."
+msgstr "Branded content produzido para a Record."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_one_fm_giant_robot
+msgid "Branded film produced for 1 FM."
+msgstr "Filme branded produzido para a 1 FM."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_elma_chips
+msgid "Branded film produced for Elma Chips."
+msgstr "Filme branded produzido para a Elma Chips."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_from_love_to_bingo
+msgid "Branded film produced for Getty Images."
+msgstr "Filme branded produzido para a Getty Images."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_oglobo_media_day
+msgid "Branded film produced for O Globo's Media Day."
+msgstr "Filme branded produzido para o Dia do Mídia do O Globo."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_league_of_legends
+msgid "Branded film produced for Riot Games' League of Legends."
+msgstr "Filme branded produzido para o League of Legends da Riot Games."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_sesc
+msgid "Branded film produced for SESC."
+msgstr "Filme branded produzido para o SESC."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_iguatemi
+msgid "Branded film produced for Teatro Iguatemi."
+msgstr "Filme branded produzido para o Teatro Iguatemi."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_zolkin
+msgid "Branded film produced for Zolkin."
+msgstr "Filme branded produzido para a Zolkin."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_que_corpo_eca
+msgid "Branded film produced with Canal Futura for Eca's 30th anniversary."
+msgstr "Filme branded produzido com o Canal Futura para os 30 anos da Eca."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_parmalat
+msgid "Branded manifesto produced for Parmalat."
+msgstr "Manifesto branded produzido para a Parmalat."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
 msgid "Branded series"
 msgstr "Série branded"
@@ -848,6 +1226,13 @@ msgstr ""
 "pipeline 2D da Split."
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_dc_fandome
+msgid "Branded short produced with Mauricio de Sousa Produções for DC Fandome."
+msgstr ""
+"Curta branded produzido com a Mauricio de Sousa Produções para o DC "
+"Fandome."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
 msgid ""
 "Branded shorts produced for UFC, mixing fight mythology with Split's 2D "
@@ -859,10 +1244,9 @@ msgstr ""
 "às vozes, à animação, ao som e à mixagem."
 
 #. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "Brazil"
-msgstr "Brasil"
+#: model:ir.ui.view,website_meta_description:split_website.project_pernambucanas
+msgid "Branded spot produced for Pernambucanas."
+msgstr "Spot branded produzido para as Pernambucanas."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -877,6 +1261,18 @@ msgid "Bubu and the Little Owls"
 msgstr "Bubu e as Corujinhas"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+msgid "Cabrito & Chewy"
+msgstr "Cabrito & Chewy"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+msgid "Cabrito &amp; Chewy"
+msgstr "Cabrito &amp; Chewy"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_miss_and_grubs
 msgid "Camila Kamimura and Victor Canela"
 msgstr "Camila Kamimura and Victor Canela"
@@ -884,17 +1280,38 @@ msgstr "Camila Kamimura and Victor Canela"
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_e_esse
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Canal Futura"
 msgstr "Canal Futura"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+msgid "Canal Futura · Branded content"
+msgstr "Canal Futura · Branded content"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_e_esse
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Canal Futura · Original series"
 msgstr "Canal Futura · Série original"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+msgid "Canal Nostalgia"
+msgstr "Canal Nostalgia"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+msgid "Canal Nostalgia · Music video"
+msgstr "Canal Nostalgia · Clipe musical"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -905,9 +1322,22 @@ msgstr "Indicador do carrossel"
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:split_website.project_monica_and_friends
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Cartoon Network"
 msgstr "Cartoon Network"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
+msgid "Cartoon Network | Monica Month"
+msgstr "Cartoon Network | Mês da Mônica"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
+msgid "Cartoon Network · Branded content"
+msgstr "Cartoon Network · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -916,11 +1346,28 @@ msgid "Cartoonito"
 msgstr "Cartoonito"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+msgid "Castanhari 2022 Recap"
+msgstr "Retrospectiva Castanhari 2022"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+msgid "Castanhari 2023 Recap"
+msgstr "Retrospectiva Castanhari 2023"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Character Design &amp; Backgrounds"
 msgstr "Design de personagens e cenários"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+msgid "Character Design, Props, Backgrounds, Builds, 2D Animation"
+msgstr "Design de personagens, Props, Cenários, Rigs, Animação 2D"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
@@ -1009,26 +1456,61 @@ msgstr ""
 "uma das mais assistidas do Brasil no canal."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
 #: model_terms:ir.ui.view,arch_db:split_website.project_among_the_stars
 #: model_terms:ir.ui.view,arch_db:split_website.project_are_you_okay
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
 #: model_terms:ir.ui.view,arch_db:split_website.project_bit_wars
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
 #: model_terms:ir.ui.view,arch_db:split_website.project_bubu_and_the_little_owls
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
 #: model_terms:ir.ui.view,arch_db:split_website.project_egregora
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
 #: model_terms:ir.ui.view,arch_db:split_website.project_howdy_harrdy
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
 #: model_terms:ir.ui.view,arch_db:split_website.project_is_anybody_out_there
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
 #: model_terms:ir.ui.view,arch_db:split_website.project_monica_and_friends
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
 #: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_e_esse
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
 #: model_terms:ir.ui.view,arch_db:split_website.project_sun_boy
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
 #: model_terms:ir.ui.view,arch_db:split_website.project_tito_and_the_birds
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
 #: model_terms:ir.ui.view,arch_db:split_website.project_wizavior
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
 msgid "Client"
 msgstr "Cliente"
 
@@ -1080,6 +1562,13 @@ msgid "Contact form"
 msgstr "Formulário de contato"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "Cool Sneakers"
+msgstr "Tênis da Hora"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_howdy_harrdy
 #: model_terms:ir.ui.view,arch_db:split_website.project_miss_and_grubs
 #: model_terms:ir.ui.view,arch_db:split_website.project_whats_up_bud
@@ -1127,7 +1616,17 @@ msgid "Cut Out &amp; Traditional Animation"
 msgstr "Animação cut out e tradicional"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
+msgid "DC Fandome"
+msgstr "DC Fandome"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
 #: model_terms:ir.ui.view,arch_db:split_website.project_monica_and_friends
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
 msgid ""
 "Direction, Script, Storyboard &amp; Animatic, Character Design, Props, "
 "Backgrounds, Builds, 2D Animation, Editing, Composition"
@@ -1136,6 +1635,16 @@ msgstr ""
 "cenários, builds, animação 2D, edição, composição"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+msgid ""
+"Direction, Script, Storyboard &amp; Animatic, Props, Backgrounds, Builds, "
+"2D Animation, Editing, Composition"
+msgstr ""
+"Direção, Roteiro, Storyboard &amp; Animatic, Props, Cenários, Rigs, "
+"Animação 2D, Edição, Composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
 msgid ""
 "Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, "
@@ -1145,11 +1654,28 @@ msgstr ""
 "props, cenários, builds, animação 2D, edição, composição, músicas, mixagem"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+msgid ""
+"Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, "
+"Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, "
+"Songs"
+msgstr ""
+"Direção, Roteiro, Storyboard &amp; Animatic, Vozes, Design de personagens, "
+"Props, Cenários, Rigs, Animação 2D, Edição, Composição, Efeitos sonoros, "
+"Músicas"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
 #: model_terms:ir.ui.view,arch_db:split_website.project_egregora
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
 #: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_e_esse
 #: model_terms:ir.ui.view,arch_db:split_website.project_whats_up_bud
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
 msgid ""
 "Direction, Script, Storyboard &amp; Animatic, Voices, Character Design, "
 "Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, "
@@ -1171,6 +1697,29 @@ msgstr ""
 "músicas, mixagem, animação 3D"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+msgid ""
+"Direction, Script, Voices, Storyboard &amp; Animatic, Character Design, "
+"Props, Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, "
+"Songs, Mix"
+msgstr ""
+"Direção, Roteiro, Vozes, Storyboard &amp; Animatic, Design de personagens, "
+"Props, Cenários, Rigs, Animação 2D, Edição, Composição, Efeitos sonoros, "
+"Músicas, Mixagem"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+msgid ""
+"Direction, Storyboard &amp; Animatic, Character Design, Props, "
+"Backgrounds, 2D Animation, Editing, Composition"
+msgstr ""
+"Direção, Storyboard &amp; Animatic, Design de personagens, Props, "
+"Cenários, Animação 2D, Edição, Composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
 #: model_terms:ir.ui.view,arch_db:split_website.project_sun_boy
 msgid ""
 "Direction, Storyboard &amp; Animatic, Character Design, Props, "
@@ -1181,6 +1730,7 @@ msgstr ""
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
 msgid ""
 "Direction, Storyboard &amp; Animatic, Character Design, Props, "
 "Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, "
@@ -1197,6 +1747,28 @@ msgid ""
 msgstr ""
 "Direção, storyboard e animatic, props, cenários, builds, animação 2D, "
 "edição, composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+msgid ""
+"Direction, Storyboard &amp; Animatic, Voices, Character Design, Props, "
+"Backgrounds, Builds, 2D Animation, Editing, Composition"
+msgstr ""
+"Direção, Storyboard &amp; Animatic, Vozes, Design de personagens, Props, "
+"Cenários, Rigs, Animação 2D, Edição, Composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
+msgid ""
+"Direction, Storyboard &amp; Animatic, Voices, Character Design, Props, "
+"Backgrounds, Builds, 2D Animation, Editing, Composition, Sound FX, Songs, "
+"Mix"
+msgstr ""
+"Direção, Storyboard &amp; Animatic, Vozes, Design de personagens, Props, "
+"Cenários, Rigs, Animação 2D, Edição, Composição, Efeitos sonoros, Músicas, "
+"Mixagem"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
@@ -1220,6 +1792,12 @@ msgid "Disney Jr."
 msgstr "Disney Jr."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+msgid "Editing, Composition"
+msgstr "Edição, Composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_egregora
 msgid "Egregore"
 msgstr "Egrégora"
@@ -1228,6 +1806,23 @@ msgstr "Egrégora"
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "Egrégora"
 msgstr "Egrégora"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
+msgid "Elma Chips"
+msgstr "Elma Chips"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
+msgid "Elma Chips | Peanuts"
+msgstr "Elma Chips | Amendoim"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
+msgid "Elma Chips · Branded content"
+msgstr "Elma Chips · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
@@ -1260,6 +1855,17 @@ msgstr "Produtor executivo e diretor de animação"
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "FX &amp; Motion Animation"
 msgstr "FX e motion animation"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
+msgid "FalaíDearo"
+msgstr "FalaíDearo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
+msgid "FalaíDearo · Animated series"
+msgstr "FalaíDearo · Série animada"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
@@ -1337,6 +1943,7 @@ msgstr "Fit UFC | Mito de Verdade"
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
 msgid "Format"
 msgstr "Formato"
 
@@ -1354,6 +1961,28 @@ msgstr "Fundador, diretor e roteirista"
 #: model_terms:ir.ui.view,arch_db:split_website.project_among_the_stars
 msgid "Game"
 msgstr "Game"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Games"
+msgstr "Games"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+msgid "Getty Images"
+msgstr "Getty Images"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+msgid "Getty Images | From Love to Bingo"
+msgstr "Getty Images | From Love to Bingo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+msgid "Getty Images · Branded content"
+msgstr "Getty Images · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -1414,6 +2043,24 @@ msgstr ""
 "primeira qualidade."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
+msgid "Heart of Darkness"
+msgstr "Heart of Darkness"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+msgid "Hello Kitty Chef Star"
+msgstr "Hello Kitty Chef Star"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+msgid "Hello Kitty Fun"
+msgstr "Hello Kitty Fun"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Hello Kitty Supercute Adventures"
@@ -1424,6 +2071,12 @@ msgstr "Hello Kitty Supercute Adventures"
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
 msgid "Hello Kitty and Friends Supercute Adventures"
 msgstr "Hello Kitty and Friends Supercute Adventures"
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_hello_kitty_chef_star
+#: model:ir.ui.view,website_meta_description:split_website.project_hello_kitty_fun
+msgid "Hello Kitty web episodes produced for Sanrio Brazil."
+msgstr "Episódios web da Hello Kitty produzidos para a Sanrio Brasil."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_howdy_harrdy
@@ -1459,6 +2112,7 @@ msgid "How long we keep it"
 msgstr "Por quanto tempo guardamos"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_howdy_harrdy
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "Howdy Harrdy"
@@ -1474,6 +2128,17 @@ msgstr ""
 "Howdy Harrdy é um cartoon preschool criado por Henrique Lira e produzido "
 "pelo Split Studio em parceria com a Animact! para o Nick Jr. US, pelo "
 "Nickelodeon Animated Shorts Program."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+msgid "Hélio Ziskind"
+msgstr "Hélio Ziskind"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+msgid "Hélio Ziskind · Music video"
+msgstr "Hélio Ziskind · Clipe musical"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
@@ -1504,6 +2169,12 @@ msgid ""
 msgstr ""
 "Se você assina a newsletter, guardamos o e-mail informado para enviar as "
 "novidades do estúdio. Dá para cancelar a inscrição em qualquer mensagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
+msgid "Iguatemi Theater"
+msgstr "Teatro Iguatemi"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_among_the_stars
@@ -1537,9 +2208,16 @@ msgstr ""
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Instituto Ayrton Senna"
 msgstr "Instituto Ayrton Senna"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+msgid "Instituto Ayrton Senna · Animated series"
+msgstr "Instituto Ayrton Senna · Série animada"
 
 #. module: split_website
 #: model:ir.ui.view,website_meta_description:split_website.split_originals
@@ -1607,14 +2285,76 @@ msgid "João Alegria"
 msgstr "João Alegria"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
+msgid "Karmatique"
+msgstr "Karmatique"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
+msgid "Karmatique · Promo"
+msgstr "Karmatique · Promo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+msgid "Kids Glove"
+msgstr "Kids Glove"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+msgid "Kids Glove · Promo"
+msgstr "Kids Glove · Promo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+msgid "Lala"
+msgstr "Lala"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+msgid "Lala Produções"
+msgstr "Lala Produções"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+msgid "Lala Produções · Animated series"
+msgstr "Lala Produções · Série animada"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_bit_wars
 msgid "Layout, Animation"
 msgstr "Layout, animação"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+msgid "League of Legends | Project n.5"
+msgstr "League of Legends | Project n.5"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
 msgid "Loyal Companion"
 msgstr "Fiel companheira"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
+msgid "Luan Santana"
+msgstr "Luan Santana"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
+msgid "Luan Santana | I Didn't Deserve This"
+msgstr "Luan Santana | Eu Não Merecia Isso"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
+msgid "Luan Santana · Music video"
+msgstr "Luan Santana · Clipe musical"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -1624,9 +2364,20 @@ msgstr "Mauricio de Sousa"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Mauricio de Sousa Produções"
 msgstr "Mauricio de Sousa Produções"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+msgid "Mauricio de Sousa Produções · Branded content"
+msgstr "Mauricio de Sousa Produções · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
@@ -1650,12 +2401,14 @@ msgid "Midas Productions · Music videos"
 msgstr "Midas Productions · Clipes musicais"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_miss_and_grubs
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "Miss & Grubs"
 msgstr "Miss & Grubs"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_miss_and_grubs
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "Miss &amp; Grubs"
@@ -1688,14 +2441,40 @@ msgstr "Mr Men Little Miss"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Mr Plot"
 msgstr "Mr Plot"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
+msgid "Mr Plot · Music video"
+msgstr "Mr Plot · Clipe musical"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Music videos"
+msgstr "Clipes musicais"
+
+#. module: split_website
 #: model:ir.ui.view,website_meta_description:split_website.project_sun_boy
 msgid "Music videos for Sun Boy and Friends, with songs by Vitor Kley."
 msgstr "Clipes da Turma do Menino Sol, com as músicas de Vitor Kley."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_radio_bita
+msgid "Music videos produced with Mr Plot for Radio Bita."
+msgstr "Clipes produzidos com a Mr Plot para o Rádio Bita."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
+msgid ""
+"Music videos produced with Mr Plot for Radio Bita. Split handled "
+"storyboard, animatic and 2D animation."
+msgstr ""
+"Clipes produzidos com a Mr Plot para o Rádio Bita. A Split fez storyboard, "
+"animatic e animação 2D."
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -1737,15 +2516,33 @@ msgid "Nick Jr. US"
 msgstr "Nick Jr. US"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Nick Jr. US · Promo"
+msgstr "Nick Jr. US · Promo"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_howdy_harrdy
 msgid "Nick Jr. US · Series in development"
 msgstr "Nick Jr. US · Série em desenvolvimento"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Nickelodeon"
 msgstr "Nickelodeon"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+msgid "Nickelodeon | Nick Summer"
+msgstr "Nickelodeon | Verão Nick"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+msgid "Nickelodeon · Branded content"
+msgstr "Nickelodeon · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_bit_wars
@@ -1759,6 +2556,24 @@ msgid "NuBoom · Promo"
 msgstr "NuBoom · Promo"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+msgid "O Globo"
+msgstr "O Globo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+msgid "O Globo | Media Day"
+msgstr "O Globo | Dia do Mídia"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+msgid "O Globo · Branded content"
+msgstr "O Globo · Branded content"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "On the Trail of the Blue Butterflies"
@@ -1809,6 +2624,11 @@ msgstr "IP original · Série preschool"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "Original IP · Promo"
+msgstr "IP original · Promo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "Original IP · Series"
 msgstr "IP original · Série"
 
@@ -1834,6 +2654,7 @@ msgstr ""
 "lançado na CCXP19."
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_a_common_place
 #: model:ir.ui.view,website_meta_description:split_website.project_egregora
 #: model:ir.ui.view,website_meta_description:split_website.project_to_reach_the_moon
 msgid "Original animated short created and produced by Split."
@@ -1863,6 +2684,11 @@ msgstr ""
 "disponível em vários territórios."
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_world_doesnt_know
+msgid "Original promo created and produced inside Split."
+msgstr "Promo original criada e produzida dentro da Split."
+
+#. module: split_website
 #: model:ir.ui.view,website_meta_description:split_website.project_blue_butterflies
 msgid "Original series created inside Split, covering the full 2D pipeline."
 msgstr "Série original criada na Split, cobrindo o pipeline 2D completo."
@@ -1887,18 +2713,53 @@ msgstr ""
 #: model:website.menu,name:split_website.menu_our_work
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
 #: model_terms:ir.ui.view,arch_db:split_website.project_are_you_okay
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
 #: model_terms:ir.ui.view,arch_db:split_website.project_bit_wars
 #: model_terms:ir.ui.view,arch_db:split_website.project_bubu_and_the_little_owls
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
 #: model_terms:ir.ui.view,arch_db:split_website.project_is_anybody_out_there
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
 #: model_terms:ir.ui.view,arch_db:split_website.project_monica_and_friends
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
 #: model_terms:ir.ui.view,arch_db:split_website.project_tito_and_the_birds
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Our Work"
 msgstr "Nossos trabalhos"
@@ -1929,6 +2790,40 @@ msgstr "Paranoid"
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "Paris, France"
 msgstr "Paris, França"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+msgid "Parmalat"
+msgstr "Parmalat"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+msgid "Parmalat | Manifesto"
+msgstr "Parmalat | Manifesto"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+msgid "Parmalat · Branded content"
+msgstr "Parmalat · Branded content"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
+msgid "Pernambucanas"
+msgstr "Pernambucanas"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
+msgid "Pernambucanas | A Little Cold"
+msgstr "Lojas Pernambucanas | Friozinho"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
+msgid "Pernambucanas · Branded content"
+msgstr "Pernambucanas · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
@@ -2045,12 +2940,38 @@ msgstr ""
 "direção à mixagem."
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_studio_r
+msgid "Promo produced for Studio R, covering Split's 2D pipeline."
+msgstr "Promo produzida para o Studio R, cobrindo o pipeline 2D da Split."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_heart_of_darkness
+msgid "Promo produced with Karmatique, with Split on art and 2D animation."
+msgstr "Promo produzida com a Karmatique, com a Split na arte e na animação 2D."
+
+#. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_cabrito_chewy
+msgid "Promo produced with Kids Glove, with Split on art and 2D animation."
+msgstr "Promo produzida com a Kids Glove, com a Split na arte e na animação 2D."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
+msgid "Props, Backgrounds, 2D Animation, Editing, Composition"
+msgstr "Props, Cenários, Animação 2D, Edição, Composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+msgid "Props, Backgrounds, Builds, 2D Animation"
+msgstr "Props, Cenários, Rigs, Animação 2D"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_are_you_okay
 msgid "Props, Backgrounds, Builds, 2D Animation, Composition"
 msgstr "Props, cenários, builds, animação 2D, composição"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_e_esse
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
@@ -2058,15 +2979,45 @@ msgid "Que Corpo é Esse?"
 msgstr "Que Corpo é Esse?"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+msgid "Que Corpo é Esse? | Eca 30 Years"
+msgstr "Que Corpo é Esse? | Eca 30 Anos"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.privacy
 msgid "Questions:"
 msgstr "Dúvidas:"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
+msgid "Radio Bita"
+msgstr "Rádio Bita"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Record"
 msgstr "Record"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+msgid "Record · Branded content"
+msgstr "Record · Branded content"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+msgid "Rede Globo"
+msgstr "Rede Globo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+msgid "Rede Globo · TV series"
+msgstr "Rede Globo · Série de TV"
 
 #. module: split_website
 #: model:website.menu,name:split_website.menu_reel
@@ -2118,14 +3069,38 @@ msgstr "Rick and Morty"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Riot Games"
 msgstr "Riot Games"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+msgid "Riot Games · Branded content"
+msgstr "Riot Games · Branded content"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "Run Away from Them!"
 msgstr "Fuja deles!"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+msgid "SESC"
+msgstr "SESC"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+msgid "SESC | What Is It?"
+msgstr "SESC | O Que é o Que é?"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+msgid "SESC · Branded content"
+msgstr "SESC · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -2135,6 +3110,8 @@ msgstr "Sanrio"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
 msgid "Sanrio Brazil"
 msgstr "Sanrio Brasil"
@@ -2144,6 +3121,13 @@ msgstr "Sanrio Brasil"
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
 msgid "Sanrio Brazil · Promo"
 msgstr "Sanrio Brasil · Promo"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+msgid "Sanrio Brazil · Web series"
+msgstr "Sanrio Brasil · Websérie"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
@@ -2164,6 +3148,12 @@ msgstr "Composição de cena"
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Script Writing"
 msgstr "Roteiro"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+msgid "Seara | Monica and Friends"
+msgstr "Seara | Turma da Mônica"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
@@ -2192,6 +3182,12 @@ msgid "Send"
 msgstr "Enviar"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+msgid "Senninha on the Crazy Track"
+msgstr "Senninha na Pista Maluca"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "Series promo on air."
@@ -2203,25 +3199,60 @@ msgid "Series, films, promos and branded content."
 msgstr "Séries, filmes, promos e branded content."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
 #: model_terms:ir.ui.view,arch_db:split_website.project_are_you_okay
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
 #: model_terms:ir.ui.view,arch_db:split_website.project_bit_wars
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
 #: model_terms:ir.ui.view,arch_db:split_website.project_bubu_and_the_little_owls
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
 #: model_terms:ir.ui.view,arch_db:split_website.project_egregora
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
 #: model_terms:ir.ui.view,arch_db:split_website.project_is_anybody_out_there
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
 #: model_terms:ir.ui.view,arch_db:split_website.project_monica_and_friends
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
 #: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_e_esse
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
 #: model_terms:ir.ui.view,arch_db:split_website.project_sun_boy
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
 #: model_terms:ir.ui.view,arch_db:split_website.project_tito_and_the_birds
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
 #: model_terms:ir.ui.view,arch_db:split_website.project_whats_up_bud
 #: model_terms:ir.ui.view,arch_db:split_website.project_wizavior
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
 msgid "Services"
 msgstr "Serviços"
 
@@ -2237,6 +3268,11 @@ msgstr "Setup e rigging"
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
 msgid "Short film"
 msgstr "Curta-metragem"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Short films"
+msgstr "Curtas-metragens"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
@@ -2307,11 +3343,13 @@ msgid "Split Originals"
 msgstr "Originais Split"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
 #: model_terms:ir.ui.view,arch_db:split_website.project_among_the_stars
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
 #: model_terms:ir.ui.view,arch_db:split_website.project_egregora
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
 #: model_terms:ir.ui.view,arch_db:split_website.project_wizavior
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
 msgid "Split Studio"
 msgstr "Split Studio"
 
@@ -2326,15 +3364,28 @@ msgid "Split Studio characters"
 msgstr "Personagens da Split Studio"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_whats_up_bud
 msgid "Split Studio · Comedy series"
 msgstr "Split Studio · Série de comédia"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_among_the_stars
 #: model_terms:ir.ui.view,arch_db:split_website.project_wizavior
 msgid "Split Studio · Game"
 msgstr "Split Studio · Game"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+msgid "Split Studio · Music videos"
+msgstr "Split Studio · Clipes musicais"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+msgid "Split Studio · Promo"
+msgstr "Split Studio · Promo"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_blue_butterflies
@@ -2347,6 +3398,8 @@ msgid "Split Studio · Series in development"
 msgstr "Split Studio · Série em desenvolvimento"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
 #: model_terms:ir.ui.view,arch_db:split_website.project_egregora
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
 msgid "Split Studio · Short film"
@@ -2354,6 +3407,8 @@ msgstr "Split Studio · Curta"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.about
+#: model_terms:ir.ui.view,arch_db:split_website.contactus
+#: model_terms:ir.ui.view,arch_db:website.contactus
 msgid "Split brand character"
 msgstr "Personagem da marca Split"
 
@@ -2413,18 +3468,53 @@ msgid "Staging &amp; Blocking"
 msgstr "Staging e blocking"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_a_common_place
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
 #: model_terms:ir.ui.view,arch_db:split_website.project_are_you_okay
+#: model_terms:ir.ui.view,arch_db:split_website.project_balacobaco
+#: model_terms:ir.ui.view,arch_db:split_website.project_betania_kids
 #: model_terms:ir.ui.view,arch_db:split_website.project_bit_wars
 #: model_terms:ir.ui.view,arch_db:split_website.project_bubu_and_the_little_owls
+#: model_terms:ir.ui.view,arch_db:split_website.project_cabrito_chewy
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2022
+#: model_terms:ir.ui.view,arch_db:split_website.project_castanhari_2023
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+#: model_terms:ir.ui.view,arch_db:split_website.project_dc_fandome
+#: model_terms:ir.ui.view,arch_db:split_website.project_elma_chips
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
+#: model_terms:ir.ui.view,arch_db:split_website.project_from_love_to_bingo
+#: model_terms:ir.ui.view,arch_db:split_website.project_heart_of_darkness
 #: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
 #: model_terms:ir.ui.view,arch_db:split_website.project_is_anybody_out_there
+#: model_terms:ir.ui.view,arch_db:split_website.project_lala
+#: model_terms:ir.ui.view,arch_db:split_website.project_league_of_legends
+#: model_terms:ir.ui.view,arch_db:split_website.project_luan_santana
 #: model_terms:ir.ui.view,arch_db:split_website.project_monica_and_friends
+#: model_terms:ir.ui.view,arch_db:split_website.project_monica_month
 #: model_terms:ir.ui.view,arch_db:split_website.project_mr_men_little_miss
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
+#: model_terms:ir.ui.view,arch_db:split_website.project_nick_summer
+#: model_terms:ir.ui.view,arch_db:split_website.project_oglobo_media_day
+#: model_terms:ir.ui.view,arch_db:split_website.project_one_fm_giant_robot
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
+#: model_terms:ir.ui.view,arch_db:split_website.project_pernambucanas
+#: model_terms:ir.ui.view,arch_db:split_website.project_que_corpo_eca
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
 #: model_terms:ir.ui.view,arch_db:split_website.project_rick_and_morty
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+#: model_terms:ir.ui.view,arch_db:split_website.project_senninha
+#: model_terms:ir.ui.view,arch_db:split_website.project_sesc
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
 #: model_terms:ir.ui.view,arch_db:split_website.project_the_boy_and_the_world
 #: model_terms:ir.ui.view,arch_db:split_website.project_tito_and_the_birds
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
 msgid "Start a project"
 msgstr "Comece um projeto"
 
@@ -2452,6 +3542,16 @@ msgid "Storyboard &amp; Animatic"
 msgstr "Storyboard e animatic"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_radio_bita
+msgid "Storyboard &amp; Animatic, 2D Animation"
+msgstr "Storyboard &amp; Animatic, Animação 2D"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+msgid "Storyboard &amp; Animatic, Builds, 2D Animation"
+msgstr "Storyboard &amp; Animatic, Rigs, Animação 2D"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_tito_and_the_birds
 msgid ""
 "Storyboard &amp; Animatic, Character Design, Props, Backgrounds, Builds, "
@@ -2462,6 +3562,7 @@ msgstr ""
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
+#: model_terms:ir.ui.view,arch_db:split_website.project_parmalat
 msgid ""
 "Storyboard &amp; Animatic, Character Designs, Props, Backgrounds, Builds, "
 "2D Animation, Editing, Compositing"
@@ -2470,12 +3571,34 @@ msgstr ""
 "animação 2D, edição, composição"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_seara_monica
+msgid ""
+"Storyboard &amp; Animatic, Props, Backgrounds, Builds, 2D Animation, "
+"Editing, Composition"
+msgstr ""
+"Storyboard &amp; Animatic, Props, Cenários, Rigs, Animação 2D, Edição, "
+"Composição"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
+msgid "Studio R"
+msgstr "Studio R"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_studio_r
+msgid "Studio R · Promo"
+msgstr "Studio R · Promo"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
 msgid "Subscribe"
 msgstr "Assinar"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_sun_boy
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
@@ -2498,6 +3621,17 @@ msgid ""
 msgstr "Canais de TV e YouTube, produtoras de filmes, agências e grandes empresas."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+msgid "TV Escola"
+msgstr "TV Escola"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_cool_sneakers
+msgid "TV Escola · Short film"
+msgstr "TV Escola · Curta-metragem"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "TV and YouTube channels, film companies, ad agencies and big corporations."
@@ -2509,8 +3643,12 @@ msgid "TV series &amp; Digital Game"
 msgstr "Série de TV e jogo digital"
 
 #. module: split_website
+#: model:ir.ui.view,website_meta_description:split_website.project_yellow_woodpecker
+msgid "TV series animation produced for Rede Globo."
+msgstr "Animação de série produzida para a Rede Globo."
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:split_website.project_among_the_stars
 #: model_terms:ir.ui.view,arch_db:website.contactus
 msgid "Talk to us"
 msgstr "Fale conosco"
@@ -2521,17 +3659,26 @@ msgid "Teaser project released in CCXP19"
 msgstr "Teaser do projeto lançado na CCXP19"
 
 #. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "Tell us about your project, your studio or the story you want to animate."
-msgstr ""
-"Conte sobre o seu projeto, o seu estúdio ou a história que você quer "
-"animar."
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
+msgid "Teatro Iguatemi"
+msgstr "Teatro Iguatemi"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_iguatemi
+msgid "Teatro Iguatemi · Branded content"
+msgstr "Teatro Iguatemi · Branded content"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "The Adventure"
 msgstr "Aventureira"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_adventures_of_mike
+msgid "The Adventures of Mike"
+msgstr "As Aventuras de Mike"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.our_work
@@ -2541,6 +3688,7 @@ msgstr "O Menino e o Mundo"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_charcoal_swordsman
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
@@ -2556,6 +3704,19 @@ msgstr "Still de O Espadachim de Carvão"
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "The Mythological Giant"
 msgstr "Gigante mitológico"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+msgid "The Under-Undergrounds"
+msgstr "Os Under-Undergrounds"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_world_doesnt_know
+#: model_terms:ir.ui.view,arch_db:split_website.split_originals
+msgid "The World Doesn't Know What It Lost"
+msgstr "O Mundo Não Sabe o que Perdeu"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_children_of_the_world
@@ -2609,10 +3770,22 @@ msgid "Tito and the Birds"
 msgstr "Tito e os Pássaros"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_to_reach_the_moon
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 msgid "To Reach the Moon"
 msgstr "Para Chegar à Lua"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+msgid "Tortuga Studios"
+msgstr "Tortuga Studios"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_under_undergrounds
+msgid "Tortuga Studios · Animated series"
+msgstr "Tortuga Studios · Série animada"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_fit_ufc
@@ -2626,12 +3799,6 @@ msgstr "UFC"
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "UFC · Branded series"
 msgstr "UFC · Série branded"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "USA"
-msgstr "EUA"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
@@ -2709,6 +3876,29 @@ msgstr ""
 "para responder ou manter a lista, e não vendemos esses dados."
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_chef_star
+msgid ""
+"Web episodes of Hello Kitty Chef Star produced for Sanrio Brazil, from "
+"direction and script through animation, songs and mix."
+msgstr ""
+"Episódios web de Hello Kitty Chef Star produzidos para a Sanrio Brasil, da "
+"direção e do roteiro à animação, às músicas e à mixagem."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.project_hello_kitty_fun
+msgid ""
+"Web episodes of Hello Kitty Fun produced for Sanrio Brazil, covering the "
+"full 2D pipeline from storyboard to mix."
+msgstr ""
+"Episódios web de Hello Kitty Fun produzidos para a Sanrio Brasil, cobrindo "
+"o pipeline 2D do storyboard à mixagem."
+
+#. module: split_website
+#: model:ir.model,name:split_website.model_website
+msgid "Website"
+msgstr "Website"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "Wee"
 msgstr "Wee"
@@ -2738,6 +3928,7 @@ msgstr ""
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
@@ -2773,6 +3964,7 @@ msgstr "O que a Split faz"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_whats_up_bud
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
@@ -2814,6 +4006,7 @@ msgstr "Com quem criamos"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.homepage
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
 #: model_terms:ir.ui.view,arch_db:split_website.project_wizavior
 #: model_terms:ir.ui.view,arch_db:split_website.split_originals
 #: model_terms:ir.ui.view,arch_db:website.homepage
@@ -2851,10 +4044,16 @@ msgid "Wonder Media · Animated series"
 msgstr "Wonder Media · Série animada"
 
 #. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "YouTube"
-msgstr "YouTube"
+#: model:ir.ui.view,website_meta_description:split_website.project_castanhari_2022
+#: model:ir.ui.view,website_meta_description:split_website.project_castanhari_2023
+msgid "Year-end recap produced for Felipe Castanhari's Canal Nostalgia."
+msgstr "Retrospectiva produzida para o Canal Nostalgia de Felipe Castanhari."
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_yellow_woodpecker
+msgid "Yellow Woodpecker Farm"
+msgstr "Sítio do Picapau Amarelo"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.reel
@@ -2867,6 +4066,24 @@ msgid "Your name"
 msgstr "Seu nome"
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_zis
+msgid "Zis"
+msgstr "Zis"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
+msgid "Zolkin"
+msgstr "Zolkin"
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.our_work
+#: model_terms:ir.ui.view,arch_db:split_website.project_zolkin
+msgid "Zolkin · Branded content"
+msgstr "Zolkin · Branded content"
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.privacy
 msgid "contato@splitstudio.tv"
 msgstr "contato@splitstudio.tv"
@@ -2876,12 +4093,6 @@ msgstr "contato@splitstudio.tv"
 #: model_terms:ir.ui.view,arch_db:website.contactus
 msgid "privacy policy"
 msgstr "política de privacidade"
-
-#. module: split_website
-#: model_terms:ir.ui.view,arch_db:split_website.contactus
-#: model_terms:ir.ui.view,arch_db:website.contactus
-msgid "vimeo.com/splitstudio"
-msgstr "vimeo.com/splitstudio"
 
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter

@@ -143,6 +143,11 @@ def _rename_default_menus(env):
     )
     for menu in menus.with_context(lang="en_US"):
         menu.name = MENU_NAMES[menu.url]
+    contact = menus.filtered(lambda menu: menu.url == "/contactus")
+    if contact:
+        # The default contact menu has no split_website xmlid, so the PO
+        # term never binds. Keep the Portuguese label on every registry load.
+        contact.with_context(lang="pt_BR").name = "Contato"
 
 
 def _brand_header_and_footer(env):
