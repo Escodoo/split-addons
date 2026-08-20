@@ -99,6 +99,8 @@ class TestSplitWebsitePages(HttpCase):
         self.assertIn("/web/image/split_website.client_cartoon_network", body)
         self.assertIn("split-clients", body)
         self.assertIn("split-testimonials", body)
+        self.assertIn("split-testimonial-org", body)
+        self.assertIn("/web/image/split_website.avatar_mauricio_de_sousa", body)
         self.assertNotIn("splitacademia.com.br", body)
 
     def test_contact_form_targets_crm_lead(self):

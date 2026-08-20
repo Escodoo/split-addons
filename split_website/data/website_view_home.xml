@@ -774,7 +774,7 @@
                                                     style="text-align:center;"
                                                 >“Split Studio has become an MSP extension, where the relationship between both teams goes beyond the partnership in projects, becoming a friendship relationship. We've always been able to count on their high production capacity, agility and fidelity to our ideology.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_mauricio_de_sousa"
@@ -783,12 +783,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Mauricio de Sousa</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Mauricio de Sousa Produções</span>
                                                         </span>
                                                     </div>
@@ -821,7 +821,7 @@
                                                     style="text-align:center;"
                                                 >“For us at Cartoon Network, working with Split is a real gift. It's the guarantee of excellent creative and technical quality, within the agreed deadline. After so many projects, Split is like an extension of our internal team.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_adriana_alcantara"
@@ -830,12 +830,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Adriana Alcântara</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Cartoon Network</span>
                                                         </span>
                                                     </div>
@@ -868,7 +868,7 @@
                                                     style="text-align:center;"
                                                 >“We are with Split in projects designed to communicate based on social causes. The studio and its team always surprise us, for the quality of what they do, and for living in the team's practice the diversity and mutual respect that we want to see on all screens.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_joao_alegria"
@@ -877,12 +877,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >João Alegria</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Canal Futura</span>
                                                         </span>
                                                     </div>
@@ -915,7 +915,7 @@
                                                     style="text-align:center;"
                                                 >“For us at Sanrio Brazil it is a pleasure to work with Split in the development of our content for our Hello Kitty Brazil, Mexico and Latin America channels. All the projects have greatly met our expectations.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_renata_pereto"
@@ -924,12 +924,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Renata Pereto</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Sanrio Brazil</span>
                                                         </span>
                                                     </div>
@@ -962,7 +962,7 @@
                                                     style="text-align:center;"
                                                 >“Working with Split on the development of the Senninha na Pista Maluca second season was a wonderful experience. A very committed, professional, flexible, creative and partner team. They're A+.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_bianca_senna"
@@ -971,12 +971,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Bianca Senna</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Senna Brands</span>
                                                         </span>
                                                     </div>
@@ -1009,7 +1009,7 @@
                                                     style="text-align:center;"
                                                 >“The work coming out of Split Studio is exceptional, and the entire team is extremely competent and super talented. Every project we have collaborated on with them has been easy and seamless.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_rene_veilleux"
@@ -1018,12 +1018,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >René Veilleux</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Verite Entertainment</span>
                                                         </span>
                                                     </div>
@@ -1056,7 +1056,7 @@
                                                     style="text-align:center;"
                                                 >“My relationship with Split is intertwined with my start in animation. Since then, I've been more and more attracted by Split's enormous capacity to invest affection in all projects.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_bruno_honda"
@@ -1065,11 +1065,11 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong>Bruno Honda</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Pachinko</span>
                                                         </span>
                                                     </div>
@@ -1102,7 +1102,7 @@
                                                     style="text-align:center;"
                                                 >“Split managed to greatly improve the quality of the project, both in terms of conception, animation and art. Without Split, we would never have gotten where we are with Tito and the Birds.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_gustav_steinberg"
@@ -1111,12 +1111,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Gustav Steinberg</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Bit Productions</span>
                                                         </span>
                                                     </div>
@@ -1149,7 +1149,7 @@
                                                     style="text-align:center;"
                                                 >“We were right in looking for Split to contribute to the production of the Rádio Bita show. We are very happy with the care, result and way of conducting the work by their team. At Split we found great partners and friends.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_felipe_almeida"
@@ -1158,12 +1158,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Felipe Almeida</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Mr Plot</span>
                                                         </span>
                                                     </div>
@@ -1196,7 +1196,7 @@
                                                     style="text-align:center;"
                                                 >“I have had the joy and the privilege of working with the talent, quality and commitment of the Split team since the production of Sítio do Picapau Amarelo. Long live Split.”</p>
                                                 <div
-                                                    class="s_blockquote_infos d-flex gap-2 flex-column align-items-center w-100 text-center"
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
                                                 >
                                                     <img
                                                         src="/web/image/split_website.avatar_reynaldo_marchesini"
@@ -1205,12 +1205,12 @@
                                                         loading="lazy"
                                                     />
                                                     <div class="s_blockquote_author">
-                                                        <span class="o_small">
+                                                        <span>
                                                             <strong
                                                             >Reynaldo Marchesini</strong>
                                                             <br />
                                                             <span
-                                                                class="text-muted"
+                                                                class="split-testimonial-org"
                                                             >Flamma</span>
                                                         </span>
                                                     </div>
