@@ -218,6 +218,7 @@ TRANSLATIONS = {
     "Cut Out & Traditional Animation": "Animação cut out e tradicional",
     "Cut Out &amp; Traditional Animation": "Animação cut out e tradicional",
     "Discover the project": "Conheça o projeto",
+    "E-mail": "E-mail",
     "Egregore": "Egrégora",
     "Ep 01 – Mamma Mia!": "Ep 01 – Mamma mia!",
     "Ep 02 – Ah, I'amour…": "Ep 02 – Ah, I'amour…",
@@ -312,6 +313,7 @@ TRANSLATIONS = {
     "Original series produced with Canal Futura, covering the full 2D pipeline.": (
         "Série original produzida com o Canal Futura, cobrindo o pipeline 2D completo."
     ),
+    "Name": "Nome",
     "Our Work": "Nossos trabalhos",
     "Palermo, Italy": "Palermo, Itália",
     "Paper Films · Feature film": "Paper Films · Longa-metragem",
@@ -362,6 +364,7 @@ TRANSLATIONS = {
     "Short film": "Curta-metragem",
     "Shows": "Séries",
     "Sign up for our newsletter": "Inscreva-se na newsletter",
+    "Social media": "Redes sociais",
     "Split Academy": "Split Academia",
     "Split Originals": "Originais Split",
     "Split Studio Reel": "Reel da Split Studio",

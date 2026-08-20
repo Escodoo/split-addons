@@ -1554,6 +1554,11 @@ msgid "Elma Chips · Branded content"
 msgstr ""
 
 #. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+msgid "E-mail"
+msgstr ""
+
+#. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.project_weeboom
 msgid "Ep 01 – Mamma Mia!"
 msgstr ""
@@ -2171,6 +2176,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:split_website.project_my_life_is_worth_living
 #: model_terms:ir.ui.view,arch_db:website.homepage
 msgid "My Life Is Worth Living"
+msgstr ""
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
+msgid "Name"
 msgstr ""
 
 #. module: split_website
@@ -2943,6 +2953,11 @@ msgstr ""
 #. module: split_website
 #: model_terms:ir.ui.view,arch_db:split_website.footer_newsletter
 msgid "Sign up for our newsletter"
+msgstr ""
+
+#. module: split_website
+#: model_terms:ir.ui.view,arch_db:split_website.footer_mascot
+msgid "Social media"
 msgstr ""
 
 #. module: split_website
