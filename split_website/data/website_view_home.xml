@@ -656,92 +656,79 @@
                                 </div>
                             </section>
                             <section
-                                class="s_features pt64 pb64 o_cc o_cc5"
+                                class="s_features pt0 pb64 split-pipeline"
                                 data-snippet="s_features"
                                 data-name="What Split Does"
                             >
+                                <h2
+                                    class="split-pipeline-banner"
+                                >What Split does</h2>
                                 <div class="container">
-                                    <div class="col-lg-12 pb16">
-                                        <h2>What Split does</h2>
-                                        <p
-                                            class="lead"
-                                        >A full 2D pipeline, from the first idea to the final render.</p>
-                                    </div>
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
                                             <img
-                                                src="/web/image/split_website.icon_creation"
-                                                class="img mb-3"
-                                                style="height: 64px;"
+                                                src="/split_website/static/src/binary/ir_attachment/icon_creation.svg"
+                                                class="split-pipeline-icon"
                                                 alt="Creation &amp; Development"
                                                 loading="lazy"
                                             />
-                                            <h3
-                                                class="h5-fs"
-                                            >Creation &amp; Development</h3>
-                                            <ul class="list-unstyled o_small mb-0">
-                                                <li class="mb-1">IPs Creation</li>
-                                                <li
-                                                    class="mb-1"
-                                                >Project Development</li>
-                                                <li class="mb-1">Script Writing</li>
+                                            <h3>Creation &amp; Development</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>IPs Creation</li>
+                                                <li>Project Development</li>
+                                                <li>Script Writing</li>
                                             </ul>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
                                             <img
-                                                src="/web/image/split_website.icon_pre_production"
-                                                class="img mb-3"
-                                                style="height: 64px;"
+                                                src="/split_website/static/src/binary/ir_attachment/icon_pre_production.svg"
+                                                class="split-pipeline-icon"
                                                 alt="Pre-Production"
                                                 loading="lazy"
                                             />
-                                            <h3 class="h5-fs">Pre-Production</h3>
-                                            <ul class="list-unstyled o_small mb-0">
+                                            <h3>Pre-Production</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Storyboard &amp; Animatic</li>
                                                 <li
-                                                    class="mb-1"
-                                                >Storyboard &amp; Animatic</li>
-                                                <li
-                                                    class="mb-1"
                                                 >Character Design &amp; Backgrounds</li>
-                                                <li
-                                                    class="mb-1"
-                                                >Setup &amp; Rigging</li>
+                                                <li>Setup &amp; Rigging</li>
                                             </ul>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
                                             <img
-                                                src="/web/image/split_website.icon_animation"
-                                                class="img mb-3"
-                                                style="height: 64px;"
+                                                src="/split_website/static/src/binary/ir_attachment/icon_animation.svg"
+                                                class="split-pipeline-icon"
                                                 alt="2D Animation"
                                                 loading="lazy"
                                             />
-                                            <h3 class="h5-fs">2D Animation</h3>
-                                            <ul class="list-unstyled o_small mb-0">
+                                            <h3>2D Animation</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Staging &amp; Blocking</li>
                                                 <li
-                                                    class="mb-1"
-                                                >Staging &amp; Blocking</li>
-                                                <li
-                                                    class="mb-1"
                                                 >Cut Out &amp; Traditional Animation</li>
-                                                <li
-                                                    class="mb-1"
-                                                >FX &amp; Motion Animation</li>
+                                                <li>FX &amp; Motion Animation</li>
                                             </ul>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 pt16 pb16">
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
                                             <img
-                                                src="/web/image/split_website.icon_post_production"
-                                                class="img mb-3"
-                                                style="height: 64px;"
+                                                src="/split_website/static/src/binary/ir_attachment/icon_post_production.svg"
+                                                class="split-pipeline-icon"
                                                 alt="Post-Production"
                                                 loading="lazy"
                                             />
-                                            <h3 class="h5-fs">Post-Production</h3>
-                                            <ul class="list-unstyled o_small mb-0">
-                                                <li class="mb-1">Scene Composition</li>
-                                                <li class="mb-1">Film Editing</li>
-                                                <li class="mb-1">Rendering</li>
+                                            <h3>Post-Production</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Scene Composition</li>
+                                                <li>Film Editing</li>
+                                                <li>Rendering</li>
                                             </ul>
                                         </div>
                                     </div>
