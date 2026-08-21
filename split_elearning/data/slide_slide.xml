@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="slide_category_backgrounds_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_backgrounds_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Course overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course The Art of Creating Backgrounds</h2>
+<p>This course is the gateway to background design in animation. You will not only learn specific techniques, but also the principles that turn a simple background into an essential piece of visual storytelling.</p>
+<p>We start with the foundation of good background design: lines, shapes and perspective. We then go deeper into how those tools convey emotion and intensify the story. You will also study color, lighting and composition, and how they shape the atmosphere of an animation.</p>
+<p>Throughout the course you apply what you learned in practical exercises, creating backgrounds and adjusting them so they meet production and storytelling needs. The emphasis is on building a solid portfolio with projects ready for the animation market.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Adobe Photoshop</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_backgrounds_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_backgrounds_instructor" model="slide.slide">
+        <field name="name">Beatriz Gondim</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Art director and background artist teaching the course.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Beatriz Gondim</h2>
+<p>Beatriz Gondim Luna, also known as Bia Luna, is an Art Director and background artist who has worked in animation since 2018. She has worked at studios such as Split Studio, Copa, Combo Studio, Titmouse and Histeria.</p>
+<p>Her work recently included art direction on the second season of WeeBoom, Split's original series airing on Discovery Kids.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_backgrounds_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_backgrounds_practice" model="slide.slide">
+        <field name="name">Build a production background</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on exercise to design a background that serves the story.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Build a production background</h2>
+<p>Create a background that supports a short scene: establish the camera, the path of the character and the mood of the beat.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Pick a simple beat (arrival, chase or quiet wait).</li>
+    <li>Block the shot with lines, shapes and a clear horizon.</li>
+    <li>Lock a color script with one key light and one accent color.</li>
+    <li>Paint in Photoshop at production resolution and leave space for animation.</li>
+</ol>
+<p>Deliver a layered PSD and a flattened preview. Adjust until the read works in grayscale.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_acting" model="slide.slide">
+        <field name="name">Workshop</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_cutout_acting" model="slide.slide">
+        <field name="name">Acting for cut-out characters</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >How posing and timing give a cut-out character a pulse.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Acting for cut-out characters</h2>
+<p>Cut-out animation lives or dies on clear poses. This workshop covers anticipation, holds and the small face changes that sell a thought.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_harmony" model="slide.slide">
+        <field name="name">Course</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_cutout_harmony" model="slide.slide">
+        <field name="name">Harmony cut-out pipeline</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >Scene setup, posing and export in Toon Boom Harmony.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Harmony cut-out pipeline</h2>
+<p>Walk through a series-ready Harmony scene: import the rig, set the camera, block the action and export for composition.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_rigs_harmony" model="slide.slide">
+        <field name="name">Course</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_rigs_harmony" model="slide.slide">
+        <field name="name">Production-ready Harmony rigs</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >Hierarchy, deformations and drawing substitution.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Production-ready Harmony rigs</h2>
+<p>Build a cut-out rig that an animation team can pose quickly: clean hierarchy, useful deformations and drawing substitution for hands and mouths.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_visual_development" model="slide.slide">
+        <field name="name">Workshop</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_visual_development" model="slide.slide">
+        <field name="name">Inventing an imaginary</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >World, color and design language for a project.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Inventing an imaginary</h2>
+<p>Visual development sets the rules of a world before production starts. This workshop covers mood boards, color scripts and a design language the whole team can follow.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_creative_writing" model="slide.slide">
+        <field name="name">Course</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_creative_writing" model="slide.slide">
+        <field name="name">From premise to episode</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Pitches, scripts and bibles for animation.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>From premise to episode</h2>
+<p>Learn how to write material that survives an animation pipeline: a clear premise, character wants, episode structure and a bible the crew can use.</p>
+        ]]></field>
+    </record>
+</odoo>
