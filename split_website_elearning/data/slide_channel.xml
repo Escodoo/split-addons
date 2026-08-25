@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="slide_channel_backgrounds" model="slide.channel">
+        <field name="name">The Art of Creating Backgrounds</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_backgrounds.png"
+        />
+        <field
+            name="description"
+        >This course is the gateway to background design in animation. You will learn specific techniques and the principles that turn a simple setting into an essential piece of visual storytelling.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_course'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_skill_photoshop'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+    <record id="slide_channel_cutout_acting" model="slide.channel">
+        <field name="name">Cut-out Acting – Bringing Characters to Life</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_cutout_acting.png"
+        />
+        <field
+            name="description"
+        >Giving life to animated characters takes more than software. This workshop focuses on body mechanics, acting and lipsync in Toon Boom Harmony so performances read on screen.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_workshop'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_skill_harmony'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+    <record id="slide_channel_cutout_harmony" model="slide.channel">
+        <field name="name">Cut-out Animation in Toon Boom Harmony</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_cutout_harmony.png"
+        />
+        <field
+            name="description"
+        >An introduction to 2D cut-out animation in Toon Boom Harmony: timing, spacing, squash and stretch, body mechanics and acting on a production rig.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_course'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_skill_harmony'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+    <record id="slide_channel_rigs_harmony" model="slide.channel">
+        <field name="name">Creating Rigs in Toon Boom Harmony</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_rigs_harmony.png"
+        />
+        <field
+            name="description"
+        >Build production-ready cut-out rigs in Harmony: hierarchy, deformations, pegs and drawing substitution that an animation team can pose quickly.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_course'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_skill_harmony'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+    <record id="slide_channel_visual_development" model="slide.channel">
+        <field name="name">Visual Development – Building Worlds</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_visual_development.png"
+        />
+        <field
+            name="description"
+        >A workshop on visual development: invent worlds, color scripts and a design language the whole animation crew can follow before production starts.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_workshop'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_skill_photoshop'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+    <record id="slide_channel_creative_writing" model="slide.channel">
+        <field name="name">Creative Writing for Animation Projects</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_creative_writing.png"
+        />
+        <field
+            name="description"
+        >Write pitches, scripts and series bibles that hold up in an animation pipeline, from premise to episode structure.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_course'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+    <record id="slide_channel_production" model="slide.channel">
+        <field name="name">Production and Planning for 2D Animation Projects</field>
+        <field name="user_id" ref="base.user_admin" />
+        <field name="website_id" ref="website_academia" />
+        <field name="channel_type">training</field>
+        <field name="enroll">public</field>
+        <field name="visibility">public</field>
+        <field name="allow_comment" eval="True" />
+        <field name="promote_strategy">latest</field>
+        <field name="is_published" eval="True" />
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_production.png"
+        />
+        <field
+            name="description"
+        >Running an animation show takes more than creative skill: you need a plan, a schedule and a crew that talks. This course covers the 2D pipeline from idea to delivery.</field>
+        <field
+            name="tag_ids"
+            eval="[(6, 0, [
+                ref('slide_channel_tag_type_course'),
+                ref('website_slides.slide_channel_tag_level_basic'),
+                ref('slide_channel_tag_skill_sheets'),
+                ref('slide_channel_tag_language_portuguese'),
+            ])]"
+        />
+    </record>
+</odoo>

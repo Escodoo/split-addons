@@ -1,0 +1,46 @@
+# Copyright 2026 Escodoo
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+{
+    "name": "Split Website eLearning",
+    "summary": "Split Academia website, educators and course catalog on eLearning",
+    "version": "18.0.1.0.0",
+    "category": "Website/eLearning",
+    "author": "Escodoo",
+    "website": "https://github.com/Escodoo/split-addons",
+    "license": "AGPL-3",
+    "development_status": "Beta",
+    "maintainers": ["marcelsavegnago"],
+    "depends": [
+        "gamification",
+        "website",
+        "website_crm",
+        "website_slides",
+        "split_crm_custom",
+    ],
+    "data": [
+        "data/website.xml",
+        "data/slide_channel_tag.xml",
+        "data/slide_channel.xml",
+        "data/slide_channel_cover.xml",
+        "data/slide_slide.xml",
+        "data/crm_tag.xml",
+        "data/gamification_rank.xml",
+        "data/website_view_layout.xml",
+        "data/website_view_slides.xml",
+        "data/website_view_home.xml",
+        "data/website_view_about.xml",
+        "data/website_view_educators.xml",
+        "data/website_view_contactus.xml",
+        "data/website_page.xml",
+        "data/website_theme_apply.xml",
+        "data/website_menu.xml",
+    ],
+    "assets": {
+        "web.assets_frontend": [
+            "split_website_elearning/static/src/scss/split_academia.scss",
+        ],
+    },
+    "pre_init_hook": "pre_init_hook",
+    "post_init_hook": "post_init_hook",
+    "installable": True,
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Reload official Academia covers on module update (not noupdate). -->
+    <record id="slide_channel_backgrounds" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_backgrounds.png"
+        />
+    </record>
+    <record id="slide_channel_cutout_acting" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_cutout_acting.png"
+        />
+    </record>
+    <record id="slide_channel_cutout_harmony" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_cutout_harmony.png"
+        />
+    </record>
+    <record id="slide_channel_rigs_harmony" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_rigs_harmony.png"
+        />
+    </record>
+    <record id="slide_channel_visual_development" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_visual_development.png"
+        />
+    </record>
+    <record id="slide_channel_creative_writing" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_creative_writing.png"
+        />
+    </record>
+    <record id="slide_channel_production" model="slide.channel">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/channel_production.png"
+        />
+    </record>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Replace the stock gold-number badges with Academia medals. -->
+    <record id="gamification.rank_newbie" model="gamification.karma.rank">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/ranks/newbie.svg"
+        />
+    </record>
+    <record id="gamification.rank_student" model="gamification.karma.rank">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/ranks/student.svg"
+        />
+    </record>
+    <record id="gamification.rank_bachelor" model="gamification.karma.rank">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/ranks/bachelor.svg"
+        />
+    </record>
+    <record id="gamification.rank_master" model="gamification.karma.rank">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/ranks/master.svg"
+        />
+    </record>
+    <record id="gamification.rank_doctor" model="gamification.karma.rank">
+        <field
+            name="image_1920"
+            type="base64"
+            file="split_website_elearning/static/src/img/ranks/doctor.svg"
+        />
+    </record>
+</odoo>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="educators" model="ir.ui.view">
+        <field name="name">Split Academia - Educators</field>
+        <field name="key">split_website_elearning.educators</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website_academia" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Educators" t-name="split_website_elearning.educators">
+                <t t-call="website.layout">
+                    <t
+                        t-set="course_backgrounds"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_backgrounds')"
+                    />
+                    <t
+                        t-set="course_visual"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_visual_development')"
+                    />
+                    <t
+                        t-set="course_writing"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_creative_writing')"
+                    />
+                    <t
+                        t-set="course_production"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_production')"
+                    />
+                    <t
+                        t-set="course_acting"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_cutout_acting')"
+                    />
+                    <t
+                        t-set="course_harmony"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_cutout_harmony')"
+                    />
+                    <t
+                        t-set="course_rigs"
+                        t-value="request.env.ref('split_website_elearning.slide_channel_rigs_harmony')"
+                    />
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_elearning_educators"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="acd-section acd-edu-hero"
+                                data-name="Title"
+                            >
+                                <div class="container text-center">
+                                    <!-- prettier-ignore -->
+                                    <h1>Those who <span class="acd-word acd-pink">teach</span>, <span class="acd-word acd-cyan">inspire.</span></h1>
+                                    <!-- prettier-ignore -->
+                                    <p class="lead col-lg-8 mx-auto mb-5">Meet the people behind Split Academia classes. Every educator is a recognized specialist in the animation market and passionate about sharing knowledge.</p>
+                                    <nav
+                                        class="acd-edu-jump"
+                                        aria-label="Educators"
+                                    >
+                                        <a href="#ana-maria">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/ana_maria.jpg"
+                                                alt=""
+                                            />
+                                            <span>Ana Maria</span>
+                                        </a>
+                                        <a href="#beatriz-gondim">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/beatriz_gondim.jpg"
+                                                alt=""
+                                            />
+                                            <span>Beatriz</span>
+                                        </a>
+                                        <a href="#belisa-proenca">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/belisa_proenca.jpg"
+                                                alt=""
+                                            />
+                                            <span>Belisa</span>
+                                        </a>
+                                        <a href="#bruno-antonio">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/bruno_antonio.jpg"
+                                                alt=""
+                                            />
+                                            <span>Bruno</span>
+                                        </a>
+                                        <a href="#luiz-do-futuro">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/luiz_do_futuro.png"
+                                                alt=""
+                                            />
+                                            <span>Luiz</span>
+                                        </a>
+                                    </nav>
+                                </div>
+                            </section>
+                            <section class="acd-section pt-0" data-name="Bios">
+                                <div class="container">
+                                    <article
+                                        id="ana-maria"
+                                        class="acd-edu-card acd-edu-cyan"
+                                    >
+                                        <div class="acd-edu-photo-wrap">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/ana_maria.jpg"
+                                                alt="Ana Maria Sena"
+                                            />
+                                        </div>
+                                        <div class="acd-edu-copy">
+                                            <p class="acd-edu-role">
+                                                Visual development
+                                            </p>
+                                            <h2>Ana Maria Sena</h2>
+                                            <ul class="acd-edu-chips">
+                                                <li>Illustration</li>
+                                                <li>Visual development</li>
+                                                <li>UnB</li>
+                                            </ul>
+                                            <!-- prettier-ignore -->
+                                            <p>Visual artist from Brasília. She illustrated for Superinteressante and books such as Sinto o que Sinto and Zuri e Dulce, then moved into animation features and series.</p>
+                                            <p class="acd-edu-credits-label">
+                                                Selected work
+                                            </p>
+                                            <ul class="acd-edu-credits">
+                                                <li>Clarice's Dream (2020)</li>
+                                                <li>Rick and Morty (2022)</li>
+                                                <li>Cosmo the Cosmonaut (2024)</li>
+                                                <li>47 — Zombie Studio, Cannes</li>
+                                            </ul>
+                                            <a
+                                                class="acd-card-cta"
+                                                t-att-href="course_visual.website_url"
+                                            >See her course</a>
+                                        </div>
+                                    </article>
+                                    <article
+                                        id="beatriz-gondim"
+                                        class="acd-edu-card acd-edu-pink acd-edu-flip"
+                                    >
+                                        <div class="acd-edu-photo-wrap">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/beatriz_gondim.jpg"
+                                                alt="Beatriz Gondim"
+                                            />
+                                        </div>
+                                        <div class="acd-edu-copy">
+                                            <p class="acd-edu-role">
+                                                Art direction
+                                            </p>
+                                            <h2>Beatriz Gondim</h2>
+                                            <ul class="acd-edu-chips">
+                                                <li>Backgrounds</li>
+                                                <li>Art direction</li>
+                                                <li>Since 2018</li>
+                                            </ul>
+                                            <!-- prettier-ignore -->
+                                            <p>Also known as Bia Luna. Art director and background artist who has worked at Split Studio, Copa, Combo Studio, Titmouse and Histeria.</p>
+                                            <p class="acd-edu-credits-label">
+                                                Selected work
+                                            </p>
+                                            <ul class="acd-edu-credits">
+                                                <!-- prettier-ignore -->
+                                                <li>WeeBoom season 2 — art director, Discovery Kids</li>
+                                                <li>Split Studio, Titmouse, Histeria</li>
+                                            </ul>
+                                            <a
+                                                class="acd-card-cta"
+                                                t-att-href="course_backgrounds.website_url"
+                                            >See her course</a>
+                                        </div>
+                                    </article>
+                                    <article
+                                        id="belisa-proenca"
+                                        class="acd-edu-card acd-edu-purple"
+                                    >
+                                        <div class="acd-edu-photo-wrap">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/belisa_proenca.jpg"
+                                                alt="Belisa Proença"
+                                            />
+                                        </div>
+                                        <div class="acd-edu-copy">
+                                            <p class="acd-edu-role">
+                                                Production
+                                            </p>
+                                            <h2>Belisa Proença</h2>
+                                            <ul class="acd-edu-chips">
+                                                <li>Producing</li>
+                                                <li>Originals</li>
+                                                <li>FAAP / Meliès</li>
+                                            </ul>
+                                            <!-- prettier-ignore -->
+                                            <p>Graduated in Social Communication with an emphasis in Film at FAAP. She leads original productions at Split and teaches Creative Executive Production at Faculdade Meliès.</p>
+                                            <p class="acd-edu-credits-label">
+                                                Selected work
+                                            </p>
+                                            <ul class="acd-edu-credits">
+                                                <li>Guida — Annecy and Anima Mundi</li>
+                                                <li>Turma da Mônica</li>
+                                                <li>Weeboom</li>
+                                                <li>Hello Kitty Super Cute Adventures</li>
+                                            </ul>
+                                            <a
+                                                class="acd-card-cta"
+                                                t-att-href="course_production.website_url"
+                                            >See her course</a>
+                                        </div>
+                                    </article>
+                                    <article
+                                        id="bruno-antonio"
+                                        class="acd-edu-card acd-edu-yellow acd-edu-flip"
+                                    >
+                                        <div class="acd-edu-photo-wrap">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/bruno_antonio.jpg"
+                                                alt="Bruno Antonio"
+                                            />
+                                        </div>
+                                        <div class="acd-edu-copy">
+                                            <p class="acd-edu-role">
+                                                Screenwriting
+                                            </p>
+                                            <h2>Bruno Antonio</h2>
+                                            <ul class="acd-edu-chips">
+                                                <li>Writing</li>
+                                                <li>Research</li>
+                                                <li>Pernambuco</li>
+                                            </ul>
+                                            <!-- prettier-ignore -->
+                                            <p>Screenwriter and writer with work in animation, comics, books and features. At Split Studio and the Institute he works as a researcher and screenwriter.</p>
+                                            <p class="acd-edu-credits-label">
+                                                Selected work
+                                            </p>
+                                            <ul class="acd-edu-credits">
+                                                <li>Recife Assombrado</li>
+                                                <!-- prettier-ignore -->
+                                                <li>Além da Lenda — first animated feature from Pernambuco</li>
+                                            </ul>
+                                            <a
+                                                class="acd-card-cta"
+                                                t-att-href="course_writing.website_url"
+                                            >See his course</a>
+                                        </div>
+                                    </article>
+                                    <article
+                                        id="luiz-do-futuro"
+                                        class="acd-edu-card acd-edu-green"
+                                    >
+                                        <div class="acd-edu-photo-wrap">
+                                            <img
+                                                src="/split_website_elearning/static/src/img/educators/luiz_do_futuro.png"
+                                                alt="Luiz do Futuro"
+                                            />
+                                        </div>
+                                        <div class="acd-edu-copy">
+                                            <p class="acd-edu-role">
+                                                Educational direction
+                                            </p>
+                                            <h2>Luiz do Futuro</h2>
+                                            <ul class="acd-edu-chips">
+                                                <li>Toon Boom</li>
+                                                <li>2D animation</li>
+                                                <li>Rigging</li>
+                                            </ul>
+                                            <!-- prettier-ignore -->
+                                            <p>Educational Director and teacher at Split Academia. He uses science and geometry to bring a contemporary view to animation and teaching.</p>
+                                            <p class="mb-3">
+                                                <a
+                                                    class="acd-edu-social"
+                                                    href="https://www.instagram.com/luizdofuturo/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >@luizdofuturo</a>
+                                            </p>
+                                            <div class="acd-edu-cta-row">
+                                                <a
+                                                    class="acd-card-cta"
+                                                    t-att-href="course_acting.website_url"
+                                                >Acting</a>
+                                                <a
+                                                    class="acd-card-cta"
+                                                    t-att-href="course_harmony.website_url"
+                                                >Harmony</a>
+                                                <a
+                                                    class="acd-card-cta"
+                                                    t-att-href="course_rigs.website_url"
+                                                >Rigs</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="contactus" model="ir.ui.view">
+        <field name="name">Split Academia - Contact Us</field>
+        <field name="key">split_website_elearning.contactus</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website_academia" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Contact Us" t-name="website.contactus">
+                <t t-call="website.layout">
+                    <t
+                        t-set="logged_partner"
+                        t-value="request.env['website.visitor']._get_visitor_from_request().partner_id"
+                    />
+                    <t
+                        t-set="contactus_form_values"
+                        t-value="{
+                        'contact_name': request.params.get('contact_name', ''),
+                        'email_from': request.params.get('email_from', ''),
+                        'description': request.params.get('description', ''),
+                    }"
+                    />
+                    <span
+                        class="hidden"
+                        data-for="contactus_form"
+                        t-att-data-values="contactus_form_values"
+                    />
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_elearning_contactus"
+                            class="oe_structure"
+                        >
+                            <section class="acd-section" data-name="Contact">
+                                <div class="container">
+                                    <div class="acd-contact">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                                <!-- prettier-ignore -->
+                                                <h1 class="acd-contact-title"><span>Shall we</span> <span class="acd-pink">talk?</span></h1>
+                                                <t
+                                                    t-call="split_website_elearning.contact_form"
+                                                />
+                                            </div>
+                                            <div class="col-lg-6 text-center">
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/brand/brain.gif"
+                                                    class="acd-brain-lift"
+                                                    alt="Split Academia"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

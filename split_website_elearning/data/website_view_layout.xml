@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="layout" model="ir.ui.view">
+        <field name="name">Split Academia - Layout</field>
+        <field name="inherit_id" ref="website.layout" />
+        <field name="website_id" ref="website_academia" />
+        <field name="key">split_website_elearning.layout</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <xpath expr="//head" position="inside">
+                <link
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Arvo:wght@400;700&amp;family=Rubik+Mono+One&amp;display=swap"
+                />
+            </xpath>
+            <xpath expr="//div[@id='wrapwrap']" position="attributes">
+                <attribute
+                    name="t-attf-class"
+                    add="split-academia"
+                    separator=" "
+                />
+            </xpath>
+            <xpath
+                expr="//div[hasclass('o_frontend_to_backend_nav')]"
+                position="replace"
+            >
+                <t />
+            </xpath>
+            <xpath expr="//div[@id='footer']" position="inside">
+                <div class="acd-footer">
+                    <ul class="acd-social">
+                        <li>
+                            <a
+                                href="https://discord.com/invite/Xw7PyfEvjw"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Discord</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/splitacademia/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >Instagram</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/company/instituto-de-inova%C3%A7%C3%A3o-split"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >LinkedIn</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/@InstitutodeInova%C3%A7%C3%A3oSplit"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >YouTube</a>
+                        </li>
+                    </ul>
+                    <!-- prettier-ignore -->
+                    <p class="mb-1">Copyright © 2026 Split Studio. All rights reserved.</p>
+                    <p class="mb-0">
+                        <a href="mailto:academia@splitstudio.tv">academia@splitstudio.tv</a>
+                    </p>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="user_dropdown" model="ir.ui.view">
+        <field name="name">Split Academia - User dropdown</field>
+        <field name="inherit_id" ref="portal.user_dropdown" />
+        <field name="website_id" ref="website_academia" />
+        <field name="key">split_website_elearning.user_dropdown</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <xpath expr="//span[@t-if='_user_name']" position="attributes">
+                <attribute name="class" add="acd-user-name" separator=" " />
+            </xpath>
+        </field>
+    </record>
+    <record id="contact_form" model="ir.ui.view">
+        <field name="name">Split Academia - Contact form</field>
+        <field name="key">split_website_elearning.contact_form</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t name="Contact form" t-name="split_website_elearning.contact_form">
+                <section
+                    class="s_website_form acd-form"
+                    data-vcss="001"
+                    data-snippet="s_website_form"
+                    data-name="Form"
+                >
+                    <form
+                        id="contactus_form"
+                        action="/website/form/"
+                        method="post"
+                        enctype="multipart/form-data"
+                        class="o_mark_required"
+                        data-mark="*"
+                        data-model_name="crm.lead"
+                        data-success-mode="redirect"
+                        data-success-page="/contactus-thank-you"
+                        data-pre-fill="false"
+                    >
+                        <div class="s_website_form_rows row s_col_no_bgcolor">
+                            <div
+                                class="mb-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="char"
+                                data-name="Field"
+                            >
+                                <label
+                                    class="s_website_form_label visually-hidden"
+                                    for="academia_contact_name"
+                                >
+                                    <span
+                                        class="s_website_form_label_content"
+                                    >Name</span>
+                                </label>
+                                <input
+                                    id="academia_contact_name"
+                                    type="text"
+                                    class="form-control s_website_form_input"
+                                    name="contact_name"
+                                    required=""
+                                    placeholder="Name"
+                                />
+                            </div>
+                            <div
+                                class="mb-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="email"
+                                data-name="Field"
+                            >
+                                <label
+                                    class="s_website_form_label visually-hidden"
+                                    for="academia_contact_email"
+                                >
+                                    <span
+                                        class="s_website_form_label_content"
+                                    >E-mail</span>
+                                </label>
+                                <input
+                                    id="academia_contact_email"
+                                    type="email"
+                                    class="form-control s_website_form_input"
+                                    name="email_from"
+                                    required=""
+                                    placeholder="E-mail"
+                                />
+                            </div>
+                            <div
+                                class="mb-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="char"
+                                data-name="Field"
+                            >
+                                <label
+                                    class="s_website_form_label visually-hidden"
+                                    for="academia_contact_subject"
+                                >
+                                    <span
+                                        class="s_website_form_label_content"
+                                    >Subject</span>
+                                </label>
+                                <input
+                                    id="academia_contact_subject"
+                                    type="text"
+                                    class="form-control s_website_form_input"
+                                    name="name"
+                                    required=""
+                                    placeholder="Subject"
+                                />
+                            </div>
+                            <div
+                                class="mb-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="text"
+                                data-name="Field"
+                            >
+                                <label
+                                    class="s_website_form_label visually-hidden"
+                                    for="academia_contact_message"
+                                >
+                                    <span
+                                        class="s_website_form_label_content"
+                                    >Message</span>
+                                </label>
+                                <textarea
+                                    id="academia_contact_message"
+                                    class="form-control s_website_form_input"
+                                    name="description"
+                                    required=""
+                                    rows="6"
+                                    placeholder="Message"
+                                />
+                            </div>
+                            <div class="mb-3 col-12 s_website_form_field s_website_form_dnone">
+                                <input
+                                    type="hidden"
+                                    class="form-control s_website_form_input"
+                                    name="team_id"
+                                    value="*crm_team_intake*"
+                                />
+                            </div>
+                            <div
+                                class="mb-0 col-12 s_website_form_submit s_website_form_no_submit_label"
+                                data-name="Submit Button"
+                            >
+                                <a
+                                    href="#"
+                                    role="button"
+                                    class="btn acd-form-send s_website_form_send"
+                                >Send</a>
+                                <span id="s_website_form_result" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </t>
+        </field>
+    </record>
+    <record id="newsletter_form" model="ir.ui.view">
+        <field name="name">Split Academia - Newsletter form</field>
+        <field name="key">split_website_elearning.newsletter_form</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t
+                name="Newsletter form"
+                t-name="split_website_elearning.newsletter_form"
+            >
+                <section
+                    class="s_website_form acd-form"
+                    data-vcss="001"
+                    data-snippet="s_website_form"
+                    data-name="Newsletter"
+                >
+                    <form
+                        id="academia_newsletter_form"
+                        action="/website/form/"
+                        method="post"
+                        enctype="multipart/form-data"
+                        class="o_mark_required"
+                        data-mark="*"
+                        data-model_name="crm.lead"
+                        data-success-mode="redirect"
+                        data-success-page="/contactus-thank-you"
+                        data-pre-fill="false"
+                    >
+                        <div class="s_website_form_rows row s_col_no_bgcolor">
+                            <div
+                                class="mb-2 col-12 s_website_form_field s_website_form_required"
+                                data-type="char"
+                                data-name="Field"
+                            >
+                                <label
+                                    class="s_website_form_label visually-hidden"
+                                    for="academia_newsletter_name"
+                                >Name</label>
+                                <input
+                                    id="academia_newsletter_name"
+                                    type="text"
+                                    class="form-control s_website_form_input"
+                                    name="contact_name"
+                                    required=""
+                                    placeholder="Name"
+                                />
+                            </div>
+                            <div
+                                class="mb-2 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="email"
+                                data-name="Field"
+                            >
+                                <label
+                                    class="s_website_form_label visually-hidden"
+                                    for="academia_newsletter_email"
+                                >E-mail</label>
+                                <input
+                                    id="academia_newsletter_email"
+                                    type="email"
+                                    class="form-control s_website_form_input"
+                                    name="email_from"
+                                    required=""
+                                    placeholder="E-mail"
+                                />
+                            </div>
+                            <div class="s_website_form_field s_website_form_dnone">
+                                <input
+                                    type="hidden"
+                                    class="form-control s_website_form_input"
+                                    name="name"
+                                    value="Newsletter signup"
+                                />
+                            </div>
+                            <div class="s_website_form_field s_website_form_dnone">
+                                <input
+                                    type="hidden"
+                                    class="form-control s_website_form_input"
+                                    name="team_id"
+                                    value="*crm_team_intake*"
+                                />
+                            </div>
+                            <div
+                                class="mb-0 col-12 s_website_form_submit s_website_form_no_submit_label"
+                                data-name="Submit Button"
+                            >
+                                <a
+                                    href="#"
+                                    role="button"
+                                    class="btn acd-form-send s_website_form_send"
+                                >Send</a>
+                                <span id="academia_newsletter_result" />
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </t>
+        </field>
+    </record>
+</odoo>

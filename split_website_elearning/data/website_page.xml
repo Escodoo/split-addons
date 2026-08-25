@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="page_about" model="website.page">
+        <field name="view_id" ref="about" />
+        <field name="url">/about</field>
+        <field name="website_id" ref="website_academia" />
+        <field name="is_published" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >What Split Academia is and how the Split Institute of Innovation trains animation talent.</field>
+    </record>
+    <record id="page_educators" model="website.page">
+        <field name="view_id" ref="educators" />
+        <field name="url">/educators</field>
+        <field name="website_id" ref="website_academia" />
+        <field name="is_published" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >The working artists and producers who teach at Split Academia.</field>
+    </record>
+</odoo>

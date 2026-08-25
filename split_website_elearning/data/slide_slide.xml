@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="slide_category_backgrounds_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_backgrounds_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Course overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course The Art of Creating Backgrounds</h2>
+<p>This course is the gateway to background design in animation. You will not only learn specific techniques, but also the principles that turn a simple background into an essential piece of visual storytelling.</p>
+<p>We start with the foundation of good background design: lines, shapes and perspective. We then go deeper into how those tools convey emotion and intensify the story. You will also study color, lighting and composition, and how they shape the atmosphere of an animation.</p>
+<p>Throughout the course you apply what you learned in practical exercises, creating backgrounds and adjusting them so they meet production and storytelling needs. The emphasis is on building a solid portfolio with projects ready for the animation market.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Adobe Photoshop</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_backgrounds_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_backgrounds_instructor" model="slide.slide">
+        <field name="name">Beatriz Gondim</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Art director and background artist teaching the course.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Beatriz Gondim</h2>
+<p>Beatriz Gondim Luna, also known as Bia Luna, is an Art Director and background artist who has worked in animation since 2018. She has worked at studios such as Split Studio, Copa, Combo Studio, Titmouse and Histeria.</p>
+<p>Her work recently included art direction on the second season of WeeBoom, Split's original series airing on Discovery Kids.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_backgrounds_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_backgrounds_practice" model="slide.slide">
+        <field name="name">Build a production background</field>
+        <field name="channel_id" ref="slide_channel_backgrounds" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on exercise to design a background that serves the story.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Build a production background</h2>
+<p>Create a background that supports a short scene: establish the camera, the path of the character and the mood of the beat.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Pick a simple beat (arrival, chase or quiet wait).</li>
+    <li>Block the shot with lines, shapes and a clear horizon.</li>
+    <li>Lock a color script with one key light and one accent color.</li>
+    <li>Paint in Photoshop at production resolution and leave space for animation.</li>
+</ol>
+<p>Deliver a layered PSD and a flattened preview. Adjust until the read works in grayscale.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_acting" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_cutout_acting_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Workshop overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course Cut-out Acting – Bringing Characters to Life</h2>
+<p>Giving life to animated characters takes more than software. You need acting, movement and expressiveness. This workshop is for anyone who wants stronger 2D character animation, with a focus on body mechanics, acting and lipsync in Toon Boom Harmony.</p>
+<p>You will structure convincing performances: from building poses and fluid motion to lip sync and facial expression. With a simple rig you practice anticipation, exaggeration and pose-to-pose, using studies and references to sharpen the shot.</p>
+<p>Practical exercises and feedback train planning, rhythm and acting in cut-out. You leave with tools to make more expressive scenes and a stronger reel.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Toon Boom Harmony</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_acting_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_cutout_acting_instructor" model="slide.slide">
+        <field name="name">Luiz do Futuro</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Educational director teaching cut-out acting.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Luiz do Futuro</h2>
+<p>Luiz is Educational Director and teacher at Split Academia, in the Split Institute of Innovation, where he trains new talent for art and animation.</p>
+<p>Passionate about science and geometry, he uses those ideas to bring a contemporary view to both animation and teaching.</p>
+        ]]></field>
+    </record>
+    <record id="slide_lesson_cutout_acting" model="slide.slide">
+        <field name="name">Acting for cut-out characters</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">3</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >How posing and timing give a cut-out character a pulse.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Acting for cut-out characters</h2>
+<p>Cut-out animation lives or dies on clear poses. This lesson covers anticipation, holds and the small face changes that sell a thought.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_acting_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_cutout_acting_practice" model="slide.slide">
+        <field name="name">Animate a thought change</field>
+        <field name="channel_id" ref="slide_channel_cutout_acting" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on exercise: sell a thought with posing, timing and lipsync.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Animate a thought change</h2>
+<p>Build a short cut-out shot where the character changes their mind. Keep the rig simple and let posing do the acting.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Write a one-line beat (wait, notice, decide).</li>
+    <li>Thumbnail three keys: anticipation, hold and the new thought.</li>
+    <li>Block the body mechanics before you open the mouth.</li>
+    <li>Add lipsync last, matching the jaw to a short line of dialogue.</li>
+</ol>
+<p>Deliver a Harmony scene and a playblast. The change of thought must read with the sound off.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_harmony" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_cutout_harmony_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Course overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course Cut-out Animation in Toon Boom Harmony</h2>
+<p>Bring your work to life. This course introduces 2D cut-out animation and the techniques studios use every day. Focused on Toon Boom Harmony, it covers animation fundamentals and prepares you for real production.</p>
+<p>You will study timing, spacing, squash and stretch, body mechanics and acting. You will also work with character rigs on practical exercises such as walk cycles and performance shots.</p>
+<p>The course is for students, enthusiasts and professionals who want stronger 2D animation skills.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Toon Boom Harmony</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_harmony_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_cutout_harmony_instructor" model="slide.slide">
+        <field name="name">Luiz do Futuro</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Educational director teaching Harmony cut-out animation.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Luiz do Futuro</h2>
+<p>Luiz is Educational Director and teacher at Split Academia, in the Split Institute of Innovation, where he trains new talent for art and animation.</p>
+<p>Passionate about science and geometry, he uses those ideas to bring a contemporary view to both animation and teaching. His work starts from the belief that passion can become real impact.</p>
+        ]]></field>
+    </record>
+    <record id="slide_lesson_cutout_harmony" model="slide.slide">
+        <field name="name">Harmony cut-out pipeline</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">12</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >Scene setup, posing and export in Toon Boom Harmony.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Harmony cut-out pipeline</h2>
+<p>Walk through a series-ready Harmony scene: import the rig, set the camera, block the action and export for composition.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_cutout_harmony_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_cutout_harmony_practice" model="slide.slide">
+        <field name="name">Build a walk cycle</field>
+        <field name="channel_id" ref="slide_channel_cutout_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on walk cycle on a Harmony character rig.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Build a walk cycle</h2>
+<p>Animate a side-view walk on a production rig. Focus on contact, passing and the up/down of the body.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Set a 16-frame cycle and lock the camera.</li>
+    <li>Pose contact, recoil, passing and high points.</li>
+    <li>Check spacing on the feet before you polish the arms.</li>
+    <li>Export a looping playblast for review.</li>
+</ol>
+<p>The cycle must loop cleanly and read as a walk, not a slide.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_rigs_harmony" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_rigs_harmony_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Course overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course Creating Rigs in Toon Boom Harmony</h2>
+<p>A cut-out show is only as fast as its rigs. This course covers how to build Harmony rigs that animators can pose without fighting the puppet.</p>
+<p>You will set a clean hierarchy, add useful deformations, pegs and drawing substitution for hands and mouths, and test the rig on a short acting beat.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Toon Boom Harmony</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_rigs_harmony_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_rigs_harmony_instructor" model="slide.slide">
+        <field name="name">Luiz do Futuro</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Educational director teaching Harmony rigging.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Luiz do Futuro</h2>
+<p>Luiz is Educational Director and teacher at Split Academia. His specialty includes Toon Boom, 2D animation and rigging.</p>
+<p>He uses science and geometry to keep rigs simple for the animator and solid for the pipeline.</p>
+        ]]></field>
+    </record>
+    <record id="slide_lesson_rigs_harmony" model="slide.slide">
+        <field name="name">Production-ready Harmony rigs</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">12</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >Hierarchy, deformations and drawing substitution.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Production-ready Harmony rigs</h2>
+<p>Build a cut-out rig that an animation team can pose quickly: clean hierarchy, useful deformations and drawing substitution for hands and mouths.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_rigs_harmony_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_rigs_harmony_practice" model="slide.slide">
+        <field name="name">Rig a simple puppet</field>
+        <field name="channel_id" ref="slide_channel_rigs_harmony" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on: build and stress-test a Harmony cut-out puppet.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Rig a simple puppet</h2>
+<p>Turn a character breakdown into a poseable Harmony rig and test it on a two-pose acting beat.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Parent the drawings in a clear torso-to-limb hierarchy.</li>
+    <li>Add one deformation on the spine and one on an arm.</li>
+    <li>Set drawing substitution for at least three hand shapes.</li>
+    <li>Pose a surprise beat and fix anything that breaks.</li>
+</ol>
+<p>Deliver the Harmony file. An animator should reach a readable pose in a few keys.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_visual_development" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_visual_development_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Workshop overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course Visual Development – Building Worlds</h2>
+<p>Visual development sets the rules of a world before production starts. This workshop covers how to invent imaginaries: mood, color and a design language the whole team can follow.</p>
+<p>You will build mood boards, a short color script and a set of rules for shape, light and material so art, boards and animation stay in the same universe.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Adobe Photoshop</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_visual_development_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_visual_development_instructor" model="slide.slide">
+        <field name="name">Ana Maria Sena</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Visual artist teaching visual development.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Ana Maria Sena</h2>
+<p>Ana Maria Sena is a visual artist from Brasília. She holds a Visual Arts degree from UnB and has illustrated for Superinteressante and books such as Sinto o que Sinto and Zuri e Dulce.</p>
+<p>In animation she worked on the feature Clarice's Dream (2020) and on the series Rick and Morty (2022) and Cosmo the Cosmonaut (2024). She also contributed visual development on the miniseries Assim Era a Vida and on 47 from Zombie Studio, awarded at Cannes.</p>
+        ]]></field>
+    </record>
+    <record id="slide_lesson_visual_development" model="slide.slide">
+        <field name="name">Inventing an imaginary</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">3</field>
+        <field name="completion_time">0.25</field>
+        <field
+            name="description"
+        >World, color and design language for a project.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Inventing an imaginary</h2>
+<p>Visual development sets the rules of a world before production starts. This lesson covers mood boards, color scripts and a design language the whole team can follow.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_visual_development_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_visual_development_practice" model="slide.slide">
+        <field name="name">Build a color script</field>
+        <field name="channel_id" ref="slide_channel_visual_development" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on: a six-beat color script for a short scene.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Build a color script</h2>
+<p>Design the light and color of a short scene so the mood changes with the story, not at random.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Pick a six-beat scene (arrive, meet, conflict, pause, decide, leave).</li>
+    <li>Lock one key light and one accent color.</li>
+    <li>Paint six frames in Photoshop that only change light and palette.</li>
+    <li>Check that the sequence still reads in grayscale.</li>
+</ol>
+<p>Deliver a contact sheet. Production should be able to light the scene from it.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_creative_writing" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_creative_writing_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Course overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course Creative Writing for Animation Projects</h2>
+<p>Animation writing has to survive a pipeline. This course covers pitches, scripts and series bibles that art, boards and production can actually use.</p>
+<p>You will move from a clear premise and character wants to episode structure and a short bible the crew can open on day one.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_creative_writing_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_creative_writing_instructor" model="slide.slide">
+        <field name="name">Bruno Antonio</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Screenwriter teaching writing for animation.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Bruno Antonio</h2>
+<p>Bruno Antonio is a screenwriter and writer from Pernambuco, with work in animation, comics, books and features. He took part in productions such as Recife Assombrado and Além da Lenda, the first animated feature produced in Pernambuco.</p>
+<p>Since 2022 he has been with Split Studio and the Split Institute of Innovation as a researcher and screenwriter.</p>
+        ]]></field>
+    </record>
+    <record id="slide_lesson_creative_writing" model="slide.slide">
+        <field name="name">From premise to episode</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">3</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Pitches, scripts and bibles for animation.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>From premise to episode</h2>
+<p>Learn how to write material that survives an animation pipeline: a clear premise, character wants, episode structure and a bible the crew can use.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_creative_writing_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_creative_writing_practice" model="slide.slide">
+        <field name="name">Write a one-page pitch</field>
+        <field name="channel_id" ref="slide_channel_creative_writing" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on: a one-page pitch a studio can greenlight or reject.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Write a one-page pitch</h2>
+<p>Write a one-page pitch for an original short or series episode that an art team could start designing from.</p>
+<h3>Brief</h3>
+<ol>
+    <li>State the premise in two sentences.</li>
+    <li>Name the protagonist, the want and the obstacle.</li>
+    <li>Outline a three-beat episode (start, turn, button).</li>
+    <li>List three visual rules the world must keep.</li>
+</ol>
+<p>Deliver one page. If a board artist cannot see the first shot, rewrite.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_production_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_production" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">1</field>
+    </record>
+    <record id="slide_lesson_production_about" model="slide.slide">
+        <field name="name">About the course</field>
+        <field name="channel_id" ref="slide_channel_production" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">2</field>
+        <field name="completion_time">0.25</field>
+        <field name="description">Course overview and learning goals.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>About the course Production and Planning for 2D Animation Projects</h2>
+<p>Running an animation production takes more than creative skill: you need planning, organization and clear communication. This course covers the practices and tools that take a 2D show from kickoff to delivery.</p>
+<p>You will walk the full animation pipeline, from the first idea through post-production. You will learn how to structure crews, build schedules and budgets, and keep departments talking. The course also covers task-tracking tools and agile methods that keep the board moving.</p>
+<p>Practical exercises ask you to apply those ideas and write a detailed production plan you can put in a portfolio.</p>
+<ul>
+    <li>Beginner level</li>
+    <li>Skill: Google Sheets</li>
+    <li>Language: Portuguese</li>
+</ul>
+        ]]></field>
+    </record>
+    <record id="slide_category_production_instructor" model="slide.slide">
+        <field name="name">Instructor</field>
+        <field name="channel_id" ref="slide_channel_production" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">10</field>
+    </record>
+    <record id="slide_lesson_production_instructor" model="slide.slide">
+        <field name="name">Belisa Proença</field>
+        <field name="channel_id" ref="slide_channel_production" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="True" />
+        <field name="sequence">11</field>
+        <field name="completion_time">0.15</field>
+        <field
+            name="description"
+        >Producer teaching 2D production and planning.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Belisa Proença</h2>
+<p>Belisa Proença graduated in Social Communication with an emphasis in Film at FAAP in 2011. In her first job she produced the short Guida, by Rosana Urbes (awarded at Annecy and Anima Mundi).</p>
+<p>She went on to produce and direct projects at Split Studio, including the TV series Turma da Mônica, Weeboom and Hello Kitty Super Cute Adventures. She now leads Split's original productions and teaches Creative Executive Production at Faculdade Meliès.</p>
+        ]]></field>
+    </record>
+    <record id="slide_category_production_practice" model="slide.slide">
+        <field name="name">Practice</field>
+        <field name="channel_id" ref="slide_channel_production" />
+        <field name="is_category" eval="True" />
+        <field name="is_published" eval="True" />
+        <field name="sequence">20</field>
+    </record>
+    <record id="slide_lesson_production_practice" model="slide.slide">
+        <field name="name">Write a production plan</field>
+        <field name="channel_id" ref="slide_channel_production" />
+        <field name="slide_category">article</field>
+        <field name="is_published" eval="True" />
+        <field name="is_preview" eval="False" />
+        <field name="sequence">21</field>
+        <field name="completion_time">0.75</field>
+        <field
+            name="description"
+        >Hands-on: a schedule and crew plan for a short 2D scene.</field>
+        <field
+            name="html_content"
+        ><![CDATA[
+<h2>Write a production plan</h2>
+<p>Plan a short 2D scene from lock to delivery. Keep the crew small and the dates honest.</p>
+<h3>Brief</h3>
+<ol>
+    <li>Name the shot, the duration and the delivery format.</li>
+    <li>List the departments (boards, art, rig, animation, comp) and one owner each.</li>
+    <li>Build a two-week schedule in a spreadsheet, with a review gate in the middle.</li>
+    <li>Write the one risk that would slip the date and how you would catch it.</li>
+</ol>
+<p>Deliver the sheet. A producer should be able to staff the week from it.</p>
+        ]]></field>
+    </record>
+</odoo>
