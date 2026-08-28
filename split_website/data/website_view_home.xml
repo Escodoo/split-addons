@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- This view only holds the arch that data/website_theme_apply.xml copies
+         into the core website.homepage view. -->
+    <record id="homepage" model="ir.ui.view">
+        <field name="name">Split Studio - Home</field>
+        <field name="key">split_website.homepage</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Homepage" t-name="website.homepage">
+                <t t-call="website.layout">
+                    <t t-set="pageName" t-value="'homepage'" />
+                    <div id="wrap">
+                        <div id="oe_structure_split_website_home" class="oe_structure">
+                            <section
+                                class="s_cover parallax s_parallax_is_fixed o_cc o_cc5 split-hero"
+                                data-snippet="s_cover"
+                                data-name="Cover"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span class="s_parallax_bg oe_img_bg o_bg_img_center">
+                                    <video
+                                        class="split-hero-video split-hero-video-desktop"
+                                        src="/split_website/static/src/video/home_hero.webm"
+                                        autoplay="autoplay"
+                                        muted="muted"
+                                        loop="loop"
+                                        playsinline="playsinline"
+                                        preload="metadata"
+                                    />
+                                    <video
+                                        class="split-hero-video split-hero-video-mobile"
+                                        src="/split_website/static/src/video/home_hero_mobile.webm"
+                                        autoplay="autoplay"
+                                        muted="muted"
+                                        loop="loop"
+                                        playsinline="playsinline"
+                                        preload="metadata"
+                                    />
+                                </span>
+                                <div class="o_we_bg_filter bg-black-25" />
+                                <div class="container s_allow_columns">
+                                    <div class="row">
+                                        <div class="col-lg-6 offset-lg-6 text-lg-end">
+                                            <h1
+                                                class="display-1-fs"
+                                            >Animation &amp; Games</h1>
+                                            <p class="mb-0">
+                                                <a
+                                                    href="/reel"
+                                                    class="btn btn-primary btn-lg"
+                                                >Watch Split's Reel</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_carousel_wrapper p-0"
+                                data-vxml="001"
+                                data-vcss="001"
+                                data-snippet="s_carousel"
+                                data-name="Featured"
+                            >
+                                <div
+                                    id="splitFeaturedCarousel"
+                                    class="s_carousel s_carousel_default carousel slide"
+                                    data-bs-ride="true"
+                                    data-bs-interval="7000"
+                                >
+                                    <div class="carousel-inner">
+                                        <div
+                                            class="carousel-item active oe_img_bg o_bg_img_center o_cc o_cc5 pt152 pb152"
+                                            style="background-image: url('/web/image/split_website.banner_among_the_stars');"
+                                            data-name="Slide"
+                                        >
+                                            <div class="o_we_bg_filter bg-black-50" />
+                                            <div class="container oe_unremovable">
+                                                <div class="row">
+                                                    <div
+                                                        class="carousel-content col-lg-6"
+                                                    >
+                                                        <h2
+                                                            class="display-3-fs"
+                                                        >Among the Stars</h2>
+                                                        <p
+                                                            class="lead"
+                                                        >Split original — help make this game a reality at Catarse.</p>
+                                                        <p>
+                                                            <a
+                                                                href="https://www.catarse.com.br/entreasestrelas-original"
+                                                                class="btn btn-primary"
+                                                                target="_blank"
+                                                            >Support on Catarse</a>
+                                                            <a
+                                                                href="/originals/among-the-stars"
+                                                                class="btn btn-outline-secondary ms-2"
+                                                            >Discover the project</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 pt152 pb152"
+                                            style="background-image: url('/web/image/split_website.banner_split_academy');"
+                                            data-name="Slide"
+                                        >
+                                            <div class="o_we_bg_filter bg-black-50" />
+                                            <div class="container oe_unremovable">
+                                                <div class="row">
+                                                    <div
+                                                        class="carousel-content col-lg-6"
+                                                    >
+                                                        <h2
+                                                            class="display-3-fs"
+                                                        >Split Academy</h2>
+                                                        <p
+                                                            class="lead"
+                                                        >Split's animation school, built on more than ten years of studio practice.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 pt152 pb152"
+                                            style="background-image: url('/web/image/split_website.banner_rick_and_morty');"
+                                            data-name="Slide"
+                                        >
+                                            <div class="o_we_bg_filter bg-black-50" />
+                                            <div class="container oe_unremovable">
+                                                <div class="row">
+                                                    <div
+                                                        class="carousel-content col-lg-6"
+                                                    >
+                                                        <h2
+                                                            class="display-3-fs"
+                                                        >Rick and Morty</h2>
+                                                        <p
+                                                            class="lead"
+                                                        >Animated episodes produced for the fifth season.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/rick-and-morty"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 pt152 pb152"
+                                            style="background-image: url('/web/image/split_website.banner_hello_kitty');"
+                                            data-name="Slide"
+                                        >
+                                            <div class="o_we_bg_filter bg-black-50" />
+                                            <div class="container oe_unremovable">
+                                                <div class="row">
+                                                    <div
+                                                        class="carousel-content col-lg-6"
+                                                    >
+                                                        <h2
+                                                            class="display-3-fs"
+                                                        >Hello Kitty Supercute Adventures</h2>
+                                                        <p
+                                                            class="lead"
+                                                        >New episodes on YouTube every Wednesday.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/hello-kitty-supercute"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 pt152 pb152"
+                                            style="background-image: url('/web/image/split_website.banner_bit_wars');"
+                                            data-name="Slide"
+                                        >
+                                            <div class="o_we_bg_filter bg-black-50" />
+                                            <div class="container oe_unremovable">
+                                                <div class="row">
+                                                    <div
+                                                        class="carousel-content col-lg-6"
+                                                    >
+                                                        <h2
+                                                            class="display-3-fs"
+                                                        >Bit Wars</h2>
+                                                        <p
+                                                            class="lead"
+                                                        >Series promo on air.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/bit-wars"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center o_cc o_cc5 pt152 pb152"
+                                            style="background-image: url('/web/image/split_website.banner_monica_and_friends');"
+                                            data-name="Slide"
+                                        >
+                                            <div class="o_we_bg_filter bg-black-50" />
+                                            <div class="container oe_unremovable">
+                                                <div class="row">
+                                                    <div
+                                                        class="carousel-content col-lg-6"
+                                                    >
+                                                        <h2
+                                                            class="display-3-fs"
+                                                        >Monica and Friends</h2>
+                                                        <p
+                                                            class="lead"
+                                                        >The most watched Brazilian show on Cartoon Network.</p>
+                                                        <p>
+                                                            <a
+                                                                href="/work/monica-and-friends"
+                                                                class="btn btn-primary"
+                                                            >Discover the project</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="carousel-control-prev o_not_editable"
+                                        contenteditable="false"
+                                        data-bs-target="#splitFeaturedCarousel"
+                                        data-bs-slide="prev"
+                                        aria-label="Previous"
+                                        title="Previous"
+                                    >
+                                        <span
+                                            class="carousel-control-prev-icon"
+                                            aria-hidden="true"
+                                        />
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button
+                                        class="carousel-control-next o_not_editable"
+                                        contenteditable="false"
+                                        data-bs-target="#splitFeaturedCarousel"
+                                        data-bs-slide="next"
+                                        aria-label="Next"
+                                        title="Next"
+                                    >
+                                        <span
+                                            class="carousel-control-next-icon"
+                                            aria-hidden="true"
+                                        />
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="carousel-indicators o_not_editable">
+                                        <button
+                                            type="button"
+                                            data-bs-target="#splitFeaturedCarousel"
+                                            data-bs-slide-to="0"
+                                            class="active"
+                                            aria-label="Carousel indicator"
+                                        />
+                                        <button
+                                            type="button"
+                                            data-bs-target="#splitFeaturedCarousel"
+                                            data-bs-slide-to="1"
+                                            aria-label="Carousel indicator"
+                                        />
+                                        <button
+                                            type="button"
+                                            data-bs-target="#splitFeaturedCarousel"
+                                            data-bs-slide-to="2"
+                                            aria-label="Carousel indicator"
+                                        />
+                                        <button
+                                            type="button"
+                                            data-bs-target="#splitFeaturedCarousel"
+                                            data-bs-slide-to="3"
+                                            aria-label="Carousel indicator"
+                                        />
+                                        <button
+                                            type="button"
+                                            data-bs-target="#splitFeaturedCarousel"
+                                            data-bs-slide-to="4"
+                                            aria-label="Carousel indicator"
+                                        />
+                                        <button
+                                            type="button"
+                                            data-bs-target="#splitFeaturedCarousel"
+                                            data-bs-slide-to="5"
+                                            aria-label="Carousel indicator"
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Our Work"
+                            >
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-12 pb16 d-flex flex-wrap align-items-baseline justify-content-between"
+                                        >
+                                            <div>
+                                                <h2 class="mb-0">Our Work</h2>
+                                                <p
+                                                    class="lead mb-0"
+                                                >Productions created and animated with channels, studios and brands.</p>
+                                            </div>
+                                            <p class="mb-0">
+                                                <a href="/our-work">See them all <i
+                                                    class="fa fa-long-arrow-right ms-2"
+                                                /></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/my-life-is-worth-living"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_my_life_is_worth_living"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="My Life Is Worth Living"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >My Life Is Worth Living</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/fit-ufc-true-myth"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_fit_ufc"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Fit UFC | True Myth"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Fit UFC | True Myth</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >UFC · Branded series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/is-anybody-out-there"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_is_anybody_out_there"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Is Anybody Out There?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Is Anybody Out There?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/tito-and-the-birds"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_tito_and_the_birds"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Tito and the Birds"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Tito and the Birds</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Bits Produções · Feature film</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/are-you-okay"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_are_you_okay"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Are You Okay?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Are You Okay?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Wonder Media · Animated series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/work/rick-and-morty"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.work_rick_and_morty"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Rick and Morty"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Rick and Morty</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Adult Swim · Animated episodes</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Split Originals"
+                            >
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-12 pb16 d-flex flex-wrap align-items-baseline justify-content-between"
+                                        >
+                                            <div>
+                                                <h2 class="mb-0">Split Originals</h2>
+                                                <p
+                                                    class="lead mb-0"
+                                                >Intellectual properties created inside the studio.</p>
+                                            </div>
+                                            <p class="mb-0">
+                                                <a
+                                                    href="/split-originals"
+                                                >See them all <i
+                                                    class="fa fa-long-arrow-right ms-2"
+                                                /></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/originals/weeboom"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_weeboom"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="WeeBoom"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">WeeBoom</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Preschool series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/originals/whats-up-bud"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_whats_up_bud"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="What's Up, Bud?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >What's Up, Bud?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Comedy series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/originals/the-charcoal-swordsman"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_charcoal_swordsman"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="The Charcoal Swordsman"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >The Charcoal Swordsman</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Series in development</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/originals/sun-boy-and-friends"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_sun_boy"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Sun Boy and Friends"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Sun Boy and Friends</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Music videos</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/originals/que-corpo-e-esse"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_que_corpo_e_esse"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Que Corpo é Esse?"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4
+                                                            class="mb-0"
+                                                        >Que Corpo é Esse?</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Canal Futura · Original series</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt16 pb16">
+                                            <a
+                                                href="/originals/wizavior"
+                                                class="text-reset split-project-card"
+                                            >
+                                                <figure class="mb-0">
+                                                    <img
+                                                        src="/web/image/split_website.original_wizavior"
+                                                        class="img img-fluid w-100"
+                                                        style="aspect-ratio: 16 / 9; object-fit: cover;"
+                                                        alt="Wizavior"
+                                                        loading="lazy"
+                                                    />
+                                                    <figcaption class="pt-2">
+                                                        <h4 class="mb-0">Wizavior</h4>
+                                                        <p
+                                                            class="o_small mb-0"
+                                                        >Original IP · Game</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Pitch"
+                            >
+                                <div class="container text-center">
+                                    <h2 class="display-4-fs">
+                                        Creating and producing animated stories for some of the
+                                        biggest brands in the world for more than 10 years
+                                    </h2>
+                                    <p class="lead">
+                                        TV &amp; YouTube channels, film companies, ad agencies and
+                                        big corporations.
+                                    </p>
+                                    <p class="h4-fs text-o-color-2">
+                                        If there's 2D animation, Split can do it.
+                                    </p>
+                                </div>
+                            </section>
+                            <section
+                                class="s_features pt0 pb64 split-pipeline"
+                                data-snippet="s_features"
+                                data-name="What Split Does"
+                            >
+                                <h2
+                                    class="split-pipeline-banner"
+                                >What Split does</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
+                                            <img
+                                                src="/split_website/static/src/binary/ir_attachment/icon_creation.svg"
+                                                class="split-pipeline-icon"
+                                                alt="Creation &amp; Development"
+                                                loading="lazy"
+                                            />
+                                            <h3>Creation &amp; Development</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>IPs Creation</li>
+                                                <li>Project Development</li>
+                                                <li>Script Writing</li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
+                                            <img
+                                                src="/split_website/static/src/binary/ir_attachment/icon_pre_production.svg"
+                                                class="split-pipeline-icon"
+                                                alt="Pre-Production"
+                                                loading="lazy"
+                                            />
+                                            <h3>Pre-Production</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Storyboard &amp; Animatic</li>
+                                                <li
+                                                >Character Design &amp; Backgrounds</li>
+                                                <li>Setup &amp; Rigging</li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
+                                            <img
+                                                src="/split_website/static/src/binary/ir_attachment/icon_animation.svg"
+                                                class="split-pipeline-icon"
+                                                alt="2D Animation"
+                                                loading="lazy"
+                                            />
+                                            <h3>2D Animation</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Staging &amp; Blocking</li>
+                                                <li
+                                                >Cut Out &amp; Traditional Animation</li>
+                                                <li>FX &amp; Motion Animation</li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="col-lg-3 col-md-6 split-pipeline-item"
+                                        >
+                                            <img
+                                                src="/split_website/static/src/binary/ir_attachment/icon_post_production.svg"
+                                                class="split-pipeline-icon"
+                                                alt="Post-Production"
+                                                loading="lazy"
+                                            />
+                                            <h3>Post-Production</h3>
+                                            <ul class="list-unstyled mb-0">
+                                                <li>Scene Composition</li>
+                                                <li>Film Editing</li>
+                                                <li>Rendering</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_quotes_carousel_wrapper split-testimonials"
+                                data-vxml="001"
+                                data-vcss="002"
+                                data-snippet="s_quotes_carousel"
+                                data-name="Testimonials"
+                            >
+                                <div
+                                    id="splitQuotesCarousel"
+                                    class="s_quotes_carousel s_carousel_boxed carousel slide o_cc o_cc5"
+                                    data-bs-ride="true"
+                                    data-bs-interval="9000"
+                                >
+                                    <div class="carousel-inner">
+                                        <div
+                                            class="carousel-item active oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“Split Studio has become an MSP extension, where the relationship between both teams goes beyond the partnership in projects, becoming a friendship relationship. We've always been able to count on their high production capacity, agility and fidelity to our ideology.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_mauricio_de_sousa"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Mauricio de Sousa"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Mauricio de Sousa</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Mauricio de Sousa Produções</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“For us at Cartoon Network, working with Split is a real gift. It's the guarantee of excellent creative and technical quality, within the agreed deadline. After so many projects, Split is like an extension of our internal team.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_adriana_alcantara"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Adriana Alcântara"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Adriana Alcântara</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Cartoon Network</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“We are with Split in projects designed to communicate based on social causes. The studio and its team always surprise us, for the quality of what they do, and for living in the team's practice the diversity and mutual respect that we want to see on all screens.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_joao_alegria"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="João Alegria"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >João Alegria</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Canal Futura</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“For us at Sanrio Brazil it is a pleasure to work with Split in the development of our content for our Hello Kitty Brazil, Mexico and Latin America channels. All the projects have greatly met our expectations.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_renata_pereto"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Renata Pereto"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Renata Pereto</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Sanrio Brazil</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“Working with Split on the development of the Senninha na Pista Maluca second season was a wonderful experience. A very committed, professional, flexible, creative and partner team. They're A+.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_bianca_senna"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Bianca Senna"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Bianca Senna</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Senna Brands</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“The work coming out of Split Studio is exceptional, and the entire team is extremely competent and super talented. Every project we have collaborated on with them has been easy and seamless.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_rene_veilleux"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="René Veilleux"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >René Veilleux</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Verite Entertainment</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“My relationship with Split is intertwined with my start in animation. Since then, I've been more and more attracted by Split's enormous capacity to invest affection in all projects.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_bruno_honda"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Bruno Honda"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong>Bruno Honda</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Pachinko</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“Split managed to greatly improve the quality of the project, both in terms of conception, animation and art. Without Split, we would never have gotten where we are with Tito and the Birds.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_gustav_steinberg"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Gustav Steinberg"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Gustav Steinberg</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Bit Productions</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“We were right in looking for Split to contribute to the production of the Rádio Bita show. We are very happy with the care, result and way of conducting the work by their team. At Split we found great partners and friends.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_felipe_almeida"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Felipe Almeida"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Felipe Almeida</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Mr Plot</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                        <div
+                                            class="carousel-item oe_img_bg o_bg_img_center pt80 pb80"
+                                            data-name="Slide"
+                                        >
+                                            <blockquote
+                                                data-name="Blockquote"
+                                                data-snippet="s_blockquote"
+                                                class="s_blockquote s_blockquote_with_icon o_cc o_cc1 o_animable position-relative d-flex flex-column gap-4 w-75 mx-auto p-5 fst-normal"
+                                                data-vcss="001"
+                                            >
+                                                <div
+                                                    class="s_blockquote_line_elt position-absolute top-0 start-0 bottom-0 bg-o-color-1"
+                                                />
+                                                <div
+                                                    class="s_blockquote_wrap_icon position-absolute top-0 start-50 translate-middle w-100"
+                                                >
+                                                    <i
+                                                        class="s_blockquote_icon fa fa-quote-right d-block mx-auto rounded bg-o-color-1"
+                                                        role="img"
+                                                    />
+                                                </div>
+                                                <p
+                                                    class="s_blockquote_quote my-auto h5-fs"
+                                                    style="text-align:center;"
+                                                >“I have had the joy and the privilege of working with the talent, quality and commitment of the Split team since the production of Sítio do Picapau Amarelo. Long live Split.”</p>
+                                                <div
+                                                    class="s_blockquote_infos d-flex flex-column align-items-center text-center"
+                                                >
+                                                    <img
+                                                        src="/web/image/split_website.avatar_reynaldo_marchesini"
+                                                        class="s_blockquote_avatar img rounded-circle"
+                                                        alt="Reynaldo Marchesini"
+                                                        loading="lazy"
+                                                    />
+                                                    <div class="s_blockquote_author">
+                                                        <span>
+                                                            <strong
+                                                            >Reynaldo Marchesini</strong>
+                                                            <br />
+                                                            <span
+                                                                class="split-testimonial-org"
+                                                            >Flamma</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="carousel-control-prev o_not_editable"
+                                        contenteditable="false"
+                                        data-bs-target="#splitQuotesCarousel"
+                                        data-bs-slide="prev"
+                                        aria-label="Previous"
+                                        title="Previous"
+                                    >
+                                        <span
+                                            class="carousel-control-prev-icon"
+                                            aria-hidden="true"
+                                        />
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button
+                                        class="carousel-control-next o_not_editable"
+                                        contenteditable="false"
+                                        data-bs-target="#splitQuotesCarousel"
+                                        data-bs-slide="next"
+                                        aria-label="Next"
+                                        title="Next"
+                                    >
+                                        <span
+                                            class="carousel-control-next-icon"
+                                            aria-hidden="true"
+                                        />
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </section>
+                            <section
+                                class="s_references split-clients pt64 pb64"
+                                data-snippet="s_references"
+                                data-name="Clients"
+                            >
+                                <div class="container">
+                                    <div class="row s_nb_column_fixed">
+                                        <div class="col-12 pb24">
+                                            <h2
+                                                style="text-align: center;"
+                                            >Who we create with</h2>
+                                            <p
+                                                class="lead"
+                                                style="text-align: center;"
+                                            >TV and YouTube channels, film companies, ad agencies and big corporations.</p>
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_cartoon_network"
+                                                class="img img-fluid mx-auto"
+                                                alt="Cartoon Network"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_cartoonito"
+                                                class="img img-fluid mx-auto"
+                                                alt="Cartoonito"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_boomerang"
+                                                class="img img-fluid mx-auto"
+                                                alt="Boomerang"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_comedy_central"
+                                                class="img img-fluid mx-auto"
+                                                alt="Comedy Central"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_disney_jr"
+                                                class="img img-fluid mx-auto"
+                                                alt="Disney Jr."
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_nickelodeon"
+                                                class="img img-fluid mx-auto"
+                                                alt="Nickelodeon"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_canal_futura"
+                                                class="img img-fluid mx-auto"
+                                                alt="Canal Futura"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_globo"
+                                                class="img img-fluid mx-auto"
+                                                alt="Globo"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_gloobinho"
+                                                class="img img-fluid mx-auto"
+                                                alt="Gloobinho"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_record"
+                                                class="img img-fluid mx-auto"
+                                                alt="Record"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_msp"
+                                                class="img img-fluid mx-auto"
+                                                alt="Mauricio de Sousa Produções"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_sanrio"
+                                                class="img img-fluid mx-auto"
+                                                alt="Sanrio"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_riot"
+                                                class="img img-fluid mx-auto"
+                                                alt="Riot Games"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_unicef"
+                                                class="img img-fluid mx-auto"
+                                                alt="Unicef"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_childhood"
+                                                class="img img-fluid mx-auto"
+                                                alt="Childhood"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_instituto_ayrton_senna"
+                                                class="img img-fluid mx-auto"
+                                                alt="Instituto Ayrton Senna"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_gullane"
+                                                class="img img-fluid mx-auto"
+                                                alt="Gullane"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_mixer_films"
+                                                class="img img-fluid mx-auto"
+                                                alt="Mixer Films"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_paranoid"
+                                                class="img img-fluid mx-auto"
+                                                alt="Paranoid"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_mr_plot"
+                                                class="img img-fluid mx-auto"
+                                                alt="Mr Plot"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_up_content"
+                                                class="img img-fluid mx-auto"
+                                                alt="Up Content"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                        <div class="col-6 col-lg-2 pt16 pb16">
+                                            <img
+                                                src="/web/image/split_website.client_wonder_media"
+                                                class="img img-fluid mx-auto"
+                                                alt="Wonder Media"
+                                                loading="lazy"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="reel" model="ir.ui.view">
+        <field name="name">Split Studio - Reel</field>
+        <field name="key">split_website.reel</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Reel" t-name="split_website.reel">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div id="oe_structure_split_website_reel" class="oe_structure">
+                            <section
+                                class="s_title parallax s_parallax_is_fixed pt96 pb96 o_cc o_cc5"
+                                data-vcss="001"
+                                data-snippet="s_title"
+                                data-name="Title"
+                                data-scroll-background-ratio="1"
+                            >
+                                <span
+                                    class="s_parallax_bg oe_img_bg o_bg_img_center"
+                                    style="background-image: url('/web/image/split_website.banner_bit_wars');"
+                                />
+                                <div class="o_we_bg_filter bg-black-75" />
+                                <div class="container">
+                                    <h1 class="display-2-fs">Reel</h1>
+                                    <p
+                                        class="lead mb-0"
+                                    >A few minutes through ten years of animation.</p>
+                                </div>
+                            </section>
+                            <section
+                                class="s_embed_code pt64 pb64 o_cc o_cc5"
+                                data-snippet="s_embed_code"
+                                data-name="Embed Code"
+                            >
+                                <div class="container">
+                                    <div class="s_embed_code_embedded ratio ratio-16x9">
+                                        <iframe
+                                            src="https://www.youtube.com/embed/sx7JLirq2s0"
+                                            title="Split Studio Reel"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen="allowfullscreen"
+                                        />
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt48 pb64 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Reel Links"
+                            >
+                                <div class="container text-center">
+                                    <p
+                                        class="lead"
+                                    >More of our work lives on Vimeo and YouTube.</p>
+                                    <p>
+                                        <a
+                                            href="https://vimeo.com/splitstudio"
+                                            target="_blank"
+                                            class="btn btn-primary"
+                                        >Vimeo channel</a>
+                                        <a
+                                            href="https://www.youtube.com/c/SplitStudioBR"
+                                            target="_blank"
+                                            class="btn btn-outline-secondary ms-2"
+                                        >YouTube channel</a>
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

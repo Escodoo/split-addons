@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="courses_home" model="ir.ui.view">
+        <field name="name">Split Academia - Courses home</field>
+        <field name="inherit_id" ref="website_slides.courses_home" />
+        <field name="website_id" ref="website_academia" />
+        <field name="key">split_website_elearning.courses_home</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <xpath expr="//section[hasclass('s_banner')]" position="replace">
+                <section class="acd-section acd-slides-hero" data-name="Courses intro">
+                    <div class="container text-center">
+                        <!-- prettier-ignore -->
+                        <h1>What do you want to <span class="acd-word acd-purple">learn</span>?</h1>
+                        <!-- prettier-ignore -->
+                        <p class="lead mb-0">These are the courses students return to: the ones that teach and stay with them.</p>
+                    </div>
+                </section>
+            </xpath>
+            <xpath expr="//h5[@t-esc='user.name']" position="replace">
+                <h5 class="d-flex flex-grow-1 mb-0">Your progress</h5>
+            </xpath>
+        </field>
+    </record>
+    <record id="courses_all" model="ir.ui.view">
+        <field name="name">Split Academia - All courses</field>
+        <field name="inherit_id" ref="website_slides.courses_all" />
+        <field name="website_id" ref="website_academia" />
+        <field name="key">split_website_elearning.courses_all</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@t-if='search_my']/section" position="replace">
+                <section class="acd-section acd-slides-hero" data-name="My courses">
+                    <div class="container text-center">
+                        <h1>My courses</h1>
+                    </div>
+                </section>
+            </xpath>
+            <xpath
+                expr="//div[@t-elif=&quot;search_slide_category == 'certification'&quot;]/section"
+                position="replace"
+            >
+                <section
+                    class="acd-section acd-slides-hero"
+                    data-name="Certifications"
+                >
+                    <div class="container text-center">
+                        <h1>Certifications</h1>
+                    </div>
+                </section>
+            </xpath>
+            <xpath expr="//div[@t-else='']/section" position="replace">
+                <section class="acd-section acd-slides-hero" data-name="All courses">
+                    <div class="container text-center">
+                        <h1>All courses</h1>
+                    </div>
+                </section>
+            </xpath>
+        </field>
+    </record>
+</odoo>

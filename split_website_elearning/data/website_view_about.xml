@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="about" model="ir.ui.view">
+        <field name="name">Split Academia - About</field>
+        <field name="key">split_website_elearning.about</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website_academia" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="About" t-name="split_website_elearning.about">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_elearning_about"
+                            class="oe_structure"
+                        >
+                            <section class="acd-section" data-name="Intro">
+                                <div class="container text-center">
+                                    <!-- prettier-ignore -->
+                                    <h1>What <span class="acd-word acd-cyan">is</span> Split <span class="acd-word acd-pink">Academia?</span></h1>
+                                    <!-- prettier-ignore -->
+                                    <p class="acd-subtitle">More than a school, an educational experience.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-9">
+                                            <!-- prettier-ignore -->
+                                            <p>Welcome to one of the most promising programs in the Brazilian animation market. Split Academia is part of the <strong>Split Institute of Innovation</strong>, a Split Studio initiative to democratize access to art, animation and technology.</p>
+                                            <!-- prettier-ignore -->
+                                            <p>At <strong>Split Academia</strong> we believe education is more than technical learning: it is about creating meaningful experiences. We are a bridge between a childhood dream and a professional future, helping you plant the seed of a career in animation.</p>
+                                            <!-- prettier-ignore -->
+                                            <p>Split has been producing animation at an excellent level for many years.</p>
+                                            <!-- prettier-ignore -->
+                                            <p>There are many brilliant projects, national and international, and with them came awards and market recognition.</p>
+                                            <!-- prettier-ignore -->
+                                            <p class="mb-0">That is why we decided to share our experience and our method.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section pt-0"
+                                data-name="Partners"
+                            >
+                                <div class="container">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6">
+                                            <div
+                                                class="acd-partner acd-card-cyan"
+                                            >
+                                                <!-- prettier-ignore -->
+                                                <p class="acd-partner-lead">We want to multiply and add!</p>
+                                                <img
+                                                    class="acd-partner-logo"
+                                                    src="/split_website_elearning/static/src/img/brand/logo_studio.webp"
+                                                    alt="Split Studio"
+                                                />
+                                                <a
+                                                    class="acd-card-cta"
+                                                    href="https://splitstudio.tv/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >Learn more about the studio</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div
+                                                class="acd-partner acd-card-yellow"
+                                            >
+                                                <!-- prettier-ignore -->
+                                                <p>The Split Institute of Innovation promotes education, training and events in animation and games, with a focus on inclusion and innovation.</p>
+                                                <!-- prettier-ignore -->
+                                                <p>Our mission is to democratize access to knowledge and boost creativity in the animation market.</p>
+                                                <img
+                                                    class="acd-partner-logo"
+                                                    src="/split_website_elearning/static/src/img/brand/logo_institute.webp"
+                                                    alt="Split Institute of Innovation"
+                                                />
+                                                <a
+                                                    class="acd-card-cta"
+                                                    href="https://www.instagram.com/institutosplit/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >Learn more about the institute</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section pt-0"
+                                data-name="Commitment"
+                            >
+                                <div class="container">
+                                    <div class="acd-commitment">
+                                        <!-- prettier-ignore -->
+                                        <h2>Our <span class="acd-word acd-yellow">Commitment</span></h2>
+                                        <ul class="mb-0">
+                                            <!-- prettier-ignore -->
+                                            <li>Democratize access to art, animation and technology.</li>
+                                            <!-- prettier-ignore -->
+                                            <li>Offer immersive, practical training.</li>
+                                            <!-- prettier-ignore -->
+                                            <li>Develop and train talent for the animation market.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="acd-section" data-name="Toon Boom">
+                                <div class="container">
+                                    <div class="row align-items-center g-4">
+                                        <div class="col-lg-7">
+                                            <!-- prettier-ignore -->
+                                            <h2>Split Academia: official <span class="acd-word acd-cyan">Toon Boom</span> training</h2>
+                                            <!-- prettier-ignore -->
+                                            <p class="mb-0">Through the official Toon Boom partnership, Split Academia offers complete, certified training so you can master the animation tools studios use every day.</p>
+                                        </div>
+                                        <div class="col-lg-5 text-center">
+                                            <img
+                                                class="acd-atc"
+                                                src="/split_website_elearning/static/src/img/brand/atc_toonboom.webp"
+                                                alt="Toon Boom Authorized Training Centre"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section"
+                                data-name="Methodology"
+                            >
+                                <div class="container">
+                                    <div class="row align-items-center g-4">
+                                        <div class="col-lg-7">
+                                            <!-- prettier-ignore -->
+                                            <h2>A new way to learn <span class="acd-word acd-pink">animation</span></h2>
+                                            <!-- prettier-ignore -->
+                                            <p>Here you learn not only the <strong>how</strong>, but the <strong>why</strong> of animation, and you develop your own identity as an artist. How we do it:</p>
+                                            <!-- prettier-ignore -->
+                                            <p>At Split Academia we combine practice, theory and innovation to prepare artists for the animation market. Our method is project-based: students build creative work while they apply what they learn in class.</p>
+                                            <!-- prettier-ignore -->
+                                            <p>With mentorship from working professionals, we keep a curriculum that goes from animation fundamentals to the tools studios use today. We also train teamwork, communication and time management.</p>
+                                            <!-- prettier-ignore -->
+                                            <p class="mb-0">Through studio partnerships and production-grade infrastructure we connect students to the market, and we encourage Brazilian culture in every project. This is where a career in animation starts with purpose.</p>
+                                        </div>
+                                        <div class="col-lg-5 text-center">
+                                            <img
+                                                class="acd-character"
+                                                src="/split_website_elearning/static/src/img/brand/about_character.webp"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section"
+                                data-name="Learning options"
+                            >
+                                <div class="container">
+                                    <!-- prettier-ignore -->
+                                    <h2 class="text-center">Discover our <span class="acd-word acd-pink">learning options.</span></h2>
+                                    <!-- prettier-ignore -->
+                                    <p class="text-center mb-5">We offer Courses, Workshops and Masterclasses for different levels, with flexible formats that fit your routine.</p>
+                                    <div class="row g-4">
+                                        <div class="col-lg-4">
+                                            <div
+                                                class="acd-format acd-format-green"
+                                            >
+                                                <div class="acd-format-head">
+                                                    <h3>Courses</h3>
+                                                </div>
+                                                <div class="acd-format-body">
+                                                    <ul>
+                                                        <!-- prettier-ignore -->
+                                                        <li><strong>Distance:</strong> learn from anywhere with recorded classes and lifetime access.</li>
+                                                        <!-- prettier-ignore -->
+                                                        <li><strong>In person:</strong> an immersive experience at Split Academia.</li>
+                                                        <!-- prettier-ignore -->
+                                                        <li><strong>Live online:</strong> join interactive classes with our educators.</li>
+                                                    </ul>
+                                                    <a
+                                                        class="acd-card-cta"
+                                                        href="/slides"
+                                                    >See all courses</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div
+                                                class="acd-format acd-format-pink"
+                                            >
+                                                <div class="acd-format-head">
+                                                    <h3>Workshops</h3>
+                                                </div>
+                                                <div class="acd-format-body">
+                                                    <ul>
+                                                        <!-- prettier-ignore -->
+                                                        <li>Specialized topics for people who want to go deeper into specific areas of animation.</li>
+                                                        <!-- prettier-ignore -->
+                                                        <li>Held in person or online, with practical exercises and exclusive materials.</li>
+                                                    </ul>
+                                                    <a
+                                                        class="acd-card-cta"
+                                                        href="/contactus"
+                                                    >Ask about workshops</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div
+                                                class="acd-format acd-format-purple"
+                                            >
+                                                <div class="acd-format-head">
+                                                    <h3>Masterclass</h3>
+                                                </div>
+                                                <div class="acd-format-body">
+                                                    <ul>
+                                                        <!-- prettier-ignore -->
+                                                        <li>One-off sessions on advanced topics such as Animation Direction.</li>
+                                                        <!-- prettier-ignore -->
+                                                        <li>Longer sessions of about three hours, with more depth and live Q&amp;A.</li>
+                                                    </ul>
+                                                    <a
+                                                        class="acd-card-cta"
+                                                        href="/contactus"
+                                                    >Ask about masterclasses</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

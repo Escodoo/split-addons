@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="contactus" model="ir.ui.view">
+        <field name="name">Split Studio - Contact Us</field>
+        <field name="key">split_website.contactus</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Contact Us" t-name="website.contactus">
+                <t t-call="website.layout">
+                    <t
+                        t-set="logged_partner"
+                        t-value="request.env['website.visitor']._get_visitor_from_request().partner_id"
+                    />
+                    <t
+                        t-set="contactus_form_values"
+                        t-value="{
+                        'contact_name': request.params.get('contact_name', ''),
+                        'partner_name': request.params.get('partner_name', ''),
+                        'phone': request.params.get('phone', ''),
+                        'email_from': request.params.get('email_from', ''),
+                        'description': request.params.get('description', ''),
+                    }"
+                    />
+                    <span
+                        class="hidden"
+                        data-for="contactus_form"
+                        t-att-data-values="contactus_form_values"
+                    />
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_contactus"
+                            class="oe_structure split-contact"
+                        >
+                            <section
+                                class="s_title pt96 pb32"
+                                data-snippet="s_title"
+                                data-name="Title"
+                            >
+                                <div class="container">
+                                    <h1
+                                        class="display-2-fs text-center mb-0"
+                                    >Talk to us</h1>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb64"
+                                data-snippet="s_text_block"
+                                data-name="Contact"
+                            >
+                                <div class="container s_allow_columns">
+                                    <div class="row align-items-start">
+                                        <div class="col-lg-7">
+                                            <section
+                                                class="s_website_form"
+                                                data-vcss="001"
+                                                data-snippet="s_website_form"
+                                                data-name="Form"
+                                            >
+                                                <div class="container">
+                                                    <form
+                                                        id="contactus_form"
+                                                        action="/website/form/"
+                                                        method="post"
+                                                        enctype="multipart/form-data"
+                                                        class="o_mark_required"
+                                                        data-mark="*"
+                                                        data-model_name="crm.lead"
+                                                        data-success-mode="redirect"
+                                                        data-success-page="/contactus-thank-you"
+                                                        data-pre-fill="true"
+                                                    >
+                                                        <div
+                                                            class="s_website_form_rows row s_col_no_bgcolor"
+                                                        >
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                data-type="char"
+                                                                data-name="Field"
+                                                            >
+                                                                <label
+                                                                    class="s_website_form_label"
+                                                                    for="split_contact_name"
+                                                                >
+                                                                    <span
+                                                                        class="s_website_form_label_content"
+                                                                    >Name</span>
+                                                                    <span
+                                                                        class="s_website_form_mark"
+                                                                    > *</span>
+                                                                </label>
+                                                                <input
+                                                                    id="split_contact_name"
+                                                                    type="text"
+                                                                    class="form-control s_website_form_input"
+                                                                    name="contact_name"
+                                                                    required=""
+                                                                    data-fill-with="name"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                data-type="email"
+                                                                data-name="Field"
+                                                            >
+                                                                <label
+                                                                    class="s_website_form_label"
+                                                                    for="split_contact_email"
+                                                                >
+                                                                    <span
+                                                                        class="s_website_form_label_content"
+                                                                    >E-mail</span>
+                                                                    <span
+                                                                        class="s_website_form_mark"
+                                                                    > *</span>
+                                                                </label>
+                                                                <input
+                                                                    id="split_contact_email"
+                                                                    type="email"
+                                                                    class="form-control s_website_form_input"
+                                                                    name="email_from"
+                                                                    required=""
+                                                                    data-fill-with="email"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                data-type="selection"
+                                                                data-name="Field"
+                                                            >
+                                                                <label
+                                                                    class="s_website_form_label"
+                                                                    for="split_contact_subject"
+                                                                >
+                                                                    <span
+                                                                        class="s_website_form_label_content"
+                                                                    >Select the subject</span>
+                                                                    <span
+                                                                        class="s_website_form_mark"
+                                                                    > *</span>
+                                                                </label>
+                                                                <select
+                                                                    id="split_contact_subject"
+                                                                    class="form-select s_website_form_input"
+                                                                    name="name"
+                                                                    required=""
+                                                                >
+                                                                    <option value="" />
+                                                                    <option
+                                                                        value="Bids"
+                                                                    >Bids</option>
+                                                                    <option
+                                                                        value="Work with Split"
+                                                                    >Work with Split</option>
+                                                                    <option
+                                                                        value="Press"
+                                                                    >Press</option>
+                                                                    <option
+                                                                        value="Other"
+                                                                    >Other</option>
+                                                                </select>
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_custom split-contact-work d-none"
+                                                                data-type="selection"
+                                                                data-name="Field"
+                                                            >
+                                                                <label
+                                                                    class="s_website_form_label"
+                                                                    for="split_contact_field"
+                                                                >
+                                                                    <span
+                                                                        class="s_website_form_label_content"
+                                                                    >Select your field of work</span>
+                                                                </label>
+                                                                <select
+                                                                    id="split_contact_field"
+                                                                    class="form-select s_website_form_input"
+                                                                    name="Field of work"
+                                                                >
+                                                                    <option value="" />
+                                                                    <option
+                                                                        value="Animation"
+                                                                    >Animation</option>
+                                                                    <option
+                                                                        value="Illustration"
+                                                                    >Illustration</option>
+                                                                    <option
+                                                                        value="Storyboard"
+                                                                    >Storyboard</option>
+                                                                    <option
+                                                                        value="Script Writing"
+                                                                    >Script Writing</option>
+                                                                    <option
+                                                                        value="Production"
+                                                                    >Production</option>
+                                                                    <option
+                                                                        value="Other"
+                                                                    >Other</option>
+                                                                </select>
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-lg-6 s_website_form_field s_website_form_custom split-contact-work d-none"
+                                                                data-type="char"
+                                                                data-name="Field"
+                                                            >
+                                                                <label
+                                                                    class="s_website_form_label"
+                                                                    for="split_contact_portfolio"
+                                                                >
+                                                                    <span
+                                                                        class="s_website_form_label_content"
+                                                                    >Link to portfolio</span>
+                                                                </label>
+                                                                <input
+                                                                    id="split_contact_portfolio"
+                                                                    type="url"
+                                                                    class="form-control s_website_form_input"
+                                                                    name="Portfolio"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required"
+                                                                data-type="text"
+                                                                data-name="Field"
+                                                            >
+                                                                <label
+                                                                    class="s_website_form_label"
+                                                                    for="split_contact_message"
+                                                                >
+                                                                    <span
+                                                                        class="s_website_form_label_content"
+                                                                    >Message</span>
+                                                                    <span
+                                                                        class="s_website_form_mark"
+                                                                    > *</span>
+                                                                </label>
+                                                                <textarea
+                                                                    id="split_contact_message"
+                                                                    class="form-control s_website_form_input"
+                                                                    name="description"
+                                                                    required=""
+                                                                    rows="6"
+                                                                />
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_dnone"
+                                                            >
+                                                                <div
+                                                                    class="row s_col_no_resize s_col_no_bgcolor"
+                                                                >
+                                                                    <label
+                                                                        class="col-form-label col-sm-auto s_website_form_label"
+                                                                        for="split_contact_team"
+                                                                    >
+                                                                        <span
+                                                                            class="s_website_form_label_content"
+                                                                        >Sales Team</span>
+                                                                    </label>
+                                                                    <div class="col-sm">
+                                                                        <input
+                                                                            id="split_contact_team"
+                                                                            type="hidden"
+                                                                            class="form-control s_website_form_input"
+                                                                            name="team_id"
+                                                                            value="*crm_team_intake*"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_dnone"
+                                                            >
+                                                                <div
+                                                                    class="row s_col_no_resize s_col_no_bgcolor"
+                                                                >
+                                                                    <label
+                                                                        class="col-form-label col-sm-auto s_website_form_label"
+                                                                        for="split_contact_medium"
+                                                                    >
+                                                                        <span
+                                                                            class="s_website_form_label_content"
+                                                                        >Medium</span>
+                                                                    </label>
+                                                                    <div class="col-sm">
+                                                                        <input
+                                                                            id="split_contact_medium"
+                                                                            type="hidden"
+                                                                            class="form-control s_website_form_input"
+                                                                            name="medium_id"
+                                                                            value="*utm_medium_website*"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_custom"
+                                                                data-type="boolean"
+                                                                data-name="Field"
+                                                            >
+                                                                <div
+                                                                    class="form-check s_website_form_boolean"
+                                                                >
+                                                                    <input
+                                                                        id="split_contact_privacy"
+                                                                        type="checkbox"
+                                                                        class="form-check-input s_website_form_input"
+                                                                        name="Privacy"
+                                                                        required=""
+                                                                    />
+                                                                    <label
+                                                                        class="form-check-label s_website_form_label"
+                                                                        for="split_contact_privacy"
+                                                                    >
+                                                                        <span
+                                                                            class="s_website_form_label_content"
+                                                                        >I agree to the <a
+                                                                            href="/privacy"
+                                                                        >privacy policy</a></span>
+                                                                        <span
+                                                                            class="s_website_form_mark"
+                                                                        > *</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="mb-0 py-2 col-12 s_website_form_submit s_website_form_no_submit_label"
+                                                                data-name="Submit Button"
+                                                            >
+                                                                <div
+                                                                    style="width: 200px;"
+                                                                    class="s_website_form_label"
+                                                                />
+                                                                <a
+                                                                    href="#"
+                                                                    role="button"
+                                                                    class="btn btn-primary btn-lg s_website_form_send"
+                                                                >Send</a>
+                                                                <span
+                                                                    id="s_website_form_result"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div
+                                            class="col-lg-4 offset-lg-1 d-none d-lg-block"
+                                        >
+                                            <img
+                                                src="/split_website/static/src/binary/ir_attachment/contact_character.png"
+                                                class="img img-fluid split-contact-mascot"
+                                                alt="Split brand character"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="split-contact-offices pt48"
+                                    >
+                                        <p class="mb-2">
+                                            <a
+                                                class="o_force_ltr"
+                                                href="tel:+5511913668953"
+                                            >+55 (11) 91366 8953</a>
+                                            <span> | Brazil | São Paulo – SP &amp; Rio de Janeiro – RJ</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <a
+                                                class="o_force_ltr"
+                                                href="tel:+16828626656"
+                                            >+1 (682) 862 6656</a>
+                                            <span> | USA | Dallas – TX</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

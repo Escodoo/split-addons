@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="privacy" model="ir.ui.view">
+        <field name="name">Split Studio - Privacy</field>
+        <field name="key">split_website.privacy</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Privacy" t-name="split_website.privacy">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_privacy"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="s_title pt96 pb48 o_cc o_cc5"
+                                data-snippet="s_title"
+                                data-name="Title"
+                            >
+                                <div class="container">
+                                    <h1 class="display-2-fs">Privacy</h1>
+                                    <p class="lead mb-0">
+                                        How Split uses the information you send us.
+                                    </p>
+                                </div>
+                            </section>
+                            <section
+                                class="s_text_block pt16 pb96 o_cc o_cc5"
+                                data-snippet="s_text_block"
+                                data-name="Policy"
+                            >
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <h2>Contact form</h2>
+                                            <p>
+                                                When you write to us through the
+                                                website, we store your name, e-mail,
+                                                company, phone, the subject of the
+                                                message, your field of work and
+                                                portfolio link, and the message itself.
+                                                That information becomes a lead in our
+                                                studio CRM so the right person can
+                                                reply.
+                                            </p>
+                                            <h2>Newsletter</h2>
+                                            <p>
+                                                If you subscribe to the newsletter, we
+                                                keep the e-mail address you gave us in
+                                                order to send studio news. You can
+                                                unsubscribe from any message.
+                                            </p>
+                                            <h2>How long we keep it</h2>
+                                            <p>
+                                                We keep contact and newsletter records
+                                                for as long as we need them to answer
+                                                you or run the list, and we do not sell
+                                                that data.
+                                            </p>
+                                            <p class="mb-0">
+                                                Questions:
+                                                <a
+                                                    href="mailto:contato@splitstudio.tv"
+                                                >contato@splitstudio.tv</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

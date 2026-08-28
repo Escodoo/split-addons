@@ -1,0 +1,1990 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* split_website_elearning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 00:00+0000\n"
+"PO-Revision-Date: 2026-08-26 00:00+0000\n"
+"Last-Translator: Marcel Savegnago <marcel.savegnago@escodoo.com.br>\n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: split_website_elearning
+#: model:website.menu,name:split_website_elearning.menu_about
+msgid "About"
+msgstr "Sobre"
+
+#. module: split_website_elearning
+#: model:crm.tag,name:split_website_elearning.crm_tag_academy
+msgid "Academy"
+msgstr "Academia"
+
+#. module: split_website_elearning
+#: model:website.menu,name:split_website_elearning.menu_contact
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contactus
+msgid "Contact"
+msgstr "Contato"
+
+#. module: split_website_elearning
+#: model:website.menu,name:split_website_elearning.menu_courses
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contactus
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: split_website_elearning
+#: model:website.menu,name:split_website_elearning.menu_educators
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Educators"
+msgstr "Educadores"
+
+#. module: split_website_elearning
+#: model:website.menu,name:split_website_elearning.menu_home
+msgid "Home"
+msgstr "Home"
+
+#. module: split_website_elearning
+#: model:website,name:split_website_elearning.website_academia
+msgid "Split Academia"
+msgstr "Split Academia"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag,name:split_website_elearning.slide_channel_tag_skill_photoshop
+msgid "Adobe Photoshop"
+msgstr "Adobe Photoshop"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag,name:split_website_elearning.slide_channel_tag_type_course
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Course"
+msgstr "Curso"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag,name:split_website_elearning.slide_channel_tag_skill_sheets
+msgid "Google Sheets"
+msgstr "Google Planilhas"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag.group,name:split_website_elearning.slide_channel_tag_group_language
+msgid "Language"
+msgstr "Língua"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag,name:split_website_elearning.slide_channel_tag_language_portuguese
+msgid "Portuguese"
+msgstr "Português"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag.group,name:split_website_elearning.slide_channel_tag_group_skill
+msgid "Skill"
+msgstr "Habilidade"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag,name:split_website_elearning.slide_channel_tag_skill_harmony
+msgid "Toon Boom Harmony"
+msgstr "Toon Boom Harmony"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag.group,name:split_website_elearning.slide_channel_tag_group_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: split_website_elearning
+#: model:slide.channel.tag,name:split_website_elearning.slide_channel_tag_type_workshop
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Workshop"
+msgstr "Workshop"
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_backgrounds
+msgid "The Art of Creating Backgrounds"
+msgstr "A Arte de Criar Cenários"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_backgrounds
+msgid ""
+"This course is the gateway to background design in animation. You will "
+"learn specific techniques and the principles that turn a simple "
+"setting into an essential piece of visual storytelling."
+msgstr ""
+"Este curso é a porta de entrada para a criação de cenários em "
+"animação. Você aprende técnicas específicas e os princípios que "
+"transformam um ambiente simples em peça essencial da narrativa visual."
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_cutout_acting
+msgid "Cut-out Acting – Bringing Characters to Life"
+msgstr "Acting para Animação Cut-out – Dando Vida à Personagens"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_cutout_acting
+msgid ""
+"Giving life to animated characters takes more than software. This "
+"workshop focuses on body mechanics, acting and lipsync in Toon Boom "
+"Harmony so performances read on screen."
+msgstr ""
+"Dar vida a personagens animados exige mais do que software. Este "
+"workshop foca em mecânica corporal, acting e lipsync no Toon Boom "
+"Harmony para a atuação ler na tela."
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_cutout_harmony
+msgid "Cut-out Animation in Toon Boom Harmony"
+msgstr "Animação Cut-out no ToonBoom Harmony"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_cutout_harmony
+msgid ""
+"An introduction to 2D cut-out animation in Toon Boom Harmony: timing, "
+"spacing, squash and stretch, body mechanics and acting on a production "
+"rig."
+msgstr ""
+"Uma introdução à animação cut-out 2D no Toon Boom Harmony: timing, "
+"spacing, squash and stretch, mecânica corporal e acting em um rig de "
+"produção."
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_rigs_harmony
+msgid "Creating Rigs in Toon Boom Harmony"
+msgstr "Criando Rigs no ToonBoom Harmony"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_rigs_harmony
+msgid ""
+"Build production-ready cut-out rigs in Harmony: hierarchy, "
+"deformations, pegs and drawing substitution that an animation team can "
+"pose quickly."
+msgstr ""
+"Construa rigs cut-out de produção no Harmony: hierarquia, deformações, "
+"pegs e substituição de desenhos para a equipe de animação posar com "
+"rapidez."
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_visual_development
+msgid "Visual Development – Building Worlds"
+msgstr "Desenvolvimento Visual – Criando Imaginários"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_visual_development
+msgid ""
+"A workshop on visual development: invent worlds, color scripts and a "
+"design language the whole animation crew can follow before production "
+"starts."
+msgstr ""
+"Um workshop de desenvolvimento visual: invente mundos, color scripts e "
+"uma linguagem de design que toda a equipe de animação possa seguir "
+"antes da produção."
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_creative_writing
+msgid "Creative Writing for Animation Projects"
+msgstr "Escrita Criativa para Projetos e Animação"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_creative_writing
+msgid ""
+"Write pitches, scripts and series bibles that hold up in an animation "
+"pipeline, from premise to episode structure."
+msgstr ""
+"Escreva pitches, roteiros e bibles de série que aguentam um pipeline "
+"de animação, da premissa à estrutura de episódio."
+
+#. module: split_website_elearning
+#: model:slide.channel,name:split_website_elearning.slide_channel_production
+msgid "Production and Planning for 2D Animation Projects"
+msgstr "Produção e Planejamento para Projetos de Animação 2D"
+
+#. module: split_website_elearning
+#: model:slide.channel,description:split_website_elearning.slide_channel_production
+msgid ""
+"Running an animation show takes more than creative skill: you need a "
+"plan, a schedule and a crew that talks. This course covers the 2D "
+"pipeline from idea to delivery."
+msgstr ""
+"Tocar uma produção de animação exige mais do que talento criativo: "
+"você precisa de um plano, um cronograma e uma equipe que se fala. Este "
+"curso percorre o pipeline 2D da ideia à entrega."
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_category_backgrounds_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_backgrounds_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_acting_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_harmony_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_rigs_harmony_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_visual_development_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_creative_writing_about
+#: model:slide.slide,name:split_website_elearning.slide_lesson_production_about
+msgid "About the course"
+msgstr "Sobre o curso"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_category_backgrounds_instructor
+#: model:slide.slide,name:split_website_elearning.slide_category_cutout_acting_instructor
+#: model:slide.slide,name:split_website_elearning.slide_category_cutout_harmony_instructor
+#: model:slide.slide,name:split_website_elearning.slide_category_rigs_harmony_instructor
+#: model:slide.slide,name:split_website_elearning.slide_category_visual_development_instructor
+#: model:slide.slide,name:split_website_elearning.slide_category_creative_writing_instructor
+#: model:slide.slide,name:split_website_elearning.slide_category_production_instructor
+msgid "Instructor"
+msgstr "Instrutor"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_category_backgrounds_practice
+msgid "Practice"
+msgstr "Prática"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_acting
+msgid "Acting for cut-out characters"
+msgstr "Acting para personagens cut-out"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid "Animate a thought change"
+msgstr "Anime uma mudança de pensamento"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_visual_development_practice
+msgid "Build a color script"
+msgstr "Monte um color script"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_backgrounds_practice
+msgid "Build a production background"
+msgstr "Construa um cenário de produção"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "Build a walk cycle"
+msgstr "Monte um ciclo de caminhada"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_creative_writing
+msgid "From premise to episode"
+msgstr "Da premissa ao episódio"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_harmony
+msgid "Harmony cut-out pipeline"
+msgstr "Pipeline cut-out no Harmony"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_visual_development
+msgid "Inventing an imaginary"
+msgstr "Criando imaginários"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_rigs_harmony
+msgid "Production-ready Harmony rigs"
+msgstr "Rigs de produção no Harmony"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid "Rig a simple puppet"
+msgstr "Faça o rig de um puppet simples"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_creative_writing_practice
+msgid "Write a one-page pitch"
+msgstr "Escreva um pitch de uma página"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_production_practice
+msgid "Write a production plan"
+msgstr "Escreva um plano de produção"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_visual_development_instructor
+msgid "Ana Maria Sena"
+msgstr "Ana Maria Sena"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_backgrounds_instructor
+msgid "Beatriz Gondim"
+msgstr "Beatriz Gondim"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_production_instructor
+msgid "Belisa Proença"
+msgstr "Belisa Proença"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_creative_writing_instructor
+msgid "Bruno Antonio"
+msgstr "Bruno Antonio"
+
+#. module: split_website_elearning
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_acting_instructor
+#: model:slide.slide,name:split_website_elearning.slide_lesson_cutout_harmony_instructor
+#: model:slide.slide,name:split_website_elearning.slide_lesson_rigs_harmony_instructor
+msgid "Luiz do Futuro"
+msgstr "Luiz do Futuro"
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_backgrounds_about
+msgid "Course overview and learning goals."
+msgstr "Visão geral do curso e objetivos de aprendizagem."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_acting_about
+msgid "Workshop overview and learning goals."
+msgstr "Visão geral do workshop e objetivos de aprendizagem."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_backgrounds_instructor
+msgid "Art director and background artist teaching the course."
+msgstr "Diretora de arte e cenarista que ministra o curso."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_backgrounds_practice
+msgid "Hands-on exercise to design a background that serves the story."
+msgstr "Exercício prático para criar um cenário a serviço da história."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_acting_instructor
+msgid "Educational director teaching cut-out acting."
+msgstr "Diretor educacional que ministra acting para cut-out."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_acting
+msgid "How posing and timing give a cut-out character a pulse."
+msgstr "Como posing e timing dão pulso a um personagem cut-out."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid "Hands-on exercise: sell a thought with posing, timing and lipsync."
+msgstr "Exercício prático: venda um pensamento com posing, timing e lipsync."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_harmony_instructor
+msgid "Educational director teaching Harmony cut-out animation."
+msgstr "Diretor educacional que ministra animação cut-out no Harmony."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_harmony
+msgid "Scene setup, posing and export in Toon Boom Harmony."
+msgstr "Montagem de cena, posing e export no Toon Boom Harmony."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "Hands-on walk cycle on a Harmony character rig."
+msgstr "Exercício prático de ciclo de caminhada em um rig do Harmony."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_rigs_harmony_instructor
+msgid "Educational director teaching Harmony rigging."
+msgstr "Diretor educacional que ministra rigging no Harmony."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_rigs_harmony
+msgid "Hierarchy, deformations and drawing substitution."
+msgstr "Hierarquia, deformações e substituição de desenhos."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid "Hands-on: build and stress-test a Harmony cut-out puppet."
+msgstr "Exercício prático: construa e teste um puppet cut-out no Harmony."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_visual_development_instructor
+msgid "Visual artist teaching visual development."
+msgstr "Artista visual que ministra desenvolvimento visual."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_visual_development
+msgid "World, color and design language for a project."
+msgstr "Mundo, cor e linguagem de design para um projeto."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_visual_development_practice
+msgid "Hands-on: a six-beat color script for a short scene."
+msgstr "Exercício prático: um color script de seis beats para uma cena curta."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_creative_writing_instructor
+msgid "Screenwriter teaching writing for animation."
+msgstr "Roteirista que ministra escrita para animação."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_creative_writing
+msgid "Pitches, scripts and bibles for animation."
+msgstr "Pitches, roteiros e bibles para animação."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_creative_writing_practice
+msgid "Hands-on: a one-page pitch a studio can greenlight or reject."
+msgstr ""
+"Exercício prático: um pitch de uma página que um estúdio pode aprovar "
+"ou recusar."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_production_instructor
+msgid "Producer teaching 2D production and planning."
+msgstr "Produtora que ministra produção e planejamento 2D."
+
+#. module: split_website_elearning
+#: model:slide.slide,description:split_website_elearning.slide_lesson_production_practice
+msgid "Hands-on: a schedule and crew plan for a short 2D scene."
+msgstr ""
+"Exercício prático: cronograma e plano de equipe para uma cena 2D "
+"curta."
+
+#. module: split_website_elearning
+#: model:website.page,website_meta_description:split_website_elearning.page_about
+msgid ""
+"What Split Academia is and how the Split Institute of Innovation "
+"trains animation talent."
+msgstr ""
+"O que é a Split Academia e como o Instituto de Inovação Split forma "
+"talentos em animação."
+
+#. module: split_website_elearning
+#: model:website.page,website_meta_description:split_website_elearning.page_educators
+msgid "The working artists and producers who teach at Split Academia."
+msgstr "Os artistas e produtores do mercado que ensinam na Split Academia."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contact_form
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.newsletter_form
+msgid "E-mail"
+msgstr "E-mail"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contact_form
+msgid "Message"
+msgstr "Mensagem"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contact_form
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.newsletter_form
+msgid "Name"
+msgstr "Nome"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contact_form
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.newsletter_form
+msgid "Send"
+msgstr "Enviar"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contact_form
+msgid "Subject"
+msgstr "Assunto"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.newsletter_form
+msgid "Newsletter signup"
+msgstr "Inscrição na newsletter"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.layout
+msgid "Copyright © 2026 Split Studio. All rights reserved."
+msgstr "Copyright © 2026 Split Studio. Todos os direitos reservados."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Academia Day"
+msgstr "Academia Day"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Toon Boom Authorized Training Centre"
+msgstr "Centro de Treinamento Autorizado Toon Boom"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Split Institute of Innovation"
+msgstr "Instituto de Inovação Split"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Learn more"
+msgstr "Saiba mais"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "See all courses"
+msgstr "Veja todos os cursos"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Join our community"
+msgstr "Acesse nossa comunidade"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Meet the educators"
+msgstr "Conheça os educadores"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Those who teach, inspire."
+msgstr "Quem ensina, inspira."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Our community"
+msgstr "Nossa comunidade"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "What students say"
+msgstr "O que dizem os alunos"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Frequently asked questions"
+msgstr "Dúvidas frequentes"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "What is Split Academia?"
+msgstr "O que é a Split Academia?"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contactus
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Community"
+msgstr "Comunidade"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contactus
+msgid "Other"
+msgstr "Outro"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contactus
+msgid "Partnerships"
+msgstr "Parcerias"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Subscribe to the newsletter and stay tuned for news."
+msgstr "Assine a Newsletter e fique antenado(a) às novidades."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "More than a school, an educational experience."
+msgstr "Mais do que uma escola, uma experiência educacional."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"What <span class=\"acd-word acd-cyan\">is</span> Split <span "
+"class=\"acd-word acd-pink\">Academia?</span>"
+msgstr ""
+"O que <span class=\"acd-word acd-cyan\">é</span> a Split <span "
+"class=\"acd-word acd-pink\">Academia?</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.courses_home
+msgid "What do you want to <span class=\"acd-word acd-purple\">learn</span>?"
+msgstr "O que você quer <span class=\"acd-word acd-purple\">aprender</span>?"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.courses_home
+msgid ""
+"These are the courses students return to: the ones that teach and stay "
+"with them."
+msgstr ""
+"Estes são os cursos aos quais os alunos voltam: os que ensinam e ficam "
+"com eles."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.contactus
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "<span>Shall we</span> <span class=\"acd-pink\">talk?</span>"
+msgstr "<span>Vamos</span> <span class=\"acd-pink\">conversar?</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.courses_home
+msgid "Your progress"
+msgstr "Seu progresso"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.courses_all
+msgid "All courses"
+msgstr "Todos os cursos"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.courses_all
+msgid "My courses"
+msgstr "Meus cursos"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.courses_all
+msgid "Certifications"
+msgstr "Certificações"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Welcome to one of the most promising programs in the Brazilian "
+"animation market. Split Academia is part of the <strong>Split "
+"Institute of Innovation</strong>, a Split Studio initiative to "
+"democratize access to art, animation and technology."
+msgstr ""
+"Boas-vindas a um dos programas mais promissores do mercado de animação "
+"brasileiro. A Split Academia faz parte do <strong>Instituto de "
+"Inovação Split</strong>, uma iniciativa da Split Studio para "
+"democratizar o acesso à arte, à animação e à tecnologia."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"At <strong>Split Academia</strong> we believe education is more than "
+"technical learning: it is about creating meaningful experiences. We "
+"are a bridge between a childhood dream and a professional future."
+msgstr ""
+"Na <strong>Split Academia</strong> acreditamos que a educação é mais "
+"do que aprendizado técnico: é sobre criar experiências significativas. "
+"Somos uma ponte entre o sonho de infância e o futuro profissional."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Our Discord server is both a classroom tool and a community. It is a "
+"place for exchange and networking, and every member gets access to "
+"talks, workshops and exclusive free events."
+msgstr ""
+"O nosso servidor do Discord é tanto uma ferramenta de aula quanto uma "
+"comunidade. É um espaço de troca e networking, e cada integrante tem "
+"acesso a palestras, workshops e eventos gratuitos e exclusivos."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Meet the people behind Split Academia classes. Every educator is a "
+"recognized specialist in the animation market and passionate about "
+"sharing knowledge."
+msgstr ""
+"Conheça quem está por trás das aulas da Split Academia. Todos os "
+"nossos educadores são especialistas reconhecidos no mercado de "
+"animação e apaixonados por compartilhar conhecimento."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"\"The Acting for animation – remote course is amazing! Complete, with "
+"very interesting materials and references. The classes, together with "
+"the exercises, were great to expand my knowledge and take my animation "
+"much further. What impressed me most was how kind everyone was, both "
+"the Split Academia team and the other students. I made friends in a "
+"supportive environment I never thought I would find.\""
+msgstr ""
+"\"O Curso Acting para animação – EAD é incrível! Completo, com "
+"materiais e referências muito interessantes. As aulas, em conjunto com "
+"os exercícios, foram ótimas para ampliar meus conhecimentos e levar as "
+"minhas animações muito além. O que mais impressionou foi a simpatia de "
+"todo mundo do curso, tanto das pessoas da Split Academia quanto dos "
+"outros alunos. Criei amizades em um ambiente muito benéfico que nunca "
+"pensei encontrar.\""
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"\"Taking the Acting for animation – remote course, there was a moment "
+"the switch flipped. Things I used to miss in animation started to "
+"stand out, and I also began to analyze, study and practice in a much "
+"more effective way than I imagined. This course gives you a solid base "
+"so you can keep learning.\""
+msgstr ""
+"\"Participando do curso de Acting para animação – EAD teve um momento "
+"em que a chave virou. Muita coisa que passava despercebida nas "
+"animações passou a ser percebida, e eu comecei a analisar, estudar e "
+"praticar animação de maneira muito mais efetiva do que imaginava. Esse "
+"curso entrega a base sólida para você continuar aprendendo.\""
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"\"It was essential to improve my narrative skills, especially starting "
+"with character sheets. Professor Bruno's attentive guidance and the "
+"exchange with other writers enriched the experience a lot!\""
+msgstr ""
+"\"Foi essencial para aprimorar minha habilidade na construção de "
+"narrativas, especialmente ao iniciar com fichas de personagens. A "
+"orientação atenciosa do professor Bruno e as trocas com outros "
+"roteiristas enriqueceram muito a experiência!\""
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"\"I learned a lot. I only wish the Herald-style animation course had "
+"been longer, with more time for the exercises, but besides that it was "
+"very good. I improved a lot after it!\""
+msgstr ""
+"\"Aprendi bastante. Só gostaria que o curso de animação estilo Herald "
+"– EAD fosse mais longo, com mais tempo para os exercícios, mas fora "
+"isso foi muito bom. Melhorei bastante depois dele!\""
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"\"The Herald-style animation course was fundamental for me, both as an "
+"animator and in my professional life. I learned a lot by doing the "
+"assignments and receiving feedback. The learning environment was very "
+"welcoming from the teacher, the students and Split Academia.\""
+msgstr ""
+"\"O curso de animação estilo Herald – EAD foi fundamental para mim, "
+"tanto para a minha evolução como animador quanto para a vida "
+"profissional. Aprendi muito na execução das tarefas e recebendo "
+"feedbacks. O ambiente de aprendizado foi muito acolhedor por parte do "
+"professor, dos alunos e da Split Academia.\""
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Split Academia is a training hub for animation, art and technology. It "
+"prepares young people and adults to work across the stages of "
+"animation production. The academy stands on three pillars: learning, "
+"culture and fostering talent."
+msgstr ""
+"A Split Academia é um núcleo de formação em animação, arte e "
+"tecnologia, que profissionaliza jovens e adultos para atuar nas "
+"diversas fases de produção. A academia se apoia em três pilares: "
+"aprendizagem, cultura e fomento."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Learning is the backbone: students take classes on script, storyboard, "
+"art, rigging, direction, production and animation. Classes are taught "
+"by working professionals. Besides live classes, Split Academia also "
+"produces video tutorials on an online teaching platform."
+msgstr ""
+"A aprendizagem é a espinha dorsal: os alunos fazem aulas de roteiro, "
+"storyboard, arte, rigging, direção, produção e animação. As aulas são "
+"ministradas por profissionais atuantes. Além das aulas ao vivo, a "
+"Split Academia também elabora tutoriais em vídeo em uma plataforma de "
+"ensino online."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "Who teaches the classes?"
+msgstr "Quem ministra as aulas?"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Working artists and producers from the animation market. You can meet "
+"them on the <a href=\"/educators\">Educators</a> page."
+msgstr ""
+"Artistas e produtores atuantes no mercado de animação. Você pode "
+"conhecê-los na página de <a href=\"/educators\">Educadores</a>."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid "How do I start?"
+msgstr "Como eu começo?"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.homepage
+msgid ""
+"Browse the <a href=\"/slides\">courses</a> or write to us below about "
+"the next intake."
+msgstr ""
+"Explore os <a href=\"/slides\">cursos</a> ou fale com a gente abaixo "
+"sobre a próxima turma."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"At <strong>Split Academia</strong> we believe education is more than "
+"technical learning: it is about creating meaningful experiences. We "
+"are a bridge between a childhood dream and a professional future, "
+"helping you plant the seed of a career in animation."
+msgstr ""
+"Na <strong>Split Academia</strong> acreditamos que a educação é mais "
+"do que aprendizado técnico: é sobre criar experiências significativas. "
+"Somos uma ponte entre o sonho de infância e o futuro profissional, "
+"ajudando você a plantar a semente de uma carreira em animação."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Split has been producing animation at an excellent level for many "
+"years."
+msgstr ""
+"A Split vem produzindo animação com nível de excelência há muitos "
+"anos."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"There are many brilliant projects, national and international, and "
+"with them came awards and market recognition."
+msgstr ""
+"São muitos projetos bacanérrimos, nacionais e internacionais, e com "
+"eles também vieram diversos prêmios e reconhecimento de mercado."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "That is why we decided to share our experience and our method."
+msgstr ""
+"É por isso que decidimos compartilhar com vocês a nossa experiência e "
+"o nosso método."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "We want to multiply and add!"
+msgstr "Queremos multiplicar e somar!"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Learn more about the studio"
+msgstr "Conheça mais o estúdio"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Learn more about the institute"
+msgstr "Conheça mais o instituto"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"The Split Institute of Innovation promotes education, training and "
+"events in animation and games, with a focus on inclusion and "
+"innovation."
+msgstr ""
+"O Instituto de Inovação Split promove educação, capacitação e eventos "
+"nas áreas de animação e games, com foco em inclusão e inovação."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Our mission is to democratize access to knowledge and boost creativity "
+"in the animation market."
+msgstr ""
+"Nossa missão é democratizar o acesso ao conhecimento e impulsionar a "
+"criatividade no mercado de animação."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Our <span class=\"acd-word acd-yellow\">Commitment</span>"
+msgstr "Nosso <span class=\"acd-word acd-yellow\">Compromisso</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Democratize access to art, animation and technology."
+msgstr "Democratizar o acesso à arte, animação e tecnologia."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Offer immersive, practical training."
+msgstr "Proporcionar uma formação imersiva e prática."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Develop and train talent for the animation market."
+msgstr "Desenvolver e capacitar talentos para o mercado de animação."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Split Academia: official <span class=\"acd-word acd-cyan\">Toon "
+"Boom</span> training"
+msgstr ""
+"Split Academia: ensino oficial do <span class=\"acd-word "
+"acd-cyan\">Toon Boom</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Through the official Toon Boom partnership, Split Academia offers "
+"complete, certified training so you can master the animation tools "
+"studios use every day."
+msgstr ""
+"Com a parceria oficial Toon Boom, a Split Academia oferece uma "
+"formação completa e certificada para você dominar as ferramentas de "
+"animação que os estúdios usam todos os dias."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "A new way to learn <span class=\"acd-word acd-pink\">animation</span>"
+msgstr ""
+"Uma nova maneira de aprender <span class=\"acd-word "
+"acd-pink\">animação</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Here you learn not only the <strong>how</strong>, but the "
+"<strong>why</strong> of animation, and you develop your own identity "
+"as an artist. How we do it:"
+msgstr ""
+"Aqui você aprende não só o <strong>como</strong>, mas o "
+"<strong>porquê</strong> da animação, e desenvolve a própria identidade "
+"como artista. Como fazemos isso:"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"At Split Academia we combine practice, theory and innovation to "
+"prepare artists for the animation market. Our method is project-based: "
+"students build creative work while they apply what they learn in "
+"class."
+msgstr ""
+"Na Split Academia combinamos prática, teoria e inovação para formar "
+"artistas preparados para o mercado de animação. Nossa metodologia é "
+"focada no aprendizado por projetos: os alunos desenvolvem produções "
+"criativas aplicando o que aprendem em sala."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"With mentorship from working professionals, we keep a curriculum that "
+"goes from animation fundamentals to the tools studios use today. We "
+"also train teamwork, communication and time management."
+msgstr ""
+"Com mentoria de profissionais atuantes, mantemos um currículo que vai "
+"dos fundamentos da animação às ferramentas que os estúdios usam hoje. "
+"Também formamos trabalho em equipe, comunicação e gestão de tempo."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Through studio partnerships and production-grade infrastructure we "
+"connect students to the market, and we encourage Brazilian culture in "
+"every project. This is where a career in animation starts with "
+"purpose."
+msgstr ""
+"Por meio de parcerias com estúdios e infraestrutura de produção, "
+"conectamos os alunos ao mercado e incentivamos a cultura brasileira em "
+"cada projeto. Aqui a carreira em animação começa com propósito."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Discover our <span class=\"acd-word acd-pink\">learning "
+"options.</span>"
+msgstr ""
+"Descubra nossas <span class=\"acd-word acd-pink\">opções de "
+"aprendizado.</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"We offer Courses, Workshops and Masterclasses for different levels, "
+"with flexible formats that fit your routine."
+msgstr ""
+"Oferecemos Cursos, Workshops e Masterclasses para diferentes níveis, "
+"com formatos flexíveis para se adaptar à sua rotina."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"<strong>Distance:</strong> learn from anywhere with recorded classes "
+"and lifetime access."
+msgstr ""
+"<strong>EAD:</strong> aprenda de qualquer lugar com aulas gravadas e "
+"acesso vitalício."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "<strong>In person:</strong> an immersive experience at Split Academia."
+msgstr ""
+"<strong>Presencial:</strong> uma experiência imersiva no ambiente da "
+"Split Academia."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"<strong>Live online:</strong> join interactive classes with our "
+"educators."
+msgstr ""
+"<strong>Ao vivo online:</strong> participe de aulas interativas com "
+"nossos educadores."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Workshops"
+msgstr "Workshops"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Masterclass"
+msgstr "Masterclass"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Specialized topics for people who want to go deeper into specific "
+"areas of animation."
+msgstr ""
+"Temas especializados para quem busca aprofundar conhecimentos em áreas "
+"específicas da animação."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid ""
+"Held in person or online, with practical exercises and exclusive "
+"materials."
+msgstr ""
+"Realizados presencialmente ou online, com exercícios práticos e "
+"materiais exclusivos."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Ask about workshops"
+msgstr "Próximos workshops"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "One-off sessions on advanced topics such as Animation Direction."
+msgstr ""
+"Sessões únicas com foco em tópicos avançados, como Direção de "
+"Animação."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Longer sessions of about three hours, with more depth and live Q&amp;A."
+msgstr ""
+"Sessões mais longas, de cerca de três horas, com mais profundidade e "
+"espaço para perguntas e respostas ao vivo."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.about
+msgid "Ask about masterclasses"
+msgstr "Próximos masterclass"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid ""
+"Those who <span class=\"acd-word acd-pink\">teach</span>, <span "
+"class=\"acd-word acd-cyan\">inspire.</span>"
+msgstr ""
+"Quem <span class=\"acd-word acd-pink\">ensina</span>, <span "
+"class=\"acd-word acd-cyan\">inspira.</span>"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Selected work"
+msgstr "Trabalhos selecionados"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "See her course"
+msgstr "Veja o curso"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "See his course"
+msgstr "Veja o curso"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Visual development"
+msgstr "Desenvolvimento visual"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Art direction"
+msgstr "Direção de arte"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Production"
+msgstr "Produção"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Screenwriting"
+msgstr "Roteiro"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Educational direction"
+msgstr "Direção educacional"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Illustration"
+msgstr "Ilustração"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Backgrounds"
+msgstr "Cenários"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Since 2018"
+msgstr "Desde 2018"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Producing"
+msgstr "Produção"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Originals"
+msgstr "Originais"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Writing"
+msgstr "Roteiro"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Research"
+msgstr "Pesquisa"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "2D animation"
+msgstr "Animação 2D"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Rigging"
+msgstr "Rigging"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid ""
+"Visual artist from Brasília. She illustrated for Superinteressante and "
+"books such as Sinto o que Sinto and Zuri e Dulce, then moved into "
+"animation features and series."
+msgstr ""
+"Ana Maria Sena, artista visual brasiliense, é graduada em Artes "
+"Visuais pela UnB. Ilustrou para a Superinteressante e livros como "
+"Sinto o que Sinto e Zuri e Dulce. Na animação, trabalhou em longas e "
+"séries."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Clarice's Dream (2020)"
+msgstr "O Sonho de Clarice (2020)"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Cosmo the Cosmonaut (2024)"
+msgstr "Cosmo, o Cosmonauta (2024)"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "47 — Zombie Studio, Cannes"
+msgstr "47 — Zombie Studio, Cannes"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid ""
+"Also known as Bia Luna. Art director and background artist who has "
+"worked at Split Studio, Copa, Combo Studio, Titmouse and Histeria."
+msgstr ""
+"Também conhecida como Bia Luna. Diretora de arte e cenarista, atua no "
+"mercado de animação desde 2018. Trabalhou em estúdios como Split "
+"Studio, Copa, Combo Studio, Titmouse e Histeria."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "WeeBoom season 2 — art director, Discovery Kids"
+msgstr "WeeBoom 2ª temporada — direção de arte, Discovery Kids"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid ""
+"Graduated in Social Communication with an emphasis in Film at FAAP. "
+"She leads original productions at Split and teaches Creative Executive "
+"Production at Faculdade Meliès."
+msgstr ""
+"Formada em Comunicação Social com ênfase em Cinema na FAAP. Lidera as "
+"produções originais da Split e é professora da pós-graduação de "
+"Produção Executiva Criativa da Faculdade Meliès."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Guida — Annecy and Anima Mundi"
+msgstr "Guida — Annecy e Anima Mundi"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid ""
+"Screenwriter and writer with work in animation, comics, books and "
+"features. At Split Studio and the Institute he works as a researcher "
+"and screenwriter."
+msgstr ""
+"Roteirista e escritor pernambucano com trabalho em animação, "
+"quadrinhos, livros e longas. No Split Studio e no Instituto atua como "
+"pesquisador e roteirista."
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid "Além da Lenda — first animated feature from Pernambuco"
+msgstr "Além da Lenda — primeiro longa-metragem de animação de Pernambuco"
+
+#. module: split_website_elearning
+#: model_terms:ir.ui.view,arch_db:split_website_elearning.educators
+msgid ""
+"Educational Director and teacher at Split Academia. He uses science "
+"and geometry to bring a contemporary view to animation and teaching."
+msgstr ""
+"Diretor educacional e professor da Split Academia. Usa ciência e "
+"geometria para trazer uma visão contemporânea à animação e ao ensino."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid "Beginner level"
+msgstr "Nível iniciante"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid "Skill: Adobe Photoshop"
+msgstr "Habilidade: Adobe Photoshop"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_about
+msgid "Skill: Toon Boom Harmony"
+msgstr "Habilidade: Toon Boom Harmony"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_about
+msgid "Skill: Google Sheets"
+msgstr "Habilidade: Google Planilhas"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid "Language: Portuguese"
+msgstr "Idioma: Português"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid "Brief"
+msgstr "Briefing"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid "About the course The Art of Creating Backgrounds"
+msgstr "Sobre o curso A Arte de Criar Cenários"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid ""
+"This course is the gateway to background design in animation. You will "
+"not only learn specific techniques, but also the principles that turn "
+"a simple background into an essential piece of visual storytelling."
+msgstr ""
+"Este curso é a porta de entrada para a criação de cenários em "
+"animação. Você não aprende só técnicas específicas, mas também os "
+"princípios que transformam um fundo simples em peça essencial da "
+"narrativa visual."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid ""
+"We start with the foundation of good background design: lines, shapes "
+"and perspective. We then go deeper into how those tools convey emotion "
+"and intensify the story. You will also study color, lighting and "
+"composition, and how they shape the atmosphere of an animation."
+msgstr ""
+"Começamos pela base de um bom cenário: linhas, formas e perspectiva. "
+"Depois aprofundamos como essas ferramentas transmitem emoção e "
+"intensificam a história. Você também estuda cor, luz e composição, e "
+"como elas moldam a atmosfera de uma animação."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_about
+msgid ""
+"Throughout the course you apply what you learned in practical "
+"exercises, creating backgrounds and adjusting them so they meet "
+"production and storytelling needs. The emphasis is on building a solid "
+"portfolio with projects ready for the animation market."
+msgstr ""
+"Ao longo do curso você aplica o que aprendeu em exercícios práticos, "
+"criando cenários e ajustando-os às necessidades de produção e "
+"narrativa. O foco é montar um portfólio sólido, com projetos prontos "
+"para o mercado de animação."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_instructor
+msgid ""
+"Beatriz Gondim Luna, also known as Bia Luna, is an Art Director and "
+"background artist who has worked in animation since 2018. She has "
+"worked at studios such as Split Studio, Copa, Combo Studio, Titmouse "
+"and Histeria."
+msgstr ""
+"Beatriz Gondim Luna, também conhecida como Bia Luna, é diretora de "
+"arte e cenarista e atua em animação desde 2018. Trabalhou em estúdios "
+"como Split Studio, Copa, Combo Studio, Titmouse e Histeria."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_instructor
+msgid ""
+"Her work recently included art direction on the second season of "
+"WeeBoom, Split's original series airing on Discovery Kids."
+msgstr ""
+"Recentemente fez a direção de arte da segunda temporada de WeeBoom, "
+"série autoral da Split em exibição no Discovery Kids."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid ""
+"Create a background that supports a short scene: establish the camera, "
+"the path of the character and the mood of the beat."
+msgstr ""
+"Crie um cenário que sustente uma cena curta: estabeleça a câmera, o "
+"caminho do personagem e o clima do beat."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid "Pick a simple beat (arrival, chase or quiet wait)."
+msgstr "Escolha um beat simples (chegada, perseguição ou espera quieta)."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid "Block the shot with lines, shapes and a clear horizon."
+msgstr "Bloqueie o plano com linhas, formas e um horizonte claro."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid "Lock a color script with one key light and one accent color."
+msgstr "Tranque um color script com uma luz-chave e uma cor de destaque."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid ""
+"Paint in Photoshop at production resolution and leave space for "
+"animation."
+msgstr ""
+"Pinte no Photoshop em resolução de produção e deixe espaço para a "
+"animação."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_backgrounds_practice
+msgid ""
+"Deliver a layered PSD and a flattened preview. Adjust until the read "
+"works in grayscale."
+msgstr ""
+"Entregue um PSD em camadas e um preview achatado. Ajuste até a leitura "
+"funcionar em escala de cinza."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_about
+msgid "About the course Cut-out Acting – Bringing Characters to Life"
+msgstr "Sobre o curso Acting para Animação Cut-out – Dando Vida à Personagens"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_about
+msgid ""
+"Giving life to animated characters takes more than software. You need "
+"acting, movement and expressiveness. This workshop is for anyone who "
+"wants stronger 2D character animation, with a focus on body mechanics, "
+"acting and lipsync in Toon Boom Harmony."
+msgstr ""
+"Dar vida a personagens animados exige mais do que software. É preciso "
+"acting, movimento e expressividade. Este workshop é para quem quer uma "
+"animação 2D de personagem mais forte, com foco em mecânica corporal, "
+"acting e lipsync no Toon Boom Harmony."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_about
+msgid ""
+"You will structure convincing performances: from building poses and "
+"fluid motion to lip sync and facial expression. With a simple rig you "
+"practice anticipation, exaggeration and pose-to-pose, using studies "
+"and references to sharpen the shot."
+msgstr ""
+"Você estrutura atuações convincentes: das poses e do movimento fluido "
+"ao lipsync e à expressão facial. Com um rig simples, pratica "
+"antecipação, exagero e pose-to-pose, usando estudos e referências para "
+"afiar o plano."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_about
+msgid ""
+"Practical exercises and feedback train planning, rhythm and acting in "
+"cut-out. You leave with tools to make more expressive scenes and a "
+"stronger reel."
+msgstr ""
+"Exercícios práticos e feedbacks treinam planejamento, ritmo e acting "
+"em cut-out. Você sai com ferramentas para cenas mais expressivas e um "
+"reel mais forte."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_instructor
+msgid ""
+"Luiz is Educational Director and teacher at Split Academia, in the "
+"Split Institute of Innovation, where he trains new talent for art and "
+"animation."
+msgstr ""
+"Luiz é diretor educacional e professor da Split Academia, no Instituto "
+"de Inovação Split, onde forma novos talentos para arte e animação."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_instructor
+msgid ""
+"Passionate about science and geometry, he uses those ideas to bring a "
+"contemporary view to both animation and teaching."
+msgstr ""
+"Apaixonado por ciência e geometria, usa essas ideias para trazer uma "
+"visão contemporânea à animação e ao ensino."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting
+msgid ""
+"Cut-out animation lives or dies on clear poses. This lesson covers "
+"anticipation, holds and the small face changes that sell a thought."
+msgstr ""
+"A animação cut-out vive ou morre em poses claras. Esta aula cobre "
+"antecipação, holds e as pequenas mudanças de rosto que vendem um "
+"pensamento."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid ""
+"Build a short cut-out shot where the character changes their mind. "
+"Keep the rig simple and let posing do the acting."
+msgstr ""
+"Monte um plano cut-out curto em que o personagem muda de ideia. "
+"Mantenha o rig simples e deixe o posing fazer o acting."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid "Write a one-line beat (wait, notice, decide)."
+msgstr "Escreva um beat de uma linha (espera, percebe, decide)."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid "Thumbnail three keys: anticipation, hold and the new thought."
+msgstr "Faça thumbnail de três keys: antecipação, hold e o novo pensamento."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid "Block the body mechanics before you open the mouth."
+msgstr "Bloqueie a mecânica corporal antes de abrir a boca."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid "Add lipsync last, matching the jaw to a short line of dialogue."
+msgstr "Deixe o lipsync por último, casando a mandíbula com uma fala curta."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_acting_practice
+msgid ""
+"Deliver a Harmony scene and a playblast. The change of thought must "
+"read with the sound off."
+msgstr ""
+"Entregue uma cena no Harmony e um playblast. A mudança de pensamento "
+"precisa ler com o som desligado."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_about
+msgid "About the course Cut-out Animation in Toon Boom Harmony"
+msgstr "Sobre o curso Animação Cut-out no ToonBoom Harmony"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_about
+msgid ""
+"Bring your work to life. This course introduces 2D cut-out animation "
+"and the techniques studios use every day. Focused on Toon Boom "
+"Harmony, it covers animation fundamentals and prepares you for real "
+"production."
+msgstr ""
+"Dê vida ao seu trabalho. Este curso introduz a animação cut-out 2D e "
+"as técnicas que os estúdios usam no dia a dia. Focado no Toon Boom "
+"Harmony, cobre fundamentos de animação e prepara você para produção "
+"real."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_about
+msgid ""
+"You will study timing, spacing, squash and stretch, body mechanics and "
+"acting. You will also work with character rigs on practical exercises "
+"such as walk cycles and performance shots."
+msgstr ""
+"Você estuda timing, spacing, squash and stretch, mecânica corporal e "
+"acting. Também trabalha com rigs de personagem em exercícios práticos, "
+"como ciclos de caminhada e planos de atuação."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_about
+msgid ""
+"The course is for students, enthusiasts and professionals who want "
+"stronger 2D animation skills."
+msgstr ""
+"O curso é para estudantes, entusiastas e profissionais que querem "
+"fortalecer a animação 2D."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_instructor
+msgid ""
+"Passionate about science and geometry, he uses those ideas to bring a "
+"contemporary view to both animation and teaching. His work starts from "
+"the belief that passion can become real impact."
+msgstr ""
+"Apaixonado por ciência e geometria, usa essas ideias para trazer uma "
+"visão contemporânea à animação e ao ensino. Seu trabalho parte da "
+"crença de que a paixão pode virar impacto real."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony
+msgid ""
+"Walk through a series-ready Harmony scene: import the rig, set the "
+"camera, block the action and export for composition."
+msgstr ""
+"Percorra uma cena de série no Harmony: importe o rig, defina a câmera, "
+"bloqueie a ação e exporte para composição."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid ""
+"Animate a side-view walk on a production rig. Focus on contact, "
+"passing and the up/down of the body."
+msgstr ""
+"Anime uma caminhada de perfil em um rig de produção. Foque no contato, "
+"no passing e no sobe-e-desce do corpo."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "Set a 16-frame cycle and lock the camera."
+msgstr "Defina um ciclo de 16 frames e tranque a câmera."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "Pose contact, recoil, passing and high points."
+msgstr "Pose contato, recoil, passing e pontos altos."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "Check spacing on the feet before you polish the arms."
+msgstr "Confira o spacing dos pés antes de polir os braços."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "Export a looping playblast for review."
+msgstr "Exporte um playblast em loop para revisão."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_cutout_harmony_practice
+msgid "The cycle must loop cleanly and read as a walk, not a slide."
+msgstr ""
+"O ciclo precisa loopar limpo e ler como caminhada, não como "
+"deslizamento."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_about
+msgid "About the course Creating Rigs in Toon Boom Harmony"
+msgstr "Sobre o curso Criando Rigs no ToonBoom Harmony"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_about
+msgid ""
+"A cut-out show is only as fast as its rigs. This course covers how to "
+"build Harmony rigs that animators can pose without fighting the "
+"puppet."
+msgstr ""
+"Uma série cut-out só é rápida se os rigs forem rápidos. Este curso "
+"mostra como construir rigs no Harmony que o animador consegue posar "
+"sem brigar com o puppet."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_about
+msgid ""
+"You will set a clean hierarchy, add useful deformations, pegs and "
+"drawing substitution for hands and mouths, and test the rig on a short "
+"acting beat."
+msgstr ""
+"Você monta uma hierarquia limpa, adiciona deformações úteis, pegs e "
+"substituição de desenhos para mãos e bocas, e testa o rig em um beat "
+"curto de acting."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_instructor
+msgid ""
+"Luiz is Educational Director and teacher at Split Academia. His "
+"specialty includes Toon Boom, 2D animation and rigging."
+msgstr ""
+"Luiz é diretor educacional e professor da Split Academia. Sua "
+"especialidade inclui Toon Boom, animação 2D e rigging."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_instructor
+msgid ""
+"He uses science and geometry to keep rigs simple for the animator and "
+"solid for the pipeline."
+msgstr ""
+"Ele usa ciência e geometria para manter os rigs simples para o "
+"animador e sólidos para o pipeline."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony
+msgid ""
+"Build a cut-out rig that an animation team can pose quickly: clean "
+"hierarchy, useful deformations and drawing substitution for hands and "
+"mouths."
+msgstr ""
+"Construa um rig cut-out que a equipe de animação consiga posar rápido: "
+"hierarquia limpa, deformações úteis e substituição de desenhos para "
+"mãos e bocas."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid ""
+"Turn a character breakdown into a poseable Harmony rig and test it on "
+"a two-pose acting beat."
+msgstr ""
+"Transforme um breakdown de personagem em um rig poseável no Harmony e "
+"teste-o em um beat de acting com duas poses."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid "Parent the drawings in a clear torso-to-limb hierarchy."
+msgstr "Parenteie os desenhos em uma hierarquia clara do tronco aos membros."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid "Add one deformation on the spine and one on an arm."
+msgstr "Adicione uma deformação na coluna e outra em um braço."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid "Set drawing substitution for at least three hand shapes."
+msgstr "Configure substituição de desenhos para pelo menos três formas de mão."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid "Pose a surprise beat and fix anything that breaks."
+msgstr "Pose um beat de surpresa e corrija o que quebrar."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_rigs_harmony_practice
+msgid ""
+"Deliver the Harmony file. An animator should reach a readable pose in "
+"a few keys."
+msgstr ""
+"Entregue o arquivo do Harmony. Um animador deve chegar a uma pose "
+"legível em poucos keys."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_about
+msgid "About the course Visual Development – Building Worlds"
+msgstr "Sobre o curso Desenvolvimento Visual – Criando Imaginários"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_about
+msgid ""
+"Visual development sets the rules of a world before production starts. "
+"This workshop covers how to invent imaginaries: mood, color and a "
+"design language the whole team can follow."
+msgstr ""
+"O desenvolvimento visual define as regras de um mundo antes da "
+"produção. Este workshop mostra como inventar imaginários: clima, cor e "
+"uma linguagem de design que toda a equipe consiga seguir."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_about
+msgid ""
+"You will build mood boards, a short color script and a set of rules "
+"for shape, light and material so art, boards and animation stay in the "
+"same universe."
+msgstr ""
+"Você monta mood boards, um color script curto e um conjunto de regras "
+"de forma, luz e material para arte, boards e animação permanecerem no "
+"mesmo universo."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_instructor
+msgid ""
+"Ana Maria Sena is a visual artist from Brasília. She holds a Visual "
+"Arts degree from UnB and has illustrated for Superinteressante and "
+"books such as Sinto o que Sinto and Zuri e Dulce."
+msgstr ""
+"Ana Maria Sena é artista visual brasiliense. É graduada em Artes "
+"Visuais pela UnB e ilustrou para a Superinteressante e livros como "
+"Sinto o que Sinto e Zuri e Dulce."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_instructor
+msgid ""
+"In animation she worked on the feature Clarice's Dream (2020) and on "
+"the series Rick and Morty (2022) and Cosmo the Cosmonaut (2024). She "
+"also contributed visual development on the miniseries Assim Era a Vida "
+"and on 47 from Zombie Studio, awarded at Cannes."
+msgstr ""
+"Na animação, trabalhou no longa O Sonho de Clarice (2020) e nas séries "
+"Rick and Morty (2022) e Cosmo, o Cosmonauta (2024). Também colaborou "
+"no desenvolvimento visual da minissérie Assim Era a Vida e em 47 da "
+"Zombie Studio, premiado em Cannes."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development
+msgid ""
+"Visual development sets the rules of a world before production starts. "
+"This lesson covers mood boards, color scripts and a design language "
+"the whole team can follow."
+msgstr ""
+"O desenvolvimento visual define as regras de um mundo antes da "
+"produção. Esta aula cobre mood boards, color scripts e uma linguagem "
+"de design que toda a equipe consiga seguir."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_practice
+msgid ""
+"Design the light and color of a short scene so the mood changes with "
+"the story, not at random."
+msgstr ""
+"Desenhe a luz e a cor de uma cena curta para o clima mudar com a "
+"história, não ao acaso."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_practice
+msgid "Pick a six-beat scene (arrive, meet, conflict, pause, decide, leave)."
+msgstr ""
+"Escolha uma cena de seis beats (chega, encontra, conflito, pausa, "
+"decide, sai)."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_practice
+msgid "Lock one key light and one accent color."
+msgstr "Tranque uma luz-chave e uma cor de destaque."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_practice
+msgid "Paint six frames in Photoshop that only change light and palette."
+msgstr "Pinte seis frames no Photoshop mudando só luz e paleta."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_practice
+msgid "Check that the sequence still reads in grayscale."
+msgstr "Confira se a sequência ainda lê em escala de cinza."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_visual_development_practice
+msgid ""
+"Deliver a contact sheet. Production should be able to light the scene "
+"from it."
+msgstr ""
+"Entregue uma contact sheet. A produção deve conseguir iluminar a cena "
+"a partir dela."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_about
+msgid "About the course Creative Writing for Animation Projects"
+msgstr "Sobre o curso Escrita Criativa para Projetos e Animação"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_about
+msgid ""
+"Animation writing has to survive a pipeline. This course covers "
+"pitches, scripts and series bibles that art, boards and production can "
+"actually use."
+msgstr ""
+"A escrita de animação precisa sobreviver a um pipeline. Este curso "
+"cobre pitches, roteiros e bibles de série que arte, boards e produção "
+"realmente consigam usar."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_about
+msgid ""
+"You will move from a clear premise and character wants to episode "
+"structure and a short bible the crew can open on day one."
+msgstr ""
+"Você parte de uma premissa clara e dos desejos do personagem até a "
+"estrutura de episódio e uma bible curta que a equipe consiga abrir no "
+"primeiro dia."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_instructor
+msgid ""
+"Bruno Antonio is a screenwriter and writer from Pernambuco, with work "
+"in animation, comics, books and features. He took part in productions "
+"such as Recife Assombrado and Além da Lenda, the first animated "
+"feature produced in Pernambuco."
+msgstr ""
+"Bruno Antonio é roteirista e escritor pernambucano, com trabalho em "
+"animação, quadrinhos, livros e longas. Participou de produções como "
+"Recife Assombrado e Além da Lenda, o primeiro longa-metragem de "
+"animação produzido em Pernambuco."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_instructor
+msgid ""
+"Since 2022 he has been with Split Studio and the Split Institute of "
+"Innovation as a researcher and screenwriter."
+msgstr ""
+"Desde 2022 integra o Split Studio e o Instituto de Inovação Split, "
+"onde atua como pesquisador e roteirista."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing
+msgid ""
+"Learn how to write material that survives an animation pipeline: a "
+"clear premise, character wants, episode structure and a bible the crew "
+"can use."
+msgstr ""
+"Aprenda a escrever material que sobrevive a um pipeline de animação: "
+"premissa clara, desejos do personagem, estrutura de episódio e uma "
+"bible que a equipe consiga usar."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_practice
+msgid ""
+"Write a one-page pitch for an original short or series episode that an "
+"art team could start designing from."
+msgstr ""
+"Escreva um pitch de uma página para um curta original ou episódio de "
+"série a partir do qual uma equipe de arte consiga começar a desenhar."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_practice
+msgid "State the premise in two sentences."
+msgstr "Declare a premissa em duas frases."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_practice
+msgid "Name the protagonist, the want and the obstacle."
+msgstr "Nomeie o protagonista, o desejo e o obstáculo."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_practice
+msgid "Outline a three-beat episode (start, turn, button)."
+msgstr "Esboce um episódio de três beats (início, virada, botão)."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_practice
+msgid "List three visual rules the world must keep."
+msgstr "Liste três regras visuais que o mundo precisa manter."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_creative_writing_practice
+msgid ""
+"Deliver one page. If a board artist cannot see the first shot, "
+"rewrite."
+msgstr ""
+"Entregue uma página. Se um artista de board não enxergar o primeiro "
+"plano, reescreva."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_about
+msgid "About the course Production and Planning for 2D Animation Projects"
+msgstr "Sobre o curso Produção e Planejamento para Projetos de Animação 2D"
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_about
+msgid ""
+"Running an animation production takes more than creative skill: you "
+"need planning, organization and clear communication. This course "
+"covers the practices and tools that take a 2D show from kickoff to "
+"delivery."
+msgstr ""
+"Tocar uma produção de animação exige mais do que talento criativo: é "
+"preciso planejamento, organização e comunicação clara. Este curso "
+"cobre as práticas e as ferramentas que levam um projeto 2D do kickoff "
+"à entrega."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_about
+msgid ""
+"You will walk the full animation pipeline, from the first idea through "
+"post-production. You will learn how to structure crews, build "
+"schedules and budgets, and keep departments talking. The course also "
+"covers task-tracking tools and agile methods that keep the board "
+"moving."
+msgstr ""
+"Você percorre o pipeline completo de animação, da primeira ideia à "
+"pós-produção. Aprende a estruturar equipes, montar cronogramas e "
+"orçamentos e manter os departamentos conversando. O curso também cobre "
+"ferramentas de acompanhamento e métodos ágeis que mantêm o quadro "
+"andando."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_about
+msgid ""
+"Practical exercises ask you to apply those ideas and write a detailed "
+"production plan you can put in a portfolio."
+msgstr ""
+"Os exercícios práticos pedem que você aplique essas ideias e escreva "
+"um plano de produção detalhado para o portfólio."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_instructor
+msgid ""
+"Belisa Proença graduated in Social Communication with an emphasis in "
+"Film at FAAP in 2011. In her first job she produced the short Guida, "
+"by Rosana Urbes (awarded at Annecy and Anima Mundi)."
+msgstr ""
+"Belisa Proença se formou em Comunicação Social com ênfase em Cinema na "
+"FAAP em 2011. Já no primeiro trabalho produziu o curta Guida, de "
+"Rosana Urbes (premiado em Annecy e Anima Mundi)."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_instructor
+msgid ""
+"She went on to produce and direct projects at Split Studio, including "
+"the TV series Turma da Mônica, Weeboom and Hello Kitty Super Cute "
+"Adventures. She now leads Split's original productions and teaches "
+"Creative Executive Production at Faculdade Meliès."
+msgstr ""
+"Seguiu produzindo e dirigindo projetos no Split Studio, incluindo as "
+"séries Turma da Mônica, Weeboom e Hello Kitty Super Cute Adventures. "
+"Hoje lidera as produções originais da Split e é professora de Produção "
+"Executiva Criativa na Faculdade Meliès."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_practice
+msgid ""
+"Plan a short 2D scene from lock to delivery. Keep the crew small and "
+"the dates honest."
+msgstr ""
+"Planeje uma cena 2D curta do lock à entrega. Mantenha a equipe enxuta "
+"e as datas honestas."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_practice
+msgid "Name the shot, the duration and the delivery format."
+msgstr "Nomeie o plano, a duração e o formato de entrega."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_practice
+msgid ""
+"List the departments (boards, art, rig, animation, comp) and one owner "
+"each."
+msgstr ""
+"Liste os departamentos (boards, arte, rig, animação, comp) e um "
+"responsável por cada um."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_practice
+msgid ""
+"Build a two-week schedule in a spreadsheet, with a review gate in the "
+"middle."
+msgstr ""
+"Monte um cronograma de duas semanas em uma planilha, com um gate de "
+"revisão no meio."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_practice
+msgid ""
+"Write the one risk that would slip the date and how you would catch "
+"it."
+msgstr "Escreva o risco que atrasaria a data e como você o pegaria."
+
+#. module: split_website_elearning
+#: model_terms:slide.slide,html_content:split_website_elearning.slide_lesson_production_practice
+msgid ""
+"Deliver the sheet. A producer should be able to staff the week from "
+"it."
+msgstr ""
+"Entregue a planilha. Uma produção deve conseguir escalar a semana a "
+"partir dela."

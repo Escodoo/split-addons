@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="website_academia" model="website">
+        <field name="name">Split Academia</field>
+        <field name="domain">http://academia.localhost</field>
+        <field name="sequence" type="int">20</field>
+        <field name="homepage_url" />
+        <field name="crm_default_team_id" ref="split_crm_custom.crm_team_intake" />
+        <field
+            name="logo"
+            type="base64"
+            file="split_website_elearning/static/src/img/brand/logo.png"
+        />
+        <field
+            name="favicon"
+            type="base64"
+            file="split_website_elearning/static/src/img/brand/favicon.png"
+        />
+        <field name="social_instagram">https://www.instagram.com/splitacademia/</field>
+        <field
+            name="social_linkedin"
+        >https://www.linkedin.com/company/instituto-de-inova%C3%A7%C3%A3o-split</field>
+        <field
+            name="social_youtube"
+        >https://www.youtube.com/@InstitutodeInova%C3%A7%C3%A3oSplit</field>
+    </record>
+</odoo>

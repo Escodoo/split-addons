@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" id="acd-rank-master">
+  <circle cx="150" cy="150" r="142" fill="#003F59"/>
+  <circle cx="150" cy="150" r="118" fill="#EE5B81"/>
+  <path fill="#FFEFE0" d="M150 86l18 48h50l-40 30 15 48-43-30-43 30 15-48-40-30h50z"/>
+</svg>

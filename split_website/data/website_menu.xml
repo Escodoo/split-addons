@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <!-- The top menu is a per-website copy of website.main_menu, so it can only
+         be resolved by search. -->
+    <record id="menu_reel" model="website.menu">
+        <field name="name">Reel</field>
+        <field name="url">/reel</field>
+        <field name="page_id" ref="page_reel" />
+        <field name="sequence" type="int">20</field>
+        <field name="website_id" ref="website.default_website" />
+        <field
+            name="parent_id"
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                ('parent_id', '=', False),
+            ], limit=1).id"
+        />
+    </record>
+    <record id="menu_our_work" model="website.menu">
+        <field name="name">Our Work</field>
+        <field name="url">/our-work</field>
+        <field name="page_id" ref="page_our_work" />
+        <field name="sequence" type="int">30</field>
+        <field name="website_id" ref="website.default_website" />
+        <field
+            name="parent_id"
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                ('parent_id', '=', False),
+            ], limit=1).id"
+        />
+    </record>
+    <record id="menu_split_originals" model="website.menu">
+        <field name="name">Split Originals</field>
+        <field name="url">/split-originals</field>
+        <field name="page_id" ref="page_split_originals" />
+        <field name="sequence" type="int">40</field>
+        <field name="website_id" ref="website.default_website" />
+        <field
+            name="parent_id"
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                ('parent_id', '=', False),
+            ], limit=1).id"
+        />
+    </record>
+    <record id="menu_about" model="website.menu">
+        <field name="name">About</field>
+        <field name="url">/about</field>
+        <field name="page_id" ref="page_about" />
+        <field name="sequence" type="int">50</field>
+        <field name="website_id" ref="website.default_website" />
+        <field
+            name="parent_id"
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                ('parent_id', '=', False),
+            ], limit=1).id"
+        />
+    </record>
+    <function model="website.menu" name="write">
+        <value
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website.default_website')),
+                ('url', '=', '/contactus'),
+            ]).ids"
+        />
+        <value eval="{'name': 'Contact', 'sequence': 60}" />
+    </function>
+</odoo>

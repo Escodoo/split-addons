@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="page_reel" model="website.page">
+        <field name="view_id" ref="reel" />
+        <field name="url">/reel</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Watch the Split Studio showreel.</field>
+    </record>
+    <record id="page_our_work" model="website.page">
+        <field name="view_id" ref="our_work" />
+        <field name="url">/our-work</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >Animated series, films, promos and branded content produced by Split Studio.</field>
+    </record>
+    <record id="page_split_originals" model="website.page">
+        <field name="view_id" ref="split_originals" />
+        <field name="url">/split-originals</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >Intellectual properties created and developed inside Split Studio.</field>
+    </record>
+    <record id="page_privacy" model="website.page">
+        <field name="view_id" ref="privacy" />
+        <field name="url">/privacy</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="False" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >How Split Studio uses the information you send through the website.</field>
+    </record>
+    <record id="page_about" model="website.page">
+        <field name="view_id" ref="about" />
+        <field name="url">/about</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field
+            name="website_meta_description"
+        >Who we are and what Split Studio does.</field>
+    </record>
+    <record id="page_project_rick_and_morty" model="website.page">
+        <field name="view_id" ref="project_rick_and_morty" />
+        <field name="url">/work/rick-and-morty</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated episodes produced for the fifth season of Rick and Morty, one of the studio's international service titles.</field>
+    </record>
+    <record id="page_project_hello_kitty" model="website.page">
+        <field name="view_id" ref="project_hello_kitty" />
+        <field name="url">/work/hello-kitty-supercute</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">New episodes produced for the Hello Kitty Brazil, Mexico and Latin America channels, published on YouTube every Wednesday.</field>
+    </record>
+    <record id="page_project_tito_and_the_birds" model="website.page">
+        <field name="view_id" ref="project_tito_and_the_birds" />
+        <field name="url">/work/tito-and-the-birds</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Feature film animation produced with Bit Productions. Split raised the quality of the conception, animation and art.</field>
+    </record>
+    <record id="page_project_my_life_is_worth_living" model="website.page">
+        <field name="view_id" ref="project_my_life_is_worth_living" />
+        <field name="url">/work/my-life-is-worth-living</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with Wonder Media, part of a slate of stories designed to communicate through social causes.</field>
+    </record>
+    <record id="page_project_monica_and_friends" model="website.page">
+        <field name="view_id" ref="project_monica_and_friends" />
+        <field name="url">/work/monica-and-friends</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Classic Monica and Friends episodes produced for Cartoon Network, one of the most watched Brazilian shows on the channel.</field>
+    </record>
+    <record id="page_project_fit_ufc" model="website.page">
+        <field name="view_id" ref="project_fit_ufc" />
+        <field name="url">/work/fit-ufc-true-myth</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded series produced for UFC, mixing fight mythology with Split's 2D animation pipeline.</field>
+    </record>
+    <record id="page_project_are_you_okay" model="website.page">
+        <field name="view_id" ref="project_are_you_okay" />
+        <field name="url">/work/are-you-okay</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with Wonder Media in 2021, part of the studio's slate of stories built around social causes.</field>
+    </record>
+    <record id="page_project_is_anybody_out_there" model="website.page">
+        <field name="view_id" ref="project_is_anybody_out_there" />
+        <field name="url">/work/is-anybody-out-there</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with Wonder Media in 2022, directed in house and delivered through the full 2D pipeline.</field>
+    </record>
+    <record id="page_project_bit_wars" model="website.page">
+        <field name="view_id" ref="project_bit_wars" />
+        <field name="url">/work/bit-wars</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Promo produced for NuBoom, with Split on layout and animation.</field>
+    </record>
+    <record id="page_project_mr_men_little_miss" model="website.page">
+        <field name="view_id" ref="project_mr_men_little_miss" />
+        <field name="url">/work/mr-men-little-miss</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Promo produced for Sanrio Brazil, covering the full 2D pipeline from direction to mix.</field>
+    </record>
+    <record id="page_project_bubu_and_the_little_owls" model="website.page">
+        <field name="view_id" ref="project_bubu_and_the_little_owls" />
+        <field name="url">/work/bubu-and-the-little-owls</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Preschool series produced with Up Content, with Split on 2D animation.</field>
+    </record>
+    <record id="page_project_the_boy_and_the_world" model="website.page">
+        <field name="view_id" ref="project_the_boy_and_the_world" />
+        <field name="url">/work/the-boy-and-the-world</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Oscar-nominated feature film produced with Paper Films, with Split on 2D animation.</field>
+    </record>
+    <record id="page_project_weeboom" model="website.page">
+        <field name="view_id" ref="project_weeboom" />
+        <field name="url">/originals/weeboom</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original preschool series created inside the studio. The first season is available in multiple territories.</field>
+    </record>
+    <record id="page_project_among_the_stars" model="website.page">
+        <field name="view_id" ref="project_among_the_stars" />
+        <field name="url">/originals/among-the-stars</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Split original game. Help make this project a reality on Catarse.</field>
+    </record>
+    <record id="page_project_whats_up_bud" model="website.page">
+        <field name="view_id" ref="project_whats_up_bud" />
+        <field name="url">/originals/whats-up-bud</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original comedy series created by Michele Massagli and produced inside Split.</field>
+    </record>
+    <record id="page_project_charcoal_swordsman" model="website.page">
+        <field name="view_id" ref="project_charcoal_swordsman" />
+        <field name="url">/originals/the-charcoal-swordsman</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original adventure series based on Affonso Solano's work. The teaser was released at CCXP19.</field>
+    </record>
+    <record id="page_project_sun_boy" model="website.page">
+        <field name="view_id" ref="project_sun_boy" />
+        <field name="url">/originals/sun-boy-and-friends</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Music videos for Sun Boy and Friends, with songs by Vitor Kley.</field>
+    </record>
+    <record id="page_project_que_corpo_e_esse" model="website.page">
+        <field name="view_id" ref="project_que_corpo_e_esse" />
+        <field name="url">/originals/que-corpo-e-esse</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original series produced with Canal Futura, covering the full 2D pipeline.</field>
+    </record>
+    <record id="page_project_wizavior" model="website.page">
+        <field name="view_id" ref="project_wizavior" />
+        <field name="url">/originals/wizavior</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Split original game in development, mixing 2D and 3D animation.</field>
+    </record>
+    <record id="page_project_egregora" model="website.page">
+        <field name="view_id" ref="project_egregora" />
+        <field name="url">/originals/egregore</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original animated short created and produced by Split.</field>
+    </record>
+    <record id="page_project_children_of_the_world" model="website.page">
+        <field name="view_id" ref="project_children_of_the_world" />
+        <field name="url">/originals/children-of-the-world</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Crossmedia original pairing a TV series with a digital game, continuing the world of The Boy and the World.</field>
+    </record>
+    <record id="page_project_blue_butterflies" model="website.page">
+        <field name="view_id" ref="project_blue_butterflies" />
+        <field name="url">/originals/blue-butterflies</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original series created inside Split, covering the full 2D pipeline.</field>
+    </record>
+    <record id="page_project_howdy_harrdy" model="website.page">
+        <field name="view_id" ref="project_howdy_harrdy" />
+        <field name="url">/originals/howdy-harrdy</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Preschool cartoon created by Henrique Lira for Nick Jr. US through the Nickelodeon Animated Shorts Program.</field>
+    </record>
+    <record id="page_project_miss_and_grubs" model="website.page">
+        <field name="view_id" ref="project_miss_and_grubs" />
+        <field name="url">/originals/miss-and-grubs</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated short created by Camila Kamimura and Victor Canela and produced by Split with support from the São Paulo government.</field>
+    </record>
+    <record id="page_project_to_reach_the_moon" model="website.page">
+        <field name="view_id" ref="project_to_reach_the_moon" />
+        <field name="url">/originals/to-reach-the-moon</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original animated short created and produced by Split.</field>
+    </record>
+    <record id="page_project_castanhari_2023" model="website.page">
+        <field name="view_id" ref="project_castanhari_2023" />
+        <field name="url">/work/castanhari-2023</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Year-end recap produced for Felipe Castanhari's Canal Nostalgia.</field>
+    </record>
+    <record id="page_project_castanhari_2022" model="website.page">
+        <field name="view_id" ref="project_castanhari_2022" />
+        <field name="url">/work/castanhari-2022</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Year-end recap produced for Felipe Castanhari's Canal Nostalgia.</field>
+    </record>
+    <record id="page_project_heart_of_darkness" model="website.page">
+        <field name="view_id" ref="project_heart_of_darkness" />
+        <field name="url">/work/heart-of-darkness</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Promo produced with Karmatique, with Split on art and 2D animation.</field>
+    </record>
+    <record id="page_project_dc_fandome" model="website.page">
+        <field name="view_id" ref="project_dc_fandome" />
+        <field name="url">/work/dc-fandome</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded short produced with Mauricio de Sousa Produções for DC Fandome.</field>
+    </record>
+    <record id="page_project_adventures_of_mike" model="website.page">
+        <field name="view_id" ref="project_adventures_of_mike" />
+        <field name="url">/work/adventures-of-mike</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with FalaíDearo, covering Split's 2D pipeline.</field>
+    </record>
+    <record id="page_project_hello_kitty_chef_star" model="website.page">
+        <field name="view_id" ref="project_hello_kitty_chef_star" />
+        <field name="url">/work/hello-kitty-chef-star</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Hello Kitty web episodes produced for Sanrio Brazil.</field>
+    </record>
+    <record id="page_project_hello_kitty_fun" model="website.page">
+        <field name="view_id" ref="project_hello_kitty_fun" />
+        <field name="url">/work/hello-kitty-fun</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Hello Kitty web episodes produced for Sanrio Brazil.</field>
+    </record>
+    <record id="page_project_radio_bita" model="website.page">
+        <field name="view_id" ref="project_radio_bita" />
+        <field name="url">/work/radio-bita</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Music videos produced with Mr Plot for Radio Bita.</field>
+    </record>
+    <record id="page_project_league_of_legends" model="website.page">
+        <field name="view_id" ref="project_league_of_legends" />
+        <field name="url">/work/league-of-legends</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for Riot Games' League of Legends.</field>
+    </record>
+    <record id="page_project_senninha" model="website.page">
+        <field name="view_id" ref="project_senninha" />
+        <field name="url">/work/senninha</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with Instituto Ayrton Senna and Gullane.</field>
+    </record>
+    <record id="page_project_betania_kids" model="website.page">
+        <field name="view_id" ref="project_betania_kids" />
+        <field name="url">/work/betania-kids</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded Monica and Friends spots produced for Betania Kids.</field>
+    </record>
+    <record id="page_project_seara_monica" model="website.page">
+        <field name="view_id" ref="project_seara_monica" />
+        <field name="url">/work/seara-monica</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded Monica and Friends spots produced for Seara.</field>
+    </record>
+    <record id="page_project_cool_sneakers" model="website.page">
+        <field name="view_id" ref="project_cool_sneakers" />
+        <field name="url">/work/cool-sneakers</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated short produced with TV Escola.</field>
+    </record>
+    <record id="page_project_world_doesnt_know" model="website.page">
+        <field name="view_id" ref="project_world_doesnt_know" />
+        <field name="url">/work/the-world-doesnt-know</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original promo created and produced inside Split.</field>
+    </record>
+    <record id="page_project_oglobo_media_day" model="website.page">
+        <field name="view_id" ref="project_oglobo_media_day" />
+        <field name="url">/work/oglobo-media-day</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for O Globo's Media Day.</field>
+    </record>
+    <record id="page_project_studio_r" model="website.page">
+        <field name="view_id" ref="project_studio_r" />
+        <field name="url">/work/studio-r</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Promo produced for Studio R, covering Split's 2D pipeline.</field>
+    </record>
+    <record id="page_project_sesc" model="website.page">
+        <field name="view_id" ref="project_sesc" />
+        <field name="url">/work/sesc-what-is-it</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for SESC.</field>
+    </record>
+    <record id="page_project_luan_santana" model="website.page">
+        <field name="view_id" ref="project_luan_santana" />
+        <field name="url">/work/luan-santana</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated music video produced for Luan Santana.</field>
+    </record>
+    <record id="page_project_cabrito_chewy" model="website.page">
+        <field name="view_id" ref="project_cabrito_chewy" />
+        <field name="url">/work/cabrito-chewy</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Promo produced with Kids Glove, with Split on art and 2D animation.</field>
+    </record>
+    <record id="page_project_one_fm_giant_robot" model="website.page">
+        <field name="view_id" ref="project_one_fm_giant_robot" />
+        <field name="url">/work/1-fm-giant-robot</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for 1 FM.</field>
+    </record>
+    <record id="page_project_monica_month" model="website.page">
+        <field name="view_id" ref="project_monica_month" />
+        <field name="url">/work/monica-month</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded campaign produced for Cartoon Network's Monica Month.</field>
+    </record>
+    <record id="page_project_zolkin" model="website.page">
+        <field name="view_id" ref="project_zolkin" />
+        <field name="url">/work/zolkin</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for Zolkin.</field>
+    </record>
+    <record id="page_project_parmalat" model="website.page">
+        <field name="view_id" ref="project_parmalat" />
+        <field name="url">/work/parmalat-manifesto</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded manifesto produced for Parmalat.</field>
+    </record>
+    <record id="page_project_zis" model="website.page">
+        <field name="view_id" ref="project_zis" />
+        <field name="url">/work/zis</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated music video produced with Hélio Ziskind.</field>
+    </record>
+    <record id="page_project_from_love_to_bingo" model="website.page">
+        <field name="view_id" ref="project_from_love_to_bingo" />
+        <field name="url">/work/from-love-to-bingo</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for Getty Images.</field>
+    </record>
+    <record id="page_project_under_undergrounds" model="website.page">
+        <field name="view_id" ref="project_under_undergrounds" />
+        <field name="url">/work/under-undergrounds</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with Tortuga Studios.</field>
+    </record>
+    <record id="page_project_nick_summer" model="website.page">
+        <field name="view_id" ref="project_nick_summer" />
+        <field name="url">/work/nick-summer</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded campaign produced for Nickelodeon's Nick Summer.</field>
+    </record>
+    <record id="page_project_que_corpo_eca" model="website.page">
+        <field name="view_id" ref="project_que_corpo_eca" />
+        <field name="url">/work/que-corpo-e-esse-eca</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced with Canal Futura for Eca's 30th anniversary.</field>
+    </record>
+    <record id="page_project_pernambucanas" model="website.page">
+        <field name="view_id" ref="project_pernambucanas" />
+        <field name="url">/work/pernambucanas-friozinho</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded spot produced for Pernambucanas.</field>
+    </record>
+    <record id="page_project_lala" model="website.page">
+        <field name="view_id" ref="project_lala" />
+        <field name="url">/work/lala</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Animated series produced with Lala Produções.</field>
+    </record>
+    <record id="page_project_balacobaco" model="website.page">
+        <field name="view_id" ref="project_balacobaco" />
+        <field name="url">/work/balacobaco</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded content produced for Record.</field>
+    </record>
+    <record id="page_project_yellow_woodpecker" model="website.page">
+        <field name="view_id" ref="project_yellow_woodpecker" />
+        <field name="url">/work/yellow-woodpecker-farm</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">TV series animation produced for Rede Globo.</field>
+    </record>
+    <record id="page_project_elma_chips" model="website.page">
+        <field name="view_id" ref="project_elma_chips" />
+        <field name="url">/work/elma-chips</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for Elma Chips.</field>
+    </record>
+    <record id="page_project_a_common_place" model="website.page">
+        <field name="view_id" ref="project_a_common_place" />
+        <field name="url">/work/a-common-place</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Original animated short created and produced by Split.</field>
+    </record>
+    <record id="page_project_iguatemi" model="website.page">
+        <field name="view_id" ref="project_iguatemi" />
+        <field name="url">/work/iguatemi-theater</field>
+        <field name="website_id" ref="website.default_website" />
+        <field name="is_published" eval="True" />
+        <field name="header_overlay" eval="True" />
+        <field name="track" eval="True" />
+        <field name="website_meta_description">Branded film produced for Teatro Iguatemi.</field>
+    </record>
+</odoo>

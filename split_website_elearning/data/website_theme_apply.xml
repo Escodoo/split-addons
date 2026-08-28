@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- The home and contact URLs already belong to the website module, so
+         we write the Academia arch onto the per-website copies. -->
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env['website'].with_context(
+                website_id=ref('split_website_elearning.website_academia')
+            ).viewref('website.homepage').id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{'arch': obj().env.ref('split_website_elearning.homepage').arch.replace(
+                '*crm_team_intake*',
+                str(obj().env.ref('split_crm_custom.crm_team_intake').id),
+            )}"
+        />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="(obj().env['ir.ui.view'].search([
+                ('key', '=', 'website.contactus'),
+                ('website_id', '=', ref('split_website_elearning.website_academia')),
+            ], limit=1) or obj().env.ref('split_website_elearning.contactus')).id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{'arch': obj().env.ref('split_website_elearning.contactus').arch.replace(
+                '*crm_team_intake*',
+                str(obj().env.ref('split_crm_custom.crm_team_intake').id),
+            )}"
+        />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env.ref('split_website_elearning.contact_form').id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{'arch': obj().env.ref('split_website_elearning.contact_form').arch.replace(
+                '*crm_team_intake*',
+                str(obj().env.ref('split_crm_custom.crm_team_intake').id),
+            )}"
+        />
+    </function>
+    <function name="write" model="ir.ui.view">
+        <value
+            model="ir.ui.view"
+            eval="obj().env.ref('split_website_elearning.newsletter_form').id"
+        />
+        <value
+            model="ir.ui.view"
+            eval="{'arch': obj().env.ref('split_website_elearning.newsletter_form').arch.replace(
+                '*crm_team_intake*',
+                str(obj().env.ref('split_crm_custom.crm_team_intake').id),
+            )}"
+        />
+    </function>
+</odoo>

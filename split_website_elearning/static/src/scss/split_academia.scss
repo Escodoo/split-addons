@@ -1,0 +1,1228 @@
+// Copyright 2026 Escodoo
+// License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+// Brand tokens from splitacademia.com.br — scoped so the studio site is untouched.
+
+.split-academia {
+    --acd-navy: #003f59;
+    --acd-ink: #0c0d0e;
+    --acd-cream: #ffefe0;
+    --acd-canvas: #fdf8f2;
+    --acd-yellow: #ebe856;
+    --acd-pink: #ee5b81;
+    --acd-cyan: #72d0f5;
+    --acd-purple: #a65fa8;
+    --acd-green: #6bc39e;
+    --acd-white: #ffffff;
+    // GIF has no real alpha; its canvas is a dithered warm paper
+    // around #FDF8F2. Match that so the brain does not sit in a box.
+    background: var(--acd-canvas) !important;
+    color: var(--acd-navy);
+    font-family: Arvo, "Times New Roman", serif;
+
+    #wrapwrap,
+    #wrap,
+    main,
+    .o_wsale_offcanvas {
+        background: var(--acd-canvas);
+        color: var(--acd-navy);
+    }
+
+    h1,
+    h2,
+    h3,
+    .acd-display {
+        font-family: Anton, Impact, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--acd-navy);
+    }
+
+    h1 {
+        font-size: clamp(2.2rem, 5vw, 3.25rem);
+    }
+
+    h2 {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    a {
+        color: var(--acd-pink);
+    }
+
+    a:hover {
+        color: var(--acd-navy);
+    }
+
+    header#top,
+    header .o_header_standard,
+    header .navbar,
+    header .o_main_header {
+        background: var(--acd-cream) !important;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    }
+
+    header {
+        .navbar-brand img,
+        .navbar-brand .o_header_logo {
+            max-height: 72px;
+            width: auto;
+        }
+
+        .nav-link,
+        .navbar-brand,
+        .js_language_selector .dropdown-toggle,
+        .o_header_hide_sm_only,
+        .acd-user-name {
+            color: var(--acd-pink) !important;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+        }
+
+        .nav-link.active,
+        .nav-item .nav-link.active,
+        .nav-link:hover {
+            color: var(--acd-navy) !important;
+        }
+
+        .btn-outline-secondary,
+        .btn-outline-primary {
+            border-color: var(--acd-pink);
+            color: var(--acd-pink);
+        }
+
+        .o_nav_link_btn,
+        a[href="/web/login"],
+        a[href^="/web/login"] {
+            border: 2px solid var(--acd-pink) !important;
+            border-radius: 999px;
+            color: var(--acd-pink) !important;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 0.35rem 1.1rem !important;
+        }
+
+        .o_wsale_my_cart,
+        a[href^="tel:"],
+        .header_phone,
+        .o_header_phone {
+            display: none !important;
+        }
+
+        // Website color-combo + header-text-color paint these menus dark
+        // with dark item text. Keep them on paper so languages stay readable.
+        --bs-dropdown-bg: #ffffff;
+        --bs-dropdown-color: #003f59;
+        --bs-dropdown-link-color: #003f59;
+        --bs-dropdown-link-hover-bg: #ee5b81;
+        --bs-dropdown-link-hover-color: #ffffff;
+        --bs-dropdown-link-active-bg: #ee5b81;
+        --bs-dropdown-link-active-color: #ffffff;
+        --bs-dropdown-border-color: rgba(0, 63, 89, 0.12);
+
+        .dropdown-menu {
+            background: var(--acd-white) !important;
+            border: 1px solid rgba(0, 63, 89, 0.12);
+            box-shadow: 0 12px 28px rgba(0, 63, 89, 0.12);
+        }
+
+        .dropdown-item,
+        .dropdown-item span,
+        .js_language_selector .dropdown-menu span {
+            color: var(--acd-navy) !important;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item:focus,
+        .dropdown-item.active,
+        .dropdown-item:hover span,
+        .dropdown-item:focus span,
+        .dropdown-item.active span {
+            background: var(--acd-pink) !important;
+            color: var(--acd-white) !important;
+        }
+    }
+
+    footer,
+    #footer,
+    #bottom,
+    .o_footer {
+        background: var(--acd-canvas) !important;
+        color: var(--acd-navy);
+        border-top: 1px solid rgba(0, 63, 89, 0.12);
+    }
+
+    #footer > *:not(.acd-footer),
+    .o_footer .container,
+    .o_footer_copyright {
+        display: none !important;
+    }
+
+    .acd-footer {
+        display: block !important;
+        text-align: center;
+        padding: 2rem 1rem 3rem;
+    }
+
+    .acd-social {
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        margin: 0 0 1rem;
+        padding: 0;
+        list-style: none;
+    }
+
+    .acd-social a {
+        color: var(--acd-navy);
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+    }
+
+    .btn-primary,
+    .acd-btn {
+        background: transparent;
+        border: 2px solid var(--acd-navy);
+        color: var(--acd-navy);
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        border-radius: 999px;
+        padding: 0.55rem 1.5rem;
+    }
+
+    .btn-primary:hover,
+    .acd-btn:hover {
+        background: var(--acd-navy);
+        border-color: var(--acd-navy);
+        color: var(--acd-cream);
+    }
+
+    .btn-secondary,
+    .acd-btn-ghost {
+        background: transparent;
+        border: 2px solid var(--acd-pink);
+        color: var(--acd-pink);
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        border-radius: 999px;
+        padding: 0.55rem 1.4rem;
+    }
+
+    .btn-secondary:hover,
+    .acd-btn-ghost:hover {
+        background: var(--acd-pink);
+        color: var(--acd-white);
+    }
+
+    .acd-section {
+        padding: 4rem 0;
+    }
+
+    .acd-section-cream {
+        background: var(--acd-canvas);
+        color: var(--acd-navy);
+    }
+
+    .acd-section-ink {
+        background: var(--acd-navy);
+        color: var(--acd-cream);
+
+        h1,
+        h2,
+        h3 {
+            color: var(--acd-white);
+        }
+
+        a {
+            color: var(--acd-yellow);
+        }
+
+        .acd-kicker {
+            color: var(--acd-yellow);
+        }
+    }
+
+    .acd-kicker {
+        font-family: "Rubik Mono One", Anton, sans-serif;
+        font-size: clamp(3.5rem, 10vw, 7rem);
+        line-height: 0.85;
+        color: var(--acd-navy);
+        margin: 0 0 0.5rem;
+        text-align: center;
+    }
+
+    .acd-word {
+        font-family: "Rubik Mono One", Anton, sans-serif;
+        text-transform: uppercase;
+    }
+
+    .acd-cyan {
+        color: var(--acd-cyan);
+    }
+
+    .acd-pink {
+        color: var(--acd-pink);
+    }
+
+    .acd-purple {
+        color: var(--acd-purple);
+    }
+
+    .acd-yellow {
+        color: var(--acd-yellow);
+    }
+
+    .acd-subtitle {
+        font-family: Anton, Impact, sans-serif;
+        font-size: clamp(1.3rem, 3vw, 2rem);
+        text-transform: uppercase;
+        color: var(--acd-purple);
+        text-align: center;
+    }
+
+    .acd-hero-banner {
+        min-height: 70vh;
+        background: url("/split_website_elearning/static/src/img/brand/hero_academia_day.jpg")
+            center center / cover no-repeat;
+    }
+
+    .acd-hero-banner img {
+        display: none;
+    }
+
+    .acd-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 2rem;
+        border-radius: 30px;
+        color: var(--acd-navy);
+        text-decoration: none;
+        transition: transform 0.2s ease;
+    }
+
+    .acd-card:hover {
+        transform: translateY(-4px);
+        color: var(--acd-navy);
+    }
+
+    .acd-card-yellow {
+        background: var(--acd-yellow);
+    }
+
+    .acd-card-cyan {
+        background: var(--acd-cyan);
+    }
+
+    .acd-card-pink {
+        background: var(--acd-pink);
+    }
+
+    .acd-card-purple {
+        background: var(--acd-purple);
+    }
+
+    .acd-card-green {
+        background: var(--acd-green);
+    }
+
+    .acd-card img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        display: block;
+        border-radius: 16px;
+        margin: 0.75rem 0 1.25rem;
+    }
+
+    .acd-card h3 {
+        font-size: 1.7rem;
+        margin: 0 0 1.25rem;
+        text-align: center;
+        color: var(--acd-navy);
+    }
+
+    .acd-card-cta {
+        display: inline-block;
+        align-self: center;
+        border: 2px solid var(--acd-navy);
+        border-radius: 999px;
+        padding: 0.4rem 1.2rem;
+        font-family: Arvo, "Times New Roman", serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--acd-navy);
+        text-decoration: none;
+    }
+
+    .acd-card-cta:hover {
+        background: var(--acd-navy);
+        color: var(--acd-cream);
+    }
+
+    .acd-badge {
+        display: inline-block;
+        align-self: flex-start;
+        margin-bottom: 0.25rem;
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        border: 2px solid var(--acd-navy);
+        font-size: 0.9rem;
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        text-transform: none;
+        background: transparent;
+        color: var(--acd-navy);
+    }
+
+    .acd-educator {
+        text-align: center;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .acd-educator img,
+    .acd-portrait {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--acd-yellow);
+        margin-bottom: 0.75rem;
+    }
+
+    .acd-portrait {
+        width: 180px;
+        height: 180px;
+        border-color: var(--acd-pink);
+    }
+
+    .acd-educator h3 {
+        font-size: 1.1rem;
+        text-transform: none;
+        letter-spacing: 0;
+        font-family: Arvo, "Times New Roman", serif;
+        color: inherit;
+    }
+
+    .acd-edu-jump {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem 1.75rem;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.45rem;
+            color: var(--acd-navy);
+            text-decoration: none;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+        }
+
+        img {
+            width: 76px;
+            height: 76px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--acd-navy);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        a:hover img {
+            transform: translateY(-3px);
+            border-color: var(--acd-pink);
+        }
+    }
+
+    .acd-edu-card {
+        display: grid;
+        grid-template-columns: minmax(180px, 240px) 1fr;
+        gap: 1.75rem 2.25rem;
+        align-items: center;
+        border-radius: 36px;
+        padding: clamp(1.5rem, 4vw, 2.4rem);
+        margin-bottom: 1.75rem;
+        color: var(--acd-navy);
+        scroll-margin-top: 7rem;
+    }
+
+    .acd-edu-flip {
+        grid-template-columns: 1fr minmax(180px, 240px);
+
+        .acd-edu-photo-wrap {
+            order: 2;
+        }
+    }
+
+    .acd-edu-photo-wrap {
+        text-align: center;
+    }
+
+    .acd-edu-photo-wrap img {
+        width: 220px;
+        max-width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid var(--acd-cream);
+        box-shadow: 0 12px 28px rgba(0, 63, 89, 0.18);
+        background: var(--acd-cream);
+    }
+
+    .acd-edu-role {
+        font-family: Anton, Impact, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.15rem;
+        font-size: 1rem;
+    }
+
+    .acd-edu-copy h2 {
+        margin: 0 0 0.75rem;
+        text-align: left;
+    }
+
+    .acd-edu-chips,
+    .acd-edu-credits {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem;
+    }
+
+    .acd-edu-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+    }
+
+    .acd-edu-chips li {
+        border: 2px solid var(--acd-navy);
+        border-radius: 999px;
+        padding: 0.15rem 0.75rem;
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        font-size: 0.82rem;
+    }
+
+    .acd-edu-credits-label {
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        margin-bottom: 0.35rem;
+    }
+
+    .acd-edu-credits li {
+        position: relative;
+        padding-left: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .acd-edu-credits li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.55em;
+        width: 0.45rem;
+        height: 0.45rem;
+        border-radius: 50%;
+        background: var(--acd-navy);
+    }
+
+    .acd-edu-social {
+        font-family: Arvo, "Times New Roman", serif;
+        font-weight: 700;
+        color: var(--acd-navy);
+    }
+
+    .acd-edu-cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+    }
+
+    .acd-edu-cyan {
+        background: var(--acd-cyan);
+    }
+
+    .acd-edu-pink {
+        background: var(--acd-pink);
+    }
+
+    .acd-edu-purple {
+        background: var(--acd-purple);
+    }
+
+    .acd-edu-yellow {
+        background: var(--acd-yellow);
+    }
+
+    .acd-edu-green {
+        background: var(--acd-green);
+    }
+
+    @media (max-width: 767.98px) {
+        .acd-edu-card,
+        .acd-edu-flip {
+            grid-template-columns: 1fr;
+        }
+
+        .acd-edu-flip .acd-edu-photo-wrap {
+            order: 0;
+        }
+
+        .acd-edu-copy h2 {
+            text-align: center;
+        }
+
+        .acd-edu-role,
+        .acd-edu-chips {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .acd-partner {
+        border-radius: 32px;
+        padding: 2rem 1.75rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.25rem;
+        text-align: center;
+    }
+
+    .acd-partner-lead {
+        font-family: Anton, Impact, sans-serif;
+        font-size: clamp(1.4rem, 3vw, 1.9rem);
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .acd-partner-logo {
+        max-width: 240px;
+        width: 100%;
+        height: auto;
+    }
+
+    .acd-commitment {
+        background: var(--acd-purple);
+        color: var(--acd-cream);
+        border-radius: 36px;
+        padding: clamp(2rem, 5vw, 3.5rem);
+
+        h2 {
+            color: var(--acd-yellow);
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            font-size: 1.15rem;
+        }
+
+        li + li {
+            margin-top: 0.75rem;
+        }
+    }
+
+    .acd-atc,
+    .acd-character {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .acd-atc {
+        max-width: 380px;
+    }
+
+    .acd-character {
+        max-width: 420px;
+    }
+
+    .acd-format {
+        border-radius: 28px;
+        overflow: hidden;
+        height: 100%;
+        color: var(--acd-navy);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acd-format-head {
+        padding: 1.2rem 1.5rem 0.6rem;
+
+        h3 {
+            margin: 0;
+            text-align: left;
+            color: var(--acd-navy);
+        }
+    }
+
+    .acd-format-body {
+        padding: 0 1.5rem 1.6rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            padding-left: 1.15rem;
+            margin-bottom: 1.35rem;
+            flex: 1;
+        }
+
+        li + li {
+            margin-top: 0.7rem;
+        }
+
+        .acd-card-cta {
+            align-self: flex-start;
+        }
+    }
+
+    .acd-format-green .acd-format-head {
+        background: #54b48c;
+    }
+
+    .acd-format-green .acd-format-body {
+        background: #6bc39e;
+    }
+
+    .acd-format-pink .acd-format-head {
+        background: #e14e76;
+    }
+
+    .acd-format-pink .acd-format-body {
+        background: #ee5b81;
+    }
+
+    .acd-format-purple .acd-format-head {
+        background: #955496;
+    }
+
+    .acd-format-purple .acd-format-body {
+        background: #a65fa8;
+    }
+
+    .acd-quote {
+        background: rgba(0, 63, 89, 0.06);
+        border-left: 4px solid var(--acd-pink);
+        border-radius: 0 1rem 1rem 0;
+        padding: 1.25rem 1.4rem;
+        height: 100%;
+        color: var(--acd-navy);
+    }
+
+    .acd-section-ink .acd-quote {
+        background: rgba(255, 239, 224, 0.08);
+        color: var(--acd-cream);
+    }
+
+    .acd-quote footer {
+        color: var(--acd-pink);
+        font-family: Anton, Impact, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        background: transparent !important;
+    }
+
+    .acd-faq details {
+        border-bottom: 1px solid rgba(0, 63, 89, 0.15);
+        padding: 0.9rem 0;
+    }
+
+    .acd-faq summary {
+        cursor: pointer;
+        font-family: Anton, Impact, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--acd-navy);
+    }
+
+    .acd-faq p {
+        margin: 0.75rem 0 0;
+    }
+
+    .acd-contact-title {
+        text-align: left;
+        line-height: 0.92;
+        margin-bottom: 1.75rem;
+
+        span {
+            display: block;
+        }
+
+        .acd-pink {
+            font-size: 1.12em;
+        }
+    }
+
+    .acd-brain-lift {
+        max-width: 440px;
+        width: 100%;
+        height: auto;
+    }
+
+    .acd-form {
+        .s_website_form_field {
+            margin-bottom: 0.55rem;
+        }
+
+        .form-control,
+        .form-select {
+            background: var(--acd-pink) !important;
+            border: 0 !important;
+            border-radius: 0;
+            box-shadow: none !important;
+            min-height: 3.4rem;
+            padding: 0.95rem 1.15rem;
+            color: var(--acd-white) !important;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        textarea.form-control {
+            min-height: 11rem;
+            resize: vertical;
+        }
+
+        .form-control::placeholder {
+            color: var(--acd-white);
+            opacity: 1;
+        }
+
+        .form-control:focus {
+            background: var(--acd-pink) !important;
+            color: var(--acd-white) !important;
+            outline: 2px solid var(--acd-navy);
+            outline-offset: 2px;
+        }
+
+        .acd-form-send,
+        .s_website_form_send {
+            display: block;
+            width: 100%;
+            background: var(--acd-navy) !important;
+            border: 0 !important;
+            border-radius: 0;
+            color: var(--acd-white) !important;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 1rem 1.2rem;
+        }
+
+        .acd-form-send:hover,
+        .s_website_form_send:hover {
+            background: var(--acd-ink) !important;
+            color: var(--acd-white) !important;
+        }
+    }
+
+    // eLearning catalog (/slides) — keep the same cream + card language.
+    .acd-slides-hero {
+        padding-bottom: 1.5rem;
+    }
+
+    // Hide leftover stock LMS banners if a website-editor copy kept them.
+    .o_wslides_wrap section.s_banner {
+        display: none !important;
+    }
+
+    .o_wslides_home,
+    .o_wslides_channel_main,
+    .o_wslides_js_channel {
+        background: transparent;
+        color: var(--acd-navy);
+    }
+
+    .o_wslides_home h1,
+    .o_wslides_home h2,
+    .o_wslides_channel_card_title,
+    .o_wslides_channel_header h1 {
+        font-family: Anton, Impact, sans-serif;
+        text-transform: uppercase;
+        color: var(--acd-navy);
+    }
+
+    .o_wslides_home_nav .navbar {
+        background: var(--acd-white);
+        border: 1px solid rgba(0, 63, 89, 0.1);
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(0, 63, 89, 0.06);
+    }
+
+    .o_wslides_home_nav .form-control {
+        background: var(--acd-canvas);
+        border: 1px solid rgba(0, 63, 89, 0.12);
+        color: var(--acd-navy);
+    }
+
+    .o_wslides_body .o_record_cover_container,
+    .o_wslides_wrap .o_record_cover_container:has(.o_wslides_course_header) {
+        background-image: none !important;
+        background-color: var(--acd-navy) !important;
+        color: var(--acd-cream);
+    }
+
+    .o_wslides_course_header {
+        color: var(--acd-cream);
+
+        h1 {
+            color: var(--acd-cream) !important;
+        }
+
+        .o_wslides_header_text,
+        a {
+            color: var(--acd-cream) !important;
+        }
+    }
+
+    .o_wslides_course_nav,
+    .o_wslides_course_nav .o_wslides_course_nav_search {
+        background-color: rgba(0, 0, 0, 0.18);
+        border-color: rgba(255, 239, 224, 0.16);
+        color: var(--acd-cream);
+
+        a,
+        .breadcrumb-item,
+        .breadcrumb-item::before,
+        input,
+        input::placeholder,
+        button {
+            color: var(--acd-cream) !important;
+        }
+    }
+
+    .o_wslides_course_main .o_wslides_nav_tabs .nav-link {
+        color: rgba(255, 239, 224, 0.85);
+
+        &:hover {
+            background: #002c3f;
+            color: var(--acd-cream);
+        }
+
+        &.active {
+            background: var(--acd-canvas);
+            border-color: var(--acd-canvas);
+            color: var(--acd-navy);
+        }
+    }
+
+    .o_wslides_course_card,
+    .o_wslides_channel_card,
+    .o_wslides_slide_card {
+        border: 0;
+        border-radius: 24px;
+        overflow: hidden;
+        background: var(--acd-white);
+        box-shadow: 0 8px 24px rgba(0, 63, 89, 0.08);
+    }
+
+    .o_wslides_home_aside_loggedin {
+        background: var(--acd-white) !important;
+        border: 1px solid rgba(0, 63, 89, 0.08) !important;
+        border-radius: 24px !important;
+        box-shadow: 0 8px 24px rgba(0, 63, 89, 0.06);
+        padding: 1.25rem 1.15rem !important;
+        overflow: visible;
+
+        .o_wslides_home_aside_title h5,
+        .o_wslides_home_aside h5 {
+            font-family: Anton, Impact, sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--acd-navy);
+        }
+
+        .o_wslides_home_aside_title a,
+        a {
+            color: var(--acd-pink);
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+        }
+
+        hr {
+            border-color: rgba(0, 63, 89, 0.12);
+            opacity: 1;
+        }
+    }
+
+    .o_wslides_home_aside {
+        color: var(--acd-navy);
+    }
+
+    .o_wprofile_progress_circle {
+        max-width: 168px;
+        margin: 0.75rem auto 0.35rem;
+
+        .o_pc_circular_chart {
+            #gradient {
+                --o-pc-color-stop-1: #ee5b81;
+                --o-pc-color-stop-2: #003f59;
+            }
+
+            .o_pc_circle_bg {
+                stroke: rgba(0, 63, 89, 0.12);
+            }
+
+            .o_pc_circle {
+                stroke-width: 2px;
+            }
+        }
+
+        .o_pc_overlay {
+            padding: 1.6rem !important;
+
+            img,
+            .o_field_image,
+            .o_field_image img {
+                max-width: 42% !important;
+                width: 42% !important;
+                height: auto;
+                border-radius: 50%;
+                object-fit: cover;
+                box-shadow: 0 0 0 3px var(--acd-white), 0 0 0 5px var(--acd-pink);
+            }
+
+            h4 {
+                font-family: Anton, Impact, sans-serif;
+                font-weight: 400;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--acd-navy);
+                font-size: 0.95rem;
+                width: 70%;
+                margin-top: 0.2rem;
+            }
+
+            small,
+            small.text-center {
+                font-family: Arvo, "Times New Roman", serif;
+                color: var(--acd-navy);
+                width: 80% !important;
+                line-height: 1.35;
+            }
+
+            .text-primary {
+                color: var(--acd-pink) !important;
+            }
+        }
+    }
+
+    .o_wslides_home_content_section_title h5,
+    .o_wslides_home_aside_title h5 {
+        font-family: Anton, Impact, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--acd-navy);
+    }
+
+    .o_wslides_course_card {
+        border: 0;
+        border-radius: 24px;
+        overflow: hidden;
+        color: var(--acd-navy);
+        box-shadow: none;
+
+        .card-body,
+        .card-footer {
+            background: transparent;
+            border: 0;
+            color: var(--acd-navy);
+        }
+
+        .card-title,
+        a.card-title,
+        .card-title a {
+            font-family: Anton, Impact, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--acd-navy) !important;
+            text-decoration: none;
+        }
+
+        > a {
+            height: auto !important;
+            min-height: 140px;
+        }
+
+        .o_wslides_background_image {
+            min-height: 140px;
+        }
+    }
+
+    .o_wslides_home_main .row > [class*="col-"],
+    .o_wslides_home_main .row.mx-n2 > [class*="col-"] {
+        &:nth-child(5n + 1) .o_wslides_course_card {
+            background: var(--acd-yellow);
+        }
+
+        &:nth-child(5n + 2) .o_wslides_course_card {
+            background: var(--acd-cyan);
+        }
+
+        &:nth-child(5n + 3) .o_wslides_course_card {
+            background: var(--acd-pink);
+        }
+
+        &:nth-child(5n + 4) .o_wslides_course_card {
+            background: var(--acd-purple);
+        }
+
+        &:nth-child(5n + 5) .o_wslides_course_card {
+            background: var(--acd-green);
+        }
+    }
+
+    .o_wslides_course_sidebar {
+        background: var(--acd-white) !important;
+        border: 0 !important;
+        border-radius: 0 0 24px 24px;
+        box-shadow: 0 8px 24px rgba(0, 63, 89, 0.06);
+        color: var(--acd-navy);
+
+        table {
+            --bs-table-bg: transparent;
+            color: var(--acd-navy);
+        }
+
+        th {
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+        }
+
+        .btn-link,
+        .o_wslides_share {
+            color: var(--acd-pink);
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .o_wslides_course_pict,
+    .o_wslides_course_pict img {
+        border-radius: 16px;
+    }
+
+    .o_wslides_slides_list {
+        .o_wslides_slide_list_category_header {
+            background: var(--acd-navy) !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            color: var(--acd-cream) !important;
+            border-radius: 12px 12px 0 0;
+
+            a,
+            span,
+            h6,
+            .o_wslides_js_list_item {
+                color: var(--acd-cream) !important;
+            }
+        }
+
+        .o_wslides_slides_list_slide {
+            background: var(--acd-white);
+            border-color: rgba(0, 63, 89, 0.1) !important;
+
+            a {
+                color: var(--acd-navy);
+            }
+
+            &:hover {
+                background: var(--acd-canvas);
+            }
+        }
+    }
+
+    .o_wslides_lesson_header {
+        color: var(--acd-cream);
+
+        h2,
+        h2 a,
+        a {
+            color: var(--acd-cream) !important;
+        }
+    }
+
+    .o_wslides_lesson_aside_list,
+    .o_wslides_lesson_aside_doc {
+        background: var(--acd-white) !important;
+        border: 0 !important;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 63, 89, 0.06);
+        overflow: hidden;
+
+        .o_wslides_lesson_aside_list_link {
+            color: var(--acd-navy);
+        }
+
+        .active,
+        .bg-100.active {
+            background: var(--acd-pink) !important;
+            color: var(--acd-white) !important;
+        }
+    }
+
+    .o_wslides_wrap .progress-bar,
+    .o_wslides_course_main .progress-bar,
+    .o_wslides_lesson_main .progress-bar {
+        background-color: var(--acd-pink);
+    }
+}
+
+// Beat Odoo `#wrapwrap header .js_language_selector span { color: !important }`
+// which forces header-text-color onto every language label, including the menu.
+#wrapwrap.split-academia header {
+    .js_language_selector > .dropdown-toggle,
+    .js_language_selector > .dropdown-toggle span {
+        color: var(--acd-pink) !important;
+    }
+
+    .dropdown-menu {
+        background: var(--acd-white) !important;
+    }
+
+    .dropdown-item,
+    .dropdown-item span,
+    .js_language_selector .dropdown-menu span {
+        color: var(--acd-navy) !important;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus,
+    .dropdown-item.active,
+    .dropdown-item:hover span,
+    .dropdown-item:focus span,
+    .dropdown-item.active span {
+        background: var(--acd-pink) !important;
+        color: var(--acd-white) !important;
+    }
+}
+
+// Editor / Apps launcher lives outside #wrapwrap.
+body:has(#wrapwrap.split-academia) .o_frontend_to_backend_nav {
+    display: none !important;
+}

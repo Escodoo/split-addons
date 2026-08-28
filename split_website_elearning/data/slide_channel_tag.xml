@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="slide_channel_tag_group_type" model="slide.channel.tag.group">
+        <field name="name">Type</field>
+        <field name="sequence">5</field>
+        <field name="is_published" eval="True" />
+    </record>
+    <record id="slide_channel_tag_group_skill" model="slide.channel.tag.group">
+        <field name="name">Skill</field>
+        <field name="sequence">15</field>
+        <field name="is_published" eval="True" />
+    </record>
+    <record id="slide_channel_tag_group_language" model="slide.channel.tag.group">
+        <field name="name">Language</field>
+        <field name="sequence">16</field>
+        <field name="is_published" eval="True" />
+    </record>
+    <record id="slide_channel_tag_type_course" model="slide.channel.tag">
+        <field name="name">Course</field>
+        <field name="color">4</field>
+        <field name="sequence">10</field>
+        <field name="group_id" ref="slide_channel_tag_group_type" />
+    </record>
+    <record id="slide_channel_tag_type_workshop" model="slide.channel.tag">
+        <field name="name">Workshop</field>
+        <field name="color">2</field>
+        <field name="sequence">20</field>
+        <field name="group_id" ref="slide_channel_tag_group_type" />
+    </record>
+    <record id="slide_channel_tag_skill_photoshop" model="slide.channel.tag">
+        <field name="name">Adobe Photoshop</field>
+        <field name="color">8</field>
+        <field name="sequence">10</field>
+        <field name="group_id" ref="slide_channel_tag_group_skill" />
+    </record>
+    <record id="slide_channel_tag_skill_harmony" model="slide.channel.tag">
+        <field name="name">Toon Boom Harmony</field>
+        <field name="color">5</field>
+        <field name="sequence">20</field>
+        <field name="group_id" ref="slide_channel_tag_group_skill" />
+    </record>
+    <record id="slide_channel_tag_skill_sheets" model="slide.channel.tag">
+        <field name="name">Google Sheets</field>
+        <field name="color">3</field>
+        <field name="sequence">30</field>
+        <field name="group_id" ref="slide_channel_tag_group_skill" />
+    </record>
+    <record id="slide_channel_tag_language_portuguese" model="slide.channel.tag">
+        <field name="name">Portuguese</field>
+        <field name="color">10</field>
+        <field name="sequence">10</field>
+        <field name="group_id" ref="slide_channel_tag_group_language" />
+    </record>
+</odoo>

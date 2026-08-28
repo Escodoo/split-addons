@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="menu_about" model="website.menu">
+        <field name="name">About</field>
+        <field name="url">/about</field>
+        <field name="page_id" ref="page_about" />
+        <field name="sequence" type="int">30</field>
+        <field name="website_id" ref="website_academia" />
+        <field
+            name="parent_id"
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website_academia')),
+                ('parent_id', '=', False),
+            ], limit=1).id"
+        />
+    </record>
+    <record id="menu_educators" model="website.menu">
+        <field name="name">Educators</field>
+        <field name="url">/educators</field>
+        <field name="page_id" ref="page_educators" />
+        <field name="sequence" type="int">40</field>
+        <field name="website_id" ref="website_academia" />
+        <field
+            name="parent_id"
+            model="website.menu"
+            eval="obj().search([
+                ('website_id', '=', ref('website_academia')),
+                ('parent_id', '=', False),
+            ], limit=1).id"
+        />
+    </record>
+    <function model="website" name="_split_website_elearning_setup" />
+</odoo>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- The official studio site has no Odoo promotion in the copyright bar. -->
+    <template
+        id="hide_brand_promotion"
+        inherit_id="web.brand_promotion"
+        name="Hide Odoo brand promotion"
+        priority="99"
+    >
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace">
+            <div class="o_brand_promotion d-none" />
+        </xpath>
+    </template>
+    <!-- Official footer is a single pink bar. Hide Odoo's Useful links / About / Connect. -->
+    <template
+        id="hide_default_footer"
+        inherit_id="website.layout"
+        name="Hide default footer columns"
+        priority="15"
+    >
+        <xpath expr="//div[@id='footer']" position="attributes">
+            <attribute name="class" add="d-none" separator=" " />
+        </xpath>
+    </template>
+    <template
+        id="footer_newsletter"
+        inherit_id="website.layout"
+        name="Split footer newsletter"
+        priority="20"
+    >
+        <xpath expr="//div[@id='footer']" position="before">
+            <div class="split-footer-newsletter">
+                <h2 class="split-footer-newsletter-title">Sign up for our newsletter</h2>
+                <div class="s_website_form" data-vcss="001">
+                    <form
+                        action="/website/form/"
+                        method="post"
+                        enctype="multipart/form-data"
+                        class="o_mark_required split-footer-newsletter-form"
+                        data-mark="*"
+                        data-model_name="mailing.contact"
+                        data-success-mode="message"
+                    >
+                        <div
+                            class="s_website_form_rows split-footer-newsletter-fields s_col_no_bgcolor"
+                        >
+                            <div
+                                class="s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="char"
+                            >
+                                <label class="s_website_form_label" for="split_footer_name">
+                                    Name
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control s_website_form_input"
+                                    id="split_footer_name"
+                                    name="name"
+                                    required=""
+                                    placeholder="Name"
+                                />
+                            </div>
+                            <div
+                                class="s_website_form_field s_website_form_required s_website_form_model_required"
+                                data-type="email"
+                            >
+                                <label class="s_website_form_label" for="split_footer_email">
+                                    E-mail
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control s_website_form_input"
+                                    id="split_footer_email"
+                                    name="email"
+                                    required=""
+                                    placeholder="E-mail"
+                                />
+                            </div>
+                            <div class="split-footer-newsletter-submit">
+                                <a
+                                    href="#"
+                                    role="button"
+                                    class="split-footer-submit s_website_form_send"
+                                    aria-label="Subscribe"
+                                >
+                                    <i class="fa fa-arrow-right" />
+                                </a>
+                            </div>
+                            <div
+                                class="s_website_form_field s_website_form_dnone"
+                                data-type="char"
+                            >
+                                <input
+                                    type="hidden"
+                                    class="s_website_form_input"
+                                    name="list_ids"
+                                    t-att-value="request.env.ref('split_website.mailing_list_newsletter').id"
+                                />
+                            </div>
+                        </div>
+                        <span id="s_website_form_result" />
+                    </form>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <template
+        id="footer_mascot"
+        inherit_id="website.layout"
+        name="Split footer mascot"
+        priority="25"
+    >
+        <xpath expr="//span[hasclass('o_footer_copyright_name')]" position="replace">
+            <span class="o_footer_copyright_name">Copyright © Split Studio. All rights reserved.</span>
+        </xpath>
+        <xpath expr="//span[hasclass('o_footer_copyright_name')]" position="after">
+            <nav class="split-footer-languages" aria-label="Languages">
+                <t t-call="website.language_selector_inline">
+                    <t t-set="no_text" t-value="True" />
+                    <t t-set="codes" t-value="True" />
+                    <t t-set="_div_classes" t-value="'split-footer-language-selector'" />
+                </t>
+            </nav>
+        </xpath>
+        <xpath expr="//footer[@id='bottom']" position="inside">
+            <div class="split-footer-mascot" aria-hidden="true">
+                <video
+                    src="/split_website/static/src/video/footer_character_01.mp4"
+                    muted="muted"
+                    playsinline="playsinline"
+                    preload="metadata"
+                />
+            </div>
+            <nav class="split-footer-socials" aria-label="Social media">
+                <a
+                    t-if="website.social_facebook"
+                    t-att-href="website.social_facebook"
+                    target="_blank"
+                    rel="noopener"
+                    title="Facebook"
+                    aria-label="Facebook"
+                >
+                    <i class="fa fa-facebook" />
+                </a>
+                <a
+                    t-if="website.social_instagram"
+                    t-att-href="website.social_instagram"
+                    target="_blank"
+                    rel="noopener"
+                    title="Instagram"
+                    aria-label="Instagram"
+                >
+                    <i class="fa fa-instagram" />
+                </a>
+                <a
+                    t-if="website.social_linkedin"
+                    t-att-href="website.social_linkedin"
+                    target="_blank"
+                    rel="noopener"
+                    title="LinkedIn"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa fa-linkedin" />
+                </a>
+                <a
+                    href="https://vimeo.com/splitstudio"
+                    target="_blank"
+                    rel="noopener"
+                    title="Vimeo"
+                    aria-label="Vimeo"
+                >
+                    <i class="fa fa-vimeo" />
+                </a>
+                <a
+                    t-if="website.social_youtube"
+                    t-att-href="website.social_youtube"
+                    target="_blank"
+                    rel="noopener"
+                    title="YouTube"
+                    aria-label="YouTube"
+                >
+                    <i class="fa fa-youtube-play" />
+                </a>
+            </nav>
+        </xpath>
+    </template>
+</odoo>

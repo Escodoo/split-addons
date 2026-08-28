@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="homepage" model="ir.ui.view">
+        <field name="name">Split Academia - Home</field>
+        <field name="key">split_website_elearning.homepage</field>
+        <field name="type">qweb</field>
+        <field name="website_id" ref="website_academia" />
+        <field name="active" eval="True" />
+        <field name="arch" type="xml">
+            <t name="Homepage" t-name="website.homepage">
+                <t t-call="website.layout">
+                    <t t-set="pageName" t-value="'homepage'" />
+                    <t t-set="slug" t-value="request.env['ir.http']._slug" />
+                    <t
+                        t-set="featured"
+                        t-value="[
+                            (request.env.ref('split_website_elearning.slide_channel_rigs_harmony'), 'course', 'yellow'),
+                            (request.env.ref('split_website_elearning.slide_channel_production'), 'course', 'cyan'),
+                            (request.env.ref('split_website_elearning.slide_channel_backgrounds'), 'course', 'pink'),
+                            (request.env.ref('split_website_elearning.slide_channel_creative_writing'), 'course', 'purple'),
+                            (request.env.ref('split_website_elearning.slide_channel_visual_development'), 'workshop', 'green'),
+                            (request.env.ref('split_website_elearning.slide_channel_cutout_acting'), 'workshop', 'yellow'),
+                        ]"
+                    />
+                    <div id="wrap">
+                        <div
+                            id="oe_structure_split_website_elearning_home"
+                            class="oe_structure"
+                        >
+                            <section
+                                class="acd-hero-banner"
+                                data-name="Hero"
+                            >
+                                <img
+                                    src="/split_website_elearning/static/src/img/brand/hero_academia_day.jpg"
+                                    alt="Academia Day"
+                                />
+                            </section>
+                            <section class="acd-section" data-name="Intro">
+                                <div class="container text-center">
+                                    <!-- prettier-ignore -->
+                                    <h1>What <span class="acd-word acd-cyan">is</span> Split <span class="acd-word acd-pink">Academia?</span></h1>
+                                    <!-- prettier-ignore -->
+                                    <p class="acd-subtitle">More than a school, an educational experience.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-9">
+                                            <!-- prettier-ignore -->
+                                            <p>Welcome to one of the most promising programs in the Brazilian animation market. Split Academia is part of the <strong>Split Institute of Innovation</strong>, a Split Studio initiative to democratize access to art, animation and technology.</p>
+                                            <!-- prettier-ignore -->
+                                            <p>At <strong>Split Academia</strong> we believe education is more than technical learning: it is about creating meaningful experiences. We are a bridge between a childhood dream and a professional future.</p>
+                                            <p class="mb-0">
+                                                <a
+                                                    href="/about"
+                                                    class="btn btn-primary"
+                                                >Learn more</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section acd-section-cream"
+                                data-name="Courses"
+                            >
+                                <div class="container">
+                                    <!-- prettier-ignore -->
+                                    <h2 class="text-center">What do you want to <span class="acd-word acd-purple">learn</span>?</h2>
+                                    <!-- prettier-ignore -->
+                                    <p class="text-center mb-5">These are the courses students return to: the ones that teach and stay with them.</p>
+                                    <div class="row">
+                                        <t
+                                            t-foreach="featured"
+                                            t-as="item"
+                                        >
+                                            <div class="col-md-6 col-xl-4 mb-4">
+                                                <article
+                                                    t-attf-class="acd-card acd-card-#{item[2]}"
+                                                >
+                                                    <span
+                                                        t-if="item[1] == 'course'"
+                                                        class="acd-badge"
+                                                    >Course</span>
+                                                    <span
+                                                        t-else=""
+                                                        class="acd-badge"
+                                                    >Workshop</span>
+                                                    <img
+                                                        t-att-src="'/web/image/slide.channel/%s/image_1920' % item[0].id"
+                                                        t-att-alt="item[0].name"
+                                                    />
+                                                    <h3 t-out="item[0].name" />
+                                                    <a
+                                                        t-att-href="'/slides/%s' % slug(item[0])"
+                                                        class="acd-card-cta"
+                                                    >Learn more</a>
+                                                </article>
+                                            </div>
+                                        </t>
+                                    </div>
+                                    <p class="text-center mb-0">
+                                        <a
+                                            href="/slides"
+                                            class="btn btn-primary"
+                                        >See all courses</a>
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="acd-section" data-name="Community">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-8">
+                                            <h2>Our community</h2>
+                                            <!-- prettier-ignore -->
+                                            <p class="mb-0">Our Discord server is both a classroom tool and a community. It is a place for exchange and networking, and every member gets access to talks, workshops and exclusive free events.</p>
+                                        </div>
+                                        <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                                            <a
+                                                href="https://discord.com/invite/Xw7PyfEvjw"
+                                                class="btn btn-primary"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >Join our community</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section acd-section-ink"
+                                data-name="Educators teaser"
+                            >
+                                <div class="container text-center">
+                                    <h2>Those who teach, inspire.</h2>
+                                    <!-- prettier-ignore -->
+                                    <p class="mb-5">Meet the people behind Split Academia classes. Every educator is a recognized specialist in the animation market and passionate about sharing knowledge.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 col-md-4 col-lg mb-4">
+                                            <a
+                                                href="/educators#ana-maria"
+                                                class="acd-educator"
+                                            >
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/educators/ana_maria.jpg"
+                                                    alt="Ana Maria Sena"
+                                                />
+                                                <h3>Ana Maria Sena</h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg mb-4">
+                                            <a
+                                                href="/educators#beatriz-gondim"
+                                                class="acd-educator"
+                                            >
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/educators/beatriz_gondim.jpg"
+                                                    alt="Beatriz Gondim"
+                                                />
+                                                <h3>Beatriz Gondim</h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg mb-4">
+                                            <a
+                                                href="/educators#belisa-proenca"
+                                                class="acd-educator"
+                                            >
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/educators/belisa_proenca.jpg"
+                                                    alt="Belisa Proença"
+                                                />
+                                                <h3>Belisa Proença</h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg mb-4">
+                                            <a
+                                                href="/educators#bruno-antonio"
+                                                class="acd-educator"
+                                            >
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/educators/bruno_antonio.jpg"
+                                                    alt="Bruno Antonio"
+                                                />
+                                                <h3>Bruno Antonio</h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg mb-4">
+                                            <a
+                                                href="/educators#luiz-do-futuro"
+                                                class="acd-educator"
+                                            >
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/educators/luiz_do_futuro.png"
+                                                    alt="Luiz do Futuro"
+                                                />
+                                                <h3>Luiz do Futuro</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">
+                                        <a
+                                            href="/educators"
+                                            class="btn btn-secondary"
+                                        >Meet the educators</a>
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="acd-section" data-name="Testimonials">
+                                <div class="container">
+                                    <h2 class="text-center">What students say</h2>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-6 mb-4">
+                                            <blockquote class="acd-quote">
+                                                <!-- prettier-ignore -->
+                                                <p>"The Acting for animation – remote course is amazing! Complete, with very interesting materials and references. The classes, together with the exercises, were great to expand my knowledge and take my animation much further. What impressed me most was how kind everyone was, both the Split Academia team and the other students. I made friends in a supportive environment I never thought I would find."</p>
+                                                <footer>Murilo Carvalho</footer>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-lg-6 mb-4">
+                                            <blockquote class="acd-quote">
+                                                <!-- prettier-ignore -->
+                                                <p>"Taking the Acting for animation – remote course, there was a moment the switch flipped. Things I used to miss in animation started to stand out, and I also began to analyze, study and practice in a much more effective way than I imagined. This course gives you a solid base so you can keep learning."</p>
+                                                <footer>Lairo Carrijo</footer>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <blockquote class="acd-quote">
+                                                <!-- prettier-ignore -->
+                                                <p>"It was essential to improve my narrative skills, especially starting with character sheets. Professor Bruno's attentive guidance and the exchange with other writers enriched the experience a lot!"</p>
+                                                <footer>Juliana Almeida</footer>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <blockquote class="acd-quote">
+                                                <!-- prettier-ignore -->
+                                                <p>"I learned a lot. I only wish the Herald-style animation course had been longer, with more time for the exercises, but besides that it was very good. I improved a lot after it!"</p>
+                                                <footer>Heloisa Pinheiro</footer>
+                                            </blockquote>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <blockquote class="acd-quote">
+                                                <!-- prettier-ignore -->
+                                                <p>"The Herald-style animation course was fundamental for me, both as an animator and in my professional life. I learned a lot by doing the assignments and receiving feedback. The learning environment was very welcoming from the teacher, the students and Split Academia."</p>
+                                                <footer>Lucas Foresti</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section
+                                class="acd-section acd-section-cream"
+                                data-name="FAQ"
+                            >
+                                <div class="container">
+                                    <h2>Frequently asked questions</h2>
+                                    <div class="acd-faq">
+                                        <details open="open">
+                                            <summary>What is Split Academia?</summary>
+                                            <!-- prettier-ignore -->
+                                            <p>Split Academia is a training hub for animation, art and technology. It prepares young people and adults to work across the stages of animation production. The academy stands on three pillars: learning, culture and fostering talent.</p>
+                                            <!-- prettier-ignore -->
+                                            <p>Learning is the backbone: students take classes on script, storyboard, art, rigging, direction, production and animation. Classes are taught by working professionals. Besides live classes, Split Academia also produces video tutorials on an online teaching platform.</p>
+                                        </details>
+                                        <details>
+                                            <summary>Who teaches the classes?</summary>
+                                            <!-- prettier-ignore -->
+                                            <p class="o_translate_inline">Working artists and producers from the animation market. You can meet them on the <a href="/educators">Educators</a> page.</p>
+                                        </details>
+                                        <details>
+                                            <summary>How do I start?</summary>
+                                            <!-- prettier-ignore -->
+                                            <p class="o_translate_inline">Browse the <a href="/slides">courses</a> or write to us below about the next intake.</p>
+                                        </details>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="acd-section" data-name="Contact">
+                                <div class="container">
+                                    <div class="acd-contact">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                                <!-- prettier-ignore -->
+                                                <h2 class="acd-contact-title"><span>Shall we</span> <span class="acd-pink">talk?</span></h2>
+                                                <t
+                                                    t-call="split_website_elearning.contact_form"
+                                                />
+                                            </div>
+                                            <div class="col-lg-6 text-center">
+                                                <img
+                                                    src="/split_website_elearning/static/src/img/brand/brain.gif"
+                                                    class="acd-brain-lift"
+                                                    alt="Split Academia"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>
