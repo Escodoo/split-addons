@@ -64,6 +64,7 @@ class Website(models.Model):
         self._split_brand_academy_ranks()
         self._split_bind_academy_channels(academy)
         self._split_serve_academy_languages(academy)
+        self._split_show_academy_sign_in(academy)
         self._split_hide_studio_courses_menu()
         self._split_setup_academy_menus(academy)
         self._split_sync_academy_view_translations(academy)
@@ -161,6 +162,21 @@ class Website(models.Model):
         academy.write(
             {"language_ids": [(6, 0, langs.ids)], "default_lang_id": english.id}
         )
+
+    @api.model
+    def _split_show_academy_sign_in(self, academy):
+        """Keep Sign in on Academia when the studio site archives the generic view.
+
+        ``split_website`` writes ``active=False`` on ``portal.user_sign_in``
+        without a website-specific copy, so every website loses the public
+        login link. The user dropdown stays on, which is why logged-in
+        visitors still see their name.
+        """
+        view = academy.with_context(website_id=academy.id).viewref(
+            "portal.user_sign_in"
+        )
+        if view:
+            view.with_context(website_id=academy.id).write({"active": True})
 
     @api.model
     def _split_hide_studio_courses_menu(self):

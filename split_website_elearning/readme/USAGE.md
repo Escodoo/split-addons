@@ -6,8 +6,9 @@ the ``/slides`` catalog.
 In production, set the Academia website domain to
 ``https://splitacademia.com.br``.
 
-The public menu is Home, Courses, About, Educators and Contact. The
-studio website does not show a **Courses** menu.
+The public menu is Home, Courses, About, Educators and Contact. Visitors
+see **Sign in** in the header; after login the user name replaces it.
+The studio website does not show a **Courses** menu.
 
 Open **eLearning** to edit the Academy courses, lessons and tags.
 Every course includes an About lesson, a preview class, the official

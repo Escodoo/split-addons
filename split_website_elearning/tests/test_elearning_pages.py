@@ -269,6 +269,21 @@ class TestSplitWebsiteElearningPages(HttpCase):
             else:
                 self.assertGreater(len(raw), 80, name)
 
+    def test_academia_public_shows_sign_in(self):
+        body = self._open_academy("/").text
+        self.assertIn("split-academia", body)
+        self.assertIn("Sign in", body)
+        self.assertIn("/web/login", body)
+        self.assertNotIn("o_backend_user_dropdown_link", body)
+        self.assertNotIn("Administrator", body)
+        portuguese = self._academy().language_ids.filtered(
+            lambda lang: lang.code == "pt_BR"
+        )[:1]
+        self.assertTrue(portuguese, "Academia must serve Portuguese")
+        pt_body = self._open_academy(f"/{portuguese.url_code}").text
+        self.assertIn("Entrar", pt_body)
+        self.assertIn("/web/login", pt_body)
+
     def test_academia_hides_admin_chrome(self):
         self.authenticate("admin", "admin")
         body = self._open_academy("/").text

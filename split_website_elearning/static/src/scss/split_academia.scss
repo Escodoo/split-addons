@@ -91,6 +91,19 @@
             color: var(--acd-pink);
         }
 
+        .o_nav_link_btn,
+        a[href="/web/login"],
+        a[href^="/web/login"] {
+            border: 2px solid var(--acd-pink) !important;
+            border-radius: 999px;
+            color: var(--acd-pink) !important;
+            font-family: Arvo, "Times New Roman", serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            padding: 0.35rem 1.1rem !important;
+        }
+
         .o_wsale_my_cart,
         a[href^="tel:"],
         .header_phone,
