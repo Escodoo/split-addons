@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright 2026 Escodoo
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
-<odoo>
-    <data noupdate="1">
-        <record id="rule_splitstudio_lead_import_wizard_all" model="ir.rule">
-            <field name="name">splitstudio.lead.import.wizard: all users see all</field>
-            <field name="model_id" ref="model_splitstudio_lead_import_wizard"/>
-            <field name="domain_force">[(1, '=', 1)]</field>
-            <field name="groups" eval="[(4, ref('base.group_user'))]"/>
-        </record>
-    </data>
+<odoo noupdate="1">
+    <record id="rule_splitstudio_lead_import_wizard_all" model="ir.rule">
+        <field name="name">splitstudio.lead.import.wizard: all users see all</field>
+        <field name="model_id" ref="model_splitstudio_lead_import_wizard"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+    </record>
 </odoo>

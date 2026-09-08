@@ -15,9 +15,7 @@ class TestLeadImportFields(common.TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.team = cls.env["crm.team"].search(
-            [("use_leads", "=", True)], limit=1
-        )
+        cls.team = cls.env["crm.team"].search([("use_leads", "=", True)], limit=1)
         cls.br = cls.env["res.country"].search([("code", "=", "BR")], limit=1)
 
     def _build_csv(self, header, rows):
@@ -69,8 +67,11 @@ class TestLeadImportFields(common.TransactionCase):
         csv_bytes = self._build_csv(
             ["name", "email", "tag_ids"],
             [
-                {"name": "Tag Singular", "email": "singular@x.com",
-                 "tag_ids": "alpha, beta"},
+                {
+                    "name": "Tag Singular",
+                    "email": "singular@x.com",
+                    "tag_ids": "alpha, beta",
+                },
             ],
         )
         wiz = self._run_wizard(csv_bytes)
@@ -88,8 +89,7 @@ class TestLeadImportFields(common.TransactionCase):
             wiz = self._run_wizard(
                 self._build_csv(
                     ["name", "email", "priority"],
-                    [{"name": f"P {text}", "email": f"{text}@x.com",
-                      "priority": text}],
+                    [{"name": f"P {text}", "email": f"{text}@x.com", "priority": text}],
                 ),
                 name=f"Priority {text}",
             )
@@ -115,8 +115,7 @@ class TestLeadImportFields(common.TransactionCase):
             wiz = self._run_wizard(
                 self._build_csv(
                     ["name", "email", "priority"],
-                    [{"name": f"P {raw}", "email": f"p{raw}@x.com",
-                      "priority": raw}],
+                    [{"name": f"P {raw}", "email": f"p{raw}@x.com", "priority": raw}],
                 ),
                 name=f"Priority {raw}",
             )
@@ -133,8 +132,13 @@ class TestLeadImportFields(common.TransactionCase):
         wiz = self._run_wizard(
             self._build_csv(
                 ["name", "email", "description"],
-                [{"name": "Desc Test", "email": "desc@x.com",
-                  "description": description_text}],
+                [
+                    {
+                        "name": "Desc Test",
+                        "email": "desc@x.com",
+                        "description": description_text,
+                    }
+                ],
             ),
             name="Description Test",
         )
@@ -146,8 +150,7 @@ class TestLeadImportFields(common.TransactionCase):
         # crm.lead.description is rendered as HTML, so it is wrapped in <p>.
         self.assertIn(description_text, lead.description)
         notes = lead.message_ids.filtered(
-            lambda m: m.subtype_id
-            and "note" in (m.subtype_id.name or "").lower()
+            lambda m: m.subtype_id and "note" in (m.subtype_id.name or "").lower()
         )
         self.assertTrue(
             notes,
@@ -160,20 +163,20 @@ class TestLeadImportFields(common.TransactionCase):
             self._build_csv(
                 ["name", "email", "country_id"],
                 [
-                    {"name": "ByCode", "email": "bycode@x.com",
-                     "country_id": "BR"},
-                    {"name": "ByName", "email": "byname@x.com",
-                     "country_id": "United States"},
+                    {"name": "ByCode", "email": "bycode@x.com", "country_id": "BR"},
+                    {
+                        "name": "ByName",
+                        "email": "byname@x.com",
+                        "country_id": "United States",
+                    },
                 ],
             ),
             name="Country Test",
         )
-        by_code = wiz.line_ids.filtered(lambda l: l.name == "ByCode")
-        by_name = wiz.line_ids.filtered(lambda l: l.name == "ByName")
+        by_code = wiz.line_ids.filtered(lambda line: line.name == "ByCode")
+        by_name = wiz.line_ids.filtered(lambda line: line.name == "ByName")
         self.assertEqual(by_code.country_id, self.br)
-        us = self.env["res.country"].search(
-            [("code", "=", "US")], limit=1
-        )
+        us = self.env["res.country"].search([("code", "=", "US")], limit=1)
         self.assertEqual(by_name.country_id, us)
 
     def test_07_website_city_country_create(self):
@@ -182,13 +185,15 @@ class TestLeadImportFields(common.TransactionCase):
         wiz = self._run_wizard(
             self._build_csv(
                 ["name", "email", "website", "city", "country_id"],
-                [{
-                    "name": "Site City Lead",
-                    "email": "sc@x.com",
-                    "website": "https://example.com",
-                    "city": "Sao Paulo",
-                    "country_id": "BR",
-                }],
+                [
+                    {
+                        "name": "Site City Lead",
+                        "email": "sc@x.com",
+                        "website": "https://example.com",
+                        "city": "Sao Paulo",
+                        "country_id": "BR",
+                    }
+                ],
             ),
             name="Site City Test",
         )
@@ -198,9 +203,7 @@ class TestLeadImportFields(common.TransactionCase):
         self.assertEqual(line.country_id, self.br)
         line.write({"import_line": True})
         wiz.action_import_leads()
-        lead = self.env["crm.lead"].search(
-            [("name", "=", "Site City Lead")]
-        )
+        lead = self.env["crm.lead"].search([("name", "=", "Site City Lead")])
         self.assertEqual(lead.website, "https://example.com")
         self.assertEqual(lead.city, "Sao Paulo")
         self.assertEqual(lead.country_id, self.br)
@@ -210,19 +213,19 @@ class TestLeadImportFields(common.TransactionCase):
     def test_08_campaign_auto_create(self):
         """A campaign that does not exist is created on the fly."""
         unique_name = "Auto Campaign Unit Test"
-        existing = self.env["utm.campaign"].search(
-            [("name", "=", unique_name)]
-        )
+        existing = self.env["utm.campaign"].search([("name", "=", unique_name)])
         if existing:
             existing.unlink()
         wiz = self._run_wizard(
             self._build_csv(
                 ["name", "email", "campaign_id"],
-                [{
-                    "name": "Auto Campaign Lead",
-                    "email": "auto_camp@x.com",
-                    "campaign_id": unique_name,
-                }],
+                [
+                    {
+                        "name": "Auto Campaign Lead",
+                        "email": "auto_camp@x.com",
+                        "campaign_id": unique_name,
+                    }
+                ],
             ),
             name="Auto Campaign Test",
         )
@@ -234,16 +237,17 @@ class TestLeadImportFields(common.TransactionCase):
     def test_09_duplicate_detection_email(self):
         """An email that already exists in crm.lead flags the row."""
         self.env["crm.lead"].create(
-            {"name": "Dup Probe", "email_from": "dup_probe@x.com",
-             "type": "lead"}
+            {"name": "Dup Probe", "email_from": "dup_probe@x.com", "type": "lead"}
         )
         wiz = self._run_wizard(
             self._build_csv(
                 ["name", "email"],
-                [{
-                    "name": "Dup Probe 2",
-                    "email": "dup_probe@x.com",
-                }],
+                [
+                    {
+                        "name": "Dup Probe 2",
+                        "email": "dup_probe@x.com",
+                    }
+                ],
             ),
             name="Dup Test",
         )

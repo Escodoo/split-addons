@@ -46,8 +46,9 @@ class LeadImportWizard(models.Model):
                         team=wiz.team_id.display_name,
                     )
                 )
+
     file_data = fields.Binary(string="CSV File", required=True)
-    file_name = fields.Char(string="File Name")
+    file_name = fields.Char()
     state = fields.Selection(
         [
             ("draft", "Draft"),
@@ -64,7 +65,6 @@ class LeadImportWizard(models.Model):
         string="Import Lines",
     )
     duplicate_count = fields.Integer(
-        string="Duplicate Count",
         compute="_compute_duplicate_count",
     )
 
@@ -123,12 +123,16 @@ class LeadImportWizard(models.Model):
                     )
                     if child:
                         actual = child.child_ids.filtered(
-                            lambda c: c.name and c.name.lower() == contact_name_clean.lower()
+                            lambda c: (
+                                c.name and c.name.lower() == contact_name_clean.lower()
+                            )
                         )[:1]
                         person = actual or child
             if person:
-                company = person.parent_id if person.parent_id else (
-                    person if person.is_company else Partner
+                company = (
+                    person.parent_id
+                    if person.parent_id
+                    else (person if person.is_company else Partner)
                 )
         elif partner_name_clean:
             company = Partner.search(
@@ -208,7 +212,7 @@ class LeadImportWizard(models.Model):
 
     def _read_rows_from_xlsx(self, file_content):
         try:
-            import openpyxl  # noqa: PLC0415
+            import openpyxl
         except ImportError as err:
             raise UserError(
                 _(
@@ -216,18 +220,28 @@ class LeadImportWizard(models.Model):
                     "Please contact your administrator."
                 )
             ) from err
-        workbook = openpyxl.load_workbook(io.BytesIO(file_content), data_only=True, read_only=True)
+        workbook = openpyxl.load_workbook(
+            io.BytesIO(file_content), data_only=True, read_only=True
+        )
         worksheet = workbook.active
         rows = worksheet.iter_rows(values_only=True)
         try:
-            header = [str(cell).strip() if cell is not None else "" for cell in next(rows)]
+            header = [
+                str(cell).strip() if cell is not None else "" for cell in next(rows)
+            ]
         except StopIteration:
             return [], []
         records = []
         for row in rows:
             if row is None or all(cell is None or cell == "" for cell in row):
                 continue
-            records.append({header[i]: ("" if value is None else value) for i, value in enumerate(row) if i < len(header)})
+            records.append(
+                {
+                    header[i]: ("" if value is None else value)
+                    for i, value in enumerate(row)
+                    if i < len(header)
+                }
+            )
         return header, records
 
     def _decode_csv_bytes(self, file_content):
@@ -235,19 +249,19 @@ class LeadImportWizard(models.Model):
             return ""
         if file_content.startswith(b"\xef\xbb\xbf"):
             return file_content[3:].decode("utf-8")
-        if file_content.startswith(b"\xff\xfe") or file_content.startswith(b"\xfe\xff"):
+        if file_content.startswith((b"\xff\xfe", b"\xfe\xff")):
             return file_content.decode("utf-16")
         if b"\x00" in file_content:
             try:
                 return file_content.decode("utf-16")
             except UnicodeDecodeError:
-                pass
+                _logger.info("utf-16 decode failed, falling back to utf-8")
         try:
             return file_content.decode("utf-8")
         except UnicodeDecodeError:
             return file_content.decode("latin1")
 
-    def action_parse_and_check(self):
+    def action_parse_and_check(self):  # noqa: C901
         self.ensure_one()
         if not self.file_data:
             raise UserError(_("Please upload a file before checking."))
@@ -264,8 +278,8 @@ class LeadImportWizard(models.Model):
                 if "\x00" in decoded_file:
                     raise UserError(
                         _(
-                            "Could not parse CSV file '%(name)s': it contains NUL bytes. "
-                            "Please re-save it as UTF-8 (e.g. in Excel: 'Save As > CSV UTF-8').",
+                            "Could not parse CSV file '%(name)s': NUL bytes. "
+                            "Please re-save it as UTF-8.",
                             name=file_name,
                         )
                     )
@@ -274,8 +288,12 @@ class LeadImportWizard(models.Model):
             raise
         except Exception as e:
             raise UserError(
-                _("Could not parse file '%(name)s': %(error)s", name=self.file_name or "", error=e)
-            )
+                _(
+                    "Could not parse file '%(name)s': %(error)s",
+                    name=self.file_name or "",
+                    error=e,
+                )
+            ) from e
 
         # Clear existing lines
         self.line_ids.unlink()
@@ -420,7 +438,9 @@ class LeadImportWizard(models.Model):
                     )
 
             if partner_name_clean:
-                existing_leads_comp = self.env["crm.lead"].search(domain_company, limit=1)
+                existing_leads_comp = self.env["crm.lead"].search(
+                    domain_company, limit=1
+                )
                 if existing_leads_comp:
                     is_dup = True
                     duplicate_reasons.append(
@@ -436,7 +456,9 @@ class LeadImportWizard(models.Model):
                 duplicate_reasons.append(
                     _("Contact exists in Partner: %s") % resolved_person.display_name
                 )
-            if resolved_company and (not resolved_person or resolved_person != resolved_company):
+            if resolved_company and (
+                not resolved_person or resolved_person != resolved_company
+            ):
                 is_dup = True
                 duplicate_reasons.append(
                     _("Company exists in Partner: %s") % resolved_company.display_name
@@ -494,7 +516,9 @@ class LeadImportWizard(models.Model):
                     "duplicate_reason": reason_str,
                     "import_line": True,
                     "partner_id": resolved_person.id if resolved_person else False,
-                    "partner_company_id": resolved_company.id if resolved_company else False,
+                    "partner_company_id": resolved_company.id
+                    if resolved_company
+                    else False,
                     "campaign_id": campaign_record.id if campaign_record else False,
                     "tag_ids": [(6, 0, resolved_tags.ids)] if resolved_tags else False,
                     "tag_names": tag_names,
@@ -532,19 +556,10 @@ class LeadImportWizard(models.Model):
             if not partner_id:
                 active_id = self.env.context.get("active_id")
                 if active_id:
-                    partner_id = (
-                        self.env["crm.lead"].browse(active_id).partner_id.id
-                    )
+                    partner_id = self.env["crm.lead"].browse(active_id).partner_id.id
             new_wiz = self.create({"state": "preview"})
             if partner_id:
                 partner = self.env["res.partner"].browse(partner_id)
-                existing_opps = self.env["crm.lead"].search(
-                    [
-                        ("partner_id", "=", partner.id),
-                        ("type", "=", "opportunity"),
-                        ("probability", "<", 100),
-                    ]
-                )
                 company = (
                     partner.parent_id
                     if partner.parent_id
@@ -648,13 +663,13 @@ class LeadImportLine(models.Model):
         ondelete="cascade",
     )
     name = fields.Char(string="Opportunity / Lead Name")
-    contact_name = fields.Char(string="Contact Name")
-    email = fields.Char(string="Email")
-    partner_name = fields.Char(string="Company Name")
-    phone = fields.Char(string="Phone")
-    is_duplicate = fields.Boolean(string="Duplicate?")
-    duplicate_reason = fields.Char(string="Duplicate Reason")
-    import_line = fields.Boolean(string="Import?", default=True)
+    contact_name = fields.Char()
+    email = fields.Char()
+    partner_name = fields.Char()
+    phone = fields.Char()
+    is_duplicate = fields.Boolean()
+    duplicate_reason = fields.Char()
+    import_line = fields.Boolean(default=True)
     partner_id = fields.Many2one(
         "res.partner",
         string="Existing Contact",
@@ -709,14 +724,8 @@ class LeadImportLine(models.Model):
         string="Tags",
         readonly=True,
     )
-    tag_names = fields.Char(
-        string="Tag Names",
-        readonly=True,
-    )
-    description = fields.Text(
-        string="Description",
-        readonly=True,
-    )
+    tag_names = fields.Char(readonly=True)
+    description = fields.Text(readonly=True)
     priority = fields.Selection(
         [
             ("0", "Low"),
@@ -724,20 +733,12 @@ class LeadImportLine(models.Model):
             ("2", "High"),
             ("3", "Very High"),
         ],
-        string="Priority",
         readonly=True,
     )
-    website = fields.Char(
-        string="Website",
-        readonly=True,
-    )
-    city = fields.Char(
-        string="City",
-        readonly=True,
-    )
+    website = fields.Char(readonly=True)
+    city = fields.Char(readonly=True)
     country_id = fields.Many2one(
         "res.country",
-        string="Country",
         readonly=True,
     )
 
@@ -759,7 +760,9 @@ class LeadImportLine(models.Model):
                 )
             line.opportunity_count = len(opps)
             line.opportunity_ids = opps
-            line.opportunity_summary = self._format_pipeline_summary(opps, kind="opportunity")
+            line.opportunity_summary = self._format_pipeline_summary(
+                opps, kind="opportunity"
+            )
             line.lead_count = len(leads)
             line.lead_record_ids = leads
             line.lead_summary = self._format_pipeline_summary(leads, kind="lead")
@@ -780,7 +783,11 @@ class LeadImportLine(models.Model):
         )
         name_matches = [("partner_name", "=ilike", partner.name)]
         if company and company.name and company.name != partner.name:
-            name_matches = ["|", *name_matches, ("partner_name", "=ilike", company.name)]
+            name_matches = [
+                "|",
+                *name_matches,
+                ("partner_name", "=ilike", company.name),
+            ]
         domain = [
             "&",
             "|",
@@ -803,25 +810,22 @@ class LeadImportLine(models.Model):
             stage = rec.stage_id.name if rec.stage_id else ""
             if kind == "opportunity":
                 revenue = (
-                    "{:,.2f}".format(rec.expected_revenue).replace(",", "X").replace(".", ",").replace("X", ".")
+                    f"{rec.expected_revenue:,.2f}".replace(",", "X")
+                    .replace(".", ",")
+                    .replace("X", ".")
                     if rec.expected_revenue
                     else "0,00"
                 )
                 items.append(
-                    f"<li><strong>{rec.name}</strong> &mdash; {stage} &mdash; R$ {revenue}</li>"
+                    f"<li><strong>{rec.name}</strong> &mdash; {stage} "
+                    f"&mdash; R$ {revenue}</li>"
                 )
             else:
-                items.append(
-                    f"<li><strong>{rec.name}</strong> &mdash; {stage}</li>"
-                )
-        return (
-            "<ul style='margin:0; padding-left:1em;'>"
-            + "".join(items)
-            + "</ul>"
-        )
+                items.append(f"<li><strong>{rec.name}</strong> &mdash; {stage}</li>")
+        return "<ul style='margin:0; padding-left:1em;'>" + "".join(items) + "</ul>"
 
     def action_view_opportunities(self):
-        """Open the open opportunities of the matched partner as a read-only
+        """Open the matched partner's open opportunities as a read-only
         pop-up on top of the wizard (3rd layer).
 
         The user closes the pop-up with the X / Esc to fall back to the

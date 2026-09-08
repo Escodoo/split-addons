@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 {
     "name": "SplitStudio Lead Import",
-    "summary": "Wizard for importing leads with duplicate check on email, name, and company name.",
+    "summary": "Import leads from XLSX/CSV with duplicate check.",
     "version": "18.0.1.0.0",
     "category": "CRM",
     "author": "Escodoo",

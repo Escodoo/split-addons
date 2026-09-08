@@ -4,8 +4,13 @@
 #   "\\wsl.localhost\Ubuntu\home\polloskki\~projetos\odoo-doodba\devel.yaml"
 #   exec -T odoo odoo shell -d splitstudio --no-http --log-level=warn
 
-Lead = env["crm.lead"]
-Partner = env["res.partner"]
+# ruff: noqa: F821  # `env` is provided by `odoo shell`.
+import logging
+
+_logger = logging.getLogger(__name__)
+
+Lead = env["crm.lead"]  # noqa: F821
+Partner = env["res.partner"]  # noqa: F821
 
 orphans = Lead.search(
     [
@@ -16,27 +21,27 @@ orphans = Lead.search(
         ("active", "=", False),
     ]
 )
-print(f"Found {len(orphans)} orphan opportunities")
+_logger.info("Found %s orphan opportunities", len(orphans))
 
 linked = 0
 for opp in orphans:
-    # Prefer contact_name (the person) over partner_name (the company).
-    # Most leads with partner_id IS NULL have a contact_name set even when
-    # partner_name is just a free-text label.
     target_name = opp.contact_name or opp.partner_name
     if not target_name:
-        print(f"  Skipped opp {opp.id} (no contact_name / partner_name)")
+        _logger.info("Skipped opp %s (no contact_name / partner_name)", opp.id)
         continue
     partner = Partner.search([("name", "=ilike", target_name)], limit=1)
     if partner:
         opp.write({"partner_id": partner.id})
         linked += 1
-        print(
-            f"  Linked opp {opp.id} ({opp.name!r}) -> partner "
-            f"{partner.id} ({partner.display_name!r})"
+        _logger.info(
+            "Linked opp %s (%r) -> partner %s (%r)",
+            opp.id,
+            opp.name,
+            partner.id,
+            partner.display_name,
         )
     else:
-        print(f"  No match for opp {opp.id} (target_name={target_name!r})")
+        _logger.info("No match for opp %s (target_name=%r)", opp.id, target_name)
 
-env.cr.commit()
-print(f"\nDone. Linked {linked} of {len(orphans)} orphans.")
+env.cr.commit()  # noqa: F821
+_logger.info("Done. Linked %s of %s orphans.", linked, len(orphans))

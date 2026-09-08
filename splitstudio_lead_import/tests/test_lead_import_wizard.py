@@ -2,11 +2,11 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import base64
+
 from odoo.tests import common
 
 
 class TestLeadImportWizard(common.TransactionCase):
-
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -34,9 +34,7 @@ class TestLeadImportWizard(common.TransactionCase):
         )
         file_base64 = base64.b64encode(csv_data.encode("utf-8"))
 
-        team = self.env["crm.team"].search(
-            [("use_leads", "=", True)], limit=1
-        )
+        team = self.env["crm.team"].search([("use_leads", "=", True)], limit=1)
         wizard = self.env["splitstudio.lead.import.wizard"].create(
             {
                 "file_data": file_base64,
