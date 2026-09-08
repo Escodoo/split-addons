@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2026 Escodoo
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -7,28 +7,36 @@
         <field name="model">splitstudio.lead.import.wizard</field>
         <field name="arch" type="xml">
             <list>
-                <field name="name"/>
-                <field name="user_id" widget="many2one_avatar_user"/>
-                <field name="state" widget="badge"
-                       decoration-info="state == 'draft'"
-                       decoration-warning="state == 'preview'"
-                       decoration-success="state == 'done'"/>
-                <field name="file_name" optional="show"/>
-                <field name="create_date" optional="show"/>
+                <field name="name" />
+                <field name="user_id" widget="many2one_avatar_user" />
+                <field
+          name="state"
+          widget="badge"
+          decoration-info="state == 'draft'"
+          decoration-warning="state == 'preview'"
+          decoration-success="state == 'done'"
+        />
+                <field name="file_name" optional="show" />
+                <field name="create_date" optional="show" />
             </list>
         </field>
     </record>
 
-    <record id="action_splitstudio_lead_import_sessions" model="ir.actions.act_window">
+    <record
+    id="action_splitstudio_lead_import_sessions"
+    model="ir.actions.act_window"
+  >
         <field name="name">Import Sessions</field>
         <field name="res_model">splitstudio.lead.import.wizard</field>
         <field name="view_mode">list,form</field>
         <field name="target">current</field>
     </record>
 
-    <menuitem id="menu_splitstudio_lead_import_sessions"
-              name="Import Sessions"
-              parent="crm.crm_menu_root"
-              action="action_splitstudio_lead_import_sessions"
-              sequence="31"/>
+    <menuitem
+    id="menu_splitstudio_lead_import_sessions"
+    name="Import Sessions"
+    parent="crm.crm_menu_root"
+    action="action_splitstudio_lead_import_sessions"
+    sequence="31"
+  />
 </odoo>

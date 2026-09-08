@@ -1,14 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright 2026 Escodoo
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <record id="view_crm_lead2opportunity_partner_inherit_team" model="ir.ui.view">
-        <field name="name">crm.lead2opportunity.partner.form.inherit.team</field>
+    <record
+    id="view_crm_lead2opportunity_partner_inherit_team"
+    model="ir.ui.view"
+  >
+        <field
+      name="name"
+    >crm.lead2opportunity.partner.form.inherit.team</field>
         <field name="model">crm.lead2opportunity.partner</field>
-        <field name="inherit_id" ref="crm.view_crm_lead2opportunity_partner"/>
+        <field name="inherit_id" ref="crm.view_crm_lead2opportunity_partner" />
         <field name="arch" type="xml">
             <field name="team_id" position="attributes">
-                <attribute name="domain">[("use_opportunities", "=", True)]</attribute>
+                <attribute
+          name="domain"
+        >[("use_opportunities", "=", True)]</attribute>
             </field>
         </field>
     </record>
