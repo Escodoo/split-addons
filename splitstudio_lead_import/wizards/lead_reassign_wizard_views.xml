@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Escodoo
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="action_open_reassign_wizard_from_lead" model="ir.actions.server">
+        <field name="name">Move to another pipeline</field>
+        <field name="model_id" ref="crm.model_crm_lead" />
+        <field name="state">code</field>
+        <field
+            name="code"
+        ><![CDATA[
+action = env['crm.lead.reassign.wizard'].with_context(env.context).action_open_reassign_wizard()
+]]></field>
+    </record>
+
+    <record id="view_crm_lead_reassign_wizard_form" model="ir.ui.view">
+        <field name="name">crm.lead.reassign.wizard.form</field>
+        <field name="model">crm.lead.reassign.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Move to another pipeline">
+                <group>
+                    <field name="lead_id" readonly="1" />
+                    <field name="new_team_id" options="{'no_create_edit': True}" />
+                    <field
+                        name="note"
+                        placeholder="Optional: why is this lead/opportunity being moved?"
+                    />
+                </group>
+                <footer>
+                    <button
+                        name="action_reassign"
+                        string="Move"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

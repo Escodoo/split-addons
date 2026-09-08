@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Escodoo
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_crm_lead_form_inherit_readonly_for_wizard" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.readonly.for.wizard</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <header position="attributes">
+                <attribute
+                    name="invisible"
+                >context.get('splitstudio_lead_import_wizard_id')</attribute>
+            </header>
+            <header position="inside">
+                <button
+                    name="%(splitstudio_lead_import.action_open_reassign_wizard_from_lead)d"
+                    string="Move to another pipeline"
+                    type="action"
+                    class="btn-secondary"
+                    invisible="not id or context.get('splitstudio_lead_import_wizard_id')"
+                />
+            </header>
+        </field>
+    </record>
+
+    <record id="view_crm_lead_form_inherit_team_lock" model="ir.ui.view">
+        <field name="name">crm.lead.form.inherit.team.lock</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <field name="team_id" position="attributes">
+                <attribute name="readonly">True</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_crm_lead_tree_inherit_readonly_for_wizard" model="ir.ui.view">
+        <field name="name">crm.lead.tree.inherit.readonly.for.wizard</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_tree_view_oppor" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//button[@name='action_reschedule_meeting']"
+                position="attributes"
+            >
+                <attribute name="invisible">True</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_snooze']" position="attributes">
+                <attribute name="invisible">True</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
