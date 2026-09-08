@@ -16,7 +16,6 @@
     },
     "data": [
         "security/ir.model.access.csv",
-        "security/import_sessions_rule.xml",
         "wizards/lead_reassign_wizard_views.xml",
         "wizards/lead_import_wizard_views.xml",
         "views/wizard_list.xml",
