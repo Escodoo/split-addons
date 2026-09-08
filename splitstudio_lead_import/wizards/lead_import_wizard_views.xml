@@ -52,12 +52,14 @@
                         />
                     </group>
                     <field name="state" invisible="1" />
+                    <!-- state machine driving section visibility -->
                     <div invisible="state != 'draft'">
                         <p class="oe_grey">
                             Upload an XLSX or CSV file containing lead records. Required columns: oportunidade (or opportunity / name), contact_name, email (or email_from), partner_name, phone. Optional: campaign (auto-created), tags (auto-created), description (chatter note), priority (Low/Medium/High/Very High or 0/1/2/3), website, city, country_id (ISO code or name). The first row is the header.
                         </p>
                         <group>
                             <field name="file_name" invisible="1" />
+                            <!-- binary field carrier for file_data upload widget -->
                             <field name="file_data" filename="file_name" required="1" />
                         </group>
                     </div>
