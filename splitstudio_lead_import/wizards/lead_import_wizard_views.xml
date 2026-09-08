@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 Escodoo
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="view_splitstudio_lead_import_wizard_form" model="ir.ui.view">
+        <field name="name">splitstudio.lead.import.wizard.form</field>
+        <field name="model">splitstudio.lead.import.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import Leads with Duplicate Check">
+                <header>
+                    <button name="action_parse_and_check"
+                            string="Check Duplicates &amp; Preview"
+                            type="object"
+                            class="btn-primary"
+                            invisible="state != 'draft'"/>
+                    <button name="action_import_leads"
+                            string="Confirm Import"
+                            type="object"
+                            class="btn-primary"
+                            invisible="state != 'preview'"/>
+                    <button name="action_discard"
+                            string="Discard"
+                            type="object"
+                            class="btn-secondary"
+                            confirm="Are you sure you want to discard this import? All preview data will be permanently deleted."
+                            invisible="state == 'done'"/>
+                    <button string="Close"
+                            class="btn-secondary"
+                            special="cancel"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,preview,done"/>
+                </header>
+                <sheet>
+                        <group>
+                            <field name="name" placeholder="e.g. Licensing Expo 2026 — Leads"/>
+                            <field name="user_id" readonly="1"/>
+                            <field name="team_id" widget="selection" required="1" placeholder="Choose the pipeline to import into"/>
+                        </group>
+                    <field name="state" invisible="1"/>
+                    <div invisible="state != 'draft'">
+                        <p class="oe_grey">
+                            Upload an <b>XLSX</b> or <b>CSV</b> file containing lead records. Columns expected: <b>oportunidade</b> or <i>opportunity</i> (or <i>name</i>/Nome — name of the lead/opportunity to be created), <b>contact_name</b> (or Contato — person name used to match <i>res.partner</i>), <b>partner_name</b> (or Empresa — company), <b>email</b> or <i>email_from</i> (or E-mail), <b>phone</b> (or Telefone), <b>campaign</b> or <i>campaign_id</i> (or Campanha — campaigns that do not exist are created automatically), <b>tags</b> or <i>tag_ids</i> (or Etiquetas — comma- or semicolon-separated; tags that do not exist are created automatically), optional <b>description</b> (or Anotações internas — posted as a chatter note on the new lead), optional <b>priority</b> (or Prioridade — Low/Medium/High/Very High or 0/1/2/3), optional <b>website</b> (or Site — written to the lead's Website field), optional <b>city</b> (or Cidade — written to the lead's City field), and optional <b>country_id</b> (or country/País — resolved by ISO code like <code>US</code> or <code>BR</code>, or by name). The first row is treated as the header.
+                        </p>
+                        <group>
+                            <field name="file_name" invisible="1"/>
+                            <field name="file_data" filename="file_name" required="1"/>
+                        </group>
+                    </div>
+
+                    <div invisible="state != 'preview'">
+                        <div class="alert alert-warning" role="alert" invisible="duplicate_count == 0">
+                            <b>Warning:</b> <field name="duplicate_count" readonly="1" class="oe_inline"/> potential duplicate(s) detected based on email, name, or company name! Review before importing.
+                        </div>
+                        <div class="alert alert-info" role="alert" invisible="duplicate_count > 0">
+                            No duplicates detected in the database. You are good to import!
+                        </div>
+                        <separator string="Import Preview &amp; Duplicate Check"/>
+                        <p class="oe_grey">
+                            Click the <b>list icon</b> on a row with open opportunities to view them in a read-only pop-up on top of this wizard. Close the pop-up with the X to return here.
+                        </p>
+                        <field name="line_ids">
+                            <list editable="bottom" decoration-danger="is_duplicate">
+                                <field name="import_line" widget="boolean_toggle"/>
+                                <field name="opportunity_count" string="Open Opps" widget="integer"/>
+                                <button name="action_view_opportunities"
+                                        type="object"
+                                        icon="fa-list"
+                                        title="View open opportunities for this contact (read-only)"
+                                        invisible="opportunity_count == 0"/>
+                                <field name="lead_count" string="Open Leads" widget="integer"/>
+                                <button name="action_view_leads"
+                                        type="object"
+                                        icon="fa-list"
+                                        title="View open leads for this contact (read-only)"
+                                        invisible="lead_count == 0"/>
+                                <field name="contact_name"/>
+                                <field name="email"/>
+                                <field name="partner_name"/>
+                                <field name="phone"/>
+                                <field name="campaign_id" optional="show" widget="many2one"/>
+                                <field name="tag_ids" optional="show" widget="many2many_tags"/>
+                                <field name="partner_id" optional="show" widget="many2one"/>
+                                <field name="partner_company_id" optional="show" widget="many2one"/>
+                                <field name="website" optional="hide"/>
+                                <field name="city" optional="hide"/>
+                                <field name="country_id" optional="hide" widget="many2one"/>
+                                <field name="description" optional="hide"/>
+                                <field name="priority" optional="hide" widget="priority"/>
+                                <field name="is_duplicate"/>
+                                <field name="duplicate_reason"/>
+                            </list>
+                        </field>
+                    </div>
+
+                    <div invisible="state != 'done'">
+                        <div class="alert alert-success" role="alert">
+                            Leads successfully imported!
+                        </div>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
