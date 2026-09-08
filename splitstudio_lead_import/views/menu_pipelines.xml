@@ -2,16 +2,15 @@
 <!-- Copyright 2026 Escodoo
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <!-- Override the core CRM "Leads" action to fix the broken
-         default_team_id=4 reference (the original team_id 4 no longer
-         exists; the user's teams are 11, 12, 13, 14). Clear the broken
-         filter so the kanban loads without TypeError. -->
-    <record id="crm.crm_lead_all_leads" model="ir.actions.act_window">
-        <field
-            name="context"
-        >{"default_type": "lead", "search_default_type": "lead"}</field>
-    </record>
-
+    <!-- Rename the core CRM "Leads" top-menu to "Pipelines" so the
+         splitstudio_lead_import wizard grouping matches the user's
+         mental model. The crm.crm_lead_all_leads action context is
+         intentionally NOT overridden here: split_crm_custom already
+         sets default_team_id=ref('crm_team_intake') on that action
+         and overwriting it here would erase the Intake-team binding
+         (regression caught by
+         split_crm_custom.tests.test_crm_leads_menu
+         .test_leads_action_uses_intake_team). -->
     <record id="crm.crm_menu_leads" model="ir.ui.menu">
         <field name="name">Pipelines</field>
     </record>
