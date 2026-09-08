@@ -681,11 +681,11 @@ class LeadImportLine(models.Model):
         readonly=True,
     )
     opportunity_count = fields.Integer(
-        string="Open Opportunities Count",
+        string="Matching Opportunities",
         compute="_compute_pipeline_count",
     )
     opportunity_summary = fields.Html(
-        string="Open Opportunities Summary",
+        string="Opportunities Summary",
         compute="_compute_pipeline_count",
         sanitize=False,
     )
@@ -694,15 +694,15 @@ class LeadImportLine(models.Model):
         "splitstudio_lead_import_line_opp_rel",
         "line_id",
         "lead_id",
-        string="Open Opportunities (records)",
+        string="Matching Opportunity Records",
         compute="_compute_pipeline_count",
     )
     lead_count = fields.Integer(
-        string="Open Leads Count",
+        string="Matching Leads",
         compute="_compute_pipeline_count",
     )
     lead_summary = fields.Html(
-        string="Open Leads Summary",
+        string="Leads Summary",
         compute="_compute_pipeline_count",
         sanitize=False,
     )
@@ -711,7 +711,7 @@ class LeadImportLine(models.Model):
         "splitstudio_lead_import_line_lead_rel",
         "line_id",
         "lead_id",
-        string="Open Leads (records)",
+        string="Matching Lead Records",
         compute="_compute_pipeline_count",
     )
     campaign_id = fields.Many2one(
