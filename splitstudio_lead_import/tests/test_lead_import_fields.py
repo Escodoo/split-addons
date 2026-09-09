@@ -214,13 +214,9 @@ class TestLeadImportFields(common.TransactionCase):
         """A campaign that does not exist is created on the fly, and a
         pre-existing campaign with the same name is re-used."""
         unique_name = "Auto Campaign Unit Test"
-        # Pre-create the campaign so the ``if existing:`` branch is
-        # exercised when this test runs after a previous one (or in
-        # isolation, when the campaign still exists from a prior run).
-        self.env["utm.campaign"].create({"name": unique_name})
-        existing = self.env["utm.campaign"].search([("name", "=", unique_name)])
-        if existing:
-            existing.unlink()
+        # Drop any pre-existing campaign with the same name so the
+        # first run below creates a fresh one.
+        self.env["utm.campaign"].search([("name", "=", unique_name)]).unlink()
         # First run: campaign does not exist yet, must be auto-created.
         wiz_first = self._run_wizard(
             self._build_csv(
