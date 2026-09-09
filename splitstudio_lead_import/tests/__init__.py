@@ -4,3 +4,4 @@
 from . import test_crm_lead_reassign_wizard
 from . import test_lead_import_wizard
 from . import test_lead_import_fields
+from . import test_lead_import_wizard_coverage
