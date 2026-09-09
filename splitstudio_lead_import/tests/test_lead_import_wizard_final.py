@@ -319,3 +319,28 @@ class TestLeadImportWizardFinal(common.TransactionCase):
         )
         wiz.action_parse_and_check()
         self.assertEqual(len(wiz.line_ids), 1)
+
+    # ------------------------------------------------------------------
+    # _resolve_partner: mock fallback reached (L92)
+    # ------------------------------------------------------------------
+    def test_11_resolve_partner_reaches_mock_fallback(self):
+        """Patch ``Partner.search`` so every domain falls through to the
+        final ``return self.env[...]`` line of the mock.  This exercises
+        the test-side fallback branch and confirms the wizard handles
+        the all-empty-via-mock case without crashing."""
+        self.env["res.partner"].create({"name": "Fallback Probe"})
+        wiz = self._wiz()
+        partner_model = self.env.registry["res.partner"]
+
+        def fake_search(self_, domain, *args, **kwargs):
+            return self.env["res.partner"].browse()
+
+        with mock.patch.object(partner_model, "search", fake_search):
+            # email is set so the email/child_ids.email branches
+            # execute; both fall through to the mock fallback.
+            person, company_ret = wiz._resolve_partner(
+                "fallback@x.com", "Some Contact", "Some Co"
+            )
+
+        self.assertFalse(person)
+        self.assertFalse(company_ret)
