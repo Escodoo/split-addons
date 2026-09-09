@@ -72,7 +72,13 @@ class TestLeadImportWizardFinal(common.TransactionCase):
         is called and the result drives ``person = actual or child``.
         We patch ``env['res.partner'].search`` so the direct email
         search returns nothing and the child_ids.email search returns
-        a company with no children (so actual is empty)."""
+        a company with no children (so actual is empty).
+
+        We call ``_resolve_partner`` twice: once with only an email
+        (to exercise the email-child path) and once with only a
+        contact name (to exercise the final ``return`` fallback of
+        the mock, since the direct name search uses a domain that
+        none of the ``if`` branches in the mock intercept)."""
         company = self.env["res.partner"].create(
             {"name": "Email Mock Co", "is_company": True}
         )
@@ -89,13 +95,23 @@ class TestLeadImportWizardFinal(common.TransactionCase):
             for leaf in domain:
                 if isinstance(leaf, tuple) and leaf[0] == "child_ids.email":
                     return company
+            # Direct name and child_ids.name searches reach here.
             return self.env["res.partner"].browse()
 
         with mock.patch.object(partner_model, "search", fake_search):
+            # First call: email-only path; child_ids.email returns the
+            # company so ``actual or child`` falls back to the company.
             person, company_ret = wiz._resolve_partner("any@x.com", "", "")
+            self.assertEqual(person, company)
+            self.assertEqual(company_ret, company)
 
-        self.assertEqual(person, company)
-        self.assertEqual(company_ret, company)
+            # Second call: name-only path; the direct name search uses
+            # a ``("name", "=ilike", ...)`` domain that does not match
+            # any of the explicit ``if`` branches above, so the final
+            # ``return self.env[...]`` line is exercised.
+            person2, company_ret2 = wiz._resolve_partner("", "Some Contact", "")
+            self.assertFalse(person2)
+            self.assertFalse(company_ret2)
 
     # ------------------------------------------------------------------
     # _resolve_partner: filtered() returns empty recordset (name path)
