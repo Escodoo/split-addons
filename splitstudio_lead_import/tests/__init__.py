@@ -7,3 +7,4 @@ from . import test_lead_import_fields
 from . import test_lead_import_wizard_coverage
 from . import test_lead_import_wizard_fileparsing
 from . import test_lead_import_wizard_edges
+from . import test_lead_import_wizard_final
