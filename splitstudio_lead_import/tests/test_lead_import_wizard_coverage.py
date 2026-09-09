@@ -208,6 +208,24 @@ class TestLeadImportWizardCoverage(common.TransactionCase):
         wiz = self._wiz()
         self.assertFalse(wiz._resolve_country(""))
 
+    def test_25_resolve_country_whitespace_only_returns_empty(self):
+        """A value that is only whitespace is treated as blank."""
+        wiz = self._wiz()
+        self.assertFalse(wiz._resolve_country("   "))
+
+    def test_26_resolve_country_name_ilike_with_wildcards(self):
+        """The third fallback uses a non-anchored `ilike` which
+        interprets `%` and `_` as wildcards; the second uses `=ilike`
+        which is anchored. A country whose name starts with a wildcard
+        prefix forces the third branch."""
+        # Use a unique name to avoid clashing with demo countries.
+        partial_country = self.env["res.country"].create(
+            {"name": "ZZTestZZ Country", "code": "ZZ"}
+        )
+        wiz = self._wiz()
+        result = wiz._resolve_country("ZZTestZZ")
+        self.assertEqual(result, partial_country)
+
     # ------------------------------------------------------------------
     # _resolve_tags
     # ------------------------------------------------------------------
