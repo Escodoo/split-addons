@@ -277,3 +277,45 @@ class TestLeadImportWizardFinal(common.TransactionCase):
         self.assertEqual(new_wiz.state, "preview")
         self.assertEqual(len(new_wiz.line_ids), 1)
         self.assertEqual(new_wiz.line_ids[0].partner_id, partner)
+
+    # ------------------------------------------------------------------
+    # _resolve_partner: all-empty inputs (exercises elif False branch)
+    # ------------------------------------------------------------------
+    def test_09_resolve_partner_all_empty(self):
+        """Calling ``_resolve_partner`` with empty email, name and
+        partner_name returns an empty recordset pair.  This exercises
+        the ``elif partner_name_clean:`` False branch (L137->146) and
+        the early ``return`` at L146."""
+        wiz = self._wiz()
+        person, company = wiz._resolve_partner("", "", "")
+        self.assertFalse(person)
+        self.assertFalse(company)
+
+    # ------------------------------------------------------------------
+    # action_parse_and_check: oportunidade empty (skip branch L430->440)
+    # ------------------------------------------------------------------
+    def test_10_action_parse_skips_oportunidade_branch_when_empty(self):
+        """When the spreadsheet row has an empty ``name``/``oportunidade``
+        column, the ``if oportunidade_clean:`` branch in
+        ``action_parse_and_check`` is skipped.  This exercises the
+        L430->L440 edge."""
+        wiz = self._wiz()
+        wiz.write(
+            {
+                "file_data": base64.b64encode(
+                    self._csv_bytes(
+                        ["name", "email", "partner_name"],
+                        [
+                            {
+                                "name": "",
+                                "email": "no_name@x.com",
+                                "partner_name": "Some Co",
+                            }
+                        ],
+                    )
+                ),
+                "file_name": "noname.csv",
+            }
+        )
+        wiz.action_parse_and_check()
+        self.assertEqual(len(wiz.line_ids), 1)
