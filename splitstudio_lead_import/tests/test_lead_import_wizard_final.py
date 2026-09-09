@@ -101,7 +101,12 @@ class TestLeadImportWizardFinal(common.TransactionCase):
     # _resolve_partner: filtered() returns empty recordset (name path)
     # ------------------------------------------------------------------
     def test_02_resolve_partner_name_child_actual_via_mock(self):
-        """Same strategy as test_01 but for the name branch (L124-130)."""
+        """Same strategy as test_01 but for the name branch (L124-130).
+
+        We also intercept the ``child_ids.email`` and direct email
+        searches (returning empty) so the ``name`` and ``child_ids.name``
+        searches fall through to the final ``return self_.browse()``
+        fallback of the mock, which exercises that line too."""
         company = self.env["res.partner"].create(
             {"name": "Name Mock Co", "is_company": True}
         )
@@ -110,8 +115,16 @@ class TestLeadImportWizardFinal(common.TransactionCase):
 
         def fake_search(self_, domain, *args, **kwargs):
             for leaf in domain:
+                if isinstance(leaf, tuple) and leaf[0] in (
+                    "email",
+                    "email_normalized",
+                    "child_ids.email",
+                ):
+                    return self_.browse()
+            for leaf in domain:
                 if isinstance(leaf, tuple) and leaf[0] == "child_ids.name":
                     return company
+            # The direct name search reaches this fallback.
             return self_.browse()
 
         with mock.patch.object(partner_model, "search", fake_search):
@@ -234,3 +247,33 @@ class TestLeadImportWizardFinal(common.TransactionCase):
         new_wiz = Wizard.browse(result["res_id"])
         self.assertEqual(new_wiz.state, "preview")
         self.assertFalse(new_wiz.line_ids)
+
+    def test_08_action_return_from_opportunities_recreate_with_active_id(self):
+        """When the original wizard is gone and the context carries
+        ``active_id`` (but no ``splitstudio_lead_import_partner_id``),
+        the recreate path resolves ``partner_id`` from the related
+        crm.lead.partner_id (L555-559)."""
+        Wizard = self.env["splitstudio.lead.import.wizard"]
+        partner = self.env["res.partner"].create(
+            {"name": "Active Id Partner", "is_company": True}
+        )
+        lead = self.env["crm.lead"].create(
+            {
+                "name": "Active Id Lead",
+                "type": "lead",
+                "team_id": self.team.id,
+                "partner_id": partner.id,
+            }
+        )
+        result = (
+            Wizard.with_context(
+                default_team_id=self.team.id,
+                active_id=lead.id,
+            )
+            .create({"name": "Outer", "team_id": self.team.id})
+            .action_return_from_opportunities()
+        )
+        new_wiz = Wizard.browse(result["res_id"])
+        self.assertEqual(new_wiz.state, "preview")
+        self.assertEqual(len(new_wiz.line_ids), 1)
+        self.assertEqual(new_wiz.line_ids[0].partner_id, partner)

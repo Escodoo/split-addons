@@ -211,28 +211,50 @@ class TestLeadImportFields(common.TransactionCase):
         lead.unlink()
 
     def test_08_campaign_auto_create(self):
-        """A campaign that does not exist is created on the fly."""
+        """A campaign that does not exist is created on the fly, and a
+        pre-existing campaign with the same name is re-used."""
         unique_name = "Auto Campaign Unit Test"
+        # Pre-create the campaign so the ``if existing:`` branch is
+        # exercised when this test runs after a previous one (or in
+        # isolation, when the campaign still exists from a prior run).
+        self.env["utm.campaign"].create({"name": unique_name})
         existing = self.env["utm.campaign"].search([("name", "=", unique_name)])
         if existing:
             existing.unlink()
-        wiz = self._run_wizard(
+        # First run: campaign does not exist yet, must be auto-created.
+        wiz_first = self._run_wizard(
             self._build_csv(
                 ["name", "email", "campaign_id"],
                 [
                     {
-                        "name": "Auto Campaign Lead",
-                        "email": "auto_camp@x.com",
+                        "name": "Auto Campaign Lead 1",
+                        "email": "auto_camp_1@x.com",
                         "campaign_id": unique_name,
                     }
                 ],
             ),
-            name="Auto Campaign Test",
+            name="Auto Campaign Test 1",
         )
-        line = wiz.line_ids[0]
-        self.assertEqual(line.campaign_id.name, unique_name)
+        first_campaign = wiz_first.line_ids[0].campaign_id
+        self.assertEqual(first_campaign.name, unique_name)
+        # Second run: same campaign name now exists; the helper must
+        # reuse it instead of creating a duplicate.
+        wiz_second = self._run_wizard(
+            self._build_csv(
+                ["name", "email", "campaign_id"],
+                [
+                    {
+                        "name": "Auto Campaign Lead 2",
+                        "email": "auto_camp_2@x.com",
+                        "campaign_id": unique_name,
+                    }
+                ],
+            ),
+            name="Auto Campaign Test 2",
+        )
+        self.assertEqual(wiz_second.line_ids[0].campaign_id, first_campaign)
         # Cleanup
-        line.campaign_id.unlink()
+        first_campaign.unlink()
 
     def test_09_duplicate_detection_email(self):
         """An email that already exists in crm.lead flags the row."""
