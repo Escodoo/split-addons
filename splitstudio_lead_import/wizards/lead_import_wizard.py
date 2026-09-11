@@ -531,13 +531,6 @@ class LeadImportWizard(models.Model):
             self.env["splitstudio.lead.import.line"].create(lines_to_create)
 
         self.state = "preview"
-        return {
-            "type": "ir.actions.act_window",
-            "res_model": "splitstudio.lead.import.wizard",
-            "view_mode": "form",
-            "res_id": self.id,
-            "target": "new",
-        }
 
     def action_return_from_opportunities(self):
         """Re-open this import wizard in preview state.
@@ -758,6 +751,33 @@ class LeadImportLine(models.Model):
                     list(base_domain) + [("type", "=", "lead")],
                     order="create_date desc",
                 )
+            # Also search by email and name when no partner is matched
+            if not partner or (not opps and not leads):
+                email_domain = (
+                    [("email_from", "=ilike", line.email.strip().lower())]
+                    if line.email
+                    else []
+                )
+                name_domain = (
+                    [("name", "=ilike", line.name.strip())] if line.name else []
+                )
+                if email_domain or name_domain:
+                    opp_domain = [("type", "=", "opportunity")]
+                    lead_domain = [("type", "=", "lead")]
+                    if email_domain and name_domain:
+                        extra = ["|"] + email_domain + name_domain
+                    elif email_domain:
+                        extra = email_domain
+                    else:
+                        extra = name_domain
+                    opps = Lead.search(
+                        opp_domain + extra,
+                        order="expected_revenue desc, date_deadline asc",
+                    )
+                    leads = Lead.search(
+                        lead_domain + extra,
+                        order="create_date desc",
+                    )
             line.opportunity_count = len(opps)
             line.opportunity_ids = opps
             line.opportunity_summary = self._format_pipeline_summary(

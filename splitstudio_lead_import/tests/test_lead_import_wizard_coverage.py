@@ -494,6 +494,36 @@ class TestLeadImportWizardCoverage(common.TransactionCase):
         self.assertIn("Existing Opp", line.opportunity_summary)
         self.assertIn("Existing Lead", line.lead_summary)
 
+    def test_70b_compute_pipeline_count_partner_no_matches_falls_back(self):
+        company = self.env["res.partner"].create(
+            {"name": "Empty Co", "is_company": True}
+        )
+        self.env["crm.lead"].create(
+            {
+                "name": "Unrelated Lead",
+                "type": "lead",
+                "email_from": "unrelated@x.com",
+            }
+        )
+        csv_bytes = self._csv(
+            ["name", "email", "partner_name"],
+            [
+                {
+                    "name": "Match by Name",
+                    "email": "unrelated@x.com",
+                    "partner_name": "Empty Co",
+                }
+            ],
+        )
+        wiz = self._make_wizard(file_b64=csv_bytes)
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line.write({"partner_company_id": company.id})
+        line._compute_pipeline_count()
+        self.assertEqual(line.opportunity_count, 0)
+        self.assertEqual(line.lead_count, 1)
+        self.assertIn("Unrelated Lead", line.lead_summary)
+
     def test_71_action_view_opportunities_no_data_raises(self):
         csv_bytes = self._csv(
             ["name", "email"],

@@ -18,6 +18,14 @@ action = env['crm.lead.reassign.wizard'].with_context(env.context).action_open_r
         <field name="model">crm.lead.reassign.wizard</field>
         <field name="arch" type="xml">
             <form string="Move to another pipeline">
+                <header>
+                    <button
+                        name="action_reassign"
+                        string="Move"
+                        type="object"
+                        class="btn-primary"
+                    />
+                </header>
                 <group>
                     <field name="lead_id" readonly="1" />
                     <field name="new_team_id" options="{'no_create_edit': True}" />
@@ -26,15 +34,6 @@ action = env['crm.lead.reassign.wizard'].with_context(env.context).action_open_r
                         placeholder="Optional: why is this lead/opportunity being moved?"
                     />
                 </group>
-                <footer>
-                    <button
-                        name="action_reassign"
-                        string="Move"
-                        type="object"
-                        class="btn-primary"
-                    />
-                    <button string="Cancel" class="btn-secondary" special="cancel" />
-                </footer>
             </form>
         </field>
     </record>

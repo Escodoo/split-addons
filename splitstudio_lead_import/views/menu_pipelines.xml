@@ -2,108 +2,13 @@
 <!-- Copyright 2026 Escodoo
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <!-- Rename the core CRM "Leads" top-menu to "Pipelines" so the
-         splitstudio_lead_import wizard grouping matches the user's
-         mental model. The crm.crm_lead_all_leads action context is
-         intentionally NOT overridden here: split_crm_custom already
-         sets default_team_id=ref('crm_team_intake') on that action
-         and overwriting it here would erase the Intake-team binding
-         (regression caught by
-         split_crm_custom.tests.test_crm_leads_menu
-         .test_leads_action_uses_intake_team). -->
+    <!-- Rename the core CRM "Leads" top-menu to "Pipelines" -->
     <record id="crm.crm_menu_leads" model="ir.ui.menu">
         <field name="name">Pipelines</field>
     </record>
 
-    <record id="action_crm_lead_pipeline_intake" model="ir.actions.act_window">
-        <field name="name">🙂 INTAKE</field>
-        <field name="res_model">crm.lead</field>
-        <field name="view_mode">kanban,list,form</field>
-        <field name="domain">[("type", "=", "lead"), ("team_id", "=", 11)]</field>
-        <field name="context">{
-            "default_type": "lead",
-            "default_team_id": 11,
-            "search_default_team_id": 11,
-        }</field>
-    </record>
-
-    <record id="action_crm_lead_pipeline_scout_eventos" model="ir.actions.act_window">
-        <field name="name">✨ SCOUT EVENTOS</field>
-        <field name="res_model">crm.lead</field>
-        <field name="view_mode">kanban,list,form</field>
-        <field name="domain">[("type", "=", "lead"), ("team_id", "=", 14)]</field>
-        <field name="context">{
-            "default_type": "lead",
-            "default_team_id": 14,
-            "search_default_team_id": 14,
-        }</field>
-    </record>
-
-    <record id="action_crm_lead_pipeline_servicos" model="ir.actions.act_window">
-        <field name="name">🎨 SERVIÇOS</field>
-        <field name="res_model">crm.lead</field>
-        <field name="view_mode">kanban,list,form</field>
-        <field
-            name="domain"
-        >[("type", "=", "opportunity"), ("team_id", "=", 12)]</field>
-        <field name="context">{
-            "default_type": "opportunity",
-            "default_team_id": 12,
-            "search_default_team_id": 12,
-        }</field>
-    </record>
-
-    <record id="action_crm_lead_pipeline_pis" model="ir.actions.act_window">
-        <field name="name">😍 PIs</field>
-        <field name="res_model">crm.lead</field>
-        <field name="view_mode">kanban,list,form</field>
-        <field
-            name="domain"
-        >[("type", "=", "opportunity"), ("team_id", "=", 13)]</field>
-        <field name="context">{
-            "default_type": "opportunity",
-            "default_team_id": 13,
-            "search_default_team_id": 13,
-        }</field>
-    </record>
-
-    <record id="menu_pipeline_intake" model="ir.ui.menu">
-        <field name="name">🙂 INTAKE</field>
-        <field name="parent_id" ref="crm.crm_menu_leads" />
-        <field
-            name="action"
-            eval="'ir.actions.act_window,' + str(ref('action_crm_lead_pipeline_intake'))"
-        />
-        <field name="sequence">10</field>
-    </record>
-
-    <record id="menu_pipeline_scout_eventos" model="ir.ui.menu">
-        <field name="name">✨ SCOUT EVENTOS</field>
-        <field name="parent_id" ref="crm.crm_menu_leads" />
-        <field
-            name="action"
-            eval="'ir.actions.act_window,' + str(ref('action_crm_lead_pipeline_scout_eventos'))"
-        />
-        <field name="sequence">20</field>
-    </record>
-
-    <record id="menu_pipeline_servicos" model="ir.ui.menu">
-        <field name="name">🎨 SERVIÇOS</field>
-        <field name="parent_id" ref="crm.crm_menu_leads" />
-        <field
-            name="action"
-            eval="'ir.actions.act_window,' + str(ref('action_crm_lead_pipeline_servicos'))"
-        />
-        <field name="sequence">30</field>
-    </record>
-
-    <record id="menu_pipeline_pis" model="ir.ui.menu">
-        <field name="name">😍 PIs</field>
-        <field name="parent_id" ref="crm.crm_menu_leads" />
-        <field
-            name="action"
-            eval="'ir.actions.act_window,' + str(ref('action_crm_lead_pipeline_pis'))"
-        />
-        <field name="sequence">40</field>
+    <!-- Override the parent menu action name to match the renamed menu -->
+    <record id="crm.crm_lead_all_leads" model="ir.actions.act_window">
+        <field name="name">Pipelines</field>
     </record>
 </odoo>
