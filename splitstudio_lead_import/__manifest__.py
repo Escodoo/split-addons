@@ -21,6 +21,7 @@
         "views/wizard_list.xml",
         "views/crm_lead_readonly.xml",
         "views/crm_lead_conversion.xml",
+        "views/crm_team_pipeline_menu.xml",
         "views/menu_pipelines.xml",
     ],
     "installable": True,

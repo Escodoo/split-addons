@@ -289,3 +289,168 @@ class TestLeadImportWizardFileParsing(common.TransactionCase):
         self.assertEqual(line.lead_count, 0)
         self.assertFalse(line.opportunity_ids)
         self.assertFalse(line.lead_record_ids)
+
+    def test_16b_compute_pipeline_count_empty_email_and_name_skips(self):
+        """A line with no partner, no email, and no name skips the fallback."""
+        csv_bytes = self._csv(
+            ["name", "email"],
+            [{"name": "Some Name", "email": "some@x.com"}],
+        )
+        wiz = self.env["splitstudio.lead.import.wizard"].create(
+            {
+                "name": "Empty Line",
+                "team_id": self.team.id,
+                "file_data": csv_bytes,
+                "file_name": "test.csv",
+                "state": "draft",
+            }
+        )
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line.write({"name": "", "email": ""})
+        line._compute_pipeline_count()
+        self.assertEqual(line.opportunity_count, 0)
+        self.assertEqual(line.lead_count, 0)
+
+    def test_17_compute_pipeline_count_matches_by_email(self):
+        """A line without partner matches an existing lead by email."""
+        lead = self.env["crm.lead"].create(
+            {
+                "name": "Existing Lead",
+                "type": "lead",
+                "email_from": "match@x.com",
+                "team_id": self.team.id,
+            }
+        )
+        csv_bytes = self._csv(
+            ["name", "email"],
+            [{"name": "Import Line", "email": "match@x.com"}],
+        )
+        wiz = self.env["splitstudio.lead.import.wizard"].create(
+            {
+                "name": "Email Match",
+                "team_id": self.team.id,
+                "file_data": csv_bytes,
+                "file_name": "test.csv",
+                "state": "draft",
+            }
+        )
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line._compute_pipeline_count()
+        self.assertEqual(line.lead_count, 1)
+        self.assertIn(lead, line.lead_record_ids)
+
+    def test_18_compute_pipeline_count_matches_by_name(self):
+        """A line without partner matches an existing lead by name."""
+        lead = self.env["crm.lead"].create(
+            {
+                "name": "Known Prospect",
+                "type": "lead",
+                "team_id": self.team.id,
+            }
+        )
+        csv_bytes = self._csv(
+            ["name", "email"],
+            [{"name": "Known Prospect", "email": "unknown@x.com"}],
+        )
+        wiz = self.env["splitstudio.lead.import.wizard"].create(
+            {
+                "name": "Name Match",
+                "team_id": self.team.id,
+                "file_data": csv_bytes,
+                "file_name": "test.csv",
+                "state": "draft",
+            }
+        )
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line._compute_pipeline_count()
+        self.assertEqual(line.lead_count, 1)
+        self.assertIn(lead, line.lead_record_ids)
+
+    def test_19_compute_pipeline_count_matches_by_email_and_name(self):
+        """A line without partner matches an opportunity by both email and name."""
+        opp = self.env["crm.lead"].create(
+            {
+                "name": "Big Deal",
+                "type": "opportunity",
+                "email_from": "deal@x.com",
+                "team_id": self.team.id,
+            }
+        )
+        csv_bytes = self._csv(
+            ["name", "email"],
+            [{"name": "Big Deal", "email": "deal@x.com"}],
+        )
+        wiz = self.env["splitstudio.lead.import.wizard"].create(
+            {
+                "name": "Both Match",
+                "team_id": self.team.id,
+                "file_data": csv_bytes,
+                "file_name": "test.csv",
+                "state": "draft",
+            }
+        )
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line._compute_pipeline_count()
+        self.assertEqual(line.opportunity_count, 1)
+        self.assertIn(opp, line.opportunity_ids)
+
+    def test_20_compute_pipeline_count_empty_name_skips_name_domain(self):
+        """A line with empty name only searches by email."""
+        lead = self.env["crm.lead"].create(
+            {
+                "name": "Some Lead",
+                "type": "lead",
+                "email_from": "solo@x.com",
+                "team_id": self.team.id,
+            }
+        )
+        csv_bytes = self._csv(
+            ["name", "email"],
+            [{"name": "", "email": "solo@x.com"}],
+        )
+        wiz = self.env["splitstudio.lead.import.wizard"].create(
+            {
+                "name": "Email Only",
+                "team_id": self.team.id,
+                "file_data": csv_bytes,
+                "file_name": "test.csv",
+                "state": "draft",
+            }
+        )
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line._compute_pipeline_count()
+        self.assertEqual(line.lead_count, 1)
+        self.assertIn(lead, line.lead_record_ids)
+
+    def test_21_compute_pipeline_count_empty_email_skips_email_domain(self):
+        """A line with empty email only searches by name."""
+        lead = self.env["crm.lead"].create(
+            {
+                "name": "Name Only Lead",
+                "type": "lead",
+                "team_id": self.team.id,
+            }
+        )
+        csv_bytes = self._csv(
+            ["name", "email"],
+            [{"name": "Name Only Lead", "email": ""}],
+        )
+        wiz = self.env["splitstudio.lead.import.wizard"].create(
+            {
+                "name": "Name Only",
+                "team_id": self.team.id,
+                "file_data": csv_bytes,
+                "file_name": "test.csv",
+                "state": "draft",
+            }
+        )
+        wiz.action_parse_and_check()
+        line = wiz.line_ids[0]
+        line._compute_pipeline_count()
+        self.assertEqual(line.lead_count, 1)
+        self.assertIn(lead, line.lead_record_ids)

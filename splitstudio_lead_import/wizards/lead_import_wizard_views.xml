@@ -22,15 +22,7 @@
                         class="btn-primary"
                         invisible="state != 'preview'"
                     />
-                    <button
-                        name="action_discard"
-                        string="Discard"
-                        type="object"
-                        class="btn-secondary"
-                        confirm="Are you sure you want to discard this import? All preview data will be permanently deleted."
-                        invisible="state == 'done'"
-                    />
-                    <button string="Close" class="btn-secondary" special="cancel" />
+
                     <field
                         name="state"
                         widget="statusbar"

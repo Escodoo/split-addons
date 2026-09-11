@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from . import test_crm_lead_reassign_wizard
+from . import test_crm_team_pipeline_menu
 from . import test_lead_import_wizard
 from . import test_lead_import_fields
 from . import test_lead_import_wizard_coverage
