@@ -1,0 +1,524 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* splitstudio_lead_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "<b>Warning:</b>"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__file_data
+msgid "CSV File"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__campaign_id
+msgid "Campaign"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Check Duplicates & Preview"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Choose the pipeline to import into"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__city
+msgid "City"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid ""
+"Click the <b>list icon</b> on a row with open opportunities to view them in "
+"a read-only pop-up on top of this wizard. Close the pop-up with the X to "
+"return here."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Company exists in Lead: %s"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Company exists in Partner: %s"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Confirm Import"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__contact_name
+msgid "Contact Name"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Contact exists in Partner: %s"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Continue reviewing opportunities"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid ""
+"Could not parse CSV file '%(name)s': NUL bytes. Please re-save it as UTF-8."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Could not parse file '%(name)s': %(error)s"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__country_id
+msgid "Country"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__create_uid
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__create_uid
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__create_date
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__create_date
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__description
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__name
+msgid "Description"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__display_name
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__display_name
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_wizard__state__done
+msgid "Done"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_wizard__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__duplicate_count
+msgid "Duplicate Count"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__duplicate_reason
+msgid "Duplicate Reason"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__email
+msgid "Email"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Email exists in Lead: %s"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__partner_company_id
+msgid "Existing Company"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__partner_id
+msgid "Existing Contact"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__file_name
+msgid "File Name"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_line__priority__2
+msgid "High"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__id
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__id
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,help:splitstudio_lead_import.field_crm_team__show_in_pipeline_menu
+msgid ""
+"If checked, a menu item will be created under CRM > Pipelines for this team."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Import Leads"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Import Leads with Duplicate Check"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__import_line
+msgid "Import Line"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__line_ids
+msgid "Import Lines"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Import Preview & Duplicate Check"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.actions.act_window,name:splitstudio_lead_import.action_splitstudio_lead_import_sessions
+#: model:ir.ui.menu,name:splitstudio_lead_import.menu_splitstudio_lead_import_sessions
+msgid "Import Sessions"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Imported Lead"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__is_duplicate
+msgid "Is Duplicate"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__write_uid
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__write_uid
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__write_date
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__write_date
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__lead_id
+msgid "Lead / Opportunity"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Lead Import"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model,name:splitstudio_lead_import.model_splitstudio_lead_import_line
+msgid "Lead Import Wizard Line"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model,name:splitstudio_lead_import.model_splitstudio_lead_import_wizard
+msgid "Lead Import Wizard with Duplicate Check"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__lead_summary
+msgid "Leads Summary"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Leads successfully imported!"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_line__priority__0
+msgid "Low"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__lead_record_ids
+msgid "Matching Lead Records"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__lead_count
+msgid "Matching Leads"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__opportunity_count
+msgid "Matching Opportunities"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__opportunity_ids
+msgid "Matching Opportunity Records"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_line__priority__1
+msgid "Medium"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_crm_lead_reassign_wizard_form
+msgid "Move"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model,name:splitstudio_lead_import.model_crm_lead_reassign_wizard
+msgid "Move a lead/opportunity to another sales team"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_reassign_wizard.py:0
+#: model:ir.actions.server,name:splitstudio_lead_import.action_open_reassign_wizard_from_lead
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_crm_lead_form_inherit_readonly_for_wizard
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_crm_lead_reassign_wizard_form
+msgid "Move to another pipeline"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Name exists in Lead: %s"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__new_team_id
+msgid "New Pipeline"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "No duplicates detected in the database. You are good to import!"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "No open leads for this contact."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "No open opportunities for this contact."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Open Leads"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Open Opportunities"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "Open Opps"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__opportunity_summary
+msgid "Opportunities Summary"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__name
+msgid "Opportunity / Lead Name"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_crm_lead_reassign_wizard_form
+msgid "Optional: why is this lead/opportunity being moved?"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__user_id
+msgid "Owner"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__partner_name
+msgid "Partner Name"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__phone
+msgid "Phone"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__team_id
+msgid "Pipeline (Sales Team)"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid "Please upload a file before checking."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__priority
+msgid "Priority"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_lead_reassign_wizard__note
+msgid "Reason (optional)"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_wizard__state__preview
+msgid "Review Duplicates"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model,name:splitstudio_lead_import.model_crm_team
+msgid "Sales Team"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_crm_team__show_in_pipeline_menu
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.crm_team_form_view_inherit_pipeline_menu
+msgid "Show in Pipeline Menu"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_wizard__state
+msgid "Status"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__tag_names
+msgid "Tag Names"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__tag_ids
+msgid "Tags"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid ""
+"The pipeline %(team)s does not accept leads. Choose a pipeline with 'Leads' "
+"enabled."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid ""
+"Upload an XLSX or CSV file containing lead records. Required columns: "
+"oportunidade (or opportunity / name), contact_name, email (or email_from), "
+"partner_name, phone. Optional: campaign (auto-created), tags (auto-created),"
+" description (chatter note), priority (Low/Medium/High/Very High or "
+"0/1/2/3), website, city, country_id (ISO code or name). The first row is the"
+" header."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields.selection,name:splitstudio_lead_import.selection__splitstudio_lead_import_line__priority__3
+msgid "Very High"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "View open leads for this contact (read-only)"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "View open opportunities for this contact (read-only)"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__website
+msgid "Website"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model:ir.model.fields,field_description:splitstudio_lead_import.field_splitstudio_lead_import_line__wizard_id
+msgid "Wizard"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#. odoo-python
+#: code:addons/splitstudio_lead_import/wizards/lead_import_wizard.py:0
+msgid ""
+"XLSX support requires the 'openpyxl' Python library. Please contact your "
+"administrator."
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid "e.g. Licensing Expo 2026 — Leads"
+msgstr ""
+
+#. module: splitstudio_lead_import
+#: model_terms:ir.ui.view,arch_db:splitstudio_lead_import.view_splitstudio_lead_import_wizard_form
+msgid ""
+"potential duplicate(s) detected based on email, name, or company name! "
+"Review before importing."
+msgstr ""
