@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Escodoo
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Rename the core CRM "Leads" top-menu to "Pipelines" -->
+    <record id="crm.crm_menu_leads" model="ir.ui.menu">
+        <field name="name">Pipelines</field>
+    </record>
+
+    <!-- Override the parent menu action name to match the renamed menu -->
+    <record id="crm.crm_lead_all_leads" model="ir.actions.act_window">
+        <field name="name">Pipelines</field>
+    </record>
+</odoo>

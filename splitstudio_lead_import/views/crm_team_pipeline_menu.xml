@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Escodoo
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="crm_team_form_view_inherit_pipeline_menu" model="ir.ui.view">
+        <field name="name">crm.team.form.pipeline.menu</field>
+        <field name="model">crm.team</field>
+        <field name="inherit_id" ref="sales_team.crm_team_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='options_active']" position="after">
+                <div name="show_in_pipeline_menu_container" class="mt-1 mb-1">
+                    <field name="show_in_pipeline_menu" />
+                    <label for="show_in_pipeline_menu" string="Show in Pipeline Menu" />
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

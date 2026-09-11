@@ -1,0 +1,37 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">SplitStudio Lead Import</h2>
+            <p>This module provides a wizard for importing leads from CSV or XLSX files with advanced duplicate checking. Before creating the leads in CRM, it checks existing records in both <code>crm.lead</code> and <code>res.partner</code> by email, lead/contact name, and company/partner name.</p>
+            <p>If duplicates are found, they are highlighted in red with reasons provided, giving the user full control to review or skip specific lines before confirming the import.</p>
+            <p>Campaigns and tags referenced in the spreadsheet are matched against existing records and created on the fly when missing. The optional <code>description</code> column is stored on the lead and also posted as an internal note in the chatter, and the optional <code>priority</code> column controls the priority stars shown on the lead form.</p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3>Recognised spreadsheet columns</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr><th>Column</th><th>Notes</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>oportunidade</code> / <code>opportunity</code> / <code>name</code></td><td>Required: lead/opportunity name.</td></tr>
+                    <tr><td><code>contact_name</code> / <code>Contato</code></td><td>Used to match an existing contact.</td></tr>
+                    <tr><td><code>email</code> / <code>email_from</code></td><td>Match priority: email &gt; name.</td></tr>
+                    <tr><td><code>partner_name</code> / <code>Empresa</code></td><td>Company name; matched against res.partner.</td></tr>
+                    <tr><td><code>phone</code> / <code>Telefone</code></td><td></td></tr>
+                    <tr><td><code>campaign</code> / <code>campaign_id</code></td><td>Campaigns that do not exist are created.</td></tr>
+                    <tr><td><code>tags</code> / <code>tag_ids</code></td><td>Comma- or semicolon-separated; missing tags are created automatically.</td></tr>
+                    <tr><td><code>description</code></td><td>Stored on the lead and posted as a chatter internal note.</td></tr>
+                    <tr><td><code>priority</code></td><td><code>Low</code> / <code>Medium</code> / <code>High</code> / <code>Very High</code> (or 0/1/2/3) maps to the priority stars widget.</td></tr>
+                    <tr><td><code>website</code> / <code>Site</code></td><td></td></tr>
+                    <tr><td><code>city</code> / <code>Cidade</code></td><td></td></tr>
+                    <tr><td><code>country_id</code> / <code>País</code></td><td>ISO code (<code>BR</code>, <code>US</code>) or full name.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
